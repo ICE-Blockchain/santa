@@ -74,9 +74,9 @@ func unachivedPercentageTestCase() *calculateUnachievedPercentagesTestCase {
 	return &calculateUnachievedPercentagesTestCase{}
 }
 
-//nolint:funlen // A lot of testcases here
+//nolint:funlen,paralleltest,tparallel // A lot of testcases here. Not need to be parallel due to loads the global variables.
 func Test_Repository_calculateUnachievedPercentages(t *testing.T) {
-	t.Parallel()
+	loadBadges(defaultCfg())
 	tests := []*calculateUnachievedPercentagesTestCase{
 		unachivedPercentageTestCase().
 			WithDesc("All users have first 2 badges, and no one have last").
@@ -262,10 +262,10 @@ func Test_Repository_calculateUnachievedPercentages(t *testing.T) {
 	}
 }
 
-//nolint:funlen // A lot of testcases
+//nolint:funlen,paralleltest,tparallel // A lot of testcases. Not needed to be the parallel due to loads the global variables.
 func Test_Progress_BuildBadges(t *testing.T) {
-	t.Parallel()
 	repo := &repository{cfg: defaultCfg()}
+	loadBadges(repo.cfg)
 	tests := []*struct {
 		progress *progress
 		stats    map[Type]float64
@@ -279,12 +279,12 @@ func Test_Progress_BuildBadges(t *testing.T) {
 			group:    LevelGroupType,
 			stats:    map[Type]float64{},
 			expected: []*Badge{
-				expectedBadge(repo, Level1Type, false, 0),
-				expectedBadge(repo, Level2Type, false, 0),
-				expectedBadge(repo, Level3Type, false, 0),
-				expectedBadge(repo, Level4Type, false, 0),
-				expectedBadge(repo, Level5Type, false, 0),
-				expectedBadge(repo, Level6Type, false, 0),
+				expectedBadge(Level1Type, false, 0),
+				expectedBadge(Level2Type, false, 0),
+				expectedBadge(Level3Type, false, 0),
+				expectedBadge(Level4Type, false, 0),
+				expectedBadge(Level5Type, false, 0),
+				expectedBadge(Level6Type, false, 0),
 			},
 		},
 		{
@@ -299,12 +299,12 @@ func Test_Progress_BuildBadges(t *testing.T) {
 				Level3Type: 20.0,
 			},
 			expected: []*Badge{
-				expectedBadge(repo, Level1Type, true, 50.0),
-				expectedBadge(repo, Level2Type, true, 30.0),
-				expectedBadge(repo, Level3Type, true, 20.0),
-				expectedBadge(repo, Level4Type, false, 0),
-				expectedBadge(repo, Level5Type, false, 0),
-				expectedBadge(repo, Level6Type, false, 0),
+				expectedBadge(Level1Type, true, 50.0),
+				expectedBadge(Level2Type, true, 30.0),
+				expectedBadge(Level3Type, true, 20.0),
+				expectedBadge(Level4Type, false, 0),
+				expectedBadge(Level5Type, false, 0),
+				expectedBadge(Level6Type, false, 0),
 			},
 		},
 		{
@@ -327,16 +327,16 @@ func Test_Progress_BuildBadges(t *testing.T) {
 				Coin10Type: 10,
 			},
 			expected: []*Badge{
-				expectedBadge(repo, Coin1Type, true, 10),
-				expectedBadge(repo, Coin2Type, true, 10),
-				expectedBadge(repo, Coin3Type, true, 10),
-				expectedBadge(repo, Coin4Type, true, 10),
-				expectedBadge(repo, Coin5Type, true, 10),
-				expectedBadge(repo, Coin6Type, true, 10),
-				expectedBadge(repo, Coin7Type, true, 10),
-				expectedBadge(repo, Coin8Type, true, 10),
-				expectedBadge(repo, Coin9Type, true, 10),
-				expectedBadge(repo, Coin10Type, true, 10),
+				expectedBadge(Coin1Type, true, 10),
+				expectedBadge(Coin2Type, true, 10),
+				expectedBadge(Coin3Type, true, 10),
+				expectedBadge(Coin4Type, true, 10),
+				expectedBadge(Coin5Type, true, 10),
+				expectedBadge(Coin6Type, true, 10),
+				expectedBadge(Coin7Type, true, 10),
+				expectedBadge(Coin8Type, true, 10),
+				expectedBadge(Coin9Type, true, 10),
+				expectedBadge(Coin10Type, true, 10),
 			},
 		},
 		{
@@ -345,16 +345,16 @@ func Test_Progress_BuildBadges(t *testing.T) {
 			group:    CoinGroupType,
 			stats:    map[Type]float64{},
 			expected: []*Badge{
-				expectedBadge(repo, Coin1Type, true, 0),
-				expectedBadge(repo, Coin2Type, false, 0),
-				expectedBadge(repo, Coin3Type, false, 0),
-				expectedBadge(repo, Coin4Type, false, 0),
-				expectedBadge(repo, Coin5Type, false, 0),
-				expectedBadge(repo, Coin6Type, false, 0),
-				expectedBadge(repo, Coin7Type, false, 0),
-				expectedBadge(repo, Coin8Type, false, 0),
-				expectedBadge(repo, Coin9Type, false, 0),
-				expectedBadge(repo, Coin10Type, false, 0),
+				expectedBadge(Coin1Type, true, 0),
+				expectedBadge(Coin2Type, false, 0),
+				expectedBadge(Coin3Type, false, 0),
+				expectedBadge(Coin4Type, false, 0),
+				expectedBadge(Coin5Type, false, 0),
+				expectedBadge(Coin6Type, false, 0),
+				expectedBadge(Coin7Type, false, 0),
+				expectedBadge(Coin8Type, false, 0),
+				expectedBadge(Coin9Type, false, 0),
+				expectedBadge(Coin10Type, false, 0),
 			},
 		},
 		{
@@ -366,31 +366,31 @@ func Test_Progress_BuildBadges(t *testing.T) {
 				Social2Type: 50,
 			},
 			expected: []*Badge{
-				expectedBadge(repo, Social1Type, false, 50),
-				expectedBadge(repo, Social2Type, false, 50),
-				expectedBadge(repo, Social3Type, false, 0),
-				expectedBadge(repo, Social4Type, false, 0),
-				expectedBadge(repo, Social5Type, false, 0),
-				expectedBadge(repo, Social6Type, false, 0),
-				expectedBadge(repo, Social7Type, false, 0),
-				expectedBadge(repo, Social8Type, false, 0),
-				expectedBadge(repo, Social9Type, false, 0),
-				expectedBadge(repo, Social10Type, false, 0),
+				expectedBadge(Social1Type, false, 50),
+				expectedBadge(Social2Type, false, 50),
+				expectedBadge(Social3Type, false, 0),
+				expectedBadge(Social4Type, false, 0),
+				expectedBadge(Social5Type, false, 0),
+				expectedBadge(Social6Type, false, 0),
+				expectedBadge(Social7Type, false, 0),
+				expectedBadge(Social8Type, false, 0),
+				expectedBadge(Social9Type, false, 0),
+				expectedBadge(Social10Type, false, 0),
 			},
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
-			actual := tt.progress.buildBadges(repo, tt.group, tt.stats)
+			actual := tt.progress.buildBadges(tt.group, tt.stats)
 			assert.Equal(t, tt.expected, actual, tt.name)
 		})
 	}
 }
 
-//nolint:funlen // A lot of testcases.
+//nolint:funlen,paralleltest,tparallel // A lot of testcases. Not needed to be parallel due to load the global variables.
 func Test_Progress_BuildSummary(t *testing.T) {
-	t.Parallel()
+	loadBadges(defaultCfg())
 	tests := []*struct {
 		name              string
 		progress          *progress
@@ -493,7 +493,7 @@ func expectedForRandomAchievedUsers(group GroupType, userCounts ...int) map[Type
 
 func randomAchievedUsers(count int) []int {
 	achievedUserCounts := make([]int, count) //nolint:makezero // We're know size for sure.
-	for i := 0; i < count; i++ {             //nolint:intrange // .
+	for i := range count {
 		achievedUserCounts[i] = rand.Intn(totalUsers) //nolint:gosec // We dont need strong random for tests.
 		if i > 0 && achievedUserCounts[i] > achievedUserCounts[i-1] {
 			achievedUserCounts[i] = randomAchievedUsers(1)[0]
@@ -504,7 +504,7 @@ func randomAchievedUsers(count int) []int {
 	return achievedUserCounts
 }
 
-func expectedBadge(repo *repository, badgeType Type, achieved bool, percent float64) *Badge {
+func expectedBadge(badgeType Type, achieved bool, percent float64) *Badge {
 	return &Badge{
 		Name:                        AllNames[GroupTypeForEachType[badgeType]][badgeType],
 		Type:                        badgeType,
@@ -512,8 +512,9 @@ func expectedBadge(repo *repository, badgeType Type, achieved bool, percent floa
 		PercentageOfUsersInProgress: percent,
 		Achieved:                    achieved,
 		AchievingRange: AchievingRange{
-			repo.cfg.Milestones[badgeType].FromInclusive,
-			repo.cfg.Milestones[badgeType].ToInclusive,
+			Name:          AllNames[GroupTypeForEachType[badgeType]][badgeType],
+			FromInclusive: Milestones[badgeType].FromInclusive,
+			ToInclusive:   Milestones[badgeType].ToInclusive,
 		},
 	}
 }

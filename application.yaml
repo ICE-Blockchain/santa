@@ -62,80 +62,81 @@ friends-invited_test:
     <<: *friendsInvitedMessageBroker
     consumingTopics: *friendsInvitedMessageBrokerTopics
     consumerGroup: santa-local-friends-invited-test
-
 badges: &badges
-  milestones:
-    l1:
+  levels:
+    - name: Wave Starter
       toInclusive: 1
-    l2:
+    - name: Beach Walker
       fromInclusive: 2
       toInclusive: 3
-    l3:
+    - name: Rhythm Keeper
       fromInclusive: 4
       toInclusive: 5
-    l4:
+    - name: Dance Captain
       fromInclusive: 6
       toInclusive: 7
-    l5:
+    - name: Vibe Master
       fromInclusive: 8
       toInclusive: 9
-    l6:
+    - name: Festival Guru
       fromInclusive: 10
-    c1:
+  coins:
+    - name: Rookie Raver
       toInclusive: 10
-    c2:
+    - name: Beats Saver
       fromInclusive: 20
       toInclusive: 30
-    c3:
+    - name: Tune Tracker
       fromInclusive: 40
       toInclusive: 50
-    c4:
+    - name: Rhythm Collector
       fromInclusive: 60
       toInclusive: 70
-    c5:
+    - name: Bass Booster
       fromInclusive: 80
       toInclusive: 90
-    c6:
+    - name: Melody Maker
       fromInclusive: 100
       toInclusive: 110
-    c7:
+    - name: Harmony Holder
       fromInclusive: 120
       toInclusive: 130
-    c8:
+    - name: Sound Seeker
       fromInclusive: 140
       toInclusive: 150
-    c9:
+    - name: Vibe Crafter
       fromInclusive: 160
       toInclusive: 170
-    c10:
+    - name: Festival Icon
       fromInclusive: 180
-    s1:
+  socials:
+    - name: Meet Greeter
       toInclusive: 1
-    s2:
+    - name: Friend Finder
       fromInclusive: 2
       toInclusive: 3
-    s3:
+    - name: Party Starter
       fromInclusive: 4
       toInclusive: 5
-    s4:
+    - name: Crowd Mixer
       fromInclusive: 6
       toInclusive: 7
-    s5:
+    - name: Dance Circle King
       fromInclusive: 8
       toInclusive: 9
-    s6:
+    - name: Wave Rider
       fromInclusive: 10
       toInclusive: 11
-    s7:
+    - name: Night Owl
       fromInclusive: 12
       toInclusive: 13
-    s8:
+    - name: Beach Buddy
       fromInclusive: 14
       toInclusive: 15
-    s9:
+    - name: Sunset Chaser
       fromInclusive: 16
       toInclusive: 17
-    s10:
+    - name: Dance Floor Legend
       fromInclusive: 18
   wintr/connectors/storage/v2:
     runDDL: true

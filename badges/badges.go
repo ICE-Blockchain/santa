@@ -4,6 +4,8 @@ package badges
 
 import (
 	"context"
+	"fmt"
+	"log"
 	"sync"
 
 	"github.com/goccy/go-json"
@@ -22,6 +24,7 @@ func New(ctx context.Context, _ context.CancelFunc) Repository {
 	appcfg.MustLoadFromKey(applicationYamlKey, &cfg)
 
 	db := storage.MustConnect(ctx, ddl, applicationYamlKey)
+	loadBadges(&cfg)
 
 	return &repository{
 		cfg:      &cfg,
@@ -33,6 +36,7 @@ func New(ctx context.Context, _ context.CancelFunc) Repository {
 func StartProcessor(ctx context.Context, cancel context.CancelFunc) Processor {
 	var cfg config
 	appcfg.MustLoadFromKey(applicationYamlKey, &cfg)
+	loadBadges(&cfg)
 
 	var mbConsumer messagebroker.Client
 	prc := &processor{repository: &repository{
@@ -171,6 +175,74 @@ func IsBadgeGroupAchieved(actual *users.Enum[Type], expectedGroupType GroupType)
 
 func requestingUserID(ctx context.Context) (requestingUserID string) {
 	requestingUserID, _ = ctx.Value(requestingUserIDCtxValueKey).(string) //nolint:errcheck,revive // Not needed.
+
+	return
+}
+
+func loadBadges(cfg *config) {
+	LevelTypeOrder = make(map[Type]int, len(cfg.Levels))
+	CoinTypeOrder = make(map[Type]int, len(cfg.Coins))
+	SocialTypeOrder = make(map[Type]int, len(cfg.Socials))
+	AllTypeOrder = make(map[Type]int, len(cfg.Levels)+len(cfg.Coins)+len(cfg.Socials))
+	LevelTypeNames = make(map[Type]string, len(cfg.Levels))
+	CoinTypeNames = make(map[Type]string, len(cfg.Coins))
+	SocialTypeNames = make(map[Type]string, len(cfg.Socials))
+	GroupTypeForEachType = make(map[Type]GroupType, len(cfg.Levels)+len(cfg.Coins)+len(cfg.Socials))
+	AllNames = make(map[GroupType]map[Type]string, len(GroupsOrderSummaries))
+	AllGroups = make(map[GroupType][]Type, len(GroupsOrderSummaries))
+	Milestones = make(map[Type]AchievingRange, len(cfg.Levels)+len(cfg.Coins)+len(cfg.Socials))
+
+	loadBadgesInfo(cfg.Levels, LevelGroupType)
+	AllNames[LevelGroupType] = make(map[Type]string, len(LevelTypeNames))
+	AllNames[LevelGroupType] = LevelTypeNames
+
+	loadBadgesInfo(cfg.Coins, CoinGroupType)
+	AllNames[CoinGroupType] = make(map[Type]string, len(CoinTypeNames))
+	AllNames[CoinGroupType] = CoinTypeNames
+
+	loadBadgesInfo(cfg.Socials, SocialGroupType)
+	AllNames[SocialGroupType] = make(map[Type]string, len(SocialTypeNames))
+	AllNames[SocialGroupType] = SocialTypeNames
+}
+
+func loadBadgesInfo(badgeInfoList []*AchievingRange, groupType GroupType) {
+	offset := len(AllTypes)
+	for idx, val := range badgeInfoList {
+		typeName := getTypeName(groupType)
+		tpe := Type(fmt.Sprintf("%v%v", typeName, idx+1))
+		AllTypes = append(AllTypes, tpe)
+		Milestones[tpe] = *val
+
+		switch groupType {
+		case LevelGroupType:
+			LevelTypeOrder[tpe] = idx
+			LevelTypeNames[tpe] = val.Name
+		case CoinGroupType:
+			CoinTypeOrder[tpe] = idx
+			CoinTypeNames[tpe] = val.Name
+		case SocialGroupType:
+			SocialTypeOrder[tpe] = idx
+			SocialTypeNames[tpe] = val.Name
+		default:
+			log.Panic("wrong group type")
+		}
+		AllTypeOrder[tpe] = idx + offset
+		GroupTypeForEachType[tpe] = groupType
+		AllGroups[groupType] = append(AllGroups[groupType], tpe)
+	}
+}
+
+func getTypeName(groupType GroupType) (typeName string) {
+	switch groupType {
+	case LevelGroupType:
+		typeName = "l"
+	case CoinGroupType:
+		typeName = "c"
+	case SocialGroupType:
+		typeName = "s"
+	default:
+		log.Panic("wrong group type")
+	}
 
 	return
 }

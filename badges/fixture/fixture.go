@@ -5,7 +5,7 @@ package fixture
 import (
 	"testing"
 
-	"github.com/testcontainers/testcontainers-go"
+	testcontainers "github.com/testcontainers/testcontainers-go"
 
 	connectorsfixture "github.com/ice-blockchain/wintr/connectors/fixture"
 	messagebrokerfixture "github.com/ice-blockchain/wintr/connectors/message_broker/fixture"

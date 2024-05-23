@@ -28,7 +28,7 @@ func (r *repository) GetBadges(ctx context.Context, groupType GroupType, userID 
 		return nil, ErrHidden
 	}
 
-	return userProgress.buildBadges(r, groupType, stats), nil
+	return userProgress.buildBadges(groupType, stats), nil
 }
 
 func (r *repository) GetSummary(ctx context.Context, userID string) ([]*BadgeSummary, error) {
@@ -128,11 +128,11 @@ func (*repository) calculateUnachievedPercentages(groupType GroupType, res []*st
 	return resp
 }
 
-func (p *progress) buildBadges(repo *repository, groupType GroupType, stats map[Type]float64) []*Badge {
+func (p *progress) buildBadges(groupType GroupType, stats map[Type]float64) []*Badge {
 	resp := make([]*Badge, 0, len(AllGroups[groupType]))
 	for _, badgeType := range AllGroups[groupType] {
 		resp = append(resp, &Badge{
-			AchievingRange:              repo.cfg.Milestones[badgeType],
+			AchievingRange:              Milestones[badgeType],
 			Name:                        AllNames[groupType][badgeType],
 			Type:                        badgeType,
 			GroupType:                   groupType,

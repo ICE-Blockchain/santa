@@ -30,10 +30,10 @@ func (r *repository) achieveBadges(ctx context.Context, userID string) error { /
 		pr = new(progress)
 		pr.UserID = userID
 	}
-	if pr.AchievedBadges != nil && len(*pr.AchievedBadges) == len(&AllTypes) {
+	if pr.AchievedBadges != nil && len(*pr.AchievedBadges) == len(AllTypes) {
 		return nil
 	}
-	achievedBadges := pr.reEvaluateAchievedBadges(r)
+	achievedBadges := pr.reEvaluateAchievedBadges()
 	if achievedBadges != nil && pr.AchievedBadges != nil && len(*pr.AchievedBadges) == len(*achievedBadges) {
 		return nil
 	}
@@ -55,7 +55,7 @@ func (r *repository) achieveBadges(ctx context.Context, userID string) error { /
 		for _, achievedBadge := range *achievedBadges {
 			achievedBadgesCount[GroupTypeForEachType[achievedBadge]]++
 		}
-		newlyAchievedBadges := make([]*AchievedBadge, 0, len(&AllTypes))
+		newlyAchievedBadges := make([]*AchievedBadge, 0, len(AllTypes))
 	outer:
 		for _, achievedBadge := range *achievedBadges {
 			if pr.AchievedBadges != nil {
@@ -101,18 +101,18 @@ func (r *repository) achieveBadges(ctx context.Context, userID string) error { /
 	return nil
 }
 
-func (p *progress) reEvaluateAchievedBadges(repo *repository) *users.Enum[Type] { //nolint:funlen,gocognit,revive // .
-	if p.AchievedBadges != nil && len(*p.AchievedBadges) == len(&AllTypes) {
+func (p *progress) reEvaluateAchievedBadges() *users.Enum[Type] { //nolint:funlen,gocognit,revive // .
+	if p.AchievedBadges != nil && len(*p.AchievedBadges) == len(AllTypes) {
 		return p.AchievedBadges
 	}
-	alreadyAchievedBadges := make(map[Type]any, len(&AllTypes))
+	alreadyAchievedBadges := make(map[Type]any, len(AllTypes))
 	if p.AchievedBadges != nil {
 		for _, badge := range *p.AchievedBadges {
 			alreadyAchievedBadges[badge] = struct{}{}
 		}
 	}
-	achievedBadges := make(users.Enum[Type], 0, len(&AllTypes))
-	for _, badgeType := range &AllTypes {
+	achievedBadges := make(users.Enum[Type], 0, len(AllTypes))
+	for _, badgeType := range AllTypes {
 		if _, alreadyAchieved := alreadyAchievedBadges[badgeType]; alreadyAchieved {
 			achievedBadges = append(achievedBadges, badgeType)
 
@@ -121,13 +121,13 @@ func (p *progress) reEvaluateAchievedBadges(repo *repository) *users.Enum[Type] 
 		var achieved bool
 		switch GroupTypeForEachType[badgeType] {
 		case LevelGroupType:
-			achieved = uint64(p.CompletedLevels) >= repo.cfg.Milestones[badgeType].FromInclusive
+			achieved = uint64(p.CompletedLevels) >= Milestones[badgeType].FromInclusive
 		case CoinGroupType:
 			if p.Balance > 0 {
-				achieved = uint64(p.Balance) >= repo.cfg.Milestones[badgeType].FromInclusive
+				achieved = uint64(p.Balance) >= Milestones[badgeType].FromInclusive
 			}
 		case SocialGroupType:
-			achieved = uint64(p.FriendsInvited) >= repo.cfg.Milestones[badgeType].FromInclusive
+			achieved = uint64(p.FriendsInvited) >= Milestones[badgeType].FromInclusive
 		}
 		if achieved {
 			achievedBadges = append(achievedBadges, badgeType)
@@ -327,7 +327,7 @@ func (s *completedLevelsSource) upsertProgress(ctx context.Context, completedLev
 	}
 	pr, err := s.getProgress(ctx, userID, true)
 	if err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
-		(pr != nil && pr.AchievedBadges != nil && (len(*pr.AchievedBadges) == len(&AllTypes))) ||
+		(pr != nil && pr.AchievedBadges != nil && (len(*pr.AchievedBadges) == len(AllTypes))) ||
 		(pr != nil && (pr.CompletedLevels == int64(len(&levelsandroles.AllLevelTypes)) || IsBadgeGroupAchieved(pr.AchievedBadges, LevelGroupType))) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
@@ -376,7 +376,7 @@ func (s *balancesTableSource) upsertProgress(ctx context.Context, balance int64,
 	pr, err := s.getProgress(ctx, userID, true)
 	if err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
 		(pr != nil && pr.AchievedBadges != nil &&
-			(balance > pr.Balance && (len(*pr.AchievedBadges) == len(&AllTypes) || IsBadgeGroupAchieved(pr.AchievedBadges, CoinGroupType)))) {
+			(balance > pr.Balance && (len(*pr.AchievedBadges) == len(AllTypes) || IsBadgeGroupAchieved(pr.AchievedBadges, CoinGroupType)))) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
 	if pr != nil && pr.Balance == balance {

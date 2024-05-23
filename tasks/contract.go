@@ -37,7 +37,7 @@ var (
 		JoinTelegramType,
 		InviteFriendsType,
 	}
-	//nolint:gochecknoglobals,mnd,gomnd // It's just for more descriptive validation messages.
+	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
 	TypeOrder = map[Type]int{
 		ClaimUsernameType:        0,
 		StartMiningType:          1,

@@ -263,7 +263,7 @@ func diffBadgeStatistics(usr *commonUser, newBadgesTypeCount map[badges.Type]int
 			}
 		}
 		if newBadgesTypeCount != nil {
-			for _, key := range &badges.AllTypes {
+			for _, key := range badges.AllTypes {
 				if _, ok1 := oldBadgesTypeCounts[key]; ok1 {
 					if _, ok2 := newBadgesTypeCount[key]; ok2 {
 						newBadgesTypeCount[key] -= oldBadgesTypeCounts[key]
@@ -340,7 +340,7 @@ func reEvaluateEnabledBadges(
 	alreadyAchievedBadges *users.Enum[badges.Type], friendsInvited uint64, balance int64,
 ) (achievedBadges users.Enum[badges.Type], badgesTypeCounts map[badges.Type]int64) {
 	badgesTypeCounts = make(map[badges.Type]int64)
-	achievedBadges = make(users.Enum[badges.Type], 0, len(&badges.AllTypes))
+	achievedBadges = make(users.Enum[badges.Type], 0, len(badges.AllTypes))
 	if alreadyAchievedBadges != nil {
 		for _, badge := range *alreadyAchievedBadges {
 			if strings.HasPrefix(string(badge), "l") {
@@ -348,7 +348,7 @@ func reEvaluateEnabledBadges(
 			}
 		}
 	}
-	for _, badgeType := range &badges.AllTypes {
+	for _, badgeType := range badges.AllTypes {
 		var achieved bool
 		switch badges.GroupTypeForEachType[badgeType] { //nolint:exhaustive // We need to handle only 2 cases.
 		case badges.CoinGroupType:

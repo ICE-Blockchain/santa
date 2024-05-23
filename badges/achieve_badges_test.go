@@ -12,10 +12,39 @@ import (
 	wintrconfig "github.com/ice-blockchain/wintr/config"
 )
 
-//nolint:funlen // A lot of testcases in test
+const (
+	Level1Type   Type = "l1"
+	Level2Type   Type = "l2"
+	Level3Type   Type = "l3"
+	Level4Type   Type = "l4"
+	Level5Type   Type = "l5"
+	Level6Type   Type = "l6"
+	Coin1Type    Type = "c1"
+	Coin2Type    Type = "c2"
+	Coin3Type    Type = "c3"
+	Coin4Type    Type = "c4"
+	Coin5Type    Type = "c5"
+	Coin6Type    Type = "c6"
+	Coin7Type    Type = "c7"
+	Coin8Type    Type = "c8"
+	Coin9Type    Type = "c9"
+	Coin10Type   Type = "c10"
+	Social1Type  Type = "s1"
+	Social2Type  Type = "s2"
+	Social3Type  Type = "s3"
+	Social4Type  Type = "s4"
+	Social5Type  Type = "s5"
+	Social6Type  Type = "s6"
+	Social7Type  Type = "s7"
+	Social8Type  Type = "s8"
+	Social9Type  Type = "s9"
+	Social10Type Type = "s10"
+)
+
+//nolint:funlen,paralleltest,tparallel // A lot of testcases in test. Not needed parallel due to global variables usage.
 func Test_Progress_ReevaluateAchievedBadges(t *testing.T) {
-	t.Parallel()
 	defCfg := defaultCfg()
+	loadBadges(defCfg)
 	testCases := []*struct {
 		*progress
 		cfg                    *config
@@ -36,13 +65,13 @@ func Test_Progress_ReevaluateAchievedBadges(t *testing.T) {
 		},
 		{
 			name:                   "Nothing to achieve cuz we already have social1 and level1",
-			progress:               badgeProgress(&users.Enum[Type]{Social1Type, Level1Type}, 0, defCfg.Milestones[Social1Type].FromInclusive, 0),
+			progress:               badgeProgress(&users.Enum[Type]{Social1Type, Level1Type}, 0, Milestones[Social1Type].FromInclusive, 0),
 			cfg:                    defCfg,
 			expectedNewBadgesState: &users.Enum[Type]{Social1Type, Level1Type},
 		},
 		{
 			name:                   "Achieve next one for the socials",
-			progress:               badgeProgress(&users.Enum[Type]{Social1Type, Level1Type}, 0, defCfg.Milestones[Social2Type].FromInclusive, 0),
+			progress:               badgeProgress(&users.Enum[Type]{Social1Type, Level1Type}, 0, Milestones[Social2Type].FromInclusive, 0),
 			cfg:                    defCfg,
 			expectedNewBadgesState: &users.Enum[Type]{Social1Type, Level1Type, Social2Type},
 		},
@@ -96,7 +125,7 @@ func Test_Progress_ReevaluateAchievedBadges(t *testing.T) {
 		},
 		{
 			name:                   "Achieve next one for the balances",
-			progress:               badgeProgress(&users.Enum[Type]{Social1Type, Level1Type}, defCfg.Milestones[Coin1Type].ToInclusive, 0, 0),
+			progress:               badgeProgress(&users.Enum[Type]{Social1Type, Level1Type}, Milestones[Coin1Type].ToInclusive, 0, 0),
 			cfg:                    defCfg,
 			expectedNewBadgesState: &users.Enum[Type]{Social1Type, Level1Type, Coin1Type},
 		},
@@ -110,7 +139,7 @@ func Test_Progress_ReevaluateAchievedBadges(t *testing.T) {
 	for _, tt := range testCases {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Parallel()
-			actualAchievedBadges := tt.progress.reEvaluateAchievedBadges(&repository{cfg: tt.cfg})
+			actualAchievedBadges := tt.progress.reEvaluateAchievedBadges()
 			actualBadges := []Type{}
 			if actualAchievedBadges != nil {
 				actualBadges = []Type(*actualAchievedBadges)
@@ -124,9 +153,9 @@ func Test_Progress_ReevaluateAchievedBadges(t *testing.T) {
 	}
 }
 
-//nolint:funlen // A lot of testcases
+//nolint:funlen,paralleltest,tparallel // A lot of testcases. Not needed parallel due to global variables usage.
 func Test_IsBadgeGroupAchieved(t *testing.T) {
-	t.Parallel()
+	loadBadges(defaultCfg())
 	testCases := []*struct {
 		name                  string
 		alreadyAchievedBadges *users.Enum[Type]

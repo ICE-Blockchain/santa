@@ -162,7 +162,7 @@ func requestingUserID(ctx context.Context) (requestingUserID string) {
 }
 
 func (p *processor) startProcessedPingsCleaner(ctx context.Context) {
-	ticker := stdlibtime.NewTicker(stdlibtime.Duration(1+rand.Intn(24)) * stdlibtime.Minute) //nolint:gosec,mnd,gomnd // Not an  issue.
+	ticker := stdlibtime.NewTicker(stdlibtime.Duration(1+rand.Intn(24)) * stdlibtime.Minute) //nolint:gosec // Not an  issue.
 	defer ticker.Stop()
 
 	for {
