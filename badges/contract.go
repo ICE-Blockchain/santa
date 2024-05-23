@@ -51,7 +51,7 @@ type (
 	Type           string
 	GroupType      string
 	AchievingRange struct {
-		Name          string `json:"name,omitempty"`
+		Name          string `json:"-"`
 		FromInclusive uint64 `json:"fromInclusive,omitempty"`
 		ToInclusive   uint64 `json:"toInclusive,omitempty"`
 	}
