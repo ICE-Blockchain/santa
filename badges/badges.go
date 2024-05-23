@@ -194,15 +194,19 @@ func loadBadges(cfg *config) {
 
 	loadBadgesInfo(cfg.Levels, LevelGroupType)
 	AllNames[LevelGroupType] = make(map[Type]string, len(LevelTypeNames))
-	AllNames[LevelGroupType] = LevelTypeNames
-
+	for key, val := range LevelTypeNames {
+		AllNames[LevelGroupType][key] = val
+	}
 	loadBadgesInfo(cfg.Coins, CoinGroupType)
 	AllNames[CoinGroupType] = make(map[Type]string, len(CoinTypeNames))
-	AllNames[CoinGroupType] = CoinTypeNames
-
+	for key, val := range CoinTypeNames {
+		AllNames[CoinGroupType][key] = val
+	}
 	loadBadgesInfo(cfg.Socials, SocialGroupType)
 	AllNames[SocialGroupType] = make(map[Type]string, len(SocialTypeNames))
-	AllNames[SocialGroupType] = SocialTypeNames
+	for key, val := range SocialTypeNames {
+		AllNames[SocialGroupType][key] = val
+	}
 }
 
 func loadBadgesInfo(badgeInfoList []*AchievingRange, groupType GroupType) {
