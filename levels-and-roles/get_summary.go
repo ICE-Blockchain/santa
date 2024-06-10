@@ -17,7 +17,7 @@ func (r *repository) GetSummary(ctx context.Context, userID string) (*Summary, e
 	if res, err := r.getProgress(ctx, userID, true); err != nil && !errors.Is(err, storage.ErrRelationNotFound) {
 		return nil, errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	} else { //nolint:revive // .
-		return newSummary(res, requestingUserID(ctx)), nil
+		return r.newSummary(res, requestingUserID(ctx)), nil
 	}
 }
 
@@ -42,14 +42,14 @@ func (r *repository) getProgress(ctx context.Context, userID string, tolerateOld
 	return
 }
 
-func newSummary(pr *progress, requestingUserID string) *Summary {
+func (r *repository) newSummary(pr *progress, requestingUserID string) *Summary {
 	var level uint64
 	if pr == nil || !pr.HideLevel || requestingUserID == pr.UserID {
 		level = pr.level()
 	}
 	var roles []*Role
 	if pr == nil || !pr.HideRole || requestingUserID == pr.UserID {
-		roles = pr.roles()
+		roles = pr.roles(r)
 	}
 
 	return &Summary{Roles: roles, Level: level}
@@ -63,26 +63,26 @@ func (p *progress) level() uint64 {
 	}
 }
 
-func (p *progress) roles() []*Role {
+func (p *progress) roles(repo *repository) []*Role {
 	if p == nil || p.EnabledRoles == nil || len(*p.EnabledRoles) == 0 {
 		return []*Role{
 			{
-				Type:    SnowmanRoleType,
+				Type:    repo.cfg.RoleNames[SnowmanRoleIndex],
 				Enabled: true,
 			},
 			{
-				Type:    AmbassadorRoleType,
+				Type:    repo.cfg.RoleNames[AmbassadorRoleIndex],
 				Enabled: false,
 			},
 		}
 	} else { //nolint:revive // .
 		return []*Role{
 			{
-				Type:    SnowmanRoleType,
+				Type:    repo.cfg.RoleNames[SnowmanRoleIndex],
 				Enabled: false,
 			},
 			{
-				Type:    AmbassadorRoleType,
+				Type:    repo.cfg.RoleNames[AmbassadorRoleIndex],
 				Enabled: true,
 			},
 		}

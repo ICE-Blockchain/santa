@@ -41,8 +41,9 @@ const (
 )
 
 const (
-	SnowmanRoleType    RoleType = "snowman"
-	AmbassadorRoleType RoleType = "ambassador"
+	SnowmanRoleIndex    int      = 0
+	AmbassadorRoleIndex int      = 1
+	AmbassadorRoleType  RoleType = "ambassador"
 )
 
 var (
@@ -73,13 +74,8 @@ var (
 		Level21Type,
 	}
 	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
-	AllRoleTypes = [2]RoleType{
-		SnowmanRoleType,
-		AmbassadorRoleType,
-	}
-	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
-	AllRoleTypesThatCanBeEnabled = [1]RoleType{
-		AmbassadorRoleType,
+	AllRoleTypesThatCanBeEnabled = [1]int{
+		AmbassadorRoleIndex,
 	}
 )
 
@@ -184,6 +180,7 @@ type (
 		PingsSentMilestones                      map[LevelType]uint64     `yaml:"pingsSentMilestones"`
 		AgendaContactsJoinedMilestones           map[LevelType]uint64     `yaml:"agendaContactsJoinedMilestones"`
 		CompletedTasksMilestones                 map[LevelType]uint64     `yaml:"completedTasksMilestones"`
+		RoleNames                                []RoleType               `yaml:"roleNames"`
 		messagebroker.Config                     `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredInvitedFriendsToBecomeAmbassador uint64                   `yaml:"requiredInvitedFriendsToBecomeAmbassador"`
 	}

@@ -23,7 +23,9 @@ import (
 func New(ctx context.Context, _ context.CancelFunc) Repository {
 	var cfg config
 	appcfg.MustLoadFromKey(applicationYamlKey, &cfg)
-
+	if len(cfg.RoleNames) < AllRoleTypesThatCanBeEnabled[len(AllRoleTypesThatCanBeEnabled)-1]+1 {
+		log.Panic(errors.Errorf("insufficient roleNames"))
+	}
 	db := storage.MustConnect(ctx, ddl, applicationYamlKey)
 
 	return &repository{
@@ -36,7 +38,9 @@ func New(ctx context.Context, _ context.CancelFunc) Repository {
 func StartProcessor(ctx context.Context, cancel context.CancelFunc) Processor {
 	var cfg config
 	appcfg.MustLoadFromKey(applicationYamlKey, &cfg)
-
+	if len(cfg.RoleNames) < AllRoleTypesThatCanBeEnabled[len(AllRoleTypesThatCanBeEnabled)-1]+1 {
+		log.Panic(errors.Errorf("insufficient roleNames"))
+	}
 	var mbConsumer messagebroker.Client
 	prc := &processor{repository: &repository{
 		cfg: &cfg,

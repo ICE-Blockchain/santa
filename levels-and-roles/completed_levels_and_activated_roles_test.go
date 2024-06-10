@@ -37,7 +37,7 @@ func TestReEvaluateCompletedLevels(t *testing.T) { //nolint:funlen // It's a tes
 			p: &progress{
 				CompletedLevels: &users.Enum[LevelType]{Level1Type, Level2Type},
 			},
-			repo:     &repository{cfg: &config{}},
+			repo:     &repository{cfg: &config{RoleNames: []RoleType{"bogus", AmbassadorRoleType}}},
 			expected: &users.Enum[LevelType]{Level1Type, Level2Type},
 		},
 		{
@@ -47,6 +47,7 @@ func TestReEvaluateCompletedLevels(t *testing.T) { //nolint:funlen // It's a tes
 			},
 			repo: &repository{cfg: &config{
 				MiningStreakMilestones: map[LevelType]uint64{Level1Type: 9},
+				RoleNames:              []RoleType{"bogus", AmbassadorRoleType},
 			}},
 			expected: &users.Enum[LevelType]{Level1Type},
 		},
@@ -68,6 +69,7 @@ func TestReEvaluateCompletedLevels(t *testing.T) { //nolint:funlen // It's a tes
 			},
 			repo: &repository{cfg: &config{
 				AgendaContactsJoinedMilestones: map[LevelType]uint64{Level1Type: 9},
+				RoleNames:                      []RoleType{"bogus", AmbassadorRoleType},
 			}},
 			expected: &users.Enum[LevelType]{Level1Type},
 		},
@@ -78,6 +80,7 @@ func TestReEvaluateCompletedLevels(t *testing.T) { //nolint:funlen // It's a tes
 			},
 			repo: &repository{cfg: &config{
 				CompletedTasksMilestones: map[LevelType]uint64{Level1Type: 9},
+				RoleNames:                []RoleType{"bogus", AmbassadorRoleType},
 			}},
 			expected: &users.Enum[LevelType]{Level1Type},
 		},
@@ -90,6 +93,7 @@ func TestReEvaluateCompletedLevels(t *testing.T) { //nolint:funlen // It's a tes
 			repo: &repository{cfg: &config{
 				MiningStreakMilestones: map[LevelType]uint64{Level1Type: 9},
 				PingsSentMilestones:    map[LevelType]uint64{Level1Type: 9},
+				RoleNames:              []RoleType{"bogus", AmbassadorRoleType},
 			}},
 			expected: &users.Enum[LevelType]{Level1Type},
 		},
@@ -102,13 +106,14 @@ func TestReEvaluateCompletedLevels(t *testing.T) { //nolint:funlen // It's a tes
 			repo: &repository{cfg: &config{
 				MiningStreakMilestones: map[LevelType]uint64{Level1Type: 9, Level2Type: 15},
 				PingsSentMilestones:    map[LevelType]uint64{Level1Type: 9, Level2Type: 14},
+				RoleNames:              []RoleType{"bogus", AmbassadorRoleType},
 			}},
 			expected: &users.Enum[LevelType]{Level1Type, Level2Type},
 		},
 		{
 			name:     "no levels are completed, return nil",
 			p:        &progress{},
-			repo:     &repository{cfg: &config{}},
+			repo:     &repository{cfg: &config{RoleNames: []RoleType{"bogus", AmbassadorRoleType}}},
 			expected: nil,
 		},
 	}
@@ -135,18 +140,19 @@ func TestReEvaluateEnabledRoles(t *testing.T) { //nolint:funlen // It's a test f
 		{
 			name:     "all roles are returned when they are all enabled",
 			p:        &progress{EnabledRoles: &users.Enum[RoleType]{AmbassadorRoleType}},
+			repo:     &repository{cfg: &config{RoleNames: []RoleType{"bogus", AmbassadorRoleType}}},
 			expected: &users.Enum[RoleType]{AmbassadorRoleType},
 		},
 		{
 			name:     "ambassador role is returned, if friends invited threshold is passed",
 			p:        &progress{FriendsInvited: 5, EnabledRoles: &users.Enum[RoleType]{AmbassadorRoleType}},
-			repo:     &repository{cfg: &config{RequiredInvitedFriendsToBecomeAmbassador: 4}},
+			repo:     &repository{cfg: &config{RequiredInvitedFriendsToBecomeAmbassador: 4, RoleNames: []RoleType{"bogus", AmbassadorRoleType}}},
 			expected: &users.Enum[RoleType]{AmbassadorRoleType},
 		},
 		{
 			name:     "nil is returned, when no roles are enabled and friends invited threshold isn't reached",
 			p:        &progress{FriendsInvited: 4},
-			repo:     &repository{cfg: &config{RequiredInvitedFriendsToBecomeAmbassador: 5}},
+			repo:     &repository{cfg: &config{RequiredInvitedFriendsToBecomeAmbassador: 5, RoleNames: []RoleType{"bogus", AmbassadorRoleType}}},
 			expected: nil,
 		},
 	}

@@ -6,6 +6,9 @@ logger:
   level: info
 levels-and-roles: &levels-and-roles
   requiredInvitedFriendsToBecomeAmbassador: 3
+  roleNames:
+    - Snowman
+    - Ambassador
   miningStreakMilestones:
     1: 1
     2: 2
