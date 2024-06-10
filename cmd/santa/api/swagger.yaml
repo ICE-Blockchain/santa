@@ -55,11 +55,9 @@ definitions:
     type: object
   levelsandroles.RoleType:
     enum:
-    - snowman
     - ambassador
     type: string
     x-enum-varnames:
-    - SnowmanRoleType
     - AmbassadorRoleType
   levelsandroles.Summary:
     properties:

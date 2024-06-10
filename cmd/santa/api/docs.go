@@ -418,11 +418,9 @@ const docTemplate = `{
         "levelsandroles.RoleType": {
             "type": "string",
             "enum": [
-                "snowman",
                 "ambassador"
             ],
             "x-enum-varnames": [
-                "SnowmanRoleType",
                 "AmbassadorRoleType"
             ]
         },
