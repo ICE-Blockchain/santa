@@ -19,7 +19,7 @@ import (
 	"github.com/ice-blockchain/wintr/log"
 )
 
-func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error { //nolint:funlen,revive // .
+func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error { //nolint:funlen,revive,gocognit,gocyclo,cyclop // .
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "unexpected deadline")
 	}
@@ -30,6 +30,9 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	if userProgress == nil {
 		userProgress = new(progress)
 		userProgress.UserID = task.UserID
+	}
+	if task.Type == InviteFriendsType && userProgress.FriendsInvited < r.cfg.RequiredFriendsInvited {
+		return nil
 	}
 	params, sql := userProgress.buildUpdatePseudoCompletedTasksSQL(task, r)
 	if params == nil {
