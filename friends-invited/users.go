@@ -24,8 +24,12 @@ func (s *userTableSource) Process(ctx context.Context, msg *messagebroker.Messag
 	if err := json.UnmarshalContext(ctx, msg.Value, snapshot); err != nil {
 		return errors.Wrapf(err, "cannot unmarshal %v into %#v", string(msg.Value), snapshot)
 	}
-	if snapshot.Before != nil && snapshot.Before.ID != "" && snapshot.User != nil && snapshot.User.ID != "" &&
-		snapshot.User.ReferredBy != snapshot.User.ID && snapshot.User.ReferredBy != "" && !snapshot.Before.IsHuman() && snapshot.User.IsHuman() {
+	referredByChangedOnMofidy := snapshot.Before != nil && snapshot.Before.ID != "" && snapshot.User != nil && snapshot.User.ID != "" &&
+		snapshot.User.ReferredBy != snapshot.User.ID && snapshot.User.ReferredBy != "" &&
+		(snapshot.Before.ReferredBy == snapshot.Before.ID || snapshot.Before.ReferredBy == "")
+	referredByChangedOnCreate := snapshot.Before == nil && snapshot.User != nil && snapshot.User.ID != "" &&
+		snapshot.User.ReferredBy != snapshot.User.ID && snapshot.User.ReferredBy != ""
+	if referredByChangedOnCreate || referredByChangedOnMofidy {
 		return errors.Wrapf(s.insertReferrals(ctx, snapshot), "failed to insertReferrals[friendsinvited] for:%#v", snapshot)
 	}
 	if snapshot.Before != nil && snapshot.Before.ID != "" && (snapshot.User == nil || snapshot.User.ID == "") {
