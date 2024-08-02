@@ -46,6 +46,7 @@ var (
 		JoinTelegramType:         4,
 		InviteFriendsType:        5,
 	}
+	//nolint:gochecknoglobals // They are the prizes per task values.
 	TaskPrize = map[Type]float64{
 		ClaimUsernameType:        100.0,
 		StartMiningType:          200.0,
