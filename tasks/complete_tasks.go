@@ -218,14 +218,11 @@ func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] 
 		}
 	}
 	completedTasks := make(users.Enum[Type], 0, len(&AllTypes))
-	for ix, taskType := range &AllTypes {
+	for _, taskType := range &AllTypes {
 		if _, alreadyCompleted := alreadyCompletedTasks[taskType]; alreadyCompleted {
 			completedTasks = append(completedTasks, taskType)
 
 			continue
-		}
-		if len(completedTasks) != ix {
-			break
 		}
 		var completed bool
 		switch taskType {

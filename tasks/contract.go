@@ -46,6 +46,14 @@ var (
 		JoinTelegramType:         4,
 		InviteFriendsType:        5,
 	}
+	TaskPrize = map[Type]float64{
+		ClaimUsernameType:        100.0,
+		StartMiningType:          200.0,
+		UploadProfilePictureType: 300.0,
+		FollowUsOnTwitterType:    400.0,
+		JoinTelegramType:         500.0,
+		InviteFriendsType:        600.0,
+	}
 )
 
 type (
