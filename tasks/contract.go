@@ -36,8 +36,8 @@ type (
 	Data struct {
 		TwitterUserHandle  string `json:"twitterUserHandle,omitempty" example:"jdoe2"`
 		TelegramUserHandle string `json:"telegramUserHandle,omitempty" example:"jdoe1"`
-		RequiredQuantity   uint64 `json:"requiredQuantity,omitempty" example:"3"`
 		VerificationCode   string `json:"verificationCode,omitempty" example:"ABC"`
+		RequiredQuantity   uint64 `json:"requiredQuantity,omitempty" example:"3"`
 	}
 	Metadata struct {
 		Title            string `json:"title,omitempty" example:"Claim username"`
