@@ -27,6 +27,7 @@ func (s *service) setupTasksRoutes(router *server.Router) {
 //	@Param			Authorization	header	string					true	"Insert your access token"	default(Bearer <Add access token here>)
 //	@Param			taskType		path	string					true	"the type of the task"		enums(claim_username,start_mining,upload_profile_picture,follow_us_on_twitter,join_telegram,invite_friends)
 //	@Param			userId			path	string					true	"the id of the user that completed the task"
+//	@Param			language		path	string					true	"language to get tasks translation"
 //	@Param			request			body	CompleteTaskRequestBody	false	"Request params. Set it only if task completion requires additional data."
 //	@Success		200				"ok"
 //	@Failure		400				{object}	server.ErrorResponse	"if validations fail"
@@ -41,9 +42,6 @@ func (s *service) PseudoCompleteTask( //nolint:gocritic // False negative.
 	ctx context.Context,
 	req *server.Request[CompleteTaskRequestBody, any],
 ) (*server.Response[any], *server.Response[server.ErrorResponse]) {
-	if err := req.Data.validate(); err != nil {
-		return nil, server.UnprocessableEntity(errors.Wrap(err, "validations failed"), invalidPropertiesErrorCode)
-	}
 	if req.Data.TaskType == tasks.JoinTelegramType && (req.Data.Data == nil || req.Data.Data.TelegramUserHandle == "") {
 		return nil, server.UnprocessableEntity(errors.Errorf("`data`.`telegramUserHandle` required"), invalidPropertiesErrorCode)
 	}
@@ -66,14 +64,4 @@ func (s *service) PseudoCompleteTask( //nolint:gocritic // False negative.
 	}
 
 	return server.OK[any](), nil
-}
-
-func (arg *CompleteTaskRequestBody) validate() error {
-	for _, taskType := range &tasks.AllTypes {
-		if taskType == arg.TaskType {
-			return nil
-		}
-	}
-
-	return errors.Errorf("invalid type `%v`", arg.TaskType)
 }

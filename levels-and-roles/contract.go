@@ -176,11 +176,16 @@ type (
 		*repository
 	}
 	config struct {
-		MiningStreakMilestones                   map[LevelType]uint64     `yaml:"miningStreakMilestones"`
-		PingsSentMilestones                      map[LevelType]uint64     `yaml:"pingsSentMilestones"`
-		AgendaContactsJoinedMilestones           map[LevelType]uint64     `yaml:"agendaContactsJoinedMilestones"`
-		CompletedTasksMilestones                 map[LevelType]uint64     `yaml:"completedTasksMilestones"`
-		RoleNames                                []RoleType               `yaml:"roleNames"`
+		MiningStreakMilestones         map[LevelType]uint64 `yaml:"miningStreakMilestones"`
+		PingsSentMilestones            map[LevelType]uint64 `yaml:"pingsSentMilestones"`
+		AgendaContactsJoinedMilestones map[LevelType]uint64 `yaml:"agendaContactsJoinedMilestones"`
+		CompletedTasksMilestones       map[LevelType]uint64 `yaml:"completedTasksMilestones"`
+		RoleNames                      []RoleType           `yaml:"roleNames"`
+		TasksList                      []struct {
+			Type  string  `yaml:"type" mapstructure:"type"`
+			Icon  string  `yaml:"icon" mapstructure:"icon"`
+			Prize float64 `yaml:"prize" mapstructure:"prize"`
+		} `yaml:"tasksList" mapstructure:"tasksList"`
 		messagebroker.Config                     `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredInvitedFriendsToBecomeAmbassador uint64                   `yaml:"requiredInvitedFriendsToBecomeAmbassador"`
 	}

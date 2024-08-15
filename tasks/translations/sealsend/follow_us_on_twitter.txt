@@ -1,0 +1,7 @@
+{
+   "en":{
+      "title":"Follow us on X",
+      "shortDescription":"Let's keep in touch, follow us on X.",
+      "longDescription":"Let's keep in touch, follow us on X."
+   }
+}

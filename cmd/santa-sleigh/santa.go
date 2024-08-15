@@ -17,7 +17,8 @@ import (
 
 type (
 	GetTasksArg struct {
-		UserID string `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" swaggerignore:"true" required:"true"`
+		UserID   string `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" swaggerignore:"true" required:"true"`
+		Language string `uri:"language" example:"en" swaggerignore:"true" required:"false"`
 	}
 	GetLevelsAndRolesSummaryArg struct {
 		UserID string `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" allowForbiddenGet:"true" swaggerignore:"true" required:"true"`
@@ -186,7 +187,7 @@ func (s *service) GetTasks( //nolint:gocritic // False negative.
 	if req.Data.UserID != req.AuthenticatedUser.UserID {
 		return nil, server.Forbidden(errors.Errorf("not allowed. %v != %v", req.Data.UserID, req.AuthenticatedUser.UserID))
 	}
-	resp, err := s.tasksProcessor.GetTasks(ctx, req.Data.UserID)
+	resp, err := s.tasksProcessor.GetTasks(ctx, req.Data.UserID, req.Data.Language)
 	if err != nil {
 		err = errors.Wrapf(err, "failed to GetTasks for data:%#v", req.Data)
 

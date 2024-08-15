@@ -4,8 +4,9 @@ package tasks
 
 import (
 	"context"
-	_ "embed"
+	"embed"
 	"io"
+	"text/template"
 
 	"github.com/pkg/errors"
 
@@ -28,33 +29,6 @@ const (
 var (
 	ErrRelationNotFound = storage.ErrRelationNotFound
 	ErrRaceCondition    = errors.New("race condition")
-	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
-	AllTypes = [6]Type{
-		ClaimUsernameType,
-		StartMiningType,
-		UploadProfilePictureType,
-		FollowUsOnTwitterType,
-		JoinTelegramType,
-		InviteFriendsType,
-	}
-	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
-	TypeOrder = map[Type]int{
-		ClaimUsernameType:        0,
-		StartMiningType:          1,
-		UploadProfilePictureType: 2,
-		FollowUsOnTwitterType:    3,
-		JoinTelegramType:         4,
-		InviteFriendsType:        5,
-	}
-	//nolint:gochecknoglobals // They are the prizes per task values.
-	TaskPrize = map[Type]float64{
-		ClaimUsernameType:        100.0,
-		StartMiningType:          200.0,
-		UploadProfilePictureType: 300.0,
-		FollowUsOnTwitterType:    400.0,
-		JoinTelegramType:         500.0,
-		InviteFriendsType:        600.0,
-	}
 )
 
 type (
@@ -63,20 +37,30 @@ type (
 		TwitterUserHandle  string `json:"twitterUserHandle,omitempty" example:"jdoe2"`
 		TelegramUserHandle string `json:"telegramUserHandle,omitempty" example:"jdoe1"`
 		RequiredQuantity   uint64 `json:"requiredQuantity,omitempty" example:"3"`
+		VerificationCode   string `json:"verificationCode,omitempty" example:"ABC"`
+	}
+	Metadata struct {
+		Title            string `json:"title,omitempty" example:"Claim username"`
+		ShortDescription string `json:"shortDescription,omitempty" example:"Short description"`
+		LongDescription  string `json:"longDescription,omitempty" example:"Long description"`
+		IconURL          string `json:"iconUrl,omitempty" example:"https://app.ice.com/web/invite.svg"`
 	}
 	Task struct {
-		Data      *Data  `json:"data,omitempty"`
-		UserID    string `json:"userId,omitempty" swaggerignore:"true" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
-		Type      Type   `json:"type" example:"claim_username"`
-		Completed bool   `json:"completed" example:"false"`
+		Data      *Data     `json:"data,omitempty"`
+		Metadata  *Metadata `json:"metadata,omitempty"`
+		UserID    string    `json:"userId,omitempty" swaggerignore:"true" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
+		Type      Type      `json:"type" example:"claim_username"`
+		Prize     float64   `json:"prize" example:"200.0"`
+		Completed bool      `json:"completed" example:"false"`
 	}
 	CompletedTask struct {
-		UserID         string `json:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
-		Type           Type   `json:"type" example:"claim_username"`
-		CompletedTasks uint64 `json:"completedTasks,omitempty" example:"3"`
+		UserID         string  `json:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
+		Type           Type    `json:"type" example:"claim_username"`
+		CompletedTasks uint64  `json:"completedTasks,omitempty" example:"3"`
+		Prize          float64 `json:"prize,omitempty" example:"200"`
 	}
 	ReadRepository interface {
-		GetTasks(ctx context.Context, userID string) ([]*Task, error)
+		GetTasks(ctx context.Context, userID, languageCode string) ([]*Task, error)
 	}
 	WriteRepository interface {
 		PseudoCompleteTask(ctx context.Context, task *Task) error
@@ -97,16 +81,24 @@ type (
 
 const (
 	applicationYamlKey = "tasks"
+	defaultLanguage    = "en"
 )
 
 // .
 var (
 	//go:embed DDL.sql
 	ddl string
+
+	//nolint:gochecknoglobals // Its loaded once at startup.
+	allTaskTemplates map[Type]map[languageCode]*taskTemplate
+
+	//go:embed translations
+	translations embed.FS
 )
 
 type (
-	progress struct {
+	languageCode = string
+	progress     struct {
 		CompletedTasks       *users.Enum[Type] `json:"completedTasks,omitempty" example:"claim_username,start_mining"`
 		PseudoCompletedTasks *users.Enum[Type] `json:"pseudoCompletedTasks,omitempty" example:"claim_username,start_mining"`
 		TwitterUserHandle    *string           `json:"twitterUserHandle,omitempty" example:"jdoe2"`
@@ -116,6 +108,12 @@ type (
 		UsernameSet          bool              `json:"usernameSet,omitempty" example:"true"`
 		ProfilePictureSet    bool              `json:"profilePictureSet,omitempty" example:"true"`
 		MiningStarted        bool              `json:"miningStarted,omitempty" example:"true"`
+	}
+	taskTemplate struct {
+		title, shortDescription, longDescription *template.Template
+		Title                                    string `json:"title"`            //nolint:revive // That's intended.
+		ShortDescription                         string `json:"shortDescription"` //nolint:revive // That's intended.
+		LongDescription                          string `json:"longDescription"`  //nolint:revive // That's intended.
 	}
 	tryCompleteTasksCommandSource struct {
 		*processor
@@ -140,6 +138,12 @@ type (
 		*repository
 	}
 	config struct {
+		TenantName string `yaml:"tenantName" mapstructure:"tenantName"`
+		TasksList  []struct {
+			Type  string  `yaml:"type" mapstructure:"type"`
+			Icon  string  `yaml:"icon" mapstructure:"icon"`
+			Prize float64 `yaml:"prize" mapstructure:"prize"`
+		} `yaml:"tasksList" mapstructure:"tasksList"`
 		messagebroker.Config   `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredFriendsInvited uint64                   `yaml:"requiredFriendsInvited"`
 	}

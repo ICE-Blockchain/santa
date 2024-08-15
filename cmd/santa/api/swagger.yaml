@@ -92,6 +92,24 @@ definitions:
       twitterUserHandle:
         example: jdoe2
         type: string
+      verificationCode:
+        example: ABC
+        type: string
+    type: object
+  tasks.Metadata:
+    properties:
+      iconUrl:
+        example: https://app.ice.com/web/invite.svg
+        type: string
+      longDescription:
+        example: Long description
+        type: string
+      shortDescription:
+        example: Short description
+        type: string
+      title:
+        example: Claim username
+        type: string
     type: object
   tasks.Task:
     properties:
@@ -100,6 +118,11 @@ definitions:
         type: boolean
       data:
         $ref: '#/definitions/tasks.Data'
+      metadata:
+        $ref: '#/definitions/tasks.Metadata'
+      prize:
+        example: 200
+        type: number
       type:
         allOf:
         - $ref: '#/definitions/tasks.Type'

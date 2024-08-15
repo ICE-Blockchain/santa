@@ -1,0 +1,7 @@
+{
+   "en":{
+      "title":"Claim your nickname",
+      "shortDescription":"Set it and start earning from your invite.",
+      "longDescription":"Set it and start earning from your invite."
+   }
+}

@@ -1,0 +1,7 @@
+{
+   "en":{
+      "title":"Join telegram",
+      "shortDescription":"Be part of our community and join now.",
+      "longDescription":"Be part of our community and join now."
+   }
+}

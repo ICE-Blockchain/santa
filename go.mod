@@ -2,17 +2,11 @@ module github.com/ice-blockchain/santa
 
 go 1.23
 
-toolchain go1.23.0
-
 require (
 	github.com/goccy/go-json v0.10.3
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/ice-blockchain/eskimo v1.400.0
-	github.com/ice-blockchain/wintr v1.150.0
 	github.com/pkg/errors v0.9.1
-	github.com/stretchr/testify v1.9.0
-	github.com/swaggo/swag v1.16.3
-	github.com/testcontainers/testcontainers-go v0.33.0
 )
 
 require (

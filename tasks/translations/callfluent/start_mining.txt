@@ -1,0 +1,7 @@
+{
+   "en":{
+      "title":"Start mining",
+      "shortDescription":"Your first check-in session.",
+      "longDescription":"Your first check-in session."
+   }
+}

@@ -5,7 +5,6 @@ package tasks
 import (
 	"context"
 	"fmt"
-	"sort"
 	"strings"
 
 	"github.com/goccy/go-json"
@@ -22,6 +21,9 @@ import (
 func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error { //nolint:funlen,revive,gocognit,gocyclo,cyclop // .
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "unexpected deadline")
+	}
+	if err := r.validateTask(task); err != nil {
+		return errors.Wrapf(err, "wrong type for:%+v", task)
 	}
 	userProgress, err := r.getProgress(ctx, task.UserID, true)
 	if err != nil && !errors.Is(err, ErrRelationNotFound) {
@@ -76,6 +78,16 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	return nil
 }
 
+func (r *repository) validateTask(arg *Task) error {
+	for ix := range r.cfg.TasksList {
+		if Type(r.cfg.TasksList[ix].Type) == arg.Type {
+			return nil
+		}
+	}
+
+	return errors.Errorf("invalid type `%v`", arg.Type)
+}
+
 func (p *progress) buildUpdatePseudoCompletedTasksSQL(task *Task, repo *repository) (params []any, sql string) { //nolint:funlen // .
 	for _, tsk := range p.buildTasks(repo) {
 		if tsk.Type == task.Type {
@@ -84,14 +96,11 @@ func (p *progress) buildUpdatePseudoCompletedTasksSQL(task *Task, repo *reposito
 			}
 		}
 	}
-	pseudoCompletedTasks := make(users.Enum[Type], 0, len(&AllTypes))
+	pseudoCompletedTasks := make(users.Enum[Type], 0, len(repo.cfg.TasksList))
 	if p.PseudoCompletedTasks != nil {
 		pseudoCompletedTasks = append(pseudoCompletedTasks, *p.PseudoCompletedTasks...)
 	}
 	pseudoCompletedTasks = append(pseudoCompletedTasks, task.Type)
-	sort.SliceStable(pseudoCompletedTasks, func(i, j int) bool {
-		return TypeOrder[pseudoCompletedTasks[i]] < TypeOrder[pseudoCompletedTasks[j]]
-	})
 	params = make([]any, 0)
 	params = append(params, task.UserID, p.PseudoCompletedTasks, &pseudoCompletedTasks)
 	fieldIndexes := append(make([]string, 0, 1+1), "$3")
@@ -142,7 +151,7 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 		pr = new(progress)
 		pr.UserID = userID
 	}
-	if pr.CompletedTasks != nil && len(*pr.CompletedTasks) == len(&AllTypes) {
+	if pr.CompletedTasks != nil && len(*pr.CompletedTasks) == len(r.cfg.TasksList) {
 		return nil
 	}
 	completedTasks := pr.reEvaluateCompletedTasks(r)
@@ -169,7 +178,7 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 	}
 	//nolint:nestif // .
 	if completedTasks != nil && len(*completedTasks) > 0 && (pr.CompletedTasks == nil || len(*pr.CompletedTasks) < len(*completedTasks)) {
-		newlyCompletedTasks := make([]*CompletedTask, 0, len(&AllTypes))
+		newlyCompletedTasks := make([]*CompletedTask, 0, len(r.cfg.TasksList))
 	outer:
 		for _, completedTask := range *completedTasks {
 			if pr.CompletedTasks != nil {
@@ -179,11 +188,16 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 					}
 				}
 			}
-			newlyCompletedTasks = append(newlyCompletedTasks, &CompletedTask{
-				UserID:         userID,
-				Type:           completedTask,
-				CompletedTasks: uint64(len(*completedTasks)),
-			})
+			for ix := range r.cfg.TasksList {
+				if completedTask == Type(r.cfg.TasksList[ix].Type) {
+					newlyCompletedTasks = append(newlyCompletedTasks, &CompletedTask{
+						UserID:         userID,
+						Type:           completedTask,
+						CompletedTasks: uint64(len(*completedTasks)),
+						Prize:          r.cfg.TasksList[ix].Prize,
+					})
+				}
+			}
 		}
 		if err = runConcurrently(ctx, r.sendCompletedTaskMessage, newlyCompletedTasks); err != nil {
 			sErr := errors.Wrapf(err, "failed to sendCompletedTaskMessages for userID:%v,completedTasks:%#v", userID, newlyCompletedTasks)
@@ -208,24 +222,24 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 }
 
 func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] { //nolint:revive,funlen,gocognit,gocyclo,cyclop // .
-	if p.CompletedTasks != nil && len(*p.CompletedTasks) == len(&AllTypes) {
+	if p.CompletedTasks != nil && len(*p.CompletedTasks) == len(repo.cfg.TasksList) {
 		return p.CompletedTasks
 	}
-	alreadyCompletedTasks := make(map[Type]any, len(&AllTypes))
+	alreadyCompletedTasks := make(map[Type]any, len(repo.cfg.TasksList))
 	if p.CompletedTasks != nil {
 		for _, task := range *p.CompletedTasks {
 			alreadyCompletedTasks[task] = struct{}{}
 		}
 	}
-	completedTasks := make(users.Enum[Type], 0, len(&AllTypes))
-	for _, taskType := range &AllTypes {
-		if _, alreadyCompleted := alreadyCompletedTasks[taskType]; alreadyCompleted {
-			completedTasks = append(completedTasks, taskType)
+	completedTasks := make(users.Enum[Type], 0, len(repo.cfg.TasksList))
+	for ix := range repo.cfg.TasksList {
+		if _, alreadyCompleted := alreadyCompletedTasks[Type(repo.cfg.TasksList[ix].Type)]; alreadyCompleted {
+			completedTasks = append(completedTasks, Type(repo.cfg.TasksList[ix].Type))
 
 			continue
 		}
 		var completed bool
-		switch taskType {
+		switch Type(repo.cfg.TasksList[ix].Type) {
 		case ClaimUsernameType:
 			completed = p.UsernameSet
 		case StartMiningType:
@@ -246,7 +260,7 @@ func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] 
 			}
 		}
 		if completed {
-			completedTasks = append(completedTasks, taskType)
+			completedTasks = append(completedTasks, Type(repo.cfg.TasksList[ix].Type))
 		}
 	}
 	if len(completedTasks) == 0 {
