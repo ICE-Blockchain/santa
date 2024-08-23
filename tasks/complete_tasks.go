@@ -322,8 +322,8 @@ func (s *miningSessionSource) upsertProgress(ctx context.Context, userID string)
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "context failed")
 	}
-	if pr, err := s.getProgress(ctx, userID, true); err != nil && !errors.Is(err, ErrRelationNotFound) ||
-		(pr != nil && pr.CompletedTasks != nil && len(*pr.CompletedTasks) == len(&AllTypes)) {
+	if pr, err := s.getProgress(ctx, userID, true); (pr != nil && pr.CompletedTasks != nil &&
+		len(*pr.CompletedTasks) == len(&AllTypes)) || err != nil && !errors.Is(err, ErrRelationNotFound) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
 	sql := `INSERT INTO task_progress(user_id, mining_started) VALUES ($1, $2)

@@ -116,10 +116,9 @@ type (
 		Balance         int64             `json:"balance,omitempty" example:"1232323232"`
 		HideBadges      bool              `json:"hideBadges,omitempty" example:"false"`
 	}
-	statistics struct {
-		Type       Type      `db:"badge_type"`
-		GroupType  GroupType `db:"badge_group_type"`
-		AchievedBy uint64
+	badgeDistribution struct {
+		Range string `db:"range"`
+		Count uint64 `db:"count"`
 	}
 	tryAchievedBadgesCommandSource struct {
 		*processor

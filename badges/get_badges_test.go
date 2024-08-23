@@ -3,264 +3,12 @@
 package badges
 
 import (
-	"fmt"
-	"math"
-	"math/rand"
-	"sort"
-	"strconv"
-	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/require"
 
 	"github.com/ice-blockchain/eskimo/users"
 )
-
-const (
-	totalUsers = 100
-)
-
-type (
-	calculateUnachievedPercentagesTestCase struct {
-		expected   map[Type]float64
-		name       string
-		desc       string
-		group      GroupType
-		stats      []*statistics
-		totalUsers uint64
-	}
-)
-
-func (c *calculateUnachievedPercentagesTestCase) Expected(ex map[Type]float64) *calculateUnachievedPercentagesTestCase {
-	c.expected = ex
-
-	return c
-}
-
-func (c *calculateUnachievedPercentagesTestCase) WithDesc(description string) *calculateUnachievedPercentagesTestCase {
-	c.desc = description
-
-	return c
-}
-
-func (c *calculateUnachievedPercentagesTestCase) WithUsers(
-	tb testing.TB,
-	group GroupType,
-	usersCounts ...int,
-) *calculateUnachievedPercentagesTestCase {
-	tb.Helper()
-	stats := []*statistics{{
-		Type:       Type(group),
-		GroupType:  group,
-		AchievedBy: totalUsers,
-	}}
-	require.GreaterOrEqual(tb, len(usersCounts), len(AllGroups[group]))
-	achievedStr := make([]string, len(AllGroups[group])) //nolint:makezero // We're know size for sure
-	for ind, badgeType := range AllGroups[group] {
-		achievedByUsersCount := usersCounts[ind]
-		stats = append(stats, &statistics{Type: badgeType, GroupType: group, AchievedBy: uint64(achievedByUsersCount)})
-		achievedStr[ind] = strconv.FormatUint(uint64(achievedByUsersCount), 10)
-	}
-	c.group = group
-	c.name = string(group) + "-" + strings.Join(achievedStr, ",")
-	c.totalUsers = totalUsers
-	c.stats = stats
-
-	return c
-}
-
-func unachivedPercentageTestCase() *calculateUnachievedPercentagesTestCase {
-	return &calculateUnachievedPercentagesTestCase{}
-}
-
-//nolint:funlen,paralleltest,tparallel // A lot of testcases here. Not need to be parallel due to loads the global variables.
-func Test_Repository_calculateUnachievedPercentages(t *testing.T) {
-	loadBadges(defaultCfg())
-	tests := []*calculateUnachievedPercentagesTestCase{
-		unachivedPercentageTestCase().
-			WithDesc("All users have first 2 badges, and no one have last").
-			WithUsers(t, SocialGroupType, 100, 100, 50, 25, 10, 10, 5, 0, 0, 0).
-			Expected(map[Type]float64{
-				Social1Type:  0,
-				Social2Type:  0,
-				Social3Type:  50,
-				Social4Type:  25,
-				Social5Type:  15,
-				Social6Type:  0,
-				Social7Type:  5,
-				Social8Type:  5,
-				Social9Type:  0,
-				Social10Type: 0,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("50% of users did not get even 1st badge and 10% get all").
-			WithUsers(t, LevelGroupType, 50, 10, 10, 10, 10, 10).
-			Expected(map[Type]float64{
-				Level1Type: 50,
-				Level2Type: 40,
-				Level3Type: 0,
-				Level4Type: 0,
-				Level5Type: 0,
-				Level6Type: 0,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("All users achieved all badges").
-			WithUsers(t, CoinGroupType, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100).
-			Expected(map[Type]float64{
-				Coin1Type:  0,
-				Coin2Type:  0,
-				Coin3Type:  0,
-				Coin4Type:  0,
-				Coin5Type:  0,
-				Coin6Type:  0,
-				Coin7Type:  0,
-				Coin8Type:  0,
-				Coin9Type:  0,
-				Coin10Type: 0,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("All users achieved first 9 badges").
-			WithUsers(t, CoinGroupType, 100, 100, 100, 100, 100, 100, 100, 100, 100, 0).
-			Expected(map[Type]float64{
-				Coin1Type:  0,
-				Coin2Type:  0,
-				Coin3Type:  0,
-				Coin4Type:  0,
-				Coin5Type:  0,
-				Coin6Type:  0,
-				Coin7Type:  0,
-				Coin8Type:  0,
-				Coin9Type:  0,
-				Coin10Type: 100,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("No one does not have anything").
-			WithUsers(t, SocialGroupType, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0).
-			Expected(map[Type]float64{
-				Social1Type:  100,
-				Social2Type:  0,
-				Social3Type:  0,
-				Social4Type:  0,
-				Social5Type:  0,
-				Social6Type:  0,
-				Social7Type:  0,
-				Social8Type:  0,
-				Social9Type:  0,
-				Social10Type: 0,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("Achieved users greater than total due to any reason").
-			WithUsers(t, SocialGroupType, math.MaxInt, 110, 101, 90, 0, 0, 0, 0, 0, 0).
-			Expected(map[Type]float64{
-				Social1Type:  0,
-				Social2Type:  0,
-				Social3Type:  0,
-				Social4Type:  10,
-				Social5Type:  90,
-				Social6Type:  0,
-				Social7Type:  0,
-				Social8Type:  0,
-				Social9Type:  0,
-				Social10Type: 0,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("0.2+0.1 != 0.3000000000004").
-			WithUsers(t, SocialGroupType, 100, 20, 10, 0, 0, 0, 0, 0, 0, 0).
-			Expected(map[Type]float64{
-				Social1Type:  0,
-				Social2Type:  80,
-				Social3Type:  10,
-				Social4Type:  10,
-				Social5Type:  0,
-				Social6Type:  0,
-				Social7Type:  0,
-				Social8Type:  0,
-				Social9Type:  0,
-				Social10Type: 0,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("Total achieved badges less than total users").
-			WithUsers(t, SocialGroupType, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0).
-			Expected(map[Type]float64{
-				Social1Type:  98,
-				Social2Type:  0,
-				Social3Type:  1,
-				Social4Type:  1,
-				Social5Type:  0,
-				Social6Type:  0,
-				Social7Type:  0,
-				Social8Type:  0,
-				Social9Type:  0,
-				Social10Type: 0,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("Totally messed up with lesser value in the middle").
-			WithUsers(t, LevelGroupType, 30, 20, 1, 5, 0, 0).
-			Expected(map[Type]float64{
-				Level1Type: 70,
-				Level2Type: 10,
-				Level3Type: 15, // Have 1 but actually at least 5, cuz L4 = 5, 20-5 = 15.
-				Level4Type: 0,
-				Level5Type: 5,
-				Level6Type: 0,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("Totally messed up with multiple lesser values descending").
-			WithUsers(t, LevelGroupType, 100, 30, 1, 0, 20, 10).
-			Expected(map[Type]float64{
-				Level1Type: 0,
-				Level2Type: 70,
-				Level3Type: 10,
-				Level4Type: 0,
-				Level5Type: 0,
-				Level6Type: 10,
-			}),
-		unachivedPercentageTestCase().
-			WithDesc("Totally messed up with multiple lesser values ascending").
-			WithUsers(t, LevelGroupType, 70, 40, 0, 1, 20, 0).
-			Expected(map[Type]float64{
-				Level1Type: 30,
-				Level2Type: 30,
-				Level3Type: 20,
-				Level4Type: 0,
-				Level5Type: 0,
-				Level6Type: 20,
-			}),
-	}
-
-	random := randomAchievedUsers(len(AllGroups[SocialGroupType]))
-	tests = append(tests, unachivedPercentageTestCase().WithUsers(t, SocialGroupType, random...).
-		Expected(expectedForRandomAchievedUsers(SocialGroupType, random...)))
-	random = randomAchievedUsers(len(AllGroups[CoinGroupType]))
-	tests = append(tests, unachivedPercentageTestCase().WithUsers(t, CoinGroupType, random...).
-		Expected(expectedForRandomAchievedUsers(CoinGroupType, random...)))
-	random = randomAchievedUsers(len(AllGroups[LevelGroupType]))
-	tests = append(tests, unachivedPercentageTestCase().WithUsers(t, LevelGroupType, random...).
-		Expected(expectedForRandomAchievedUsers(LevelGroupType, random...)))
-	r := &repository{}
-	for _, tt := range tests {
-		t.Run(fmt.Sprintf("%v(%v)", tt.desc, tt.name), func(t *testing.T) {
-			t.Parallel()
-			actual := r.calculateUnachievedPercentages(tt.group, tt.stats)
-			// Avoid values like 28.999999999999996.
-			sum := float64(0.0)
-			for k, v := range actual {
-				require.GreaterOrEqual(t, v, 0.0)
-				actual[k] = math.Round(v)
-				sum += v
-			}
-			require.NotEmpty(t, actual)
-			require.Len(t, actual, len(AllGroups[tt.group]))
-			require.Equal(t, tt.expected, actual)
-			// User can be in progress with only 1 badge (per groupType ofc) at any given time
-			// so sum of percentages is 100-usersWhoOwnsLastBadge.
-			lastBadgeAchievedBy := tt.stats[len(AllGroups[tt.group])].AchievedBy
-			lastBadgeAchievedByPercentage := float64(lastBadgeAchievedBy*percent100) / float64(totalUsers)
-			assert.Equal(t, percent100-lastBadgeAchievedByPercentage, sum) //nolint:testifylint // .
-		})
-	}
-}
 
 //nolint:funlen,paralleltest,tparallel // A lot of testcases. Not needed to be the parallel due to loads the global variables.
 func Test_Progress_BuildBadges(t *testing.T) {
@@ -479,31 +227,6 @@ func Test_Progress_BuildSummary(t *testing.T) {
 	}
 }
 
-func expectedForRandomAchievedUsers(group GroupType, userCounts ...int) map[Type]float64 {
-	allTypes := AllGroups[group]
-	result := make(map[Type]float64)
-	for ind := 1; ind < len(allTypes); ind++ {
-		badgeType := allTypes[ind]
-		result[badgeType] = math.Round(float64(userCounts[ind-1]-userCounts[ind]) * percent100 / float64(totalUsers))
-	}
-	result[allTypes[0]] = float64(totalUsers-userCounts[0]) * percent100 / totalUsers
-
-	return result
-}
-
-func randomAchievedUsers(count int) []int {
-	achievedUserCounts := make([]int, count) //nolint:makezero // We're know size for sure.
-	for i := range count {
-		achievedUserCounts[i] = rand.Intn(totalUsers) //nolint:gosec // We dont need strong random for tests.
-		if i > 0 && achievedUserCounts[i] > achievedUserCounts[i-1] {
-			achievedUserCounts[i] = randomAchievedUsers(1)[0]
-		}
-	}
-	sort.Sort(sort.Reverse(sort.IntSlice(achievedUserCounts)))
-
-	return achievedUserCounts
-}
-
 func expectedBadge(badgeType Type, achieved bool, percent float64) *Badge {
 	return &Badge{
 		Name:                        AllNames[GroupTypeForEachType[badgeType]][badgeType],
@@ -541,4 +264,46 @@ func expectedBadgeSummaryFromBadgeType(lastAchievedType Type) *BadgeSummary {
 	}
 
 	return expectedBadgeSummary(AllNames[group][lastAchievedType], group, uint64(order), uint64(len(AllGroups[group])-1))
+}
+
+//nolint:funlen // .
+func TestPreparePercentageDistributionSQL(t *testing.T) {
+	t.Parallel()
+	repo := &repository{cfg: defaultCfg()}
+	loadBadges(repo.cfg)
+	vals := repo.preparePercentageDistributionSQL(LevelGroupType)
+	assert.EqualValues(t, []string{
+		"when completed_levels >= 0 AND completed_levels <= 1 THEN 'l1'",
+		"when completed_levels >= 2 AND completed_levels <= 3 THEN 'l2'",
+		"when completed_levels >= 4 AND completed_levels <= 5 THEN 'l3'",
+		"when completed_levels >= 6 AND completed_levels <= 7 THEN 'l4'",
+		"when completed_levels >= 8 AND completed_levels <= 9 THEN 'l5'",
+		"when completed_levels >= 10 THEN 'l6'",
+	}, vals)
+	vals = repo.preparePercentageDistributionSQL(SocialGroupType)
+	assert.EqualValues(t, []string{
+		"when friends_invited >= 0 AND friends_invited <= 1 THEN 's1'",
+		"when friends_invited >= 2 AND friends_invited <= 3 THEN 's2'",
+		"when friends_invited >= 4 AND friends_invited <= 5 THEN 's3'",
+		"when friends_invited >= 6 AND friends_invited <= 7 THEN 's4'",
+		"when friends_invited >= 8 AND friends_invited <= 9 THEN 's5'",
+		"when friends_invited >= 10 AND friends_invited <= 11 THEN 's6'",
+		"when friends_invited >= 12 AND friends_invited <= 13 THEN 's7'",
+		"when friends_invited >= 14 AND friends_invited <= 15 THEN 's8'",
+		"when friends_invited >= 16 AND friends_invited <= 17 THEN 's9'",
+		"when friends_invited >= 18 THEN 's10'",
+	}, vals)
+	vals = repo.preparePercentageDistributionSQL(CoinGroupType)
+	assert.EqualValues(t, []string{
+		"when balance >= 0 AND balance <= 10 THEN 'c1'",
+		"when balance >= 20 AND balance <= 30 THEN 'c2'",
+		"when balance >= 40 AND balance <= 50 THEN 'c3'",
+		"when balance >= 60 AND balance <= 70 THEN 'c4'",
+		"when balance >= 80 AND balance <= 90 THEN 'c5'",
+		"when balance >= 100 AND balance <= 110 THEN 'c6'",
+		"when balance >= 120 AND balance <= 130 THEN 'c7'",
+		"when balance >= 140 AND balance <= 150 THEN 'c8'",
+		"when balance >= 160 AND balance <= 170 THEN 'c9'",
+		"when balance >= 180 THEN 'c10'",
+	}, vals)
 }
