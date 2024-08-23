@@ -326,8 +326,8 @@ func (s *completedLevelsSource) upsertProgress(ctx context.Context, completedLev
 		return errors.Wrap(ctx.Err(), "context failed")
 	}
 	pr, err := s.getProgress(ctx, userID, true)
-	if err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
-		(pr != nil && pr.AchievedBadges != nil && (len(*pr.AchievedBadges) == len(AllTypes))) ||
+	if (pr != nil && pr.AchievedBadges != nil && (len(*pr.AchievedBadges) == len(AllTypes))) ||
+		err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
 		(pr != nil && (pr.CompletedLevels == int64(len(&levelsandroles.AllLevelTypes)) || IsBadgeGroupAchieved(pr.AchievedBadges, LevelGroupType))) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
@@ -336,7 +336,7 @@ func (s *completedLevelsSource) upsertProgress(ctx context.Context, completedLev
 				DO UPDATE
 					SET completed_levels = EXCLUDED.completed_levels
 				WHERE COALESCE(badge_progress.completed_levels, 0) != COALESCE(EXCLUDED.completed_levels, 0)`
-	_, err = storage.Exec(ctx, s.db, sql, userID, int64(completedLevels))
+	_, err = storage.Exec(ctx, s.db, sql, userID, int64(completedLevels)) //nolint:gosec // .
 
 	return multierror.Append( //nolint:wrapcheck // Not needed.
 		errors.Wrapf(err, "failed to insert/update progress for userID:%v, completedLevels:%v", userID, completedLevels),
@@ -410,7 +410,7 @@ func (s *globalTableSource) Process(ctx context.Context, msg *messagebroker.Mess
 		return nil
 	}
 	sql := `UPDATE badge_statistics SET achieved_by = $1 WHERE badge_type IN ($2, $3, $4)`
-	_, err := storage.Exec(ctx, s.db, sql, int64(val.Value), string(LevelGroupType), string(CoinGroupType), string(SocialGroupType))
+	_, err := storage.Exec(ctx, s.db, sql, int64(val.Value), string(LevelGroupType), string(CoinGroupType), string(SocialGroupType)) //nolint:gosec // .
 
 	return errors.Wrapf(err, "failed to update badge_statistics from global unsigned value:%#v", &val)
 }

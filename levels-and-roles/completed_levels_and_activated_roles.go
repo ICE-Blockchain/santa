@@ -89,8 +89,8 @@ func (s *completedTasksSource) upsertProgress(ctx context.Context, completedTask
 		return errors.Wrap(ctx.Err(), "context failed")
 	}
 	pr, err := s.getProgress(ctx, userID, true)
-	if err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
-		(pr != nil && pr.CompletedLevels != nil && (len(*pr.CompletedLevels) == len(&AllLevelTypes))) ||
+	if (pr != nil && pr.CompletedLevels != nil && (len(*pr.CompletedLevels) == len(&AllLevelTypes))) ||
+		err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
 		(pr != nil && (pr.CompletedTasks == uint64(len(&tasks.AllTypes)) ||
 			AreLevelsCompleted(pr.CompletedLevels, Level6Type, Level7Type, Level8Type, Level9Type, Level10Type, Level11Type))) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)

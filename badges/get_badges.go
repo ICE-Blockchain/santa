@@ -4,8 +4,8 @@ package badges
 
 import (
 	"context"
-	"math"
-	"sort"
+	"fmt"
+	"strings"
 
 	"github.com/pkg/errors"
 
@@ -16,7 +16,7 @@ func (r *repository) GetBadges(ctx context.Context, groupType GroupType, userID 
 	if ctx.Err() != nil {
 		return nil, errors.Wrap(ctx.Err(), "unexpected deadline")
 	}
-	stats, err := r.getStatistics(ctx, groupType)
+	stats, err := r.getBadgesDistributon(ctx, groupType)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed to getStatistics for %v", groupType)
 	}
@@ -65,67 +65,81 @@ func (r *repository) getProgress(ctx context.Context, userID string, tolerateOld
 	return res, errors.Wrapf(err, "can't get badge progress for userID:%v", userID)
 }
 
-func (r *repository) getStatistics(ctx context.Context, groupType GroupType) (map[Type]float64, error) {
+func (r *repository) getBadgesDistributon(ctx context.Context, groupType GroupType) (map[Type]float64, error) {
 	if ctx.Err() != nil {
 		return nil, errors.Wrap(ctx.Err(), "unexpected deadline")
 	}
-	sql := `SELECT *
-				FROM badge_statistics
-				WHERE badge_group_type = $1`
-	res, err := storage.Select[statistics](ctx, r.db, sql, string(groupType))
+	sql := fmt.Sprintf(`SELECT COALESCE(COUNT(user_id), 0) AS count,
+				(CASE
+					%v
+				END) AS range
+				FROM badge_progress
+				GROUP BY range
+				ORDER BY range ASC`, strings.Join(r.preparePercentageDistributionSQL(groupType), "\n"))
+	resp, err := storage.Select[badgeDistribution](ctx, r.db, sql)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed to get BADGE_STATISTICS for groupType:%v", groupType)
 	}
 
-	return r.calculateUnachievedPercentages(groupType, res), nil
+	return r.calculatePercentages(resp, groupType), nil
 }
 
-//nolint:funlen,revive,gocognit // calculation logic, it is better to keep in one place
-func (*repository) calculateUnachievedPercentages(groupType GroupType, res []*statistics) map[Type]float64 {
-	allTypes := AllGroups[groupType]
-	var totalUsers, totalAchievedBy uint64
-	achievedByForEachType, resp := make(map[Type]uint64, cap(res)-1), make(map[Type]float64, cap(res)-1)
-	sort.SliceStable(res, func(i, j int) bool {
-		return AllTypeOrder[res[i].Type] < AllTypeOrder[res[j].Type]
-	})
-	for idx, row := range res {
-		if row.Type == Type(row.GroupType) {
-			totalUsers = row.AchievedBy
-		} else {
-			// Previous cannot be less than current, trying to fix the data.
-			maxNextItem := row.AchievedBy
-			for nextItemsIdx := idx; nextItemsIdx < len(res); nextItemsIdx++ {
-				if res[nextItemsIdx].AchievedBy > maxNextItem {
-					maxNextItem = res[nextItemsIdx].AchievedBy
-				}
+//nolint:funlen,gocognit,revive // .
+func (r *repository) preparePercentageDistributionSQL(groupType GroupType) []string {
+	var whenValues []string
+	switch groupType {
+	case CoinGroupType:
+		whenValues = make([]string, 0, len(r.cfg.Coins))
+		for idx, rnge := range r.cfg.Coins {
+			val := fmt.Sprintf("when balance >= %v", rnge.FromInclusive)
+			if rnge.ToInclusive != 0 {
+				val = fmt.Sprintf("%v AND balance <= %v", val, rnge.ToInclusive)
 			}
-			achievedByForEachType[row.Type] = uint64(math.Max(float64(row.AchievedBy), float64(maxNextItem)))
-			totalAchievedBy += achievedByForEachType[row.Type]
+			whenValues = append(whenValues, fmt.Sprintf("%v THEN 'c%v'", val, idx+1))
+		}
+	case LevelGroupType:
+		whenValues = make([]string, 0, len(r.cfg.Levels))
+		for idx, rnge := range r.cfg.Levels {
+			val := fmt.Sprintf("when completed_levels >= %v", rnge.FromInclusive)
+			if rnge.ToInclusive != 0 {
+				val = fmt.Sprintf("%v AND completed_levels <= %v", val, rnge.ToInclusive)
+			}
+			whenValues = append(whenValues, fmt.Sprintf("%v THEN 'l%v'", val, idx+1))
+		}
+	case SocialGroupType:
+		whenValues = make([]string, 0, len(r.cfg.Socials))
+		for idx, rnge := range r.cfg.Socials {
+			val := fmt.Sprintf("when friends_invited >= %v", rnge.FromInclusive)
+			if rnge.ToInclusive != 0 {
+				val = fmt.Sprintf("%v AND friends_invited <= %v", val, rnge.ToInclusive)
+			}
+			whenValues = append(whenValues, fmt.Sprintf("%v THEN 's%v'", val, idx+1))
 		}
 	}
-	if totalUsers == 0 {
-		return resp
-	}
-	if totalAchievedBy > totalUsers {
-		totalAchievedBy = totalUsers
-	}
-	for ind, currentBadgeType := range allTypes {
-		currentBadgeAchievedBy := math.Min(float64(achievedByForEachType[allTypes[ind]]), float64(totalUsers))
-		if currentBadgeType == allTypes[0] {
-			resp[currentBadgeType] = percent100 * ((float64(totalAchievedBy) - currentBadgeAchievedBy) / float64(totalUsers))
-			if totalAchievedBy < totalUsers {
-				resp[currentBadgeType] = percent100 - (percent100 * currentBadgeAchievedBy / float64(totalUsers))
-			}
 
-			continue
-		}
-		usersWhoOwnsPreviousBadge := math.Min(float64(achievedByForEachType[allTypes[ind-1]]), float64(totalUsers))
-		usersInProgressWithBadge := usersWhoOwnsPreviousBadge
-		usersInProgressWithBadge -= currentBadgeAchievedBy
-		resp[currentBadgeType] = percent100 * (usersInProgressWithBadge / float64(totalUsers))
+	return whenValues
+}
+
+func (r *repository) calculatePercentages(distribution []*badgeDistribution, groupType GroupType) map[Type]float64 {
+	var length int
+	switch groupType {
+	case CoinGroupType:
+		length = len(r.cfg.Coins)
+	case LevelGroupType:
+		length = len(r.cfg.Levels)
+	case SocialGroupType:
+		length = len(r.cfg.Socials)
+	}
+	var totalUsers uint64
+	for _, val := range distribution {
+		totalUsers += val.Count
+	}
+	result := make(map[Type]float64, length)
+	for _, val := range distribution {
+		result[Type(val.Range)] = float64(val.Count) / float64(totalUsers) * 100
 	}
 
-	return resp
+	return result
 }
 
 func (p *progress) buildBadges(groupType GroupType, stats map[Type]float64) []*Badge {

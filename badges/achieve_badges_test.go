@@ -259,8 +259,8 @@ func defaultCfg() *config {
 func badgeProgress(alreadyAchieved *users.Enum[Type], balance, friends, levels uint64) *progress {
 	return &progress{
 		AchievedBadges:  alreadyAchieved,
-		Balance:         int64(balance),
-		FriendsInvited:  int64(friends),
-		CompletedLevels: int64(levels),
+		Balance:         int64(balance), //nolint:gosec // .
+		FriendsInvited:  int64(friends), //nolint:gosec // .
+		CompletedLevels: int64(levels),  //nolint:gosec // .
 	}
 }
