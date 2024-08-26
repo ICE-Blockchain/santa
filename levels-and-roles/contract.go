@@ -188,5 +188,6 @@ type (
 		} `yaml:"tasksList" mapstructure:"tasksList"`
 		messagebroker.Config                     `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredInvitedFriendsToBecomeAmbassador uint64                   `yaml:"requiredInvitedFriendsToBecomeAmbassador"`
+		TasksV2Enabled                           bool                     `yaml:"tasksV2Enabled" mapstructure:"tasksV2Enabled"`
 	}
 )

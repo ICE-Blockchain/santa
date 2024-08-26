@@ -53,8 +53,9 @@ func StartProcessor(ctx context.Context, cancel context.CancelFunc) Processor {
 		&friendsInvitedSource{processor: prc},
 	)
 	prc.shutdown = closeAll(mbConsumer, prc.mb, prc.db)
-
-	prc.repository.loadTaskTranslationTemplates(cfg.TenantName)
+	if cfg.TasksV2Enabled {
+		prc.repository.loadTaskTranslationTemplates(cfg.TenantName)
+	}
 
 	return prc
 }

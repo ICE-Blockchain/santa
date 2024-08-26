@@ -29,6 +29,25 @@ const (
 var (
 	ErrRelationNotFound = storage.ErrRelationNotFound
 	ErrRaceCondition    = errors.New("race condition")
+
+	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
+	AllTypes = [6]Type{
+		ClaimUsernameType,
+		StartMiningType,
+		UploadProfilePictureType,
+		FollowUsOnTwitterType,
+		JoinTelegramType,
+		InviteFriendsType,
+	}
+	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
+	TypeOrder = map[Type]int{
+		ClaimUsernameType:        0,
+		StartMiningType:          1,
+		UploadProfilePictureType: 2,
+		FollowUsOnTwitterType:    3,
+		JoinTelegramType:         4,
+		InviteFriendsType:        5,
+	}
 )
 
 type (
@@ -146,5 +165,6 @@ type (
 		} `yaml:"tasksList" mapstructure:"tasksList"`
 		messagebroker.Config   `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredFriendsInvited uint64                   `yaml:"requiredFriendsInvited"`
+		TasksV2Enabled         bool                     `yaml:"tasksV2Enabled" mapstructure:"tasksV2Enabled"`
 	}
 )

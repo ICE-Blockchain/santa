@@ -24,6 +24,7 @@ tasksList: &tasksList
     prize: 600
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/invite.svg
 tasks: &tasks
+  tasksV2Enabled: false
   requiredFriendsInvited: 5
   db: &tasksDatabase
     urls:

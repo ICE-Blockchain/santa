@@ -5,6 +5,7 @@ logger:
   encoder: console
   level: info
 levels-and-roles: &levels-and-roles
+  tasksV2Enabled: false
   requiredInvitedFriendsToBecomeAmbassador: 3
   roleNames:
     - Snowman
