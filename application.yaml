@@ -27,6 +27,25 @@ cmd/santa-sleigh:
     keyPath: cmd/santa-sleigh/.testdata/localhost.key
   wintr/auth/ice:
     jwtSecret: bogus
+tasksList: &tasksList
+  - type: claim_username
+    prize: 100
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/nikename.svg
+  - type: start_mining
+    prize: 200
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/mining.svg
+  - type: upload_profile_picture
+    prize: 300
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/profile-waiting.svg
+  - type: follow_us_on_twitter
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/twitter-follow.svg
+  - type: join_telegram
+    prize: 500
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/join-telegram-waiting.svg
+  - type: invite_friends
+    prize: 600
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/invite.svg
 friends-invited: &friends-invited
   wintr/connectors/storage/v2:
     runDDL: true
@@ -200,6 +219,7 @@ badges_test:
     consumingTopics: *badgesMessageBrokerTopics
     consumerGroup: santa-local-badges-test
 tasks: &tasks
+  tasksV2Enabled: false
   requiredFriendsInvited: 5
   wintr/connectors/storage/v2:
     runDDL: true
@@ -245,6 +265,8 @@ tasks: &tasks
       - name: users-table
       - name: mining-sessions-table
       - name: friends-invited
+  tasksList: *tasksList
+  tenantName: sunwaves
 tasks_test:
   <<: *tasks
   messageBroker:
@@ -252,6 +274,7 @@ tasks_test:
     consumingTopics: *tasksMessageBrokerTopics
     consumerGroup: santa-local-tasks-test
 levels-and-roles: &levels-and-roles
+  tasksV2Enabled: false
   requiredInvitedFriendsToBecomeAmbassador: 3
   roleNames:
     - Snowman
@@ -289,6 +312,7 @@ levels-and-roles: &levels-and-roles
       password: pass
     replicaURLs:
       - postgresql://root:pass@localhost:5432/santa
+  tasksList: *tasksList
   messageBroker: &levels-and-rolesMessageBroker
     consumerGroup: levels-and-roles-testing
     createTopics: true

@@ -84,6 +84,14 @@ func (s *completedTasksSource) Process(ctx context.Context, msg *messagebroker.M
 	return errors.Wrapf(s.upsertProgress(ctx, ct.CompletedTasks, ct.UserID), "failed to upsertProgress for completedTask:%#v", ct)
 }
 
+func (r *repository) tasksLength() int {
+	if r.cfg.TasksV2Enabled {
+		return len(r.cfg.TasksList)
+	}
+
+	return len(&tasks.AllTypes)
+}
+
 func (s *completedTasksSource) upsertProgress(ctx context.Context, completedTasks uint64, userID string) error {
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "context failed")
@@ -91,7 +99,7 @@ func (s *completedTasksSource) upsertProgress(ctx context.Context, completedTask
 	pr, err := s.getProgress(ctx, userID, true)
 	if (pr != nil && pr.CompletedLevels != nil && (len(*pr.CompletedLevels) == len(&AllLevelTypes))) ||
 		err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
-		(pr != nil && (pr.CompletedTasks == uint64(len(&tasks.AllTypes)) ||
+		(pr != nil && (pr.CompletedTasks == uint64(s.tasksLength()) ||
 			AreLevelsCompleted(pr.CompletedLevels, Level6Type, Level7Type, Level8Type, Level9Type, Level10Type, Level11Type))) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}

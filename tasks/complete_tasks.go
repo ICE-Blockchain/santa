@@ -23,6 +23,9 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "unexpected deadline")
 	}
+	if err := r.validateTask(task); err != nil {
+		return errors.Wrapf(err, "wrong type for:%+v", task)
+	}
 	userProgress, err := r.getProgress(ctx, task.UserID, true)
 	if err != nil && !errors.Is(err, ErrRelationNotFound) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", task.UserID)
@@ -76,6 +79,32 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	return nil
 }
 
+func (r *repository) validateTask(arg *Task) error {
+	if r.cfg.TasksV2Enabled {
+		for ix := range r.cfg.TasksList {
+			if Type(r.cfg.TasksList[ix].Type) == arg.Type {
+				return nil
+			}
+		}
+	} else {
+		for _, taskType := range &AllTypes {
+			if taskType == arg.Type {
+				return nil
+			}
+		}
+	}
+
+	return errors.Errorf("invalid type `%v`", arg.Type)
+}
+
+func (r *repository) tasksLength() int {
+	if r.cfg.TasksV2Enabled {
+		return len(r.cfg.TasksList)
+	}
+
+	return len(&AllTypes)
+}
+
 func (p *progress) buildUpdatePseudoCompletedTasksSQL(task *Task, repo *repository) (params []any, sql string) { //nolint:funlen // .
 	for _, tsk := range p.buildTasks(repo) {
 		if tsk.Type == task.Type {
@@ -84,14 +113,16 @@ func (p *progress) buildUpdatePseudoCompletedTasksSQL(task *Task, repo *reposito
 			}
 		}
 	}
-	pseudoCompletedTasks := make(users.Enum[Type], 0, len(&AllTypes))
+	pseudoCompletedTasks := make(users.Enum[Type], 0, repo.tasksLength())
 	if p.PseudoCompletedTasks != nil {
 		pseudoCompletedTasks = append(pseudoCompletedTasks, *p.PseudoCompletedTasks...)
 	}
 	pseudoCompletedTasks = append(pseudoCompletedTasks, task.Type)
-	sort.SliceStable(pseudoCompletedTasks, func(i, j int) bool {
-		return TypeOrder[pseudoCompletedTasks[i]] < TypeOrder[pseudoCompletedTasks[j]]
-	})
+	if !repo.cfg.TasksV2Enabled {
+		sort.SliceStable(pseudoCompletedTasks, func(i, j int) bool {
+			return TypeOrder[pseudoCompletedTasks[i]] < TypeOrder[pseudoCompletedTasks[j]]
+		})
+	}
 	params = make([]any, 0)
 	params = append(params, task.UserID, p.PseudoCompletedTasks, &pseudoCompletedTasks)
 	fieldIndexes := append(make([]string, 0, 1+1), "$3")
@@ -142,7 +173,7 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 		pr = new(progress)
 		pr.UserID = userID
 	}
-	if pr.CompletedTasks != nil && len(*pr.CompletedTasks) == len(&AllTypes) {
+	if pr.CompletedTasks != nil && len(*pr.CompletedTasks) == r.tasksLength() {
 		return nil
 	}
 	completedTasks := pr.reEvaluateCompletedTasks(r)
@@ -169,7 +200,7 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 	}
 	//nolint:nestif // .
 	if completedTasks != nil && len(*completedTasks) > 0 && (pr.CompletedTasks == nil || len(*pr.CompletedTasks) < len(*completedTasks)) {
-		newlyCompletedTasks := make([]*CompletedTask, 0, len(&AllTypes))
+		newlyCompletedTasks := make([]*CompletedTask, 0, r.tasksLength())
 	outer:
 		for _, completedTask := range *completedTasks {
 			if pr.CompletedTasks != nil {
@@ -179,11 +210,24 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 					}
 				}
 			}
-			newlyCompletedTasks = append(newlyCompletedTasks, &CompletedTask{
-				UserID:         userID,
-				Type:           completedTask,
-				CompletedTasks: uint64(len(*completedTasks)),
-			})
+			if r.cfg.TasksV2Enabled {
+				for ix := range r.cfg.TasksList {
+					if completedTask == Type(r.cfg.TasksList[ix].Type) {
+						newlyCompletedTasks = append(newlyCompletedTasks, &CompletedTask{
+							UserID:         userID,
+							Type:           completedTask,
+							CompletedTasks: uint64(len(*completedTasks)),
+							Prize:          r.cfg.TasksList[ix].Prize,
+						})
+					}
+				}
+			} else {
+				newlyCompletedTasks = append(newlyCompletedTasks, &CompletedTask{
+					UserID:         userID,
+					Type:           completedTask,
+					CompletedTasks: uint64(len(*completedTasks)),
+				})
+			}
 		}
 		if err = runConcurrently(ctx, r.sendCompletedTaskMessage, newlyCompletedTasks); err != nil {
 			sErr := errors.Wrapf(err, "failed to sendCompletedTaskMessages for userID:%v,completedTasks:%#v", userID, newlyCompletedTasks)
@@ -207,49 +251,38 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 	return nil
 }
 
-func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] { //nolint:revive,funlen,gocognit,gocyclo,cyclop // .
-	if p.CompletedTasks != nil && len(*p.CompletedTasks) == len(&AllTypes) {
+func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] { //nolint:revive,funlen,gocognit // .
+	if p.CompletedTasks != nil && len(*p.CompletedTasks) == repo.tasksLength() {
 		return p.CompletedTasks
 	}
-	alreadyCompletedTasks := make(map[Type]any, len(&AllTypes))
+	alreadyCompletedTasks := make(map[Type]any, repo.tasksLength())
 	if p.CompletedTasks != nil {
 		for _, task := range *p.CompletedTasks {
 			alreadyCompletedTasks[task] = struct{}{}
 		}
 	}
-	completedTasks := make(users.Enum[Type], 0, len(&AllTypes))
-	for ix, taskType := range &AllTypes {
-		if _, alreadyCompleted := alreadyCompletedTasks[taskType]; alreadyCompleted {
-			completedTasks = append(completedTasks, taskType)
+	completedTasks := make(users.Enum[Type], 0, repo.tasksLength())
+	if repo.cfg.TasksV2Enabled { //nolint:nestif // .
+		for _, taskType := range &AllTypes {
+			if _, alreadyCompleted := alreadyCompletedTasks[taskType]; alreadyCompleted {
+				completedTasks = append(completedTasks, taskType)
 
-			continue
-		}
-		if len(completedTasks) != ix {
-			break
-		}
-		var completed bool
-		switch taskType {
-		case ClaimUsernameType:
-			completed = p.UsernameSet
-		case StartMiningType:
-			completed = p.MiningStarted
-		case UploadProfilePictureType:
-			completed = p.ProfilePictureSet
-		case FollowUsOnTwitterType:
-			if p.TwitterUserHandle != nil && *p.TwitterUserHandle != "" {
-				completed = true
+				continue
 			}
-		case JoinTelegramType:
-			if p.TelegramUserHandle != nil && *p.TelegramUserHandle != "" {
-				completed = true
-			}
-		case InviteFriendsType:
-			if p.FriendsInvited >= repo.cfg.RequiredFriendsInvited {
-				completed = true
+			if val := p.gatherCompletedTasks(repo, taskType); val != "" {
+				completedTasks = append(completedTasks, val)
 			}
 		}
-		if completed {
-			completedTasks = append(completedTasks, taskType)
+	} else {
+		for ix := range repo.cfg.TasksList {
+			if _, alreadyCompleted := alreadyCompletedTasks[Type(repo.cfg.TasksList[ix].Type)]; alreadyCompleted {
+				completedTasks = append(completedTasks, Type(repo.cfg.TasksList[ix].Type))
+
+				continue
+			}
+			if val := p.gatherCompletedTasks(repo, Type(repo.cfg.TasksList[ix].Type)); val != "" {
+				completedTasks = append(completedTasks, val)
+			}
 		}
 	}
 	if len(completedTasks) == 0 {
@@ -257,6 +290,35 @@ func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] 
 	}
 
 	return &completedTasks
+}
+
+func (p *progress) gatherCompletedTasks(repo *repository, taskType Type) Type {
+	var completed bool
+	switch taskType {
+	case ClaimUsernameType:
+		completed = p.UsernameSet
+	case StartMiningType:
+		completed = p.MiningStarted
+	case UploadProfilePictureType:
+		completed = p.ProfilePictureSet
+	case FollowUsOnTwitterType:
+		if p.TwitterUserHandle != nil && *p.TwitterUserHandle != "" {
+			completed = true
+		}
+	case JoinTelegramType:
+		if p.TelegramUserHandle != nil && *p.TelegramUserHandle != "" {
+			completed = true
+		}
+	case InviteFriendsType:
+		if p.FriendsInvited >= repo.cfg.RequiredFriendsInvited {
+			completed = true
+		}
+	}
+	if completed {
+		return taskType
+	}
+
+	return ""
 }
 
 func (r *repository) sendCompletedTaskMessage(ctx context.Context, completedTask *CompletedTask) error {
@@ -323,7 +385,7 @@ func (s *miningSessionSource) upsertProgress(ctx context.Context, userID string)
 		return errors.Wrap(ctx.Err(), "context failed")
 	}
 	if pr, err := s.getProgress(ctx, userID, true); (pr != nil && pr.CompletedTasks != nil &&
-		len(*pr.CompletedTasks) == len(&AllTypes)) || err != nil && !errors.Is(err, ErrRelationNotFound) {
+		len(*pr.CompletedTasks) == s.tasksLength()) || err != nil && !errors.Is(err, ErrRelationNotFound) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
 	sql := `INSERT INTO task_progress(user_id, mining_started) VALUES ($1, $2)

@@ -379,6 +379,13 @@ const docTemplate = `{
                         "required": true
                     },
                     {
+                        "type": "string",
+                        "description": "language to get tasks translation",
+                        "name": "language",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
                         "description": "Request params. Set it only if task completion requires additional data.",
                         "name": "request",
                         "in": "body",
@@ -579,6 +586,31 @@ const docTemplate = `{
                 "twitterUserHandle": {
                     "type": "string",
                     "example": "jdoe2"
+                },
+                "verificationCode": {
+                    "type": "string",
+                    "example": "ABC"
+                }
+            }
+        },
+        "tasks.Metadata": {
+            "type": "object",
+            "properties": {
+                "iconUrl": {
+                    "type": "string",
+                    "example": "https://app.ice.com/web/invite.svg"
+                },
+                "longDescription": {
+                    "type": "string",
+                    "example": "Long description"
+                },
+                "shortDescription": {
+                    "type": "string",
+                    "example": "Short description"
+                },
+                "title": {
+                    "type": "string",
+                    "example": "Claim username"
                 }
             }
         },
@@ -591,6 +623,13 @@ const docTemplate = `{
                 },
                 "data": {
                     "$ref": "#/definitions/tasks.Data"
+                },
+                "metadata": {
+                    "$ref": "#/definitions/tasks.Metadata"
+                },
+                "prize": {
+                    "type": "number",
+                    "example": 200
                 },
                 "type": {
                     "allOf": [

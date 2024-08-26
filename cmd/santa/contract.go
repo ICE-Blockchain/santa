@@ -12,7 +12,8 @@ import (
 
 type (
 	GetTasksArg struct {
-		UserID string `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" swaggerignore:"true" required:"true"`
+		UserID   string `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" swaggerignore:"true" required:"true"`
+		Language string `uri:"language" example:"en" swaggerignore:"true" required:"false"`
 	}
 	GetLevelsAndRolesSummaryArg struct {
 		UserID string `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" allowForbiddenGet:"true" swaggerignore:"true" required:"true"`

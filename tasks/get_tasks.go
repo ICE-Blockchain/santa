@@ -10,7 +10,8 @@ import (
 	storage "github.com/ice-blockchain/wintr/connectors/storage/v2"
 )
 
-func (r *repository) GetTasks(ctx context.Context, userID string) (resp []*Task, err error) {
+//nolint:funlen // .
+func (r *repository) GetTasks(ctx context.Context, userID, language string) (resp []*Task, err error) {
 	if ctx.Err() != nil {
 		return nil, errors.Wrap(ctx.Err(), "unexpected deadline")
 	}
@@ -22,8 +23,26 @@ func (r *repository) GetTasks(ctx context.Context, userID string) (resp []*Task,
 
 		return nil, errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
+	tasks := userProgress.buildTasks(r)
+	if r.cfg.TasksV2Enabled {
+		lang := language
+		if language == "" {
+			lang = defaultLanguage
+		}
+		for _, task := range tasks {
+			tmpl := allTaskTemplates[task.Type][lang]
+			if _, ok := allTaskTemplates[task.Type][lang]; !ok {
+				tmpl = allTaskTemplates[task.Type][lang]
+			}
+			task.Metadata = &Metadata{
+				Title:            tmpl.getTitle(nil),
+				ShortDescription: tmpl.getShortDescription(nil),
+				LongDescription:  tmpl.getLongDescription(nil),
+			}
+		}
+	}
 
-	return userProgress.buildTasks(r), nil
+	return tasks, nil
 }
 
 //nolint:revive //.
@@ -101,21 +120,44 @@ func (p *progress) reallyCompleted(task *Task) bool {
 	return reallyCompleted
 }
 
+//nolint:funlen // .
 func (r *repository) defaultTasks() (resp []*Task) {
-	resp = make([]*Task, 0, len(&AllTypes))
-	for _, taskType := range &AllTypes {
-		var (
-			data      *Data
-			completed bool
-		)
-		switch taskType { //nolint:exhaustive // We care only about those.
-		case ClaimUsernameType:
-			completed = true // To make sure network latency doesn't affect UX.
-		case InviteFriendsType:
-			data = &Data{RequiredQuantity: r.cfg.RequiredFriendsInvited}
+	if r.cfg.TasksV2Enabled {
+		resp = make([]*Task, 0, len(r.cfg.TasksList))
+		for ix := range r.cfg.TasksList {
+			var (
+				data      *Data
+				completed bool
+			)
+			switch Type(r.cfg.TasksList[ix].Type) { //nolint:exhaustive // We care only about those.
+			case ClaimUsernameType:
+				completed = true // To make sure network latency doesn't affect UX.
+			case InviteFriendsType:
+				data = &Data{RequiredQuantity: r.cfg.RequiredFriendsInvited}
+			}
+			resp = append(resp, &Task{
+				Data:      data,
+				Type:      Type(r.cfg.TasksList[ix].Type),
+				Completed: completed,
+				Prize:     r.cfg.TasksList[ix].Prize,
+			})
 		}
-		resp = append(resp, &Task{Data: data, Type: taskType, Completed: completed})
+	} else {
+		resp = make([]*Task, 0, len(&AllTypes))
+		for _, taskType := range &AllTypes {
+			var (
+				data      *Data
+				completed bool
+			)
+			switch taskType { //nolint:exhaustive // We care only about those.
+			case ClaimUsernameType:
+				completed = true // To make sure network latency doesn't affect UX.
+			case InviteFriendsType:
+				data = &Data{RequiredQuantity: r.cfg.RequiredFriendsInvited}
+			}
+			resp = append(resp, &Task{Data: data, Type: taskType, Completed: completed})
+		}
 	}
 
-	return
+	return resp
 }

@@ -3,8 +3,12 @@
 package tasks
 
 import (
+	"bytes"
 	"context"
+	"fmt"
+	"strings"
 	"sync"
+	"text/template"
 
 	"github.com/goccy/go-json"
 	"github.com/hashicorp/go-multierror"
@@ -14,6 +18,7 @@ import (
 	appcfg "github.com/ice-blockchain/wintr/config"
 	messagebroker "github.com/ice-blockchain/wintr/connectors/message_broker"
 	storage "github.com/ice-blockchain/wintr/connectors/storage/v2"
+	"github.com/ice-blockchain/wintr/log"
 	"github.com/ice-blockchain/wintr/time"
 )
 
@@ -48,6 +53,9 @@ func StartProcessor(ctx context.Context, cancel context.CancelFunc) Processor {
 		&friendsInvitedSource{processor: prc},
 	)
 	prc.shutdown = closeAll(mbConsumer, prc.mb, prc.db)
+	if cfg.TasksV2Enabled {
+		prc.repository.loadTaskTranslationTemplates(cfg.TenantName)
+	}
 
 	return prc
 }
@@ -81,7 +89,7 @@ func (p *processor) CheckHealth(ctx context.Context) error {
 		TS *time.Time `json:"ts"`
 	}
 	now := ts{TS: time.Now()}
-	bytes, err := json.MarshalContext(ctx, now)
+	val, err := json.MarshalContext(ctx, now)
 	if err != nil {
 		return errors.Wrapf(err, "[health-check] failed to marshal %#v", now)
 	}
@@ -90,7 +98,7 @@ func (p *processor) CheckHealth(ctx context.Context) error {
 		Headers: map[string]string{"producer": "santa"},
 		Key:     p.cfg.MessageBroker.Topics[0].Name,
 		Topic:   p.cfg.MessageBroker.Topics[0].Name,
-		Value:   bytes,
+		Value:   val,
 	}, responder)
 
 	return errors.Wrapf(<-responder, "[health-check] failed to send health check message to broker")
@@ -144,4 +152,61 @@ func AreTasksCompleted(actual *users.Enum[Type], expectedSubset ...Type) bool {
 	}
 
 	return true
+}
+
+func (r *repository) loadTaskTranslationTemplates(tenantName string) {
+	const totalLanguages = 50
+	allTaskTemplates = make(map[Type]map[languageCode]*taskTemplate, len(r.cfg.TasksList))
+	for ix := range r.cfg.TasksList {
+		content, fErr := translations.ReadFile(fmt.Sprintf("translations/%v/%v.txt", strings.ToLower(tenantName), r.cfg.TasksList[ix].Type))
+		log.Panic(fErr) //nolint:revive // Wrong.
+		allTaskTemplates[Type(r.cfg.TasksList[ix].Type)] = make(map[languageCode]*taskTemplate, totalLanguages)
+		var languageData map[string]*struct {
+			Title            string `json:"title"`
+			ShortDescription string `json:"shortDescription"`
+			LongDescription  string `json:"longDescription"`
+		}
+		log.Panic(json.Unmarshal(content, &languageData))
+		for language, data := range languageData {
+			var tmpl taskTemplate
+			tmpl.ShortDescription = data.ShortDescription
+			tmpl.LongDescription = data.LongDescription
+			tmpl.Title = data.Title
+			tmpl.title = template.Must(template.New(fmt.Sprintf("task_%v_%v_title", r.cfg.TasksList[ix].Type, language)).Parse(data.Title))
+			tmpl.shortDescription = template.Must(template.New(fmt.Sprintf("task_%v_%v_short_description", r.cfg.TasksList[ix].Type, language)).Parse(data.ShortDescription)) //nolint:lll // .
+			tmpl.longDescription = template.Must(template.New(fmt.Sprintf("task_%v_%v_ling_description", r.cfg.TasksList[ix].Type, language)).Parse(data.LongDescription))    //nolint:lll // .
+
+			allTaskTemplates[Type(r.cfg.TasksList[ix].Type)][language] = &tmpl
+		}
+	}
+}
+
+func (t *taskTemplate) getTitle(data any) string {
+	if data == nil {
+		return t.Title
+	}
+	bf := new(bytes.Buffer)
+	log.Panic(errors.Wrapf(t.title.Execute(bf, data), "failed to execute title template for data:%#v", data))
+
+	return bf.String()
+}
+
+func (t *taskTemplate) getShortDescription(data any) string {
+	if data == nil {
+		return t.ShortDescription
+	}
+	bf := new(bytes.Buffer)
+	log.Panic(errors.Wrapf(t.shortDescription.Execute(bf, data), "failed to execute short description template for data:%#v", data))
+
+	return bf.String()
+}
+
+func (t *taskTemplate) getLongDescription(data any) string {
+	if data == nil {
+		return t.LongDescription
+	}
+	bf := new(bytes.Buffer)
+	log.Panic(errors.Wrapf(t.longDescription.Execute(bf, data), "failed to execute long description template for data:%#v", data))
+
+	return bf.String()
 }

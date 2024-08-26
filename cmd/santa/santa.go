@@ -66,7 +66,7 @@ func (s *service) CheckHealth(ctx context.Context) error {
 		return errors.Wrap(err, "get badges failed")
 	}
 	log.Debug("checking health...", "package", "tasks")
-	if _, err := s.tasksRepository.GetTasks(ctx, "bogus"); err != nil && !errors.Is(err, tasks.ErrRelationNotFound) {
+	if _, err := s.tasksRepository.GetTasks(ctx, "bogus", ""); err != nil && !errors.Is(err, tasks.ErrRelationNotFound) {
 		return errors.Wrap(err, "get tasks failed")
 	}
 	log.Debug("checking health...", "package", "levels-and-roles")

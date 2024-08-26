@@ -4,7 +4,27 @@ development: true
 logger:
   encoder: console
   level: info
+tasksList: &tasksList
+  - type: claim_username
+    prize: 100
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/nikename.svg
+  - type: start_mining
+    prize: 200
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/mining.svg
+  - type: upload_profile_picture
+    prize: 300
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/profile-waiting.svg
+  - type: follow_us_on_twitter
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/twitter-follow.svg
+  - type: join_telegram
+    prize: 500
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/join-telegram-waiting.svg
+  - type: invite_friends
+    prize: 600
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/invite.svg
 tasks: &tasks
+  tasksV2Enabled: false
   requiredFriendsInvited: 5
   db: &tasksDatabase
     urls:
@@ -47,6 +67,8 @@ tasks: &tasks
       - name: users-table
       - name: mining-sessions-table
       - name: friends-invited
+  tasksList: *tasksList
+  tenantName: sunwaves
 tasks_test:
   <<: *tasks
   messageBroker:
