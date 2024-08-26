@@ -263,17 +263,6 @@ func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] 
 	}
 	completedTasks := make(users.Enum[Type], 0, repo.tasksLength())
 	if repo.cfg.TasksV2Enabled { //nolint:nestif // .
-		for _, taskType := range &AllTypes {
-			if _, alreadyCompleted := alreadyCompletedTasks[taskType]; alreadyCompleted {
-				completedTasks = append(completedTasks, taskType)
-
-				continue
-			}
-			if val := p.gatherCompletedTasks(repo, taskType); val != "" {
-				completedTasks = append(completedTasks, val)
-			}
-		}
-	} else {
 		for ix := range repo.cfg.TasksList {
 			if _, alreadyCompleted := alreadyCompletedTasks[Type(repo.cfg.TasksList[ix].Type)]; alreadyCompleted {
 				completedTasks = append(completedTasks, Type(repo.cfg.TasksList[ix].Type))
@@ -281,6 +270,17 @@ func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] 
 				continue
 			}
 			if val := p.gatherCompletedTasks(repo, Type(repo.cfg.TasksList[ix].Type)); val != "" {
+				completedTasks = append(completedTasks, val)
+			}
+		}
+	} else {
+		for _, taskType := range &AllTypes {
+			if _, alreadyCompleted := alreadyCompletedTasks[taskType]; alreadyCompleted {
+				completedTasks = append(completedTasks, taskType)
+
+				continue
+			}
+			if val := p.gatherCompletedTasks(repo, taskType); val != "" {
 				completedTasks = append(completedTasks, val)
 			}
 		}
