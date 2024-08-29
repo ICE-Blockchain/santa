@@ -21,6 +21,7 @@ cmd/santa-sleigh:
   host: localhost:7443
   version: local
   defaultEndpointTimeout: 30s
+  tenant: sunwaves
   httpServer:
     port: 7443
     certPath: cmd/santa-sleigh/.testdata/localhost.crt

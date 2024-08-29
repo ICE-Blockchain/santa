@@ -23,7 +23,7 @@ type (
 
 const (
 	applicationYamlKey = "cmd/santa-sleigh"
-	swaggerRoot        = "/achievements/w"
+	swaggerRootSuffix  = "/achievements/w"
 )
 
 // Values for server.ErrorResponse#Code.
@@ -43,5 +43,6 @@ type (
 	config struct {
 		Host    string `yaml:"host"`
 		Version string `yaml:"version"`
+		Tenant  string `yaml:"tenant"`
 	}
 )
