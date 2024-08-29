@@ -61,11 +61,11 @@ func (r *repository) getProgress(ctx context.Context, userID string, tolerateOld
 	return
 }
 
-func (p *progress) buildTasks(repo *repository) []*Task { //nolint:gocognit,funlen,revive,gocyclo,cyclop // Wrong.
+func (p *progress) buildTasks(repo *repository) []*Task { //nolint:gocognit,funlen,revive // Wrong.
 	resp := repo.defaultTasks()
-	for ix, task := range resp {
+	for _, task := range resp {
 		switch task.Type { //nolint:exhaustive // Only those 2 have specific data persisted.
-		case FollowUsOnTwitterType:
+		case JoinTwitterType, FollowUsOnTwitterType:
 			if p.TwitterUserHandle != nil && *p.TwitterUserHandle != "" {
 				task.Data = &Data{
 					TwitterUserHandle: *p.TwitterUserHandle,
@@ -87,7 +87,7 @@ func (p *progress) buildTasks(repo *repository) []*Task { //nolint:gocognit,funl
 				}
 			}
 		}
-		if p.PseudoCompletedTasks != nil && !task.Completed && ix != 0 && resp[ix-1].Completed {
+		if p.PseudoCompletedTasks != nil && !task.Completed {
 			for _, pseudoCompletedTask := range *p.PseudoCompletedTasks {
 				if task.Type == pseudoCompletedTask {
 					task.Completed = true

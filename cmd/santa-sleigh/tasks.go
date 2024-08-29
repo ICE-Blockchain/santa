@@ -25,7 +25,7 @@ func (s *service) setupTasksRoutes(router *server.Router) {
 //	@Accept			json
 //	@Produce		json
 //	@Param			Authorization	header	string					true	"Insert your access token"	default(Bearer <Add access token here>)
-//	@Param			taskType		path	string					true	"the type of the task"		enums(claim_username,start_mining,upload_profile_picture,follow_us_on_twitter,join_telegram,invite_friends)
+//	@Param			taskType		path	string					true	"the type of the task"		enums(claim_username,start_mining,upload_profile_picture,follow_us_on_twitter,join_twitter,join_telegram,invite_friends)
 //	@Param			userId			path	string					true	"the id of the user that completed the task"
 //	@Param			language		path	string					true	"language to get tasks translation"
 //	@Param			request			body	CompleteTaskRequestBody	false	"Request params. Set it only if task completion requires additional data."
@@ -45,7 +45,8 @@ func (s *service) PseudoCompleteTask( //nolint:gocritic // False negative.
 	if req.Data.TaskType == tasks.JoinTelegramType && (req.Data.Data == nil || req.Data.Data.TelegramUserHandle == "") {
 		return nil, server.UnprocessableEntity(errors.Errorf("`data`.`telegramUserHandle` required"), invalidPropertiesErrorCode)
 	}
-	if req.Data.TaskType == tasks.FollowUsOnTwitterType && (req.Data.Data == nil || req.Data.Data.TwitterUserHandle == "") {
+	if req.Data.TaskType == tasks.FollowUsOnTwitterType && (req.Data.Data == nil || req.Data.Data.TwitterUserHandle == "") ||
+		req.Data.TaskType == tasks.JoinTwitterType && (req.Data.Data == nil || req.Data.Data.TwitterUserHandle == "") {
 		return nil, server.UnprocessableEntity(errors.Errorf("`data`.`twitterUserHandle` required"), invalidPropertiesErrorCode)
 	}
 	task := &tasks.Task{

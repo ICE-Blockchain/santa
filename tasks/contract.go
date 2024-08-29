@@ -22,6 +22,7 @@ const (
 	StartMiningType          Type = "start_mining"
 	UploadProfilePictureType Type = "upload_profile_picture"
 	FollowUsOnTwitterType    Type = "follow_us_on_twitter"
+	JoinTwitterType          Type = "join_twitter"
 	JoinTelegramType         Type = "join_telegram"
 	InviteFriendsType        Type = "invite_friends"
 )

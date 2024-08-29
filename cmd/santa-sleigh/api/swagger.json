@@ -355,6 +355,7 @@
                             "start_mining",
                             "upload_profile_picture",
                             "follow_us_on_twitter",
+                            "join_twitter",
                             "join_telegram",
                             "invite_friends"
                         ],
@@ -645,6 +646,7 @@
                 "start_mining",
                 "upload_profile_picture",
                 "follow_us_on_twitter",
+                "join_twitter",
                 "join_telegram",
                 "invite_friends"
             ],
@@ -653,6 +655,7 @@
                 "StartMiningType",
                 "UploadProfilePictureType",
                 "FollowUsOnTwitterType",
+                "JoinTwitterType",
                 "JoinTelegramType",
                 "InviteFriendsType"
             ]

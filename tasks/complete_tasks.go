@@ -129,7 +129,7 @@ func (p *progress) buildUpdatePseudoCompletedTasksSQL(task *Task, repo *reposito
 	fieldNames := append(make([]string, 0, 1+1), "pseudo_completed_tasks")
 	nextIndex := 4
 	switch task.Type { //nolint:exhaustive // We only care to treat those differently.
-	case FollowUsOnTwitterType:
+	case JoinTwitterType, FollowUsOnTwitterType:
 		params = append(params, task.Data.TwitterUserHandle)
 		fieldNames = append(fieldNames, "twitter_user_handle")
 		fieldIndexes = append(fieldIndexes, fmt.Sprintf("$%v ", nextIndex))
@@ -301,7 +301,7 @@ func (p *progress) gatherCompletedTasks(repo *repository, taskType Type) Type {
 		completed = p.MiningStarted
 	case UploadProfilePictureType:
 		completed = p.ProfilePictureSet
-	case FollowUsOnTwitterType:
+	case JoinTwitterType, FollowUsOnTwitterType:
 		if p.TwitterUserHandle != nil && *p.TwitterUserHandle != "" {
 			completed = true
 		}
