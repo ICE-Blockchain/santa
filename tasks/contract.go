@@ -63,6 +63,7 @@ type (
 		ShortDescription string `json:"shortDescription,omitempty" example:"Short description"`
 		LongDescription  string `json:"longDescription,omitempty" example:"Long description"`
 		IconURL          string `json:"iconUrl,omitempty" example:"https://app.ice.com/web/invite.svg"`
+		TaskURL          string `json:"taskUrl,omitempty" example:"https://x.com/ice_blockchain"`
 	}
 	Task struct {
 		Data      *Data     `json:"data,omitempty"`
@@ -161,6 +162,7 @@ type (
 		TasksList  []struct {
 			Type  string  `yaml:"type" mapstructure:"type"`
 			Icon  string  `yaml:"icon" mapstructure:"icon"`
+			URL   string  `yaml:"url" mapstructure:"url"`
 			Prize float64 `yaml:"prize" mapstructure:"prize"`
 		} `yaml:"tasksList" mapstructure:"tasksList"`
 		messagebroker.Config   `mapstructure:",squash"` //nolint:tagliatelle // Nope.

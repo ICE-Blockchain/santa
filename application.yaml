@@ -40,9 +40,11 @@ tasksList: &tasksList
   - type: follow_us_on_twitter
     prize: 400
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/twitter-follow.svg
+    url: https://x.com/ice_blockchain
   - type: join_telegram
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/join-telegram-waiting.svg
+    url: https://t.me/iceblockchain
   - type: invite_friends
     prize: 600
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/invite.svg

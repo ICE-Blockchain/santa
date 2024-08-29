@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: ice License 1.0
-
 basePath: /v1r
 definitions:
   badges.AchievingRange:
@@ -106,6 +104,9 @@ definitions:
         type: string
       shortDescription:
         example: Short description
+        type: string
+      taskUrl:
+        example: https://x.com/ice_blockchain
         type: string
       title:
         example: Claim username
