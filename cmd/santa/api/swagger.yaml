@@ -107,6 +107,9 @@ definitions:
       shortDescription:
         example: Short description
         type: string
+      taskUrl:
+        example: https://x.com/ice_blockchain
+        type: string
       title:
         example: Claim username
         type: string

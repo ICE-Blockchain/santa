@@ -608,6 +608,10 @@ const docTemplate = `{
                     "type": "string",
                     "example": "Short description"
                 },
+                "taskUrl": {
+                    "type": "string",
+                    "example": "https://x.com/ice_blockchain"
+                },
                 "title": {
                     "type": "string",
                     "example": "Claim username"

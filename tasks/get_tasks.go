@@ -10,7 +10,6 @@ import (
 	storage "github.com/ice-blockchain/wintr/connectors/storage/v2"
 )
 
-//nolint:funlen // .
 func (r *repository) GetTasks(ctx context.Context, userID, language string) (resp []*Task, err error) {
 	if ctx.Err() != nil {
 		return nil, errors.Wrap(ctx.Err(), "unexpected deadline")
@@ -34,11 +33,9 @@ func (r *repository) GetTasks(ctx context.Context, userID, language string) (res
 			if _, ok := allTaskTemplates[task.Type][lang]; !ok {
 				tmpl = allTaskTemplates[task.Type][lang]
 			}
-			task.Metadata = &Metadata{
-				Title:            tmpl.getTitle(nil),
-				ShortDescription: tmpl.getShortDescription(nil),
-				LongDescription:  tmpl.getLongDescription(nil),
-			}
+			task.Metadata.Title = tmpl.getTitle(nil)
+			task.Metadata.ShortDescription = tmpl.getShortDescription(nil)
+			task.Metadata.LongDescription = tmpl.getLongDescription(nil)
 		}
 	}
 
@@ -135,12 +132,19 @@ func (r *repository) defaultTasks() (resp []*Task) {
 			case InviteFriendsType:
 				data = &Data{RequiredQuantity: r.cfg.RequiredFriendsInvited}
 			}
-			resp = append(resp, &Task{
+			task := &Task{
 				Data:      data,
 				Type:      Type(r.cfg.TasksList[ix].Type),
 				Completed: completed,
 				Prize:     r.cfg.TasksList[ix].Prize,
-			})
+			}
+			task.Metadata = &Metadata{
+				IconURL: r.cfg.TasksList[ix].Icon,
+			}
+			if r.cfg.TasksList[ix].URL != "" {
+				task.Metadata.TaskURL = r.cfg.TasksList[ix].URL
+			}
+			resp = append(resp, task)
 		}
 	} else {
 		resp = make([]*Task, 0, len(&AllTypes))
