@@ -1,0 +1,7 @@
+{
+   "en":{
+      "title":"Invite 5 friends",
+      "shortDescription":"Create your team and increase your earnings.",
+      "longDescription":"Create your team and increase your earnings."
+   }
+}

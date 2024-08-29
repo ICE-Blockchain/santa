@@ -5,7 +5,7 @@ go 1.23
 require (
 	github.com/goccy/go-json v0.10.3
 	github.com/hashicorp/go-multierror v1.1.1
-	github.com/ice-blockchain/eskimo v1.400.0
+	github.com/ice-blockchain/eskimo v1.401.0
 	github.com/ice-blockchain/wintr v1.150.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.9.0

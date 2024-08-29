@@ -362,6 +362,7 @@ const docTemplate = `{
                             "start_mining",
                             "upload_profile_picture",
                             "follow_us_on_twitter",
+                            "join_twitter",
                             "join_telegram",
                             "invite_friends"
                         ],
@@ -652,6 +653,7 @@ const docTemplate = `{
                 "start_mining",
                 "upload_profile_picture",
                 "follow_us_on_twitter",
+                "join_twitter",
                 "join_telegram",
                 "invite_friends"
             ],
@@ -660,6 +662,7 @@ const docTemplate = `{
                 "StartMiningType",
                 "UploadProfilePictureType",
                 "FollowUsOnTwitterType",
+                "JoinTwitterType",
                 "JoinTelegramType",
                 "InviteFriendsType"
             ]

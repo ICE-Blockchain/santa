@@ -13,14 +13,14 @@ tasksList: &tasksList
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/mining.svg
   - type: upload_profile_picture
     prize: 300
-    icon: https://app.sunwavestoken.com/web/images/Components/Overview/profile-waiting.svg
-  - type: follow_us_on_twitter
+    icon: https://ice-staging.b-cdn.net/sunwaves/assets/profile-picture.svg
+  - type: join_twitter
     prize: 400
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/twitter-follow.svg
     url: https://x.com/ice_blockchain
   - type: join_telegram
     prize: 500
-    icon: https://app.sunwavestoken.com/web/images/Components/Overview/join-telegram-waiting.svg
+    icon: https://ice-staging.b-cdn.net/sunwaves/assets/join-telegram.svg
     url: https://t.me/iceblockchain
   - type: invite_friends
     prize: 600

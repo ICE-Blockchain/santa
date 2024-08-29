@@ -15,7 +15,7 @@ type (
 	CompleteTaskRequestBody struct {
 		Data     *tasks.Data `json:"data,omitempty"`
 		UserID   string      `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" swaggerignore:"true" required:"true"`
-		TaskType tasks.Type  `uri:"taskType" example:"start_mining" swaggerignore:"true" required:"true" enums:"claim_username,start_mining,upload_profile_picture,follow_us_on_twitter,join_telegram,invite_friends"` //nolint:lll // .
+		TaskType tasks.Type  `uri:"taskType" example:"start_mining" swaggerignore:"true" required:"true" enums:"claim_username,start_mining,upload_profile_picture,follow_us_on_twitter,join_twitter,join_telegram,invite_friends"` //nolint:lll // .
 	}
 )
 
