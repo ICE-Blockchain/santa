@@ -28,8 +28,9 @@ const (
 )
 
 var (
-	ErrRelationNotFound = storage.ErrRelationNotFound
-	ErrRaceCondition    = errors.New("race condition")
+	ErrRelationNotFound        = storage.ErrRelationNotFound
+	ErrRaceCondition           = errors.New("race condition")
+	ErrInvalidSocialProperties = errors.New("wrong social handle")
 
 	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
 	AllTypes = [6]Type{
