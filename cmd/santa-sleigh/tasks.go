@@ -42,13 +42,6 @@ func (s *service) PseudoCompleteTask( //nolint:gocritic // False negative.
 	ctx context.Context,
 	req *server.Request[CompleteTaskRequestBody, any],
 ) (*server.Response[any], *server.Response[server.ErrorResponse]) {
-	if req.Data.TaskType == tasks.JoinTelegramType && (req.Data.Data == nil || req.Data.Data.TelegramUserHandle == "") {
-		return nil, server.UnprocessableEntity(errors.Errorf("`data`.`telegramUserHandle` required"), invalidPropertiesErrorCode)
-	}
-	if req.Data.TaskType == tasks.FollowUsOnTwitterType && (req.Data.Data == nil || req.Data.Data.TwitterUserHandle == "") ||
-		req.Data.TaskType == tasks.JoinTwitterType && (req.Data.Data == nil || req.Data.Data.TwitterUserHandle == "") {
-		return nil, server.UnprocessableEntity(errors.Errorf("`data`.`twitterUserHandle` required"), invalidPropertiesErrorCode)
-	}
 	task := &tasks.Task{
 		Data:   req.Data.Data,
 		Type:   req.Data.TaskType,
@@ -57,6 +50,8 @@ func (s *service) PseudoCompleteTask( //nolint:gocritic // False negative.
 	if err := s.tasksProcessor.PseudoCompleteTask(ctx, task); err != nil {
 		err = errors.Wrapf(err, "failed to PseudoCompleteTask for %#v, userID:%v", req.Data, req.AuthenticatedUser.UserID)
 		switch {
+		case errors.Is(err, tasks.ErrInvalidSocialProperties):
+			return nil, server.UnprocessableEntity(err, invalidPropertiesErrorCode)
 		case errors.Is(err, tasks.ErrRelationNotFound):
 			return nil, server.NotFound(err, userNotFoundErrorCode)
 		default:

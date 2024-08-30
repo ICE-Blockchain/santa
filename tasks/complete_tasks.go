@@ -79,6 +79,7 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	return nil
 }
 
+//nolint:gocognit,nestif,revive // .
 func (r *repository) validateTask(arg *Task) error {
 	if r.cfg.TasksV2Enabled {
 		for ix := range r.cfg.TasksList {
@@ -89,6 +90,13 @@ func (r *repository) validateTask(arg *Task) error {
 	} else {
 		for _, taskType := range &AllTypes {
 			if taskType == arg.Type {
+				if arg.Type == JoinTelegramType && (arg.Data == nil || arg.Data.TelegramUserHandle == "") {
+					return errors.Wrap(ErrInvalidSocialProperties, "`data`.`telegramUserHandle` required")
+				}
+				if arg.Type == FollowUsOnTwitterType && (arg.Data == nil || arg.Data.TwitterUserHandle == "") {
+					return errors.Wrap(ErrInvalidSocialProperties, "`data`.`twitterUserHandle` required")
+				}
+
 				return nil
 			}
 		}
@@ -129,14 +137,16 @@ func (p *progress) buildUpdatePseudoCompletedTasksSQL(task *Task, repo *reposito
 	fieldNames := append(make([]string, 0, 1+1), "pseudo_completed_tasks")
 	nextIndex := 4
 	switch task.Type { //nolint:exhaustive // We only care to treat those differently.
-	case JoinTwitterType, FollowUsOnTwitterType:
+	case FollowUsOnTwitterType:
 		params = append(params, task.Data.TwitterUserHandle)
 		fieldNames = append(fieldNames, "twitter_user_handle")
 		fieldIndexes = append(fieldIndexes, fmt.Sprintf("$%v ", nextIndex))
 	case JoinTelegramType:
-		params = append(params, task.Data.TelegramUserHandle)
-		fieldNames = append(fieldNames, "telegram_user_handle")
-		fieldIndexes = append(fieldIndexes, fmt.Sprintf("$%v ", nextIndex))
+		if !repo.cfg.TasksV2Enabled {
+			params = append(params, task.Data.TelegramUserHandle)
+			fieldNames = append(fieldNames, "telegram_user_handle")
+			fieldIndexes = append(fieldIndexes, fmt.Sprintf("$%v ", nextIndex))
+		}
 	}
 	sql = fmt.Sprintf(`
 			INSERT INTO task_progress(user_id, %[2]v)
@@ -301,12 +311,16 @@ func (p *progress) gatherCompletedTasks(repo *repository, taskType Type) Type {
 		completed = p.MiningStarted
 	case UploadProfilePictureType:
 		completed = p.ProfilePictureSet
-	case JoinTwitterType, FollowUsOnTwitterType:
+	case JoinTwitterType:
+		completed = p.checkPseudoTaskCompleted(taskType)
+	case FollowUsOnTwitterType:
 		if p.TwitterUserHandle != nil && *p.TwitterUserHandle != "" {
 			completed = true
 		}
 	case JoinTelegramType:
-		if p.TelegramUserHandle != nil && *p.TelegramUserHandle != "" {
+		if repo.cfg.TasksV2Enabled {
+			completed = p.checkPseudoTaskCompleted(taskType)
+		} else if p.TelegramUserHandle != nil && *p.TelegramUserHandle != "" {
 			completed = true
 		}
 	case InviteFriendsType:
@@ -319,6 +333,18 @@ func (p *progress) gatherCompletedTasks(repo *repository, taskType Type) Type {
 	}
 
 	return ""
+}
+
+func (p *progress) checkPseudoTaskCompleted(taskType Type) bool {
+	if p.PseudoCompletedTasks != nil {
+		for ix := range *p.PseudoCompletedTasks {
+			if (*p.PseudoCompletedTasks)[ix] == taskType {
+				return true
+			}
+		}
+	}
+
+	return false
 }
 
 func (r *repository) sendCompletedTaskMessage(ctx context.Context, completedTask *CompletedTask) error {
