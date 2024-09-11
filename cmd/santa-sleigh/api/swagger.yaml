@@ -265,7 +265,13 @@ definitions:
     - MiningStreak14Type
     - MiningStreak30Type
 info:
-  contact: {}
+  contact:
+    name: ice.io
+    url: https://ice.io
+  description: API that handles everything related to user's achievements and gamification
+    progress.
+  title: Achievements API
+  version: latest
 paths:
   /v1r/achievement-summaries/badges/users/{userId}:
     get:
@@ -743,4 +749,6 @@ paths:
             $ref: '#/definitions/server.ErrorResponse'
       tags:
       - Tasks
+schemes:
+- https
 swagger: "2.0"

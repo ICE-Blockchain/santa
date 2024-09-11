@@ -1,7 +1,16 @@
 {
+    "schemes": [
+        "https"
+    ],
     "swagger": "2.0",
     "info": {
-        "contact": {}
+        "description": "API that handles everything related to user's achievements and gamification progress.",
+        "title": "Achievements API",
+        "contact": {
+            "name": "ice.io",
+            "url": "https://ice.io"
+        },
+        "version": "latest"
     },
     "paths": {
         "/v1r/achievement-summaries/badges/users/{userId}": {
