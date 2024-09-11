@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Claim badge coin 10",
+      "shortDescription":"Claim badge coin 10",
+      "longDescription":"Claim badge coin 10.",
+      "errorDescription":"You didn't reach coin 10."
+   }
+}

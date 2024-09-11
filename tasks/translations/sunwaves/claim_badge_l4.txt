@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Claim badge level 4",
+      "shortDescription":"Claim badge level 4",
+      "longDescription":"Claim badge level 4.",
+      "errorDescription":"Claim badge level 4."
+   }
+}

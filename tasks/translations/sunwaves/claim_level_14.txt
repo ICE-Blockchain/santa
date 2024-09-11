@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Claim level 14",
+      "shortDescription":"Claim level 14",
+      "longDescription":"Claim level 14.",
+      "errorDescription":"You didn't reach level 14."
+   }
+}

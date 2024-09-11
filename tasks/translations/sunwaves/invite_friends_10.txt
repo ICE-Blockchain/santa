@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Invite 10 friends",
+      "shortDescription":"Invite 10 friends.",
+      "longDescription":"Invite 10 friends.",
+      "errorDescription":"Your current friends invited count:{{.CurrentFriendsInvitedCount}}, required:{{.RequiredFriendsInvitedCount}}."
+   }
+}

@@ -121,13 +121,13 @@ func (p *progress) reEvaluateAchievedBadges() *users.Enum[Type] { //nolint:funle
 		var achieved bool
 		switch GroupTypeForEachType[badgeType] {
 		case LevelGroupType:
-			achieved = uint64(p.CompletedLevels) >= Milestones[badgeType].FromInclusive
+			achieved = uint64(p.CompletedLevels) >= Milestones[badgeType].FromInclusive //nolint:gosec // .
 		case CoinGroupType:
 			if p.Balance > 0 {
-				achieved = uint64(p.Balance) >= Milestones[badgeType].FromInclusive
+				achieved = uint64(p.Balance) >= Milestones[badgeType].FromInclusive //nolint:gosec // .
 			}
 		case SocialGroupType:
-			achieved = uint64(p.FriendsInvited) >= Milestones[badgeType].FromInclusive
+			achieved = uint64(p.FriendsInvited) >= Milestones[badgeType].FromInclusive //nolint:gosec // .
 		}
 		if achieved {
 			achievedBadges = append(achievedBadges, badgeType)

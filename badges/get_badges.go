@@ -184,8 +184,8 @@ func (p *progress) buildBadgeSummaries() []*BadgeSummary { //nolint:gocognit,rev
 		resp = append(resp, &BadgeSummary{
 			Name:      AllNames[groupType][types[lastAchievedIndex]],
 			GroupType: groupType,
-			Index:     uint64(lastAchievedIndex),
-			LastIndex: uint64(len(types) - 1),
+			Index:     uint64(lastAchievedIndex), //nolint:gosec // .
+			LastIndex: uint64(len(types) - 1),    //nolint:gosec // .
 		})
 	}
 

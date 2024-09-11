@@ -263,7 +263,7 @@ func expectedBadgeSummaryFromBadgeType(lastAchievedType Type) *BadgeSummary {
 		order = CoinTypeOrder[lastAchievedType]
 	}
 
-	return expectedBadgeSummary(AllNames[group][lastAchievedType], group, uint64(order), uint64(len(AllGroups[group])-1))
+	return expectedBadgeSummary(AllNames[group][lastAchievedType], group, uint64(order), uint64(len(AllGroups[group])-1)) //nolint:gosec // .
 }
 
 //nolint:funlen // .

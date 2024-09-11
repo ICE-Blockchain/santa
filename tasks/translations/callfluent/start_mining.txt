@@ -2,6 +2,7 @@
    "en":{
       "title":"Start mining",
       "shortDescription":"Your first check-in session.",
-      "longDescription":"Your first check-in session."
+      "longDescription":"Your first check-in session.",
+      "errorDescription":"You didn't start your first mining session."
    }
 }

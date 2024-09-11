@@ -21,7 +21,6 @@ cmd/santa-sleigh:
   host: localhost:7443
   version: local
   defaultEndpointTimeout: 30s
-  tenant: sunwaves
   httpServer:
     port: 7443
     certPath: cmd/santa-sleigh/.testdata/localhost.crt
@@ -29,26 +28,182 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
-  - type: claim_username
-    prize: 100
-    icon: https://app.sunwavestoken.com/web/images/Components/Overview/nikename.svg
-  - type: start_mining
-    prize: 200
-    icon: https://app.sunwavestoken.com/web/images/Components/Overview/mining.svg
-  - type: upload_profile_picture
-    prize: 300
-    icon: https://ice-staging.b-cdn.net/sunwaves/assets/profile-picture.svg
-  - type: join_twitter
-    prize: 400
-    icon: https://app.sunwavestoken.com/web/images/Components/Overview/twitter-follow.svg
-    url: https://x.com/ice_blockchain
   - type: join_telegram
     prize: 500
     icon: https://ice-staging.b-cdn.net/sunwaves/assets/join-telegram.svg
     url: https://t.me/iceblockchain
-  - type: invite_friends
-    prize: 600
-    icon: https://app.sunwavestoken.com/web/images/Components/Overview/invite.svg
+  - type: join_twitter
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+    url: https://x.com/ice_blockchain
+  - type: join_youtube
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+    url: https://www.youtube.com/@ice.blockchain
+  - type: watch_video_with_code_confirmation_1
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+    url: https://www.youtube.com/@ice.blockchain
+    confirmationCode: bogus
+  - type: invite_friends_5
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: invite_friends_10
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c1
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c2
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c3
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c4
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c5
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c6
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c7
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c8
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c9
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_c10
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_l1
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_l2
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_l3
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_l4
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_l5
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_l6
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s1
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s2
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s3
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s4
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s5
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s6
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s7
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s8
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s9
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_badge_s10
+    prize: 400  
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_1
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_2
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_3
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_4
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_5
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_6
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_7
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_8
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_9
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_10
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_11
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_12
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_13
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_14
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_15
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_16
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_17
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_18
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_19
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_20
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: claim_level_21
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: mining_streak_7
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: mining_streak_14
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: mining_streak_30
+    prize: 400
+    icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
+  - type: upload_profile_picture
+    prize: 300
+    icon: https://ice-staging.b-cdn.net/sunwaves/assets/profile-picture.svg
 friends-invited: &friends-invited
   wintr/connectors/storage/v2:
     runDDL: true

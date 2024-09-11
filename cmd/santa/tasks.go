@@ -26,6 +26,7 @@ func (s *service) setupTasksRoutes(router *server.Router) {
 //	@Produce		json
 //	@Param			Authorization	header		string	true	"Insert your access token"	default(Bearer <Add access token here>)
 //	@Param			userId			path		string	true	"the id of the user you need progress for"
+//	@Param			status			query		string	false	"pending/completed status filter" enums(pending,completed)
 //	@Success		200				{array}		tasks.Task
 //	@Failure		400				{object}	server.ErrorResponse	"if validations fail"
 //	@Failure		401				{object}	server.ErrorResponse	"if not authorized"
@@ -41,7 +42,7 @@ func (s *service) GetTasks( //nolint:gocritic // False negative.
 	if req.Data.UserID != req.AuthenticatedUser.UserID {
 		return nil, server.Forbidden(errors.Errorf("not allowed. %v != %v", req.Data.UserID, req.AuthenticatedUser.UserID))
 	}
-	resp, err := s.tasksRepository.GetTasks(ctx, req.Data.UserID, "")
+	resp, err := s.tasksRepository.GetTasks(ctx, req.Data.UserID, "", req.Data.Status)
 	if err != nil {
 		err = errors.Wrapf(err, "failed to GetTasks for data:%#v", req.Data)
 

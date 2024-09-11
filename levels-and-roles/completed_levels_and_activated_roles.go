@@ -99,7 +99,7 @@ func (s *completedTasksSource) upsertProgress(ctx context.Context, completedTask
 	pr, err := s.getProgress(ctx, userID, true)
 	if (pr != nil && pr.CompletedLevels != nil && (len(*pr.CompletedLevels) == len(&AllLevelTypes))) ||
 		err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
-		(pr != nil && (pr.CompletedTasks == uint64(s.tasksLength()) ||
+		(pr != nil && (pr.CompletedTasks == uint64(s.tasksLength()) || //nolint:gosec // .
 			AreLevelsCompleted(pr.CompletedLevels, Level6Type, Level7Type, Level8Type, Level9Type, Level10Type, Level11Type))) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}

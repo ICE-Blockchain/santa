@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Follow us on Youtube",
+      "shortDescription":"Let's keep in touch, follow us on Youtube.",
+      "longDescription":"Let's keep in touch, follow us on Youtube.",
+      "errorDescription":"You didn't join Youtube."
+   }
+}
