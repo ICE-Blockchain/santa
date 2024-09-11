@@ -25,12 +25,77 @@ const (
 	JoinTwitterType          Type = "join_twitter"
 	JoinTelegramType         Type = "join_telegram"
 	InviteFriendsType        Type = "invite_friends"
+
+	JoinYoutubeType                     Type = "join_youtube"
+	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
+	InviteFriends5Type                  Type = "invite_friends_5"
+	InviteFriends10Type                 Type = "invite_friends_10"
+
+	ClaimLevelBadge1Type Type = "claim_badge_l1"
+	ClaimLevelBadge2Type Type = "claim_badge_l2"
+	ClaimLevelBadge3Type Type = "claim_badge_l3"
+	ClaimLevelBadge4Type Type = "claim_badge_l4"
+	ClaimLevelBadge5Type Type = "claim_badge_l5"
+	ClaimLevelBadge6Type Type = "claim_badge_l6"
+
+	ClaimCoinBadge1Type  Type = "claim_badge_c1"
+	ClaimCoinBadge2Type  Type = "claim_badge_c2"
+	ClaimCoinBadge3Type  Type = "claim_badge_c3"
+	ClaimCoinBadge4Type  Type = "claim_badge_c4"
+	ClaimCoinBadge5Type  Type = "claim_badge_c5"
+	ClaimCoinBadge6Type  Type = "claim_badge_c6"
+	ClaimCoinBadge7Type  Type = "claim_badge_c7"
+	ClaimCoinBadge8Type  Type = "claim_badge_c8"
+	ClaimCoinBadge9Type  Type = "claim_badge_c9"
+	ClaimCoinBadge10Type Type = "claim_badge_c10"
+
+	ClaimSocialBadge1Type  Type = "claim_badge_s1"
+	ClaimSocialBadge2Type  Type = "claim_badge_s2"
+	ClaimSocialBadge3Type  Type = "claim_badge_s3"
+	ClaimSocialBadge4Type  Type = "claim_badge_s4"
+	ClaimSocialBadge5Type  Type = "claim_badge_s5"
+	ClaimSocialBadge6Type  Type = "claim_badge_s6"
+	ClaimSocialBadge7Type  Type = "claim_badge_s7"
+	ClaimSocialBadge8Type  Type = "claim_badge_s8"
+	ClaimSocialBadge9Type  Type = "claim_badge_s9"
+	ClaimSocialBadge10Type Type = "claim_badge_s10"
+
+	ClaimLevel1Type    Type = "claim_level_1"
+	ClaimLevel2Type    Type = "claim_level_2"
+	ClaimLevel3Type    Type = "claim_level_3"
+	ClaimLevel4Type    Type = "claim_level_4"
+	ClaimLevel5Type    Type = "claim_level_5"
+	ClaimLevel6Type    Type = "claim_level_6"
+	ClaimLevel7Type    Type = "claim_level_7"
+	ClaimLevel8Type    Type = "claim_level_8"
+	ClaimLevel9Type    Type = "claim_level_9"
+	ClaimLevel10Type   Type = "claim_level_10"
+	ClaimLevel11Type   Type = "claim_level_11"
+	ClaimLevel12Type   Type = "claim_level_12"
+	ClaimLevel13Type   Type = "claim_level_13"
+	ClaimLevel14Type   Type = "claim_level_14"
+	ClaimLevel15Type   Type = "claim_level_15"
+	ClaimLevel16Type   Type = "claim_level_16"
+	ClaimLevel17Type   Type = "claim_level_17"
+	ClaimLevel18Type   Type = "claim_level_18"
+	ClaimLevel19Type   Type = "claim_level_19"
+	ClaimLevel20Type   Type = "claim_level_20"
+	ClaimLevel21Type   Type = "claim_level_21"
+	MiningStreak7Type  Type = "mining_streak_7"
+	MiningStreak14Type Type = "mining_streak_14"
+	MiningStreak30Type Type = "mining_streak_30"
+
+	TaskStatusCompleted TaskStatus = "completed"
+	TaskStatusPending   TaskStatus = "pending"
 )
 
 var (
-	ErrRelationNotFound        = storage.ErrRelationNotFound
-	ErrRaceCondition           = errors.New("race condition")
-	ErrInvalidSocialProperties = errors.New("wrong social handle")
+	ErrRelationNotFound          = storage.ErrRelationNotFound
+	ErrRaceCondition             = errors.New("race condition")
+	ErrInvalidSocialProperties   = errors.New("wrong social handle")
+	ErrWrongRequestedTasksStatus = errors.New("wrong requested tasks status")
+	ErrNotFound                  = errors.New("not found")
+	ErrNotSupported              = errors.New("not supported")
 
 	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
 	AllTypes = [6]Type{
@@ -53,8 +118,9 @@ var (
 )
 
 type (
-	Type string
-	Data struct {
+	Type       string
+	TaskStatus string
+	Data       struct {
 		TwitterUserHandle  string `json:"twitterUserHandle,omitempty" example:"jdoe2"`
 		TelegramUserHandle string `json:"telegramUserHandle,omitempty" example:"jdoe1"`
 		VerificationCode   string `json:"verificationCode,omitempty" example:"ABC"`
@@ -64,6 +130,7 @@ type (
 		Title            string `json:"title,omitempty" example:"Claim username"`
 		ShortDescription string `json:"shortDescription,omitempty" example:"Short description"`
 		LongDescription  string `json:"longDescription,omitempty" example:"Long description"`
+		ErrorDescription string `json:"errorDescription,omitempty" example:"Error description"`
 		IconURL          string `json:"iconUrl,omitempty" example:"https://app.ice.com/web/invite.svg"`
 		TaskURL          string `json:"taskUrl,omitempty" example:"https://x.com/ice_blockchain"`
 	}
@@ -82,7 +149,8 @@ type (
 		Prize          float64 `json:"prize,omitempty" example:"200"`
 	}
 	ReadRepository interface {
-		GetTasks(ctx context.Context, userID, languageCode string) ([]*Task, error)
+		GetTasks(ctx context.Context, userID, languageCode string, requestedStatus TaskStatus) ([]*Task, error)
+		GetTask(ctx context.Context, userID, language string, taskType Type) (resp *Task, err error)
 	}
 	WriteRepository interface {
 		PseudoCompleteTask(ctx context.Context, task *Task) error
@@ -121,21 +189,25 @@ var (
 type (
 	languageCode = string
 	progress     struct {
-		CompletedTasks       *users.Enum[Type] `json:"completedTasks,omitempty" example:"claim_username,start_mining"`
-		PseudoCompletedTasks *users.Enum[Type] `json:"pseudoCompletedTasks,omitempty" example:"claim_username,start_mining"`
-		TwitterUserHandle    *string           `json:"twitterUserHandle,omitempty" example:"jdoe2"`
-		TelegramUserHandle   *string           `json:"telegramUserHandle,omitempty" example:"jdoe1"`
-		UserID               string            `json:"userId,omitempty" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
-		FriendsInvited       uint64            `json:"friendsInvited,omitempty" example:"3"`
-		UsernameSet          bool              `json:"usernameSet,omitempty" example:"true"`
-		ProfilePictureSet    bool              `json:"profilePictureSet,omitempty" example:"true"`
-		MiningStarted        bool              `json:"miningStarted,omitempty" example:"true"`
+		CompletedLevels      *users.Enum[string] `json:"completedLevels,omitempty" example:"1,2"`
+		AchievedBadges       *users.Enum[string] `json:"achievedBadges,omitempty" example:"c1,l1,l2,c2"`
+		CompletedTasks       *users.Enum[Type]   `json:"completedTasks,omitempty" example:"claim_username,start_mining"`
+		PseudoCompletedTasks *users.Enum[Type]   `json:"pseudoCompletedTasks,omitempty" example:"claim_username,start_mining"`
+		TwitterUserHandle    *string             `json:"twitterUserHandle,omitempty" example:"jdoe2"`
+		TelegramUserHandle   *string             `json:"telegramUserHandle,omitempty" example:"jdoe1"`
+		UserID               string              `json:"userId,omitempty" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
+		FriendsInvited       uint64              `json:"friendsInvited,omitempty" example:"3"`
+		MiningStreak         uint64              `json:"miningStreak,omitempty" example:"3"`
+		UsernameSet          bool                `json:"usernameSet,omitempty" example:"true"`
+		ProfilePictureSet    bool                `json:"profilePictureSet,omitempty" example:"true"`
+		MiningStarted        bool                `json:"miningStarted,omitempty" example:"true"`
 	}
 	taskTemplate struct {
-		title, shortDescription, longDescription *template.Template
-		Title                                    string `json:"title"`            //nolint:revive // That's intended.
-		ShortDescription                         string `json:"shortDescription"` //nolint:revive // That's intended.
-		LongDescription                          string `json:"longDescription"`  //nolint:revive // That's intended.
+		title, shortDescription, longDescription, errorDescription *template.Template
+		Title                                                      string `json:"title"`            //nolint:revive // That's intended.
+		ShortDescription                                           string `json:"shortDescription"` //nolint:revive // That's intended.
+		LongDescription                                            string `json:"longDescription"`  //nolint:revive // That's intended.
+		ErrorDescription                                           string `json:"errorDescription"` //nolint:revive // That's intended.
 	}
 	tryCompleteTasksCommandSource struct {
 		*processor
@@ -162,10 +234,11 @@ type (
 	config struct {
 		TenantName string `yaml:"tenantName" mapstructure:"tenantName"`
 		TasksList  []struct {
-			Type  string  `yaml:"type" mapstructure:"type"`
-			Icon  string  `yaml:"icon" mapstructure:"icon"`
-			URL   string  `yaml:"url" mapstructure:"url"`
-			Prize float64 `yaml:"prize" mapstructure:"prize"`
+			Type             string  `yaml:"type" mapstructure:"type"`
+			Icon             string  `yaml:"icon" mapstructure:"icon"`
+			URL              string  `yaml:"url" mapstructure:"url"`
+			ConfirmationCode string  `yaml:"confirmationCode" mapstructure:"confirmationCode"`
+			Prize            float64 `yaml:"prize" mapstructure:"prize"`
 		} `yaml:"tasksList" mapstructure:"tasksList"`
 		messagebroker.Config   `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredFriendsInvited uint64                   `yaml:"requiredFriendsInvited"`

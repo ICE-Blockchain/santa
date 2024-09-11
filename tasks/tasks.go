@@ -165,16 +165,19 @@ func (r *repository) loadTaskTranslationTemplates(tenantName string) {
 			Title            string `json:"title"`
 			ShortDescription string `json:"shortDescription"`
 			LongDescription  string `json:"longDescription"`
+			ErrorDescription string `json:"errorDescription"`
 		}
 		log.Panic(json.Unmarshal(content, &languageData))
 		for language, data := range languageData {
 			var tmpl taskTemplate
 			tmpl.ShortDescription = data.ShortDescription
 			tmpl.LongDescription = data.LongDescription
+			tmpl.ErrorDescription = data.ErrorDescription
 			tmpl.Title = data.Title
 			tmpl.title = template.Must(template.New(fmt.Sprintf("task_%v_%v_title", r.cfg.TasksList[ix].Type, language)).Parse(data.Title))
 			tmpl.shortDescription = template.Must(template.New(fmt.Sprintf("task_%v_%v_short_description", r.cfg.TasksList[ix].Type, language)).Parse(data.ShortDescription)) //nolint:lll // .
-			tmpl.longDescription = template.Must(template.New(fmt.Sprintf("task_%v_%v_ling_description", r.cfg.TasksList[ix].Type, language)).Parse(data.LongDescription))    //nolint:lll // .
+			tmpl.longDescription = template.Must(template.New(fmt.Sprintf("task_%v_%v_long_description", r.cfg.TasksList[ix].Type, language)).Parse(data.LongDescription))    //nolint:lll // .
+			tmpl.errorDescription = template.Must(template.New(fmt.Sprintf("task_%v_%v_error_description", r.cfg.TasksList[ix].Type, language)).Parse(data.ErrorDescription)) //nolint:lll // .
 
 			allTaskTemplates[Type(r.cfg.TasksList[ix].Type)][language] = &tmpl
 		}
@@ -207,6 +210,16 @@ func (t *taskTemplate) getLongDescription(data any) string {
 	}
 	bf := new(bytes.Buffer)
 	log.Panic(errors.Wrapf(t.longDescription.Execute(bf, data), "failed to execute long description template for data:%#v", data))
+
+	return bf.String()
+}
+
+func (t *taskTemplate) getErrorDescription(data any) string {
+	if data == nil {
+		return t.ErrorDescription
+	}
+	bf := new(bytes.Buffer)
+	log.Panic(errors.Wrapf(t.errorDescription.Execute(bf, data), "failed to execute error description template for data:%#v", data))
 
 	return bf.String()
 }

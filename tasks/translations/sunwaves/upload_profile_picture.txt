@@ -2,6 +2,7 @@
    "en":{
       "title":"Upload profile picture",
       "shortDescription":"Upload your profile image.",
-      "longDescription":"Upload your profile image."
+      "longDescription":"Upload your profile image.",
+      "errorDescription":"You didn't upload profile picture."
    }
 }

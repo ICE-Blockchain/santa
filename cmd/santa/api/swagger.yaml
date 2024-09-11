@@ -98,6 +98,9 @@ definitions:
     type: object
   tasks.Metadata:
     properties:
+      errorDescription:
+        example: Error description
+        type: string
       iconUrl:
         example: https://app.ice.com/web/invite.svg
         type: string
@@ -140,6 +143,60 @@ definitions:
     - join_twitter
     - join_telegram
     - invite_friends
+    - join_youtube
+    - watch_video_with_code_confirmation_1
+    - invite_friends_5
+    - invite_friends_10
+    - claim_badge_l1
+    - claim_badge_l2
+    - claim_badge_l3
+    - claim_badge_l4
+    - claim_badge_l5
+    - claim_badge_l6
+    - claim_badge_c1
+    - claim_badge_c2
+    - claim_badge_c3
+    - claim_badge_c4
+    - claim_badge_c5
+    - claim_badge_c6
+    - claim_badge_c7
+    - claim_badge_c8
+    - claim_badge_c9
+    - claim_badge_c10
+    - claim_badge_s1
+    - claim_badge_s2
+    - claim_badge_s3
+    - claim_badge_s4
+    - claim_badge_s5
+    - claim_badge_s6
+    - claim_badge_s7
+    - claim_badge_s8
+    - claim_badge_s9
+    - claim_badge_s10
+    - claim_level_1
+    - claim_level_2
+    - claim_level_3
+    - claim_level_4
+    - claim_level_5
+    - claim_level_6
+    - claim_level_7
+    - claim_level_8
+    - claim_level_9
+    - claim_level_10
+    - claim_level_11
+    - claim_level_12
+    - claim_level_13
+    - claim_level_14
+    - claim_level_15
+    - claim_level_16
+    - claim_level_17
+    - claim_level_18
+    - claim_level_19
+    - claim_level_20
+    - claim_level_21
+    - mining_streak_7
+    - mining_streak_14
+    - mining_streak_30
     type: string
     x-enum-varnames:
     - ClaimUsernameType
@@ -149,6 +206,60 @@ definitions:
     - JoinTwitterType
     - JoinTelegramType
     - InviteFriendsType
+    - JoinYoutubeType
+    - WatchVideoWithCodeConfirmation1Type
+    - InviteFriends5Type
+    - InviteFriends10Type
+    - ClaimLevelBadge1Type
+    - ClaimLevelBadge2Type
+    - ClaimLevelBadge3Type
+    - ClaimLevelBadge4Type
+    - ClaimLevelBadge5Type
+    - ClaimLevelBadge6Type
+    - ClaimCoinBadge1Type
+    - ClaimCoinBadge2Type
+    - ClaimCoinBadge3Type
+    - ClaimCoinBadge4Type
+    - ClaimCoinBadge5Type
+    - ClaimCoinBadge6Type
+    - ClaimCoinBadge7Type
+    - ClaimCoinBadge8Type
+    - ClaimCoinBadge9Type
+    - ClaimCoinBadge10Type
+    - ClaimSocialBadge1Type
+    - ClaimSocialBadge2Type
+    - ClaimSocialBadge3Type
+    - ClaimSocialBadge4Type
+    - ClaimSocialBadge5Type
+    - ClaimSocialBadge6Type
+    - ClaimSocialBadge7Type
+    - ClaimSocialBadge8Type
+    - ClaimSocialBadge9Type
+    - ClaimSocialBadge10Type
+    - ClaimLevel1Type
+    - ClaimLevel2Type
+    - ClaimLevel3Type
+    - ClaimLevel4Type
+    - ClaimLevel5Type
+    - ClaimLevel6Type
+    - ClaimLevel7Type
+    - ClaimLevel8Type
+    - ClaimLevel9Type
+    - ClaimLevel10Type
+    - ClaimLevel11Type
+    - ClaimLevel12Type
+    - ClaimLevel13Type
+    - ClaimLevel14Type
+    - ClaimLevel15Type
+    - ClaimLevel16Type
+    - ClaimLevel17Type
+    - ClaimLevel18Type
+    - ClaimLevel19Type
+    - ClaimLevel20Type
+    - ClaimLevel21Type
+    - MiningStreak7Type
+    - MiningStreak14Type
+    - MiningStreak30Type
 info:
   contact:
     name: ice.io
@@ -335,6 +446,13 @@ paths:
         in: path
         name: userId
         required: true
+        type: string
+      - description: pending/completed status filter
+        enum:
+        - pending
+        - completed
+        in: query
+        name: status
         type: string
       produces:
       - application/json

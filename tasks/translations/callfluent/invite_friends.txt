@@ -2,6 +2,7 @@
    "en":{
       "title":"Invite 5 friends",
       "shortDescription":"Create your team and increase your earnings.",
-      "longDescription":"Create your team and increase your earnings."
+      "longDescription":"Create your team and increase your earnings.",
+      "errorDescription":"Your current friends invited count:{{.CurrentFriendsInvitedCount}}, required:{{.RequiredFriendsInvitedCount}}"
    }
 }

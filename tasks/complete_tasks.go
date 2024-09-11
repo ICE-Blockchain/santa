@@ -30,6 +30,9 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	if err != nil && !errors.Is(err, ErrRelationNotFound) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", task.UserID)
 	}
+	if r.cfg.TasksV2Enabled && userProgress != nil && !userProgress.checkTaskCompleted(r, task) {
+		return nil
+	}
 	if userProgress == nil {
 		userProgress = new(progress)
 		userProgress.UserID = task.UserID
@@ -77,6 +80,52 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	}
 
 	return nil
+}
+
+//nolint:funlen // .
+func (p *progress) checkTaskCompleted(repo *repository, task *Task) bool {
+	var completed bool
+	switch task.Type { //nolint:exhaustive // Handling only v2 tasks here.
+	case WatchVideoWithCodeConfirmation1Type:
+		for ix := range repo.cfg.TasksList {
+			if Type(repo.cfg.TasksList[ix].Type) == task.Type {
+				completed = task.Data.VerificationCode == repo.cfg.TasksList[ix].ConfirmationCode
+
+				break
+			}
+		}
+	case InviteFriends5Type:
+		completed = p.FriendsInvited >= 5
+	case InviteFriends10Type:
+		completed = p.FriendsInvited >= 10
+	case ClaimCoinBadge1Type, ClaimCoinBadge2Type, ClaimCoinBadge3Type, ClaimCoinBadge4Type, ClaimCoinBadge5Type, ClaimCoinBadge6Type,
+		ClaimCoinBadge7Type, ClaimCoinBadge8Type, ClaimCoinBadge9Type, ClaimCoinBadge10Type:
+		parts := strings.Split(string(task.Type), "_")
+		completed = p.isBadgeAchieved(parts[2])
+	case ClaimLevelBadge1Type, ClaimLevelBadge2Type, ClaimLevelBadge3Type, ClaimLevelBadge4Type, ClaimLevelBadge5Type, ClaimLevelBadge6Type:
+		parts := strings.Split(string(task.Type), "_")
+		completed = p.isBadgeAchieved(parts[2])
+	case ClaimSocialBadge1Type, ClaimSocialBadge2Type, ClaimSocialBadge3Type, ClaimSocialBadge4Type, ClaimSocialBadge5Type, ClaimSocialBadge6Type,
+		ClaimSocialBadge7Type, ClaimSocialBadge8Type, ClaimSocialBadge9Type, ClaimSocialBadge10Type:
+		parts := strings.Split(string(task.Type), "_")
+		completed = p.isBadgeAchieved(parts[2])
+	case ClaimLevel1Type, ClaimLevel2Type, ClaimLevel3Type, ClaimLevel4Type, ClaimLevel5Type, ClaimLevel6Type,
+		ClaimLevel7Type, ClaimLevel8Type, ClaimLevel9Type, ClaimLevel10Type, ClaimLevel11Type, ClaimLevel12Type,
+		ClaimLevel13Type, ClaimLevel14Type, ClaimLevel15Type, ClaimLevel16Type, ClaimLevel17Type, ClaimLevel18Type,
+		ClaimLevel19Type, ClaimLevel20Type, ClaimLevel21Type:
+		parts := strings.Split(string(task.Type), "_")
+		completed = p.isLevelCompleted(parts[2])
+	case MiningStreak7Type:
+		completed = p.MiningStreak >= 7
+	case MiningStreak14Type:
+		completed = p.MiningStreak >= 14
+	case MiningStreak30Type:
+		completed = p.MiningStreak >= 30
+	default:
+		completed = true
+	}
+
+	return completed
 }
 
 //nolint:gocognit,nestif,revive // .
@@ -304,7 +353,7 @@ func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] 
 
 func (p *progress) gatherCompletedTasks(repo *repository, taskType Type) Type {
 	var completed bool
-	switch taskType {
+	switch taskType { //nolint:exhaustive // Handling v1 tasks mostly, v2 are go through pseudo tasks.
 	case ClaimUsernameType:
 		completed = p.UsernameSet
 	case StartMiningType:
@@ -314,9 +363,7 @@ func (p *progress) gatherCompletedTasks(repo *repository, taskType Type) Type {
 	case JoinTwitterType:
 		completed = p.checkPseudoTaskCompleted(taskType)
 	case FollowUsOnTwitterType:
-		if p.TwitterUserHandle != nil && *p.TwitterUserHandle != "" {
-			completed = true
-		}
+		completed = p.TwitterUserHandle != nil && *p.TwitterUserHandle != ""
 	case JoinTelegramType:
 		if repo.cfg.TasksV2Enabled {
 			completed = p.checkPseudoTaskCompleted(taskType)
@@ -324,15 +371,39 @@ func (p *progress) gatherCompletedTasks(repo *repository, taskType Type) Type {
 			completed = true
 		}
 	case InviteFriendsType:
-		if p.FriendsInvited >= repo.cfg.RequiredFriendsInvited {
-			completed = true
-		}
+		completed = p.FriendsInvited >= repo.cfg.RequiredFriendsInvited
+	default:
+		completed = p.checkPseudoTaskCompleted(taskType)
 	}
 	if completed {
 		return taskType
 	}
 
 	return ""
+}
+
+func (p *progress) isBadgeAchieved(badge string) bool {
+	if p.AchievedBadges != nil {
+		for _, achievedBadge := range *p.AchievedBadges {
+			if achievedBadge == badge {
+				return true
+			}
+		}
+	}
+
+	return false
+}
+
+func (p *progress) isLevelCompleted(level string) bool {
+	if p.CompletedLevels != nil {
+		for _, completedLevel := range *p.CompletedLevels {
+			if completedLevel == level {
+				return true
+			}
+		}
+	}
+
+	return false
 }
 
 func (p *progress) checkPseudoTaskCompleted(taskType Type) bool {
