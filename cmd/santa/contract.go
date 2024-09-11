@@ -13,7 +13,7 @@ import (
 type (
 	GetTasksArg struct {
 		UserID   string           `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" swaggerignore:"true" required:"true"`
-		Language string           `uri:"language" example:"en" swaggerignore:"true" required:"false"`
+		Language string           `form:"language" example:"en" swaggerignore:"true" required:"false"`
 		Status   tasks.TaskStatus `form:"status" example:"pending" swaggerignore:"true" required:"false" enums:"pending,completed"`
 	}
 	GetLevelsAndRolesSummaryArg struct {

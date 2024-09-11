@@ -23,7 +23,7 @@ type (
 	}
 	GetTaskArg struct {
 		UserID   string     `uri:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4" swaggerignore:"true" required:"true"`
-		Language string     `uri:"language" example:"en" swaggerignore:"true" required:"false"`
+		Language string     `form:"language" example:"en" swaggerignore:"true" required:"false"`
 		TaskType tasks.Type `uri:"taskType" example:"claim_username" swaggerignore:"true" required:"true" enums:"level,coin,social"`
 	}
 	GetLevelsAndRolesSummaryArg struct {
