@@ -531,7 +531,7 @@ tasks_test:
     consumingTopics: *tasksMessageBrokerTopics
     consumerGroup: santa-local-tasks-test
 levels-and-roles: &levels-and-roles
-  tasksV2Enabled: true
+  tasksV2Enabled: false
   requiredInvitedFriendsToBecomeAmbassador: 3
   roleNames:
     - Snowman
