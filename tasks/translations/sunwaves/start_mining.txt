@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Start mining",
-      "shortDescription":"Your first check-in session.",
-      "longDescription":"Your first check-in session.",
-      "errorDescription":"You didn't start your first mining session."
+      "title":"Start earning",
+      "shortDescription":"Begin your first check-in session.",
+      "longDescription":"Start your first check-in session to begin collecting SW tokens in the app.",
+      "errorDescription":"Verification failed. Please try again to begin earning SW tokens."
    }
 }

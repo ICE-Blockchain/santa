@@ -1,8 +1,8 @@
 {
    "en":{
       "title":"Invite 10 friends",
-      "shortDescription":"Invite 10 friends.",
-      "longDescription":"Invite 10 friends.",
-      "errorDescription":"Your current friends invited count:{{.CurrentFriendsInvitedCount}}, required:{{.RequiredFriendsInvitedCount}}."
+      "shortDescription":"Bring your friends and earn together.",
+      "longDescription":"Invite 10 friends to join your team and start earning SW tokens together.",
+      "errorDescription":"Verification failed. Please invite {{.RequiredFriendsInvitedCount}} friends and try again."
    }
 }

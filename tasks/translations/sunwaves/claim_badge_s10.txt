@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Claim badge social 10",
-      "shortDescription":"Claim badge social 10",
-      "longDescription":"Claim badge social 10.",
-      "errorDescription":"You didn't reach social 10."
+      "title":"Claim 10 social badge",
+      "shortDescription":"Unlock and claim your new social badge.",
+      "longDescription":"Claim your badge to showcase your progress and achievements in the app.",
+      "errorDescription":"Verification failed. Please try again to claim your badge."
    }
 }

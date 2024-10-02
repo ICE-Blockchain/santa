@@ -18,18 +18,35 @@ import (
 // Public API.
 
 const (
-	ClaimUsernameType        Type = "claim_username"
-	StartMiningType          Type = "start_mining"
+	ClaimUsernameType Type = "claim_username"
+	StartMiningType   Type = "start_mining"
+
+	// V1.
 	UploadProfilePictureType Type = "upload_profile_picture"
 	FollowUsOnTwitterType    Type = "follow_us_on_twitter"
 	JoinTwitterType          Type = "join_twitter"
 	JoinTelegramType         Type = "join_telegram"
 	InviteFriendsType        Type = "invite_friends"
 
+	// V2.
+	JoinTwitterUsType                   Type = "join_twitter"
+	JoinTelegramUsType                  Type = "join_telegram"
+	JoinRedditIONType                   Type = "join_reddit_ion"
+	JoinInstagramIONType                Type = "join_instagram_ion"
+	JoinTwitterIONType                  Type = "join_twitter_ion"
+	JoinTelegramIONType                 Type = "join_telegram_ion"
 	JoinYoutubeType                     Type = "join_youtube"
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"
 	InviteFriends10Type                 Type = "invite_friends_10"
+	InviteFriends25Type                 Type = "invite_friends_25"
+	InviteFriends50Type                 Type = "invite_friends_50"
+	InviteFriends100Type                Type = "invite_friends_100"
+	InviteFriends200Type                Type = "invite_friends_200"
+
+	SignUpCallfluentType Type = "signup_callfluent"
+	SignUpSaucesType     Type = "signup_sauces"
+	SignUpSealsendType   Type = "signup_sealsend"
 
 	ClaimLevelBadge1Type Type = "claim_badge_l1"
 	ClaimLevelBadge2Type Type = "claim_badge_l2"
@@ -87,6 +104,11 @@ const (
 
 	TaskStatusCompleted TaskStatus = "completed"
 	TaskStatusPending   TaskStatus = "pending"
+
+	TaskGroupBadgeSocial = "claim_badge_social"
+	TaskGroupBadgeCoin   = "claim_badge_coin"
+	TaskGroupBadgeLevel  = "claim_badge_level"
+	TaskGroupLevel       = "claim_level"
 )
 
 var (
@@ -96,6 +118,7 @@ var (
 	ErrWrongRequestedTasksStatus = errors.New("wrong requested tasks status")
 	ErrNotFound                  = errors.New("not found")
 	ErrNotSupported              = errors.New("not supported")
+	ErrTaskNotCompleted          = errors.New("task not completed")
 
 	//nolint:gochecknoglobals // It's just for more descriptive validation messages.
 	AllTypes = [6]Type{
@@ -138,6 +161,7 @@ type (
 		Data      *Data     `json:"data,omitempty"`
 		Metadata  *Metadata `json:"metadata,omitempty"`
 		UserID    string    `json:"userId,omitempty" swaggerignore:"true" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
+		Group     string    `json:"-" swaggerignore:"true"`
 		Type      Type      `json:"type" example:"claim_username"`
 		Prize     float64   `json:"prize" example:"200.0"`
 		Completed bool      `json:"completed" example:"false"`
@@ -153,7 +177,7 @@ type (
 		GetTask(ctx context.Context, userID, language string, taskType Type) (resp *Task, err error)
 	}
 	WriteRepository interface {
-		PseudoCompleteTask(ctx context.Context, task *Task) error
+		PseudoCompleteTask(ctx context.Context, task *Task, dryRun bool) error
 	}
 	Repository interface {
 		io.Closer
@@ -238,6 +262,7 @@ type (
 			Icon             string  `yaml:"icon" mapstructure:"icon"`
 			URL              string  `yaml:"url" mapstructure:"url"`
 			ConfirmationCode string  `yaml:"confirmationCode" mapstructure:"confirmationCode"`
+			Group            string  `yaml:"group" mapstructure:"group"`
 			Prize            float64 `yaml:"prize" mapstructure:"prize"`
 		} `yaml:"tasksList" mapstructure:"tasksList"`
 		messagebroker.Config   `mapstructure:",squash"` //nolint:tagliatelle // Nope.

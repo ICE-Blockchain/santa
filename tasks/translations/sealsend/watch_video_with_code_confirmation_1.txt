@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Watch video on Youtube",
-      "shortDescription":"Watch video on Youtube.",
-      "longDescription":"Watch video on Youtube.",
-      "errorDescription":"You haven't watched Youtube video."
+      "title":"Watch our video",
+      "shortDescription":"Check out our latest video content.",
+      "longDescription":"Watch the YouTube video and enter the confirmation code mentioned in it.",
+      "errorDescription":"Code verification failed. Please watch the video and enter the correct code."
    }
 }

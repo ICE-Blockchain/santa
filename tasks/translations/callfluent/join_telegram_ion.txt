@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Join ION Telegram channel",
+      "shortDescription":"Be part of ION growing community.",
+      "longDescription":"Join ION Telegram channel to receive important updates and community news.",
+      "errorDescription":"Verification failed. Please check if you joined the channel and try again."
+   }
+}

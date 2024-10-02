@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Follow us on Youtube",
-      "shortDescription":"Let's keep in touch, follow us on Youtube.",
-      "longDescription":"Let's keep in touch, follow us on Youtube.",
-      "errorDescription":"You didn't join Youtube."
+      "title":"Subscribe on YouTube",
+      "shortDescription":"Don’t miss ION latest videos and updates.",
+      "longDescription":"Subscribe to Ice Open Network’s YouTube channel for updates and exclusive content.",
+      "errorDescription":"Verification failed. Please check if you subscribed and try again."
    }
 }

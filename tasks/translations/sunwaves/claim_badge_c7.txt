@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Claim badge coin 7",
-      "shortDescription":"Claim badge coin 7",
-      "longDescription":"Claim badge coin 7.",
-      "errorDescription":"You didn't reach coin 7."
+      "title":"Claim 7 coin badge",
+      "shortDescription":"Unlock and claim your new coin badge.",
+      "longDescription":"Claim your badge to showcase your progress and achievements in the app.",
+      "errorDescription":"Verification failed. Please try again to claim your badge."
    }
 }

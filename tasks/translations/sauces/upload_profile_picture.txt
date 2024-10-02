@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Upload profile picture",
-      "shortDescription":"Upload your profile image.",
-      "longDescription":"Upload your profile image.",
-      "errorDescription":"You didn't upload profile picture."
+      "title":"Set profile picture",
+      "shortDescription":"Upload your profile picture.",
+      "longDescription":"Add a profile picture to personalize your account and make it stand out.",
+      "errorDescription":"Verification failed. Please update your profile picture and try again."
    }
 }

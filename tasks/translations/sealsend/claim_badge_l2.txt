@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Claim badge level 2",
-      "shortDescription":"Claim badge level 2",
-      "longDescription":"Claim badge level 2.",
-      "errorDescription":"You didn't reach level 2."
+      "title":"Claim 2 level badge",
+      "shortDescription":"Unlock and claim your new level badge.",
+      "longDescription":"Claim your badge to showcase your progress and achievements in the app.",
+      "errorDescription":"Verification failed. Please try again to claim your badge."
    }
 }

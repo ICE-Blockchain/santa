@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Claim level 16",
-      "shortDescription":"Claim level 16",
-      "longDescription":"Claim level 16.",
-      "errorDescription":"You didn't reach level 16."
+      "title":"Claim 16 level",
+      "shortDescription":"Unlock and claim your new level.",
+      "longDescription":"Claim your current level to display your progress and milestones in the app.",
+      "errorDescription":"Verification failed. Please try again to claim your level."
    }
 }

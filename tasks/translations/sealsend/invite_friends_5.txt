@@ -1,8 +1,8 @@
 {
    "en":{
       "title":"Invite 5 friends",
-      "shortDescription":"Invite 5 friends.",
-      "longDescription":"Invite 5 friends.",
-      "errorDescription":"You haven't invited 5 friends yet."
+      "shortDescription":"Bring your friends and earn together.",
+      "longDescription":"Invite 5 friends to join your team and start earning SEAL tokens together.",
+      "errorDescription":"Verification failed. Please invite {{.RequiredFriendsInvitedCount}} friends and try again."
    }
 }

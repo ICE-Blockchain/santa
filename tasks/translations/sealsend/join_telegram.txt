@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Join telegram",
-      "shortDescription":"Be part of our community and join now.",
-      "longDescription":"Be part of our community and join now.",
-      "errorDescription":"You didn't join to telegram."
+      "title":"Join our Telegram channel",
+      "shortDescription":"Be part of our growing community.",
+      "longDescription":"Join our Telegram channel to receive important updates and community news.",
+      "errorDescription":"Verification failed. Please check if you joined the channel and try again."
    }
 }

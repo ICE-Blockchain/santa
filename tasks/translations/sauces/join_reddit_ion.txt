@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Join ION on Reddit",
+      "shortDescription":"Be part of the ION community on Reddit.",
+      "longDescription":"Join the Ice Open Network subreddit to engage with the community and get updates.",
+      "errorDescription":"Verification failed. Please check if you joined the ION subreddit and try again."
+   }
+}

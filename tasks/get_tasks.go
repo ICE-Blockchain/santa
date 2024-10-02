@@ -4,13 +4,14 @@ package tasks
 
 import (
 	"context"
+	"strings"
 
 	"github.com/pkg/errors"
 
 	storage "github.com/ice-blockchain/wintr/connectors/storage/v2"
 )
 
-//nolint:funlen,gocognit,revive,gocognit // .
+//nolint:funlen,gocognit,revive,gocognit,gocyclo,cyclop // .
 func (r *repository) GetTasks(ctx context.Context, userID, language string, requestedStatus TaskStatus) (resp []*Task, err error) {
 	if ctx.Err() != nil {
 		return nil, errors.Wrap(ctx.Err(), "unexpected deadline")
@@ -32,6 +33,7 @@ func (r *repository) GetTasks(ctx context.Context, userID, language string, requ
 		if language == "" {
 			lang = defaultLanguage
 		}
+		taskGroups := make(map[string]*Task)
 		for _, task := range tasks {
 			if (requestedStatus == TaskStatusPending && task.Completed) ||
 				(requestedStatus == TaskStatusCompleted && !task.Completed) {
@@ -43,7 +45,22 @@ func (r *repository) GetTasks(ctx context.Context, userID, language string, requ
 			}
 			task.Metadata.Title = tmpl.getTitle(nil)
 			task.Metadata.ShortDescription = tmpl.getShortDescription(nil)
-			task.Metadata.LongDescription = tmpl.getLongDescription(nil)
+			if requestedStatus == TaskStatusPending && (task.Group != "") {
+				splitted := strings.Split(string(task.Type), "_")
+				if (task.Group == TaskGroupBadgeSocial || task.Group == TaskGroupBadgeCoin || task.Group == TaskGroupBadgeLevel) &&
+					!userProgress.isBadgeAchieved(splitted[2]) {
+					continue
+				}
+				if task.Group == TaskGroupLevel && !userProgress.isLevelCompleted(splitted[2]) {
+					continue
+				}
+				if _, ok := taskGroups[task.Group]; !ok && !task.Completed {
+					taskGroups[task.Group] = task
+					resp = append(resp, task)
+				}
+
+				continue
+			}
 
 			resp = append(resp, task)
 		}
@@ -179,6 +196,14 @@ func (r *repository) defaultTasksV2() (resp []*Task) {
 			data = &Data{RequiredQuantity: 5}
 		case InviteFriends10Type:
 			data = &Data{RequiredQuantity: 10}
+		case InviteFriends25Type:
+			data = &Data{RequiredQuantity: 25}
+		case InviteFriends50Type:
+			data = &Data{RequiredQuantity: 50}
+		case InviteFriends100Type:
+			data = &Data{RequiredQuantity: 100}
+		case InviteFriends200Type:
+			data = &Data{RequiredQuantity: 200}
 		case MiningStreak7Type:
 			data = &Data{RequiredQuantity: 7}
 		case MiningStreak14Type:
@@ -190,6 +215,7 @@ func (r *repository) defaultTasksV2() (resp []*Task) {
 			Data:      data,
 			Type:      Type(r.cfg.TasksList[ix].Type),
 			Completed: completed,
+			Group:     r.cfg.TasksList[ix].Group,
 			Prize:     r.cfg.TasksList[ix].Prize,
 		}
 		task.Metadata = &Metadata{
@@ -242,7 +268,7 @@ func (r *repository) GetTask(ctx context.Context, userID, language string, taskT
 		task.Metadata.Title = tmpl.getTitle(nil)
 		task.Metadata.ShortDescription = tmpl.getShortDescription(nil)
 		task.Metadata.LongDescription = tmpl.getLongDescription(nil)
-		task.generateErrorDescription(userProgress, tmpl)
+		task.generateErrorDescription(tmpl)
 
 		return task, nil
 	}
@@ -250,29 +276,37 @@ func (r *repository) GetTask(ctx context.Context, userID, language string, taskT
 	return nil, ErrNotFound
 }
 
-func (t *Task) generateErrorDescription(pr *progress, tmpl *taskTemplate) {
+//nolint:funlen // .
+func (t *Task) generateErrorDescription(tmpl *taskTemplate) {
 	if !t.Completed {
 		switch t.Type { //nolint:exhaustive // Handling explicitly cases that require placeholders, others go to default case.
 		case InviteFriendsType:
-			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct {
-				CurrentFriendsInvitedCount, RequiredFriendsInvitedCount uint64
-			}{
+			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct{ RequiredFriendsInvitedCount uint64 }{
 				RequiredFriendsInvitedCount: t.Data.RequiredQuantity,
-				CurrentFriendsInvitedCount:  pr.FriendsInvited,
 			})
 		case InviteFriends5Type:
-			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct {
-				CurrentFriendsInvitedCount, RequiredFriendsInvitedCount uint64
-			}{
+			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct{ RequiredFriendsInvitedCount uint64 }{
 				RequiredFriendsInvitedCount: 5,
-				CurrentFriendsInvitedCount:  pr.FriendsInvited,
 			})
 		case InviteFriends10Type:
-			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct {
-				CurrentFriendsInvitedCount, RequiredFriendsInvitedCount uint64
-			}{
+			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct{ RequiredFriendsInvitedCount uint64 }{
 				RequiredFriendsInvitedCount: 10,
-				CurrentFriendsInvitedCount:  pr.FriendsInvited,
+			})
+		case InviteFriends25Type:
+			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct{ RequiredFriendsInvitedCount uint64 }{
+				RequiredFriendsInvitedCount: 25,
+			})
+		case InviteFriends50Type:
+			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct{ RequiredFriendsInvitedCount uint64 }{
+				RequiredFriendsInvitedCount: 50,
+			})
+		case InviteFriends100Type:
+			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct{ RequiredFriendsInvitedCount uint64 }{
+				RequiredFriendsInvitedCount: 100,
+			})
+		case InviteFriends200Type:
+			t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct{ RequiredFriendsInvitedCount uint64 }{
+				RequiredFriendsInvitedCount: 200,
 			})
 		default:
 			t.Metadata.ErrorDescription = tmpl.getErrorDescription(nil)

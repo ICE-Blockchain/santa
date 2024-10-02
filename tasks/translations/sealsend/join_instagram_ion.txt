@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Follow ION on Instagram",
+      "shortDescription":"Check out ION’s exclusive content on Instagram.",
+      "longDescription":"Follow the Ice Open Network on Instagram for updates, news, and exclusive content.",
+      "errorDescription":"Verification failed. Please check if you followed ION and try again."
+   }
+}

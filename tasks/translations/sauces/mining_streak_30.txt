@@ -1,8 +1,8 @@
 {
    "en":{
-      "title":"Mining streak 30",
-      "shortDescription":"Mining streak 30.",
-      "longDescription":"Mining streak 30.",
-      "errorDescription":"You didn't reach mining streak 30 days."
+      "title":"Complete 30-Day Streak",
+      "shortDescription":"Keep your mining streak for 30 days straight.",
+      "longDescription":"Complete mining sessions for 30 consecutive days to earn a special reward.",
+      "errorDescription":"Streak verification failed. Please ensure you’ve completed 30 consecutive days."
    }
 }
