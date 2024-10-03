@@ -365,12 +365,12 @@ tasksList: &tasksList
 friends-invited: &friends-invited
   wintr/connectors/storage/v2:
     runDDL: true
-    primaryURL: postgresql://root:pass@localhost:5436/ice
+    primaryURL: postgresql://root:pass@localhost:5432/santa
     credentials:
       user: root
       password: pass
     replicaURLs:
-      - postgresql://root:pass@localhost:5436/ice
+      - postgresql://root:pass@localhost:5432/santa
   messageBroker: &friendsInvitedMessageBroker
     consumerGroup: friends-invited-testing
     createTopics: true
