@@ -336,7 +336,7 @@ tasksList: &tasksList
     requiredQuantity: 30
   - type: join_telegram_ion
     prize: 1500
-    icon: https://ice-staging.b-cdn.net/sunwaves/assets/join-telegram.svg
+    icon: https://ice-staging.b-cdn.net/task.svg
     url: https://t.me/iceblockchain
   - type: join_twitter_ion
     prize: 1500
