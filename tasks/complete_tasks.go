@@ -113,7 +113,9 @@ func (p *progress) checkTaskCompleted(repo *repository, task *Task) bool {
 	case WatchVideoWithCodeConfirmation1Type:
 		for ix := range repo.cfg.TasksList {
 			if Type(repo.cfg.TasksList[ix].Type) == task.Type {
-				completed = task.Data.VerificationCode == repo.cfg.TasksList[ix].ConfirmationCode
+				if task.Data != nil {
+					completed = task.Data.VerificationCode == repo.cfg.TasksList[ix].ConfirmationCode
+				}
 
 				break
 			}
