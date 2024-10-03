@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Invite {{.RequiredFriendsInvitedCount}} friends",
+      "shortDescription":"Bring your friends and earn together.",
+      "longDescription":"Invite {{.RequiredFriendsInvitedCount}} friends to join your team and start earning SAUCE tokens together.",
+      "errorDescription":"Verification failed. Please invite {{.RequiredFriendsInvitedCount}} friends and try again."
+   }
+}

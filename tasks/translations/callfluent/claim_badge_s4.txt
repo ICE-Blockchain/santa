@@ -1,8 +1,0 @@
-{
-   "en":{
-      "title":"Claim 4 social badge",
-      "shortDescription":"Unlock and claim your new social badge.",
-      "longDescription":"Claim your badge to showcase your progress and achievements in the app.",
-      "errorDescription":"Verification failed. Please try again to claim your badge."
-   }
-}

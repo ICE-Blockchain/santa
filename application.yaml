@@ -53,26 +53,32 @@ tasksList: &tasksList
     prize: 2500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: invite_friends
+    requiredQuantity: 5
   - type: invite_friends_10
     prize: 5000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: invite_friends
+    requiredQuantity: 10
   - type: invite_friends_25
     prize: 7500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: invite_friends
+    requiredQuantity: 25
   - type: invite_friends_50
     prize: 25000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: invite_friends
+    requiredQuantity: 50
   - type: invite_friends_100
     prize: 50000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: invite_friends
+    requiredQuantity: 100
   - type: invite_friends_200
     prize: 100000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: invite_friends
+    requiredQuantity: 200
   - type: watch_video_with_code_confirmation_1
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
@@ -82,202 +88,252 @@ tasksList: &tasksList
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 1
   - type: claim_badge_s2
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 2
   - type: claim_badge_s3
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 3
   - type: claim_badge_s4
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 4
   - type: claim_badge_s5
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 5
   - type: claim_badge_s6
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 6
   - type: claim_badge_s7
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 7
   - type: claim_badge_s8
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 8
   - type: claim_badge_s9
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 9
   - type: claim_badge_s10
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_social
+    groupIndex: 10
   - type: claim_badge_c1
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 1
   - type: claim_badge_c2
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 2
   - type: claim_badge_c3
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 3
   - type: claim_badge_c4
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 4
   - type: claim_badge_c5
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 5
   - type: claim_badge_c6
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 6
   - type: claim_badge_c7
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 7
   - type: claim_badge_c8
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 8
   - type: claim_badge_c9
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 9
   - type: claim_badge_c10
     prize: 1000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_coin
+    groupIndex: 10
   - type: claim_badge_l1
     prize: 1000  
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_level
+    groupIndex: 1
   - type: claim_badge_l2
     prize: 1000  
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_level
+    groupIndex: 2
   - type: claim_badge_l3
     prize: 1000  
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_level
+    groupIndex: 3
   - type: claim_badge_l4
     prize: 1000  
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_level
+    groupIndex: 4
   - type: claim_badge_l5
     prize: 1000  
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_level
+    groupIndex: 5
   - type: claim_badge_l6
     prize: 1000  
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_badge_level
+    groupIndex: 6
   - type: claim_level_1
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 1
   - type: claim_level_2
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 2
   - type: claim_level_3
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 3
   - type: claim_level_4
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 4
   - type: claim_level_5
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 5
   - type: claim_level_6
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 6
   - type: claim_level_7
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 7
   - type: claim_level_8
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 8
   - type: claim_level_9
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 9
   - type: claim_level_10
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 10
   - type: claim_level_11
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 11
   - type: claim_level_12
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 12
   - type: claim_level_13
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 13
   - type: claim_level_14
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 14
   - type: claim_level_15
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 15
   - type: claim_level_16
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 16
   - type: claim_level_17
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 17
   - type: claim_level_18
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 18
   - type: claim_level_19
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 19
   - type: claim_level_20
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 20
   - type: claim_level_21
     prize: 500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: claim_level
+    groupIndex: 21
   - type: mining_streak_7
     prize: 1500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: mining_streak
+    requiredQuantity: 7
   - type: mining_streak_14
     prize: 3000
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: mining_streak
+    requiredQuantity: 14
   - type: mining_streak_30
     prize: 4500
     icon: https://app.sunwavestoken.com/web/images/Components/Overview/bogus.svg
     group: mining_streak
+    requiredQuantity: 30
   - type: join_telegram_ion
     prize: 1500
     icon: https://ice-staging.b-cdn.net/sunwaves/assets/join-telegram.svg

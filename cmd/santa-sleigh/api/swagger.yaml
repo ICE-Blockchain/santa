@@ -476,14 +476,16 @@ paths:
         - claim_username
         - start_mining
         - upload_profile_picture
-        - follow_us_on_twitter
         - join_twitter
         - join_telegram
-        - invite_friends
-        - join_youtube
-        - watch_video_with_code_confirmation_1
         - invite_friends_5
         - invite_friends_10
+        - invite_friends_25
+        - invite_friends_50
+        - invite_friends_100
+        - invite_friends_200
+        - join_youtube
+        - watch_video_with_code_confirmation_1
         - claim_badge_l1
         - claim_badge_l2
         - claim_badge_l3
@@ -534,6 +536,13 @@ paths:
         - mining_streak_7
         - mining_streak_14
         - mining_streak_30
+        - join_reddit_ion
+        - join_instagram_ion
+        - join_twitter_ion
+        - join_telegram_ion
+        - signup_callfluent
+        - signup_sauces
+        - signup_sealsend
         in: path
         name: taskType
         required: true
@@ -676,8 +685,6 @@ paths:
         - invite_friends_200
         - join_youtube
         - watch_video_with_code_confirmation_1
-        - invite_friends_5
-        - invite_friends_10
         - claim_badge_l1
         - claim_badge_l2
         - claim_badge_l3

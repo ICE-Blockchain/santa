@@ -105,10 +105,12 @@ const (
 	TaskStatusCompleted TaskStatus = "completed"
 	TaskStatusPending   TaskStatus = "pending"
 
-	TaskGroupBadgeSocial = "claim_badge_social"
-	TaskGroupBadgeCoin   = "claim_badge_coin"
-	TaskGroupBadgeLevel  = "claim_badge_level"
-	TaskGroupLevel       = "claim_level"
+	TaskGroupBadgeSocial   = "claim_badge_social"
+	TaskGroupBadgeCoin     = "claim_badge_coin"
+	TaskGroupBadgeLevel    = "claim_badge_level"
+	TaskGroupLevel         = "claim_level"
+	TaskGroupInviteFriends = "invite_friends"
+	TaskGroupMiningStreak  = "mining_streak"
 )
 
 var (
@@ -158,13 +160,14 @@ type (
 		TaskURL          string `json:"taskUrl,omitempty" example:"https://x.com/ice_blockchain"`
 	}
 	Task struct {
-		Data      *Data     `json:"data,omitempty"`
-		Metadata  *Metadata `json:"metadata,omitempty"`
-		UserID    string    `json:"userId,omitempty" swaggerignore:"true" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
-		Group     string    `json:"-" swaggerignore:"true"`
-		Type      Type      `json:"type" example:"claim_username"`
-		Prize     float64   `json:"prize" example:"200.0"`
-		Completed bool      `json:"completed" example:"false"`
+		Data       *Data     `json:"data,omitempty"`
+		Metadata   *Metadata `json:"metadata,omitempty"`
+		UserID     string    `json:"userId,omitempty" swaggerignore:"true" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
+		Group      string    `json:"-" swaggerignore:"true"`
+		Type       Type      `json:"type" example:"claim_username"`
+		Prize      float64   `json:"prize" example:"200.0"`
+		GroupIndex uint64    `json:"-" swaggerignore:"true"`
+		Completed  bool      `json:"completed" example:"false"`
 	}
 	CompletedTask struct {
 		UserID         string  `json:"userId" example:"edfd8c02-75e0-4687-9ac2-1ce4723865c4"`
@@ -264,6 +267,8 @@ type (
 			ConfirmationCode string  `yaml:"confirmationCode" mapstructure:"confirmationCode"`
 			Group            string  `yaml:"group" mapstructure:"group"`
 			Prize            float64 `yaml:"prize" mapstructure:"prize"`
+			RequiredQuantity uint64  `yaml:"requiredQuantity" mapstructure:"requiredQuantity"`
+			GroupIndex       uint64  `yaml:"groupIndex" mapstructure:"groupIndex"`
 		} `yaml:"tasksList" mapstructure:"tasksList"`
 		messagebroker.Config   `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredFriendsInvited uint64                   `yaml:"requiredFriendsInvited"`

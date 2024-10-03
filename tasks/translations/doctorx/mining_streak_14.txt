@@ -1,8 +1,0 @@
-{
-   "en":{
-      "title":"Complete 14-Day Streak",
-      "shortDescription":"Keep your mining streak for 14 days straight.",
-      "longDescription":"Complete mining sessions for 14 consecutive days to earn a special reward.",
-      "errorDescription":"Streak verification failed. Please ensure you’ve completed 14 consecutive days."
-   }
-}
