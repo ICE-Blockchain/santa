@@ -1,8 +1,0 @@
-{
-   "en":{
-      "title":"Claim badge level 1",
-      "shortDescription":"Claim badge level 1",
-      "longDescription":"Claim badge level 1.",
-      "errorDescription":"You didn't reach level 1."
-   }
-}

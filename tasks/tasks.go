@@ -154,11 +154,19 @@ func AreTasksCompleted(actual *users.Enum[Type], expectedSubset ...Type) bool {
 	return true
 }
 
+//nolint:funlen // .
 func (r *repository) loadTaskTranslationTemplates(tenantName string) {
 	const totalLanguages = 50
 	allTaskTemplates = make(map[Type]map[languageCode]*taskTemplate, len(r.cfg.TasksList))
 	for ix := range r.cfg.TasksList {
-		content, fErr := translations.ReadFile(fmt.Sprintf("translations/%v/%v.txt", strings.ToLower(tenantName), r.cfg.TasksList[ix].Type))
+		var fileName string
+		switch r.cfg.TasksList[ix].Group {
+		case TaskGroupBadgeSocial, TaskGroupBadgeCoin, TaskGroupBadgeLevel, TaskGroupLevel, TaskGroupInviteFriends, TaskGroupMiningStreak:
+			fileName = r.cfg.TasksList[ix].Group
+		default:
+			fileName = r.cfg.TasksList[ix].Type
+		}
+		content, fErr := translations.ReadFile(fmt.Sprintf("translations/%v/%v.json", strings.ToLower(tenantName), fileName))
 		log.Panic(fErr) //nolint:revive // Wrong.
 		allTaskTemplates[Type(r.cfg.TasksList[ix].Type)] = make(map[languageCode]*taskTemplate, totalLanguages)
 		var languageData map[string]*struct {

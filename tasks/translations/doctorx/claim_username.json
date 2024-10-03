@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Claim your nickname",
+      "shortDescription":"Create your unique nickname.",
+      "longDescription":"Set up a unique nickname to personalize your account and start inviting friends.",
+      "errorDescription":"Verification failed. Please set your nickname and try again."
+   }
+}

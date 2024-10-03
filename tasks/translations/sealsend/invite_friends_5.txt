@@ -1,8 +1,0 @@
-{
-   "en":{
-      "title":"Invite 5 friends",
-      "shortDescription":"Invite 5 friends.",
-      "longDescription":"Invite 5 friends.",
-      "errorDescription":"You haven't invited 5 friends yet."
-   }
-}

@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Start earning",
+      "shortDescription":"Begin your first check-in session.",
+      "longDescription":"Start your first check-in session to begin collecting SW tokens in the app.",
+      "errorDescription":"Verification failed. Please try again to begin earning SW tokens."
+   }
+}

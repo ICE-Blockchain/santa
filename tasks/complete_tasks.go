@@ -19,7 +19,7 @@ import (
 	"github.com/ice-blockchain/wintr/log"
 )
 
-func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error { //nolint:funlen,revive,gocognit,gocyclo,cyclop // .
+func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task, dryRun bool) error { //nolint:funlen,revive,gocognit,gocyclo,cyclop // .
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "unexpected deadline")
 	}
@@ -30,8 +30,16 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	if err != nil && !errors.Is(err, ErrRelationNotFound) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", task.UserID)
 	}
-	if r.cfg.TasksV2Enabled && userProgress != nil && !userProgress.checkTaskCompleted(r, task) {
+	completed := userProgress.checkTaskCompleted(r, task)
+	if r.cfg.TasksV2Enabled && dryRun {
+		if !completed {
+			return errors.Wrapf(ErrTaskNotCompleted, "task is not completed for: %v", task.UserID)
+		}
+
 		return nil
+	}
+	if r.cfg.TasksV2Enabled && userProgress != nil && !completed {
+		return errors.Wrapf(ErrTaskNotCompleted, "task is not completed for: %v", task.UserID)
 	}
 	if userProgress == nil {
 		userProgress = new(progress)
@@ -54,21 +62,37 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 		return nil
 	}
 	if updatedRows, uErr := storage.Exec(ctx, r.db, sql, params...); updatedRows == 0 && uErr == nil {
-		return r.PseudoCompleteTask(ctx, task)
+		return r.PseudoCompleteTask(ctx, task, dryRun)
 	} else if uErr != nil {
-		return errors.Wrapf(err, "failed to update task_progress.pseudo_completed_tasks for params:%#v", params...)
+		return errors.Wrapf(uErr, "failed to update task_progress.pseudo_completed_tasks for params:%#v", params...)
 	}
-	if err = r.sendTryCompleteTasksCommandMessage(ctx, task.UserID); err != nil {
-		sErr := errors.Wrapf(err, "failed to sendTryCompleteTasksCommandMessage for userID:%v", task.UserID)
+	var sErr error
+	if !r.cfg.TasksV2Enabled {
+		sErr = r.sendTryCompleteTasksCommandMessage(ctx, task.UserID)
+	} else {
+		var prize float64
+		for ix := range r.cfg.TasksList {
+			if r.cfg.TasksList[ix].Type == string(task.Type) {
+				prize = r.cfg.TasksList[ix].Prize
+			}
+		}
+		sErr = r.sendCompletedTaskMessage(ctx, &CompletedTask{
+			UserID: task.UserID,
+			Type:   task.Type,
+			Prize:  prize,
+		})
+	}
+	if sErr != nil {
+		sErr = errors.Wrapf(sErr, "failed to send message for userID:%v", task.UserID)
 		pseudoCompletedTasks := params[2].(*users.Enum[Type]) //nolint:errcheck,forcetypeassert,revive // We're sure.
 		sql = `UPDATE task_progress
-			   SET pseudo_completed_tasks = $2
-			   WHERE user_id = $1
-				 AND COALESCE(pseudo_completed_tasks,ARRAY[]::TEXT[]) = COALESCE($3,ARRAY[]::TEXT[])`
+		   SET pseudo_completed_tasks = $2
+		   WHERE user_id = $1
+			 AND COALESCE(pseudo_completed_tasks,ARRAY[]::TEXT[]) = COALESCE($3,ARRAY[]::TEXT[])`
 		if updatedRows, rErr := storage.Exec(ctx, r.db, sql, task.UserID, userProgress.PseudoCompletedTasks, pseudoCompletedTasks); rErr == nil && updatedRows == 0 {
 			log.Error(errors.Wrapf(sErr, "race condition while rolling back the update request"))
 
-			return r.PseudoCompleteTask(ctx, task)
+			return r.PseudoCompleteTask(ctx, task, dryRun)
 		} else if rErr != nil {
 			return multierror.Append( //nolint:wrapcheck // Not needed.
 				sErr,
@@ -82,7 +106,7 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task) error {
 	return nil
 }
 
-//nolint:funlen // .
+//nolint:funlen,gocyclo,revive,cyclop // .
 func (p *progress) checkTaskCompleted(repo *repository, task *Task) bool {
 	var completed bool
 	switch task.Type { //nolint:exhaustive // Handling only v2 tasks here.
@@ -98,6 +122,14 @@ func (p *progress) checkTaskCompleted(repo *repository, task *Task) bool {
 		completed = p.FriendsInvited >= 5
 	case InviteFriends10Type:
 		completed = p.FriendsInvited >= 10
+	case InviteFriends25Type:
+		completed = p.FriendsInvited >= 25
+	case InviteFriends50Type:
+		completed = p.FriendsInvited >= 50
+	case InviteFriends100Type:
+		completed = p.FriendsInvited >= 100
+	case InviteFriends200Type:
+		completed = p.FriendsInvited >= 200
 	case ClaimCoinBadge1Type, ClaimCoinBadge2Type, ClaimCoinBadge3Type, ClaimCoinBadge4Type, ClaimCoinBadge5Type, ClaimCoinBadge6Type,
 		ClaimCoinBadge7Type, ClaimCoinBadge8Type, ClaimCoinBadge9Type, ClaimCoinBadge10Type:
 		parts := strings.Split(string(task.Type), "_")
@@ -269,18 +301,7 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 					}
 				}
 			}
-			if r.cfg.TasksV2Enabled {
-				for ix := range r.cfg.TasksList {
-					if completedTask == Type(r.cfg.TasksList[ix].Type) {
-						newlyCompletedTasks = append(newlyCompletedTasks, &CompletedTask{
-							UserID:         userID,
-							Type:           completedTask,
-							CompletedTasks: uint64(len(*completedTasks)),
-							Prize:          r.cfg.TasksList[ix].Prize,
-						})
-					}
-				}
-			} else {
+			if !r.cfg.TasksV2Enabled {
 				newlyCompletedTasks = append(newlyCompletedTasks, &CompletedTask{
 					UserID:         userID,
 					Type:           completedTask,
@@ -453,8 +474,11 @@ func (s *tryCompleteTasksCommandSource) Process(ctx context.Context, msg *messag
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "unexpected deadline while processing message")
 	}
+	if !s.cfg.TasksV2Enabled {
+		return errors.Wrapf(s.completeTasks(ctx, msg.Key), "failed to completeTasks for userID:%v", msg.Key)
+	}
 
-	return errors.Wrapf(s.completeTasks(ctx, msg.Key), "failed to completeTasks for userID:%v", msg.Key)
+	return nil
 }
 
 func (s *miningSessionSource) Process(ctx context.Context, msg *messagebroker.Message) error {

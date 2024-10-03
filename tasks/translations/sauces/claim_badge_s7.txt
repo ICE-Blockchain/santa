@@ -1,8 +1,0 @@
-{
-   "en":{
-      "title":"Claim badge social 7",
-      "shortDescription":"Claim badge social 7",
-      "longDescription":"Claim badge social 7.",
-      "errorDescription":"You didn't reach social 7."
-   }
-}

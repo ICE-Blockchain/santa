@@ -147,10 +147,23 @@ definitions:
     - join_twitter
     - join_telegram
     - invite_friends
+    - join_twitter
+    - join_telegram
+    - join_reddit_ion
+    - join_instagram_ion
+    - join_twitter_ion
+    - join_telegram_ion
     - join_youtube
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
+    - invite_friends_25
+    - invite_friends_50
+    - invite_friends_100
+    - invite_friends_200
+    - signup_callfluent
+    - signup_sauces
+    - signup_sealsend
     - claim_badge_l1
     - claim_badge_l2
     - claim_badge_l3
@@ -210,10 +223,23 @@ definitions:
     - JoinTwitterType
     - JoinTelegramType
     - InviteFriendsType
+    - JoinTwitterUsType
+    - JoinTelegramUsType
+    - JoinRedditIONType
+    - JoinInstagramIONType
+    - JoinTwitterIONType
+    - JoinTelegramIONType
     - JoinYoutubeType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
+    - InviteFriends25Type
+    - InviteFriends50Type
+    - InviteFriends100Type
+    - InviteFriends200Type
+    - SignUpCallfluentType
+    - SignUpSaucesType
+    - SignUpSealsendType
     - ClaimLevelBadge1Type
     - ClaimLevelBadge2Type
     - ClaimLevelBadge3Type
@@ -450,14 +476,16 @@ paths:
         - claim_username
         - start_mining
         - upload_profile_picture
-        - follow_us_on_twitter
         - join_twitter
         - join_telegram
-        - invite_friends
-        - join_youtube
-        - watch_video_with_code_confirmation_1
         - invite_friends_5
         - invite_friends_10
+        - invite_friends_25
+        - invite_friends_50
+        - invite_friends_100
+        - invite_friends_200
+        - join_youtube
+        - watch_video_with_code_confirmation_1
         - claim_badge_l1
         - claim_badge_l2
         - claim_badge_l3
@@ -508,6 +536,13 @@ paths:
         - mining_streak_7
         - mining_streak_14
         - mining_streak_30
+        - join_reddit_ion
+        - join_instagram_ion
+        - join_twitter_ion
+        - join_telegram_ion
+        - signup_callfluent
+        - signup_sauces
+        - signup_sealsend
         in: path
         name: taskType
         required: true
@@ -516,6 +551,10 @@ paths:
         in: path
         name: userId
         required: true
+        type: string
+      - description: language of translations for task description
+        in: query
+        name: language
         type: string
       produces:
       - application/json
@@ -640,10 +679,12 @@ paths:
         - invite_friends
         - invite_friends_5
         - invite_friends_10
+        - invite_friends_25
+        - invite_friends_50
+        - invite_friends_100
+        - invite_friends_200
         - join_youtube
         - watch_video_with_code_confirmation_1
-        - invite_friends_5
-        - invite_friends_10
         - claim_badge_l1
         - claim_badge_l2
         - claim_badge_l3
@@ -694,6 +735,13 @@ paths:
         - mining_streak_7
         - mining_streak_14
         - mining_streak_30
+        - join_reddit_ion
+        - join_instagram_ion
+        - join_twitter_ion
+        - join_telegram_ion
+        - signup_callfluent
+        - signup_sauces
+        - signup_sealsend
         in: path
         name: taskType
         required: true
@@ -701,11 +749,6 @@ paths:
       - description: the id of the user that completed the task
         in: path
         name: userId
-        required: true
-        type: string
-      - description: language to get tasks translation
-        in: path
-        name: language
         required: true
         type: string
       - description: Request params. Set it only if task completion requires additional

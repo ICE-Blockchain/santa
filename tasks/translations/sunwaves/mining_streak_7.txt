@@ -1,8 +1,0 @@
-{
-   "en":{
-      "title":"Mining streak 7",
-      "shortDescription":"Mining streak 7.",
-      "longDescription":"Mining streak 7.",
-      "errorDescription":"You didn't reach mining streak 7 days."
-   }
-}

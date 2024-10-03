@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Complete {{.RequiredMiningStreakNumber}}-Day Streak",
+      "shortDescription":"Keep your mining streak for {{.RequiredMiningStreakNumber}} days straight.",
+      "longDescription":"Complete mining sessions for {{.RequiredMiningStreakNumber}} consecutive days to earn a special reward.",
+      "errorDescription":"Streak verification failed. Please ensure you’ve completed {{.RequiredMiningStreakNumber}} consecutive days."
+   }
+}

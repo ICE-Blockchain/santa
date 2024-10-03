@@ -1,0 +1,8 @@
+{
+   "en":{
+      "title":"Watch our video",
+      "shortDescription":"Check out our latest video content.",
+      "longDescription":"Watch the YouTube video and enter the confirmation code mentioned in it.",
+      "errorDescription":"Code verification failed. Please watch the video and enter the correct code."
+   }
+}

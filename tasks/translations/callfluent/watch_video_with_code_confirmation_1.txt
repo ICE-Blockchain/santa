@@ -1,8 +1,0 @@
-{
-   "en":{
-      "title":"Watch video on Youtube",
-      "shortDescription":"Watch video on Youtube.",
-      "longDescription":"Watch video on Youtube.",
-      "errorDescription":"You haven't watched Youtube video."
-   }
-}

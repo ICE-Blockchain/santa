@@ -1,8 +1,0 @@
-{
-   "en":{
-      "title":"Claim level 9",
-      "shortDescription":"Claim level 9",
-      "longDescription":"Claim level 9.",
-      "errorDescription":"You didn't reach level 9."
-   }
-}
