@@ -1,8 +1,20 @@
 {
-   "en":{
-      "title":"Claim your nickname",
-      "shortDescription":"Create your unique nickname.",
-      "longDescription":"Set up a unique nickname to personalize your account and start inviting friends.",
-      "errorDescription":"Verification failed. Please set your nickname and try again."
+   "en": {
+      "title": "Claim your username",
+      "shortDescription": "Create your unique username.",
+      "longDescription": "Set up a unique username to personalize your account and start inviting friends.",
+      "errorDescription": "Verification failed. Please set your username and try again."
+   },
+   "ro": {
+      "title": "Revendică-ți numele de utilizator",
+      "shortDescription": "Creează-ți un nume de utilizator unic.",
+      "longDescription": "Configurează un nume de utilizator unic pentru a-ți personaliza contul și a începe să inviți prieteni.",
+      "errorDescription": "Verificarea a eșuat. Te rugăm să setezi numele de utilizator și să încerci din nou."
+   },
+   "it": {
+      "title": "Richiedi il tuo nome utente",
+      "shortDescription": "Crea il tuo nome utente unico.",
+      "longDescription": "Imposta un nome utente unico per personalizzare il tuo account e inizia a invitare amici.",
+      "errorDescription": "Verifica non riuscita. Si prega di impostare il nome utente e riprovare."
    }
 }

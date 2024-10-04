@@ -258,8 +258,8 @@ func (r *repository) GetTask(ctx context.Context, userID, language string, taskT
 //nolint:funlen // .
 func (t *Task) prepareTranslations(language string) {
 	tmpl := allTaskTemplates[t.Type][language]
-	if _, ok := allTaskTemplates[t.Type][language]; !ok {
-		tmpl = allTaskTemplates[t.Type][language]
+	if tm, ok := allTaskTemplates[t.Type][language]; !ok || tm == nil {
+		tmpl = allTaskTemplates[t.Type][defaultLanguage]
 	}
 	switch t.Group {
 	case TaskGroupBadgeCoin, TaskGroupBadgeLevel, TaskGroupBadgeSocial:
