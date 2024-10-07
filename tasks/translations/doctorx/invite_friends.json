@@ -2,7 +2,7 @@
    "en":{
       "title":"Invite {{.RequiredFriendsInvitedCount}} friends",
       "shortDescription":"Bring your friends and earn together.",
-      "longDescription":"Invite {{.RequiredFriendsInvitedCount}} friends to join your team and start earning CALL tokens together.",
+      "longDescription":"Invite {{.RequiredFriendsInvitedCount}} friends to join your team and start earning DRX tokens together.",
       "errorDescription":"Verification failed. Please invite {{.RequiredFriendsInvitedCount}} friends and try again."
    }
 }

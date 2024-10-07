@@ -180,29 +180,29 @@ func requestingUserID(ctx context.Context) (requestingUserID string) {
 }
 
 func loadBadges(cfg *config) {
-	LevelTypeOrder = make(map[Type]int, len(cfg.Levels))
-	CoinTypeOrder = make(map[Type]int, len(cfg.Coins))
-	SocialTypeOrder = make(map[Type]int, len(cfg.Socials))
-	AllTypeOrder = make(map[Type]int, len(cfg.Levels)+len(cfg.Coins)+len(cfg.Socials))
-	LevelTypeNames = make(map[Type]string, len(cfg.Levels))
-	CoinTypeNames = make(map[Type]string, len(cfg.Coins))
-	SocialTypeNames = make(map[Type]string, len(cfg.Socials))
-	GroupTypeForEachType = make(map[Type]GroupType, len(cfg.Levels)+len(cfg.Coins)+len(cfg.Socials))
+	LevelTypeOrder = make(map[Type]int, len(cfg.BadgesList.Levels))
+	CoinTypeOrder = make(map[Type]int, len(cfg.BadgesList.Coins))
+	SocialTypeOrder = make(map[Type]int, len(cfg.BadgesList.Socials))
+	AllTypeOrder = make(map[Type]int, len(cfg.BadgesList.Levels)+len(cfg.BadgesList.Coins)+len(cfg.BadgesList.Socials))
+	LevelTypeNames = make(map[Type]string, len(cfg.BadgesList.Levels))
+	CoinTypeNames = make(map[Type]string, len(cfg.BadgesList.Coins))
+	SocialTypeNames = make(map[Type]string, len(cfg.BadgesList.Socials))
+	GroupTypeForEachType = make(map[Type]GroupType, len(cfg.BadgesList.Levels)+len(cfg.BadgesList.Coins)+len(cfg.BadgesList.Socials))
 	AllNames = make(map[GroupType]map[Type]string, len(GroupsOrderSummaries))
 	AllGroups = make(map[GroupType][]Type, len(GroupsOrderSummaries))
-	Milestones = make(map[Type]AchievingRange, len(cfg.Levels)+len(cfg.Coins)+len(cfg.Socials))
+	Milestones = make(map[Type]AchievingRange, len(cfg.BadgesList.Levels)+len(cfg.BadgesList.Coins)+len(cfg.BadgesList.Socials))
 
-	loadBadgesInfo(cfg.Levels, LevelGroupType)
+	loadBadgesInfo(cfg.BadgesList.Levels, LevelGroupType)
 	AllNames[LevelGroupType] = make(map[Type]string, len(LevelTypeNames))
 	for key, val := range LevelTypeNames {
 		AllNames[LevelGroupType][key] = val
 	}
-	loadBadgesInfo(cfg.Coins, CoinGroupType)
+	loadBadgesInfo(cfg.BadgesList.Coins, CoinGroupType)
 	AllNames[CoinGroupType] = make(map[Type]string, len(CoinTypeNames))
 	for key, val := range CoinTypeNames {
 		AllNames[CoinGroupType][key] = val
 	}
-	loadBadgesInfo(cfg.Socials, SocialGroupType)
+	loadBadgesInfo(cfg.BadgesList.Socials, SocialGroupType)
 	AllNames[SocialGroupType] = make(map[Type]string, len(SocialTypeNames))
 	for key, val := range SocialTypeNames {
 		AllNames[SocialGroupType][key] = val

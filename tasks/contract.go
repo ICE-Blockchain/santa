@@ -270,6 +270,17 @@ type (
 			RequiredQuantity uint64  `yaml:"requiredQuantity" mapstructure:"requiredQuantity"`
 			GroupIndex       uint64  `yaml:"groupIndex" mapstructure:"groupIndex"`
 		} `yaml:"tasksList" mapstructure:"tasksList"`
+		BadgesList struct {
+			Levels []*struct {
+				Name string `yaml:"name" mapstructure:"name"`
+			} `yaml:"levels" mapstructure:"levels"`
+			Coins []*struct {
+				Name string `yaml:"name" mapstructure:"name"`
+			} `yaml:"coins" mapstructure:"coins"`
+			Socials []*struct {
+				Name string `yaml:"name" mapstructure:"name"`
+			} `yaml:"socials" mapstructure:"socials"`
+		} `yaml:"badgesList" mapstructure:"badgesList"`
 		messagebroker.Config   `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredFriendsInvited uint64                   `yaml:"requiredFriendsInvited"`
 		TasksV2Enabled         bool                     `yaml:"tasksV2Enabled" mapstructure:"tasksV2Enabled"`

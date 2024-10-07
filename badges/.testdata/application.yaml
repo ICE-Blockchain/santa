@@ -5,81 +5,82 @@ logger:
   encoder: console
   level: info
 badges: &badges
-  levels:
-    - name: Wave Starter
-      toInclusive: 1
-    - name: Beach Walker
-      fromInclusive: 2
-      toInclusive: 3
-    - name: Rhythm Keeper
-      fromInclusive: 4
-      toInclusive: 5
-    - name: Dance Captain
-      fromInclusive: 6
-      toInclusive: 7
-    - name: Vibe Master
-      fromInclusive: 8
-      toInclusive: 9
-    - name: Festival Guru
-      fromInclusive: 10
-  coins:
-    - name: Rookie Raver
-      toInclusive: 10
-    - name: Beats Saver
-      fromInclusive: 20
-      toInclusive: 30
-    - name: Tune Tracker
-      fromInclusive: 40
-      toInclusive: 50
-    - name: Rhythm Collector
-      fromInclusive: 60
-      toInclusive: 70
-    - name: Bass Booster
-      fromInclusive: 80
-      toInclusive: 90
-    - name: Melody Maker
-      fromInclusive: 100
-      toInclusive: 110
-    - name: Harmony Holder
-      fromInclusive: 120
-      toInclusive: 130
-    - name: Sound Seeker
-      fromInclusive: 140
-      toInclusive: 150
-    - name: Vibe Crafter
-      fromInclusive: 160
-      toInclusive: 170
-    - name: Festival Icon
-      fromInclusive: 180
-  socials:
-    - name: Meet Greeter
-      toInclusive: 1
-    - name: Friend Finder
-      fromInclusive: 2
-      toInclusive: 3
-    - name: Party Starter
-      fromInclusive: 4
-      toInclusive: 5
-    - name: Crowd Mixer
-      fromInclusive: 6
-      toInclusive: 7
-    - name: Dance Circle King
-      fromInclusive: 8
-      toInclusive: 9
-    - name: Wave Rider
-      fromInclusive: 10
-      toInclusive: 11
-    - name: Night Owl
-      fromInclusive: 12
-      toInclusive: 13
-    - name: Beach Buddy
-      fromInclusive: 14
-      toInclusive: 15
-    - name: Sunset Chaser
-      fromInclusive: 16
-      toInclusive: 17
-    - name: Dance Floor Legend
-      fromInclusive: 18
+  badgesList:
+    levels:
+      - name: Wave Starter
+        toInclusive: 1
+      - name: Beach Walker
+        fromInclusive: 2
+        toInclusive: 3
+      - name: Rhythm Keeper
+        fromInclusive: 4
+        toInclusive: 5
+      - name: Dance Captain
+        fromInclusive: 6
+        toInclusive: 7
+      - name: Vibe Master
+        fromInclusive: 8
+        toInclusive: 9
+      - name: Festival Guru
+        fromInclusive: 10
+    coins:
+      - name: Rookie Raver
+        toInclusive: 10
+      - name: Beats Saver
+        fromInclusive: 20
+        toInclusive: 30
+      - name: Tune Tracker
+        fromInclusive: 40
+        toInclusive: 50
+      - name: Rhythm Collector
+        fromInclusive: 60
+        toInclusive: 70
+      - name: Bass Booster
+        fromInclusive: 80
+        toInclusive: 90
+      - name: Melody Maker
+        fromInclusive: 100
+        toInclusive: 110
+      - name: Harmony Holder
+        fromInclusive: 120
+        toInclusive: 130
+      - name: Sound Seeker
+        fromInclusive: 140
+        toInclusive: 150
+      - name: Vibe Crafter
+        fromInclusive: 160
+        toInclusive: 170
+      - name: Festival Icon
+        fromInclusive: 180
+    socials:
+      - name: Meet Greeter
+        toInclusive: 1
+      - name: Friend Finder
+        fromInclusive: 2
+        toInclusive: 3
+      - name: Party Starter
+        fromInclusive: 4
+        toInclusive: 5
+      - name: Crowd Mixer
+        fromInclusive: 6
+        toInclusive: 7
+      - name: Dance Circle King
+        fromInclusive: 8
+        toInclusive: 9
+      - name: Wave Rider
+        fromInclusive: 10
+        toInclusive: 11
+      - name: Night Owl
+        fromInclusive: 12
+        toInclusive: 13
+      - name: Beach Buddy
+        fromInclusive: 14
+        toInclusive: 15
+      - name: Sunset Chaser
+        fromInclusive: 16
+        toInclusive: 17
+      - name: Dance Floor Legend
+        fromInclusive: 18
   db: &badgesDatabase
     urls:
       - localhost:3304
