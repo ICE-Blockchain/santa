@@ -153,9 +153,11 @@ type (
 		*repository
 	}
 	config struct {
-		Levels               []*AchievingRange        `yaml:"levels"`
-		Coins                []*AchievingRange        `yaml:"coins"`
-		Socials              []*AchievingRange        `yaml:"socials"`
+		BadgesList struct {
+			Levels  []*AchievingRange `yaml:"levels" mapstructure:"levels"`
+			Coins   []*AchievingRange `yaml:"coins" mapstructure:"coins"`
+			Socials []*AchievingRange `yaml:"socials" mapstructure:"socials"`
+		} `yaml:"badgesList" mapstructure:"badgesList"`
 		messagebroker.Config `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 	}
 )

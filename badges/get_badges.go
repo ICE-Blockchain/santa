@@ -89,8 +89,8 @@ func (r *repository) preparePercentageDistributionSQL(groupType GroupType) []str
 	var whenValues []string
 	switch groupType {
 	case CoinGroupType:
-		whenValues = make([]string, 0, len(r.cfg.Coins))
-		for idx, rnge := range r.cfg.Coins {
+		whenValues = make([]string, 0, len(r.cfg.BadgesList.Coins))
+		for idx, rnge := range r.cfg.BadgesList.Coins {
 			val := fmt.Sprintf("when balance >= %v", rnge.FromInclusive)
 			if rnge.ToInclusive != 0 {
 				val = fmt.Sprintf("%v AND balance <= %v", val, rnge.ToInclusive)
@@ -98,8 +98,8 @@ func (r *repository) preparePercentageDistributionSQL(groupType GroupType) []str
 			whenValues = append(whenValues, fmt.Sprintf("%v THEN 'c%v'", val, idx+1))
 		}
 	case LevelGroupType:
-		whenValues = make([]string, 0, len(r.cfg.Levels))
-		for idx, rnge := range r.cfg.Levels {
+		whenValues = make([]string, 0, len(r.cfg.BadgesList.Levels))
+		for idx, rnge := range r.cfg.BadgesList.Levels {
 			val := fmt.Sprintf("when completed_levels >= %v", rnge.FromInclusive)
 			if rnge.ToInclusive != 0 {
 				val = fmt.Sprintf("%v AND completed_levels <= %v", val, rnge.ToInclusive)
@@ -107,8 +107,8 @@ func (r *repository) preparePercentageDistributionSQL(groupType GroupType) []str
 			whenValues = append(whenValues, fmt.Sprintf("%v THEN 'l%v'", val, idx+1))
 		}
 	case SocialGroupType:
-		whenValues = make([]string, 0, len(r.cfg.Socials))
-		for idx, rnge := range r.cfg.Socials {
+		whenValues = make([]string, 0, len(r.cfg.BadgesList.Socials))
+		for idx, rnge := range r.cfg.BadgesList.Socials {
 			val := fmt.Sprintf("when friends_invited >= %v", rnge.FromInclusive)
 			if rnge.ToInclusive != 0 {
 				val = fmt.Sprintf("%v AND friends_invited <= %v", val, rnge.ToInclusive)
@@ -124,11 +124,11 @@ func (r *repository) calculatePercentages(distribution []*badgeDistribution, gro
 	var length int
 	switch groupType {
 	case CoinGroupType:
-		length = len(r.cfg.Coins)
+		length = len(r.cfg.BadgesList.Coins)
 	case LevelGroupType:
-		length = len(r.cfg.Levels)
+		length = len(r.cfg.BadgesList.Levels)
 	case SocialGroupType:
-		length = len(r.cfg.Socials)
+		length = len(r.cfg.BadgesList.Socials)
 	}
 	var totalUsers uint64
 	for _, val := range distribution {

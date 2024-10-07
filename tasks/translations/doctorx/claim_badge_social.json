@@ -1,6 +1,6 @@
 {
    "en":{
-      "title":"Claim {{.BadgeNumber}} social badge",
+      "title":"Claim {{.BadgeName}} social badge",
       "shortDescription":"Unlock and claim your new social badge.",
       "longDescription":"Claim your badge to showcase your progress and achievements in the app.",
       "errorDescription":"Verification failed. Please try again to claim your badge."

@@ -39,7 +39,7 @@ func (r *repository) GetTasks(ctx context.Context, userID, language string, requ
 				(requestedStatus == TaskStatusCompleted && !task.Completed) {
 				continue
 			}
-			task.prepareTranslations(lang)
+			task.prepareTranslations(lang, r.cfg)
 			if requestedStatus == TaskStatusPending && (task.Group != "") {
 				splitted := strings.Split(string(task.Type), "_")
 				if (task.Group == TaskGroupBadgeSocial || task.Group == TaskGroupBadgeCoin || task.Group == TaskGroupBadgeLevel) &&
@@ -247,7 +247,7 @@ func (r *repository) GetTask(ctx context.Context, userID, language string, taskT
 		if task.Type != taskType {
 			continue
 		}
-		task.prepareTranslations(lang)
+		task.prepareTranslations(lang, r.cfg)
 
 		return task, nil
 	}
@@ -256,15 +256,29 @@ func (r *repository) GetTask(ctx context.Context, userID, language string, taskT
 }
 
 //nolint:funlen // .
-func (t *Task) prepareTranslations(language string) {
+func (t *Task) prepareTranslations(language string, cfg *config) {
 	tmpl := allTaskTemplates[t.Type][language]
 	if tm, ok := allTaskTemplates[t.Type][language]; !ok || tm == nil {
 		tmpl = allTaskTemplates[t.Type][defaultLanguage]
 	}
 	switch t.Group {
-	case TaskGroupBadgeCoin, TaskGroupBadgeLevel, TaskGroupBadgeSocial:
-		t.Metadata.Title = tmpl.getTitle(struct{ BadgeNumber uint64 }{
-			BadgeNumber: t.GroupIndex,
+	case TaskGroupBadgeCoin:
+		t.Metadata.Title = tmpl.getTitle(struct{ BadgeName string }{
+			BadgeName: cfg.BadgesList.Coins[t.GroupIndex-1].Name,
+		})
+		t.Metadata.ShortDescription = tmpl.getShortDescription(nil)
+		t.Metadata.LongDescription = tmpl.getLongDescription(nil)
+		t.Metadata.ErrorDescription = tmpl.getErrorDescription(nil)
+	case TaskGroupBadgeLevel:
+		t.Metadata.Title = tmpl.getTitle(struct{ BadgeName string }{
+			BadgeName: cfg.BadgesList.Levels[t.GroupIndex-1].Name,
+		})
+		t.Metadata.ShortDescription = tmpl.getShortDescription(nil)
+		t.Metadata.LongDescription = tmpl.getLongDescription(nil)
+		t.Metadata.ErrorDescription = tmpl.getErrorDescription(nil)
+	case TaskGroupBadgeSocial:
+		t.Metadata.Title = tmpl.getTitle(struct{ BadgeName string }{
+			BadgeName: cfg.BadgesList.Socials[t.GroupIndex-1].Name,
 		})
 		t.Metadata.ShortDescription = tmpl.getShortDescription(nil)
 		t.Metadata.LongDescription = tmpl.getLongDescription(nil)
@@ -293,10 +307,10 @@ func (t *Task) prepareTranslations(language string) {
 		t.Metadata.Title = tmpl.getTitle(struct{ RequiredMiningStreakNumber uint64 }{
 			RequiredMiningStreakNumber: t.Data.RequiredQuantity,
 		})
-		t.Metadata.ShortDescription = tmpl.getTitle(struct{ RequiredMiningStreakNumber uint64 }{
+		t.Metadata.ShortDescription = tmpl.getShortDescription(struct{ RequiredMiningStreakNumber uint64 }{
 			RequiredMiningStreakNumber: t.Data.RequiredQuantity,
 		})
-		t.Metadata.LongDescription = tmpl.getTitle(struct{ RequiredMiningStreakNumber uint64 }{
+		t.Metadata.LongDescription = tmpl.getLongDescription(struct{ RequiredMiningStreakNumber uint64 }{
 			RequiredMiningStreakNumber: t.Data.RequiredQuantity,
 		})
 		t.Metadata.ErrorDescription = tmpl.getErrorDescription(struct{ RequiredMiningStreakNumber uint64 }{
