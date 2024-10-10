@@ -1,6 +1,6 @@
 {
    "en":{
-      "title":"Claim {{.LevelNumber}} level",
+      "title":"Claim level {{.LevelNumber}}",
       "shortDescription":"Unlock and claim your new level.",
       "longDescription":"Claim your current level to display your progress and milestones in the app.",
       "errorDescription":"Verification failed. Please try again to claim your level."
