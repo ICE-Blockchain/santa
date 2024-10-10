@@ -110,6 +110,12 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task, dryRun 
 func (p *progress) checkTaskCompleted(repo *repository, task *Task) bool {
 	var completed bool
 	switch task.Type { //nolint:exhaustive // Handling only v2 tasks here.
+	case ClaimUsernameType:
+		completed = p.UsernameSet
+	case StartMiningType:
+		completed = p.MiningStarted
+	case UploadProfilePictureType:
+		completed = p.ProfilePictureSet
 	case WatchVideoWithCodeConfirmation1Type:
 		for ix := range repo.cfg.TasksList {
 			if Type(repo.cfg.TasksList[ix].Type) == task.Type {
