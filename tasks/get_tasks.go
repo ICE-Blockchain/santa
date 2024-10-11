@@ -19,13 +19,13 @@ func (r *repository) GetTasks(ctx context.Context, userID, language string, requ
 	userProgress, err := r.getProgress(ctx, userID, true)
 	if err != nil {
 		if errors.Is(err, ErrRelationNotFound) {
-			return r.defaultTasks(), nil
+			return r.defaultTasks(userID), nil
 		}
 
 		return nil, errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
-	tasks := userProgress.buildTasks(r)
-	if r.cfg.TasksV2Enabled { //nolint:nestif // .
+	tasks := userProgress.buildTasks(r, userID)
+	if r.tasksV2Enabled(userID) { //nolint:nestif // .
 		if requestedStatus != TaskStatusCompleted && requestedStatus != TaskStatusPending {
 			return nil, errors.Wrapf(ErrWrongRequestedTasksStatus, "requested status should be:%v or %v", TaskStatusCompleted, TaskStatusPending)
 		}
@@ -103,8 +103,8 @@ func (r *repository) getProgress(ctx context.Context, userID string, tolerateOld
 	return
 }
 
-func (p *progress) buildTasks(repo *repository) []*Task { //nolint:gocognit,funlen,revive // Wrong.
-	resp := repo.defaultTasks()
+func (p *progress) buildTasks(repo *repository, userID string) []*Task { //nolint:gocognit,funlen,revive // Wrong.
+	resp := repo.defaultTasks(userID)
 	for _, task := range resp {
 		switch task.Type { //nolint:exhaustive // Only those 2 have specific data persisted.
 		case JoinTwitterType, FollowUsOnTwitterType:
@@ -159,8 +159,8 @@ func (p *progress) reallyCompleted(task *Task) bool {
 	return reallyCompleted
 }
 
-func (r *repository) defaultTasks() (resp []*Task) {
-	if r.cfg.TasksV2Enabled {
+func (r *repository) defaultTasks(userID string) (resp []*Task) {
+	if r.tasksV2Enabled(userID) {
 		return r.defaultTasksV2()
 	}
 
@@ -221,13 +221,13 @@ func (r *repository) GetTask(ctx context.Context, userID, language string, taskT
 	if ctx.Err() != nil {
 		return nil, errors.Wrap(ctx.Err(), "unexpected deadline")
 	}
-	if !r.cfg.TasksV2Enabled {
+	if !r.tasksV2Enabled(userID) {
 		return nil, ErrNotSupported
 	}
 	userProgress, err := r.getProgress(ctx, userID, true)
 	if err != nil {
 		if errors.Is(err, ErrRelationNotFound) {
-			for _, task := range r.defaultTasks() {
+			for _, task := range r.defaultTasks(userID) {
 				if task.Type == taskType {
 					return task, nil
 				}
@@ -238,7 +238,7 @@ func (r *repository) GetTask(ctx context.Context, userID, language string, taskT
 
 		return nil, errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
-	tasks := userProgress.buildTasks(r)
+	tasks := userProgress.buildTasks(r, userID)
 	lang := language
 	if language == "" {
 		lang = defaultLanguage

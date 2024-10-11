@@ -186,6 +186,7 @@ type (
 			Icon  string  `yaml:"icon" mapstructure:"icon"`
 			Prize float64 `yaml:"prize" mapstructure:"prize"`
 		} `yaml:"tasksList" mapstructure:"tasksList"`
+		AdminUsers                               []string                 `yaml:"adminUsers" mapstructure:"adminUsers"`
 		messagebroker.Config                     `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredInvitedFriendsToBecomeAmbassador uint64                   `yaml:"requiredInvitedFriendsToBecomeAmbassador"`
 		TasksV2Enabled                           bool                     `yaml:"tasksV2Enabled" mapstructure:"tasksV2Enabled"`

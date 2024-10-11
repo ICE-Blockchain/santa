@@ -31,14 +31,14 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task, dryRun 
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", task.UserID)
 	}
 	completed := userProgress.checkTaskCompleted(r, task)
-	if r.cfg.TasksV2Enabled && dryRun {
+	if dryRun && r.tasksV2Enabled(task.UserID) {
 		if !completed {
 			return errors.Wrapf(ErrTaskNotCompleted, "task is not completed for: %v", task.UserID)
 		}
 
 		return nil
 	}
-	if r.cfg.TasksV2Enabled && userProgress != nil && !completed {
+	if userProgress != nil && !completed && r.tasksV2Enabled(task.UserID) {
 		return errors.Wrapf(ErrTaskNotCompleted, "task is not completed for: %v", task.UserID)
 	}
 	if userProgress == nil {
@@ -67,7 +67,7 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task, dryRun 
 		return errors.Wrapf(uErr, "failed to update task_progress.pseudo_completed_tasks for params:%#v", params...)
 	}
 	var sErr error
-	if !r.cfg.TasksV2Enabled {
+	if !r.tasksV2Enabled(task.UserID) {
 		sErr = r.sendTryCompleteTasksCommandMessage(ctx, task.UserID)
 	} else {
 		var prize float64
@@ -170,7 +170,7 @@ func (p *progress) checkTaskCompleted(repo *repository, task *Task) bool {
 
 //nolint:gocognit,nestif,revive // .
 func (r *repository) validateTask(arg *Task) error {
-	if r.cfg.TasksV2Enabled {
+	if r.tasksV2Enabled(arg.UserID) {
 		for ix := range r.cfg.TasksList {
 			if Type(r.cfg.TasksList[ix].Type) == arg.Type {
 				return nil
@@ -194,8 +194,8 @@ func (r *repository) validateTask(arg *Task) error {
 	return errors.Errorf("invalid type `%v`", arg.Type)
 }
 
-func (r *repository) tasksLength() int {
-	if r.cfg.TasksV2Enabled {
+func (r *repository) tasksLength(userID string) int {
+	if r.tasksV2Enabled(userID) {
 		return len(r.cfg.TasksList)
 	}
 
@@ -203,19 +203,19 @@ func (r *repository) tasksLength() int {
 }
 
 func (p *progress) buildUpdatePseudoCompletedTasksSQL(task *Task, repo *repository) (params []any, sql string) { //nolint:funlen // .
-	for _, tsk := range p.buildTasks(repo) {
+	for _, tsk := range p.buildTasks(repo, task.UserID) {
 		if tsk.Type == task.Type {
 			if tsk.Completed {
 				return nil, ""
 			}
 		}
 	}
-	pseudoCompletedTasks := make(users.Enum[Type], 0, repo.tasksLength())
+	pseudoCompletedTasks := make(users.Enum[Type], 0, repo.tasksLength(task.UserID))
 	if p.PseudoCompletedTasks != nil {
 		pseudoCompletedTasks = append(pseudoCompletedTasks, *p.PseudoCompletedTasks...)
 	}
 	pseudoCompletedTasks = append(pseudoCompletedTasks, task.Type)
-	if !repo.cfg.TasksV2Enabled {
+	if !repo.tasksV2Enabled(task.UserID) {
 		sort.SliceStable(pseudoCompletedTasks, func(i, j int) bool {
 			return TypeOrder[pseudoCompletedTasks[i]] < TypeOrder[pseudoCompletedTasks[j]]
 		})
@@ -231,7 +231,7 @@ func (p *progress) buildUpdatePseudoCompletedTasksSQL(task *Task, repo *reposito
 		fieldNames = append(fieldNames, "twitter_user_handle")
 		fieldIndexes = append(fieldIndexes, fmt.Sprintf("$%v ", nextIndex))
 	case JoinTelegramType:
-		if !repo.cfg.TasksV2Enabled {
+		if !repo.tasksV2Enabled(task.UserID) {
 			params = append(params, task.Data.TelegramUserHandle)
 			fieldNames = append(fieldNames, "telegram_user_handle")
 			fieldIndexes = append(fieldIndexes, fmt.Sprintf("$%v ", nextIndex))
@@ -272,7 +272,7 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 		pr = new(progress)
 		pr.UserID = userID
 	}
-	if pr.CompletedTasks != nil && len(*pr.CompletedTasks) == r.tasksLength() {
+	if pr.CompletedTasks != nil && len(*pr.CompletedTasks) == r.tasksLength(userID) {
 		return nil
 	}
 	completedTasks := pr.reEvaluateCompletedTasks(r)
@@ -299,7 +299,7 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 	}
 	//nolint:nestif // .
 	if completedTasks != nil && len(*completedTasks) > 0 && (pr.CompletedTasks == nil || len(*pr.CompletedTasks) < len(*completedTasks)) {
-		newlyCompletedTasks := make([]*CompletedTask, 0, r.tasksLength())
+		newlyCompletedTasks := make([]*CompletedTask, 0, r.tasksLength(userID))
 	outer:
 		for _, completedTask := range *completedTasks {
 			if pr.CompletedTasks != nil {
@@ -309,7 +309,7 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 					}
 				}
 			}
-			if !r.cfg.TasksV2Enabled {
+			if !r.tasksV2Enabled(userID) {
 				newlyCompletedTasks = append(newlyCompletedTasks, &CompletedTask{
 					UserID:         userID,
 					Type:           completedTask,
@@ -340,17 +340,17 @@ func (r *repository) completeTasks(ctx context.Context, userID string) error { /
 }
 
 func (p *progress) reEvaluateCompletedTasks(repo *repository) *users.Enum[Type] { //nolint:revive,funlen,gocognit // .
-	if p.CompletedTasks != nil && len(*p.CompletedTasks) == repo.tasksLength() {
+	if p.CompletedTasks != nil && len(*p.CompletedTasks) == repo.tasksLength(p.UserID) {
 		return p.CompletedTasks
 	}
-	alreadyCompletedTasks := make(map[Type]any, repo.tasksLength())
+	alreadyCompletedTasks := make(map[Type]any, repo.tasksLength(p.UserID))
 	if p.CompletedTasks != nil {
 		for _, task := range *p.CompletedTasks {
 			alreadyCompletedTasks[task] = struct{}{}
 		}
 	}
-	completedTasks := make(users.Enum[Type], 0, repo.tasksLength())
-	if repo.cfg.TasksV2Enabled { //nolint:nestif // .
+	completedTasks := make(users.Enum[Type], 0, repo.tasksLength(p.UserID))
+	if repo.tasksV2Enabled(p.UserID) { //nolint:nestif // .
 		for ix := range repo.cfg.TasksList {
 			if _, alreadyCompleted := alreadyCompletedTasks[Type(repo.cfg.TasksList[ix].Type)]; alreadyCompleted {
 				completedTasks = append(completedTasks, Type(repo.cfg.TasksList[ix].Type))
@@ -394,7 +394,7 @@ func (p *progress) gatherCompletedTasks(repo *repository, taskType Type) Type {
 	case FollowUsOnTwitterType:
 		completed = p.TwitterUserHandle != nil && *p.TwitterUserHandle != ""
 	case JoinTelegramType:
-		if repo.cfg.TasksV2Enabled {
+		if repo.tasksV2Enabled(p.UserID) {
 			completed = p.checkPseudoTaskCompleted(taskType)
 		} else if p.TelegramUserHandle != nil && *p.TelegramUserHandle != "" {
 			completed = true
@@ -482,7 +482,7 @@ func (s *tryCompleteTasksCommandSource) Process(ctx context.Context, msg *messag
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "unexpected deadline while processing message")
 	}
-	if !s.cfg.TasksV2Enabled {
+	if !s.tasksV2Enabled(msg.Key) {
 		return errors.Wrapf(s.completeTasks(ctx, msg.Key), "failed to completeTasks for userID:%v", msg.Key)
 	}
 
@@ -514,7 +514,7 @@ func (s *miningSessionSource) upsertProgress(ctx context.Context, userID string)
 		return errors.Wrap(ctx.Err(), "context failed")
 	}
 	if pr, err := s.getProgress(ctx, userID, true); (pr != nil && pr.CompletedTasks != nil &&
-		len(*pr.CompletedTasks) == s.tasksLength()) || err != nil && !errors.Is(err, ErrRelationNotFound) {
+		len(*pr.CompletedTasks) == s.tasksLength(userID)) || err != nil && !errors.Is(err, ErrRelationNotFound) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
 	sql := `INSERT INTO task_progress(user_id, mining_started) VALUES ($1, $2)

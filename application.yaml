@@ -537,6 +537,9 @@ badges_test:
     consumingTopics: *badgesMessageBrokerTopics
     consumerGroup: santa-local-badges-test
 tasks: &tasks
+  adminUsers:
+    - user1
+    - user2
   tasksV2Enabled: false
   requiredFriendsInvited: 5
   wintr/connectors/storage/v2:
@@ -593,6 +596,9 @@ tasks_test:
     consumingTopics: *tasksMessageBrokerTopics
     consumerGroup: santa-local-tasks-test
 levels-and-roles: &levels-and-roles
+  adminUsers:
+    - user1
+    - user2
   tasksV2Enabled: false
   requiredInvitedFriendsToBecomeAmbassador: 3
   roleNames:

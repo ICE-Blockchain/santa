@@ -4,6 +4,7 @@ package levelsandroles
 
 import (
 	"context"
+	"slices"
 
 	"github.com/goccy/go-json"
 	"github.com/hashicorp/go-multierror"
@@ -84,8 +85,12 @@ func (s *completedTasksSource) Process(ctx context.Context, msg *messagebroker.M
 	return errors.Wrapf(s.upsertProgress(ctx, ct.CompletedTasks, ct.UserID), "failed to upsertProgress for completedTask:%#v", ct)
 }
 
-func (r *repository) tasksLength() int {
-	if r.cfg.TasksV2Enabled {
+func (r *repository) tasksV2Enabled(userID string) bool {
+	return r.cfg.TasksV2Enabled || (len(r.cfg.AdminUsers) > 0 && slices.Contains(r.cfg.AdminUsers, userID))
+}
+
+func (r *repository) tasksLength(userID string) int {
+	if r.tasksV2Enabled(userID) {
 		return len(r.cfg.TasksList)
 	}
 
@@ -99,7 +104,7 @@ func (s *completedTasksSource) upsertProgress(ctx context.Context, completedTask
 	pr, err := s.getProgress(ctx, userID, true)
 	if (pr != nil && pr.CompletedLevels != nil && (len(*pr.CompletedLevels) == len(&AllLevelTypes))) ||
 		err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
-		(pr != nil && (pr.CompletedTasks == uint64(s.tasksLength()) || //nolint:gosec // .
+		(pr != nil && (pr.CompletedTasks == uint64(s.tasksLength(userID)) || //nolint:gosec // .
 			AreLevelsCompleted(pr.CompletedLevels, Level6Type, Level7Type, Level8Type, Level9Type, Level10Type, Level11Type))) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
