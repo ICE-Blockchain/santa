@@ -281,6 +281,7 @@ type (
 				Name string `yaml:"name" mapstructure:"name"`
 			} `yaml:"socials" mapstructure:"socials"`
 		} `yaml:"badgesList" mapstructure:"badgesList"`
+		AdminUsers             []string                 `yaml:"adminUsers" mapstructure:"adminUsers"`
 		messagebroker.Config   `mapstructure:",squash"` //nolint:tagliatelle // Nope.
 		RequiredFriendsInvited uint64                   `yaml:"requiredFriendsInvited"`
 		TasksV2Enabled         bool                     `yaml:"tasksV2Enabled" mapstructure:"tasksV2Enabled"`

@@ -6,6 +6,7 @@ import (
 	"bytes"
 	"context"
 	"fmt"
+	"slices"
 	"strings"
 	"sync"
 	"text/template"
@@ -53,9 +54,7 @@ func StartProcessor(ctx context.Context, cancel context.CancelFunc) Processor {
 		&friendsInvitedSource{processor: prc},
 	)
 	prc.shutdown = closeAll(mbConsumer, prc.mb, prc.db)
-	if cfg.TasksV2Enabled {
-		prc.repository.loadTaskTranslationTemplates(cfg.TenantName)
-	}
+	prc.repository.loadTaskTranslationTemplates(cfg.TenantName)
 
 	return prc
 }
@@ -230,4 +229,8 @@ func (t *taskTemplate) getErrorDescription(data any) string {
 	log.Panic(errors.Wrapf(t.errorDescription.Execute(bf, data), "failed to execute error description template for data:%#v", data))
 
 	return bf.String()
+}
+
+func (r *repository) tasksV2Enabled(userID string) bool {
+	return r.cfg.TasksV2Enabled || (len(r.cfg.AdminUsers) > 0 && slices.Contains(r.cfg.AdminUsers, userID))
 }
