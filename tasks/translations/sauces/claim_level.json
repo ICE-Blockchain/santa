@@ -1,8 +1,261 @@
 {
-   "en":{
-      "title":"Claim level {{.LevelNumber}}",
-      "shortDescription":"Unlock and claim your new level.",
-      "longDescription":"Claim your current level to display your progress and milestones in the app.",
-      "errorDescription":"Verification failed. Please try again to claim your level."
+   "af": {
+     "title": "Eis vlak {{.LevelNumber}}",
+     "shortDescription": "Ontsluit en eis jou nuwe vlak.",
+     "longDescription": "Eis jou huidige vlak om jou vordering en mylpale in die app te wys.",
+     "errorDescription": "Verifikasie het misluk. Probeer asseblief weer om jou vlak te eis."
+   },
+   "ar": {
+     "title": "مطالبة بالمستوى {{.LevelNumber}}",
+     "shortDescription": "افتح واطلب مستواك الجديد.",
+     "longDescription": "اطلب مستواك الحالي لعرض تقدمك والمعالم التي حققتها في التطبيق.",
+     "errorDescription": "فشل التحقق. يرجى المحاولة مرة أخرى للمطالبة بمستواك."
+   },
+   "az": {
+     "title": "{{.LevelNumber}} səviyyəsini tələb et",
+     "shortDescription": "Yeni səviyyənizi açın və tələb edin.",
+     "longDescription": "Tətbiqdə irəliləyişlərinizi və nailiyyətlərinizi göstərmək üçün cari səviyyənizi tələb edin.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa səviyyənizi tələb etmək üçün yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Заяви ниво {{.LevelNumber}}",
+     "shortDescription": "Отключете и заявете новото си ниво.",
+     "longDescription": "Заявете текущото си ниво, за да покажете напредъка и етапите си в приложението.",
+     "errorDescription": "Проверката не бе успешна. Моля, опитайте отново, за да заявите нивото си."
+   },
+   "bn": {
+     "title": "{{.LevelNumber}} স্তর দাবি করুন",
+     "shortDescription": "আপনার নতুন স্তর আনলক এবং দাবি করুন।",
+     "longDescription": "অ্যাপে আপনার অগ্রগতি এবং মাইলফলক প্রদর্শন করতে আপনার বর্তমান স্তর দাবি করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। আপনার স্তরটি দাবি করার জন্য অনুগ্রহ করে আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Získejte úroveň {{.LevelNumber}}",
+     "shortDescription": "Odemkněte a získejte svou novou úroveň.",
+     "longDescription": "Získejte svou aktuální úroveň a ukažte svůj pokrok a milníky v aplikaci.",
+     "errorDescription": "Ověření selhalo. Zkuste to znovu a získejte svou úroveň."
+   },
+   "de": {
+     "title": "{{.LevelNumber}} Level beanspruchen",
+     "shortDescription": "Schalte dein neues Level frei und beanspruche es.",
+     "longDescription": "Beanspruche dein aktuelles Level, um deinen Fortschritt und deine Meilensteine in der App zu zeigen.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte versuche es erneut, um dein Level zu beanspruchen."
+   },
+   "el": {
+     "title": "Διεκδίκηση επιπέδου {{.LevelNumber}}",
+     "shortDescription": "Ξεκλειδώστε και διεκδικήστε το νέο σας επίπεδο.",
+     "longDescription": "Διεκδικήστε το τρέχον επίπεδό σας για να δείξετε την πρόοδό σας και τα ορόσημα σας στην εφαρμογή.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Δοκιμάστε ξανά να διεκδικήσετε το επίπεδό σας."
+   },
+   "en": {
+     "title": "Claim level {{.LevelNumber}}",
+     "shortDescription": "Unlock and claim your new level.",
+     "longDescription": "Claim your current level to display your progress and milestones in the app.",
+     "errorDescription": "Verification failed. Please try again to claim your level."
+   },
+   "es": {
+     "title": "Reclamar el nivel {{.LevelNumber}}",
+     "shortDescription": "Desbloquea y reclama tu nuevo nivel.",
+     "longDescription": "Reclama tu nivel actual para mostrar tu progreso y logros en la aplicación.",
+     "errorDescription": "La verificación falló. Por favor, inténtalo de nuevo para reclamar tu nivel."
+   },
+   "fa": {
+     "title": "ادعای سطح {{.LevelNumber}}",
+     "shortDescription": "سطح جدید خود را باز کرده و ادعا کنید.",
+     "longDescription": "سطح فعلی خود را ادعا کنید تا پیشرفت‌ها و نقاط عطف خود را در اپلیکیشن نشان دهید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً دوباره تلاش کنید تا سطح خود را ادعا کنید."
+   },
+   "fr": {
+     "title": "Réclamer le niveau {{.LevelNumber}}",
+     "shortDescription": "Débloquez et réclamez votre nouveau niveau.",
+     "longDescription": "Réclamez votre niveau actuel pour afficher vos progrès et jalons dans l'application.",
+     "errorDescription": "Échec de la vérification. Veuillez réessayer de réclamer votre niveau."
+   },
+   "gu": {
+     "title": "{{.LevelNumber}} સ્તર દાવો કરો",
+     "shortDescription": "તમારા નવા સ્તરને અનલૉક કરો અને દાવો કરો.",
+     "longDescription": "એપ્લિકેશનમાં તમારા પ્રગતિ અને માઇલસ્ટોન બતાવવા માટે તમારું વર્તમાન સ્તર દાવો કરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. તમારું સ્તર દાવો કરવા માટે ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "תבע את רמת {{.LevelNumber}}",
+     "shortDescription": "פתח ותבע את הרמה החדשה שלך.",
+     "longDescription": "תבע את הרמה הנוכחית שלך כדי להציג את ההתקדמות והאבני דרך שלך באפליקציה.",
+     "errorDescription": "האימות נכשל. אנא נסה שוב לתבוע את הרמה שלך."
+   },
+   "hi": {
+     "title": "{{.LevelNumber}} स्तर का दावा करें",
+     "shortDescription": "अपना नया स्तर अनलॉक करें और दावा करें।",
+     "longDescription": "ऐप में अपनी प्रगति और मील के पत्थर प्रदर्शित करने के लिए अपना वर्तमान स्तर दावा करें।",
+     "errorDescription": "सत्यापन विफल। कृपया फिर से प्रयास करें और अपने स्तर का दावा करें।"
+   },
+   "hu": {
+     "title": "Igényeld a(z) {{.LevelNumber}} szintet",
+     "shortDescription": "Nyisd meg és igényeld az új szintedet.",
+     "longDescription": "Igényeld a jelenlegi szintedet, hogy bemutasd a haladásodat és mérföldköveidet az alkalmazásban.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Kérlek, próbáld újra igényelni a szintedet."
+   },
+   "id": {
+     "title": "Klaim level {{.LevelNumber}}",
+     "shortDescription": "Buka dan klaim level baru Anda.",
+     "longDescription": "Klaim level Anda saat ini untuk menampilkan kemajuan dan pencapaian Anda di aplikasi.",
+     "errorDescription": "Verifikasi gagal. Silakan coba lagi untuk mengklaim level Anda."
+   },
+   "it": {
+     "title": "Richiedi il livello {{.LevelNumber}}",
+     "shortDescription": "Sblocca e richiedi il tuo nuovo livello.",
+     "longDescription": "Richiedi il tuo livello attuale per mostrare i tuoi progressi e traguardi nell'app.",
+     "errorDescription": "Verifica fallita. Riprova a richiedere il tuo livello."
+   },
+   "ja": {
+     "title": "{{.LevelNumber}} レベルを請求する",
+     "shortDescription": "新しいレベルをアンロックして請求してください。",
+     "longDescription": "現在のレベルを請求して、アプリ内での進捗やマイルストーンを表示しましょう。",
+     "errorDescription": "確認に失敗しました。レベルを請求するためにもう一度試してください。"
+   },
+   "jv": {
+     "title": "Ngaku level {{.LevelNumber}}",
+     "shortDescription": "Buka lan ngaku level anyar sampeyan.",
+     "longDescription": "Ngaku level sampeyan kanggo nampilake kemajuan lan prestasi ing aplikasi.",
+     "errorDescription": "Verifikasi gagal. Coba maneh kanggo ngaku level sampeyan."
+   },
+   "kn": {
+     "title": "{{.LevelNumber}} ಮಟ್ಟವನ್ನು ದಾವಿ ಮಾಡಿ",
+     "shortDescription": "ನಿಮ್ಮ ಹೊಸ ಮಟ್ಟವನ್ನು ಅನ್ಲಾಕ್ ಮಾಡಿ ಮತ್ತು ದಾವಿ ಮಾಡಿ.",
+     "longDescription": "ಆಪ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಪ್ರಗತಿ ಮತ್ತು ಮೈಲುಗಲ್ಲುಗಳನ್ನು ತೋರಿಸಲು ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಮಟ್ಟವನ್ನು ದಾವಿ ಮಾಡಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಮಟ್ಟವನ್ನು ದಾವಿ ಮಾಡಲು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "{{.LevelNumber}} 레벨을 요청하세요",
+     "shortDescription": "새로운 레벨을 잠금 해제하고 요청하세요.",
+     "longDescription": "앱에서 자신의 진행 상황과 이정표를 보여주기 위해 현재 레벨을 요청하세요.",
+     "errorDescription": "인증에 실패했습니다. 레벨을 요청하려면 다시 시도해 주세요."
+   },
+   "mr": {
+     "title": "{{.LevelNumber}} स्तराचा दावा करा",
+     "shortDescription": "तुमचा नवीन स्तर अनलॉक करा आणि दावा करा.",
+     "longDescription": "अॅपमध्ये तुमची प्रगती आणि मैलाचे दगड दाखवण्यासाठी तुमचा वर्तमान स्तर दावा करा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया पुन्हा प्रयत्न करा आणि तुमचा स्तर दावा करा."
+   },
+   "ms": {
+     "title": "Tuntut tahap {{.LevelNumber}}",
+     "shortDescription": "Buka dan tuntut tahap baharu anda.",
+     "longDescription": "Tuntut tahap semasa anda untuk mempamerkan kemajuan dan pencapaian anda dalam aplikasi.",
+     "errorDescription": "Pengesahan gagal. Sila cuba lagi untuk menuntut tahap anda."
+   },
+   "nb": {
+     "title": "Krev nivå {{.LevelNumber}}",
+     "shortDescription": "Lås opp og krev ditt nye nivå.",
+     "longDescription": "Krev ditt nåværende nivå for å vise frem fremgangen og milepælene dine i appen.",
+     "errorDescription": "Verifisering mislyktes. Vennligst prøv igjen for å kreve nivået ditt."
+   },
+   "nn": {
+     "title": "Krev nivå {{.LevelNumber}}",
+     "shortDescription": "Lås opp og krev ditt nye nivå.",
+     "longDescription": "Krev ditt noverande nivå for å vise fram framgangen og milepælane dine i appen.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å prøv igjen for å krev nivået ditt."
+   },
+   "pa": {
+     "title": "{{.LevelNumber}} ਪੱਧਰ ਕਲੈਮ ਕਰੋ",
+     "shortDescription": "ਆਪਣਾ ਨਵਾਂ ਪੱਧਰ ਅਨਲੌਕ ਕਰੋ ਅਤੇ ਕਲੈਮ ਕਰੋ।",
+     "longDescription": "ਐਪ ਵਿੱਚ ਆਪਣੇ ਪ੍ਰਗਤੀ ਅਤੇ ਮੈਲਸਟੋਨ ਵੇਖਾਉਣ ਲਈ ਆਪਣਾ ਵਰਤਮਾਨ ਪੱਧਰ ਕਲੈਮ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਆਪਣਾ ਪੱਧਰ ਕਲੈਮ ਕਰਨ ਲਈ।"
+   },
+   "pl": {
+     "title": "Zgłoś poziom {{.LevelNumber}}",
+     "shortDescription": "Odblokuj i zgłoś swój nowy poziom.",
+     "longDescription": "Zgłoś swój obecny poziom, aby zaprezentować swoje postępy i kamienie milowe w aplikacji.",
+     "errorDescription": "Weryfikacja nie powiodła się. Spróbuj ponownie zgłosić swój poziom."
+   },
+   "pt": {
+     "title": "Reivindicar o nível {{.LevelNumber}}",
+     "shortDescription": "Desbloqueie e reivindique o seu novo nível.",
+     "longDescription": "Reivindique o seu nível atual para exibir seu progresso e marcos no aplicativo.",
+     "errorDescription": "Falha na verificação. Tente novamente para reivindicar o seu nível."
+   },
+   "ro": {
+     "title": "Revendică nivelul {{.LevelNumber}}",
+     "shortDescription": "Deblochează și revendică noul tău nivel.",
+     "longDescription": "Revendică-ți nivelul actual pentru a-ți afișa progresul și etapele atinse în aplicație.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să încerci din nou pentru a revendica nivelul."
+   },
+   "ru": {
+     "title": "Получите уровень {{.LevelNumber}}",
+     "shortDescription": "Разблокируйте и получите новый уровень.",
+     "longDescription": "Получите свой текущий уровень, чтобы продемонстрировать свои успехи и достижения в приложении.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, попробуйте снова, чтобы получить свой уровень."
+   },
+   "sk": {
+     "title": "Získajte úroveň {{.LevelNumber}}",
+     "shortDescription": "Odomknite a získajte svoju novú úroveň.",
+     "longDescription": "Získajte svoju aktuálnu úroveň a ukážte svoj pokrok a míľniky v aplikácii.",
+     "errorDescription": "Overenie zlyhalo. Skúste to znovu a získajte svoju úroveň."
+   },
+   "sl": {
+     "title": "Zahtevajte raven {{.LevelNumber}}",
+     "shortDescription": "Odklenite in zahtevajte svojo novo raven.",
+     "longDescription": "Zahtevajte svojo trenutno raven, da pokažete svoj napredek in dosežke v aplikaciji.",
+     "errorDescription": "Preverjanje ni uspelo. Poskusite znova, da zahtevate svojo raven."
+   },
+   "sq": {
+     "title": "Kërkoni nivelin {{.LevelNumber}}",
+     "shortDescription": "Zhbllokoni dhe kërkoni nivelin tuaj të ri.",
+     "longDescription": "Kërkoni nivelin tuaj aktual për të shfaqur përparimin dhe arritjet tuaja në aplikacion.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi provoni përsëri për të kërkuar nivelin tuaj."
+   },
+   "sv": {
+     "title": "Kräv nivå {{.LevelNumber}}",
+     "shortDescription": "Lås upp och kräv din nya nivå.",
+     "longDescription": "Kräv din nuvarande nivå för att visa dina framsteg och milstolpar i appen.",
+     "errorDescription": "Verifiering misslyckades. Försök igen för att kräva din nivå."
+   },
+   "te": {
+     "title": "{{.LevelNumber}} స్థాయిని క్లెయిమ్ చేయండి",
+     "shortDescription": "మీ కొత్త స్థాయిని అన్‌లాక్ చేసి క్లెయిమ్ చేయండి.",
+     "longDescription": "యాప్‌లో మీ పురోగతి మరియు మైలురాళ్లను ప్రదర్శించడానికి మీ ప్రస్తుత స్థాయిని క్లెయిమ్ చేయండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీ స్థాయిని క్లెయిమ్ చేయడానికి దయచేసి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "รับระดับ {{.LevelNumber}}",
+     "shortDescription": "ปลดล็อกและรับระดับใหม่ของคุณ",
+     "longDescription": "รับระดับปัจจุบันของคุณเพื่อแสดงความก้าวหน้าและเหตุการณ์สำคัญในแอป",
+     "errorDescription": "การยืนยันล้มเหลว โปรดลองอีกครั้งเพื่อรับระดับของคุณ"
+   },
+   "tr": {
+     "title": "{{.LevelNumber}} seviyesini talep et",
+     "shortDescription": "Yeni seviyenizi açın ve talep edin.",
+     "longDescription": "Mevcut seviyenizi talep ederek ilerlemenizi ve kilometre taşlarınızı uygulamada gösterin.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen seviyenizi talep etmek için tekrar deneyin."
+   },
+   "uk": {
+     "title": "Отримайте рівень {{.LevelNumber}}",
+     "shortDescription": "Розблокуйте та отримайте свій новий рівень.",
+     "longDescription": "Отримайте свій поточний рівень, щоб продемонструвати свій прогрес і досягнення в додатку.",
+     "errorDescription": "Перевірка не вдалася. Спробуйте ще раз, щоб отримати свій рівень."
+   },
+   "ur": {
+     "title": "{{.LevelNumber}} سطح حاصل کریں",
+     "shortDescription": "اپنا نیا سطح انلاک کریں اور حاصل کریں۔",
+     "longDescription": "اپنی پیشرفت اور اہم کامیابیاں دکھانے کے لیے اپنا موجودہ سطح حاصل کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم دوبارہ کوشش کریں تاکہ اپنا سطح حاصل کر سکیں۔"
+   },
+   "vi": {
+     "title": "Nhận cấp độ {{.LevelNumber}}",
+     "shortDescription": "Mở khóa và nhận cấp độ mới của bạn.",
+     "longDescription": "Nhận cấp độ hiện tại của bạn để hiển thị tiến trình và các cột mốc của bạn trong ứng dụng.",
+     "errorDescription": "Xác minh không thành công. Vui lòng thử lại để nhận cấp độ của bạn."
+   },
+   "zh-hant": {
+     "title": "申請第 {{.LevelNumber}} 級",
+     "shortDescription": "解鎖並申請你的新等級。",
+     "longDescription": "申請你目前的等級，以展示你在應用中的進展和里程碑。",
+     "errorDescription": "驗證失敗。請再試一次以申請你的等級。"
+   },
+   "zh": {
+     "title": "领取第 {{.LevelNumber}} 级",
+     "shortDescription": "解锁并领取您的新等级。",
+     "longDescription": "领取您当前的等级，展示您在应用中的进展和里程碑。",
+     "errorDescription": "验证失败。请再次尝试领取您的等级。"
    }
-}
+ }
+ 

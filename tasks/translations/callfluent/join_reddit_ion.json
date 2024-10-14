@@ -1,8 +1,261 @@
 {
-   "en":{
-      "title":"Join ION on Reddit",
-      "shortDescription":"Be part of the ION community on Reddit.",
-      "longDescription":"Join the Ice Open Network subreddit to engage with the community and get updates.",
-      "errorDescription":"Verification failed. Please check if you joined the ION subreddit and try again."
+   "af": {
+     "title": "Sluit aan by ION op Reddit",
+     "shortDescription": "Wees deel van die ION-gemeenskap op Reddit.",
+     "longDescription": "Sluit aan by die Ice Open Network subreddit om met die gemeenskap in gesprek te tree en opdaterings te kry.",
+     "errorDescription": "Verifikasie het misluk. Kyk asseblief of jy by die ION subreddit aangesluit het en probeer weer."
+   },
+   "ar": {
+     "title": "انضم إلى ION على Reddit",
+     "shortDescription": "كن جزءًا من مجتمع ION على Reddit.",
+     "longDescription": "انضم إلى مجتمع Ice Open Network على Reddit للتفاعل مع المجتمع والحصول على التحديثات.",
+     "errorDescription": "فشل التحقق. يرجى التحقق مما إذا كنت قد انضممت إلى ION subreddit وحاول مرة أخرى."
+   },
+   "az": {
+     "title": "ION-a Reddit-də qoşulun",
+     "shortDescription": "ION icmasının bir hissəsi olun Reddit-də.",
+     "longDescription": "Ice Open Network subreddit-ə qoşulun, icma ilə əlaqə qurun və yenilikləri əldə edin.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa ION subreddit-ə qoşulub-qatılmadığınızı yoxlayın və yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Присъединете се към ION в Reddit",
+     "shortDescription": "Бъдете част от общността на ION в Reddit.",
+     "longDescription": "Присъединете се към субреддита на Ice Open Network, за да се ангажирате с общността и да получавате актуализации.",
+     "errorDescription": "Проверката не бе успешна. Моля, проверете дали сте се присъединили към ION subreddit и опитайте отново."
+   },
+   "bn": {
+     "title": "ION-এ Reddit-এ যোগ দিন",
+     "shortDescription": "Reddit-এ ION কমিউনিটির অংশ হন।",
+     "longDescription": "আইস ওপেন নেটওয়ার্ক সাবরেডিট-এ যোগ দিন, কমিউনিটির সাথে যোগাযোগ করতে এবং আপডেট পেতে।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন আপনি ION subreddit-এ যোগ দিয়েছেন এবং আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Připojte se k ION na Redditu",
+     "shortDescription": "Staňte se součástí komunity ION na Redditu.",
+     "longDescription": "Připojte se k subreddit Ice Open Network a zapojte se do komunity a získejte novinky.",
+     "errorDescription": "Ověření selhalo. Zkontrolujte, zda jste se připojili k subreddit ION, a zkuste to znovu."
+   },
+   "de": {
+     "title": "Tritt ION auf Reddit bei",
+     "shortDescription": "Sei Teil der ION-Community auf Reddit.",
+     "longDescription": "Tritt dem Ice Open Network Subreddit bei, um dich mit der Community auszutauschen und Updates zu erhalten.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte überprüfe, ob du dem ION-Subreddit beigetreten bist, und versuche es erneut."
+   },
+   "el": {
+     "title": "Γίνετε μέλος του ION στο Reddit",
+     "shortDescription": "Γίνετε μέρος της κοινότητας ION στο Reddit.",
+     "longDescription": "Γίνετε μέλος του subreddit του Ice Open Network για να αλληλεπιδράσετε με την κοινότητα και να λάβετε ενημερώσεις.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Ελέγξτε αν γίνατε μέλος του subreddit του ION και δοκιμάστε ξανά."
+   },
+   "en": {
+     "title": "Join ION on Reddit",
+     "shortDescription": "Be part of the ION community on Reddit.",
+     "longDescription": "Join the Ice Open Network subreddit to engage with the community and get updates.",
+     "errorDescription": "Verification failed. Please check if you joined the ION subreddit and try again."
+   },
+   "es": {
+     "title": "Únete a ION en Reddit",
+     "shortDescription": "Sé parte de la comunidad de ION en Reddit.",
+     "longDescription": "Únete al subreddit de Ice Open Network para interactuar con la comunidad y obtener actualizaciones.",
+     "errorDescription": "La verificación falló. Por favor, revisa si te uniste al subreddit de ION e inténtalo de nuevo."
+   },
+   "fa": {
+     "title": "به ION در Reddit بپیوندید",
+     "shortDescription": "جزئی از جامعه ION در Reddit باشید.",
+     "longDescription": "به ساب‌ردیت Ice Open Network بپیوندید تا با جامعه درگیر شوید و به‌روزرسانی‌ها را دریافت کنید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً بررسی کنید که آیا به ساب‌ردیت ION پیوسته‌اید و دوباره تلاش کنید."
+   },
+   "fr": {
+     "title": "Rejoignez ION sur Reddit",
+     "shortDescription": "Faites partie de la communauté ION sur Reddit.",
+     "longDescription": "Rejoignez le subreddit de Ice Open Network pour interagir avec la communauté et recevoir des mises à jour.",
+     "errorDescription": "Échec de la vérification. Veuillez vérifier si vous avez rejoint le subreddit ION et réessayer."
+   },
+   "gu": {
+     "title": "ION Reddit પર જોડાઓ",
+     "shortDescription": "Reddit પર ION સમુદાયનો ભાગ બનો.",
+     "longDescription": "સમુદાય સાથે જોડાવા અને અપડેટ્સ મેળવવા માટે Ice Open Network સબ્રેડિટ પર જોડાઓ.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને તપાસો કે તમે ION સબ્રેડિટમાં જોડાયા છો કે નહીં અને ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "הצטרפו ל-ION ב-Reddit",
+     "shortDescription": "היו חלק מקהילת ION ב-Reddit.",
+     "longDescription": "הצטרפו לסאב-רדיט של Ice Open Network כדי ליצור מעורבות עם הקהילה ולקבל עדכונים.",
+     "errorDescription": "האימות נכשל. אנא בדקו אם הצטרפתם לסאב-רדיט של ION ונסו שוב."
+   },
+   "hi": {
+     "title": "ION पर Reddit से जुड़ें",
+     "shortDescription": "Reddit पर ION समुदाय का हिस्सा बनें।",
+     "longDescription": "समुदाय के साथ बातचीत करने और अपडेट प्राप्त करने के लिए Ice Open Network के सबरेडिट में शामिल हों।",
+     "errorDescription": "सत्यापन विफल। कृपया जांचें कि आप ION सबरेडिट में शामिल हुए हैं और फिर से प्रयास करें।"
+   },
+   "hu": {
+     "title": "Csatlakozz az ION-hoz a Redditen",
+     "shortDescription": "Légy része az ION közösségnek a Redditen.",
+     "longDescription": "Csatlakozz az Ice Open Network subreddit-hez, hogy részt vegyél a közösségben és megkapd a frissítéseket.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Ellenőrizd, hogy csatlakoztál-e az ION subreddit-hez, és próbáld újra."
+   },
+   "id": {
+     "title": "Bergabung dengan ION di Reddit",
+     "shortDescription": "Jadilah bagian dari komunitas ION di Reddit.",
+     "longDescription": "Bergabunglah dengan subreddit Ice Open Network untuk terlibat dengan komunitas dan mendapatkan pembaruan.",
+     "errorDescription": "Verifikasi gagal. Silakan periksa apakah Anda bergabung dengan subreddit ION dan coba lagi."
+   },
+   "it": {
+     "title": "Unisciti a ION su Reddit",
+     "shortDescription": "Fai parte della comunità ION su Reddit.",
+     "longDescription": "Unisciti al subreddit di Ice Open Network per interagire con la comunità e ottenere aggiornamenti.",
+     "errorDescription": "Verifica fallita. Controlla se ti sei unito al subreddit ION e riprova."
+   },
+   "ja": {
+     "title": "RedditでIONに参加する",
+     "shortDescription": "RedditでIONコミュニティの一員になりましょう。",
+     "longDescription": "コミュニティに参加し、最新情報を得るためにIce Open Networkのサブレディットに参加してください。",
+     "errorDescription": "確認に失敗しました。IONのサブレディットに参加しているか確認し、もう一度お試しください。"
+   },
+   "jv": {
+     "title": "Gabung ION ing Reddit",
+     "shortDescription": "Dadi bagian saka komunitas ION ing Reddit.",
+     "longDescription": "Gabung subreddit Ice Open Network kanggo melu komunitas lan entuk pembaruan.",
+     "errorDescription": "Verifikasi gagal. Priksa manawa sampeyan wis gabung ing subreddit ION lan coba maneh."
+   },
+   "kn": {
+     "title": "ION ನೊಂದಿಗೆ Reddit ನಲ್ಲಿ ಸೇರಿಕೊಳ್ಳಿ",
+     "shortDescription": "Reddit ನಲ್ಲಿ ION ಸಮುದಾಯದ ಭಾಗವಿರಿ.",
+     "longDescription": "ಸಮುದಾಯದೊಂದಿಗೆ ನಡುಗಾಟ ನಡೆಸಲು ಮತ್ತು ಅಪ್ಡೇಟ್ಗಳನ್ನು ಪಡೆಯಲು Ice Open Network ನ ಸಬ್‌ರೆಡಿಟ್ ನಲ್ಲಿ ಸೇರಿಕೊಳ್ಳಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನೀವು ION ಸಬ್‌ರೆಡಿಟ್ ಗೆ ಸೇರಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "Reddit에서 ION에 가입하세요",
+     "shortDescription": "Reddit에서 ION 커뮤니티의 일원이 되세요.",
+     "longDescription": "커뮤니티에 참여하고 업데이트를 받기 위해 Ice Open Network의 서브레딧에 가입하세요.",
+     "errorDescription": "인증에 실패했습니다. ION 서브레딧에 가입했는지 확인하고 다시 시도하세요."
+   },
+   "mr": {
+     "title": "ION मध्ये Reddit वर सामील व्हा",
+     "shortDescription": "Reddit वर ION समुदायाचा भाग व्हा.",
+     "longDescription": "समुदायाशी संवाद साधण्यासाठी आणि अद्यतने मिळवण्यासाठी Ice Open Network च्या सबरेडिटमध्ये सामील व्हा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तपासा की तुम्ही ION सबरेडिटमध्ये सामील झाला आहात आणि पुन्हा प्रयत्न करा."
+   },
+   "ms": {
+     "title": "Sertai ION di Reddit",
+     "shortDescription": "Jadilah sebahagian daripada komuniti ION di Reddit.",
+     "longDescription": "Sertai subreddit Ice Open Network untuk melibatkan diri dengan komuniti dan mendapatkan kemas kini.",
+     "errorDescription": "Pengesahan gagal. Sila semak jika anda menyertai subreddit ION dan cuba lagi."
+   },
+   "nb": {
+     "title": "Bli med i ION på Reddit",
+     "shortDescription": "Bli en del av ION-fellesskapet på Reddit.",
+     "longDescription": "Bli med i Ice Open Network subreddit for å delta i fellesskapet og få oppdateringer.",
+     "errorDescription": "Verifisering mislyktes. Vennligst sjekk om du har blitt med i ION subreddit og prøv igjen."
+   },
+   "nn": {
+     "title": "Bli med i ION på Reddit",
+     "shortDescription": "Bli ein del av ION-fellesskapet på Reddit.",
+     "longDescription": "Bli med i Ice Open Network subreddit for å delta i fellesskapet og få oppdateringar.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å sjå om du har blitt med i ION subreddit og prøv igjen."
+   },
+   "pa": {
+     "title": "ION ਨਾਲ Reddit 'ਤੇ ਸ਼ਾਮਲ ਹੋਵੋ",
+     "shortDescription": "Reddit 'ਤੇ ION ਭਾਈਚਾਰੇ ਦਾ ਹਿੱਸਾ ਬਣੋ।",
+     "longDescription": "ਭਾਈਚਾਰੇ ਨਾਲ ਜੁੜਨ ਅਤੇ ਅੱਪਡੇਟ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ Ice Open Network ਦੇ ਸਬਰੈਡਿਟ 'ਤੇ ਸ਼ਾਮਲ ਹੋਵੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚੋ ਕਿ ਤੁਸੀਂ ION ਸਬਰੇਡੀਟ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ ਹੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Dołącz do ION na Reddicie",
+     "shortDescription": "Bądź częścią społeczności ION na Reddicie.",
+     "longDescription": "Dołącz do subreddita Ice Open Network, aby zaangażować się w społeczność i otrzymywać aktualizacje.",
+     "errorDescription": "Weryfikacja nie powiodła się. Sprawdź, czy dołączyłeś do subreddita ION i spróbuj ponownie."
+   },
+   "pt": {
+     "title": "Junte-se ao ION no Reddit",
+     "shortDescription": "Faça parte da comunidade ION no Reddit.",
+     "longDescription": "Junte-se ao subreddit do Ice Open Network para se engajar com a comunidade e obter atualizações.",
+     "errorDescription": "Falha na verificação. Verifique se você entrou no subreddit do ION e tente novamente."
+   },
+   "ro": {
+     "title": "Alătură-te ION pe Reddit",
+     "shortDescription": "Fii parte din comunitatea ION pe Reddit.",
+     "longDescription": "Alătură-te subreddit-ului Ice Open Network pentru a interacționa cu comunitatea și a primi actualizări.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să verifici dacă te-ai alăturat subreddit-ului ION și încearcă din nou."
+   },
+   "ru": {
+     "title": "Присоединяйтесь к ION на Reddit",
+     "shortDescription": "Станьте частью сообщества ION на Reddit.",
+     "longDescription": "Присоединяйтесь к сабреддиту Ice Open Network, чтобы общаться с сообществом и получать обновления.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, проверьте, присоединились ли вы к сабреддиту ION, и попробуйте снова."
+   },
+   "sk": {
+     "title": "Pripojte sa k ION na Reddite",
+     "shortDescription": "Buďte súčasťou komunity ION na Reddite.",
+     "longDescription": "Pripojte sa k subredditu Ice Open Network, aby ste sa zapojili do komunity a získali aktualizácie.",
+     "errorDescription": "Overenie zlyhalo. Skontrolujte, či ste sa pripojili k subreddit ION, a skúste to znovu."
+   },
+   "sl": {
+     "title": "Pridružite se ION na Redditu",
+     "shortDescription": "Bodite del skupnosti ION na Redditu.",
+     "longDescription": "Pridružite se subreddit Ice Open Network, da se vključite v skupnost in pridobite posodobitve.",
+     "errorDescription": "Preverjanje ni uspelo. Preverite, ali ste se pridružili subreddit ION in poskusite znova."
+   },
+   "sq": {
+     "title": "Bashkohuni me ION në Reddit",
+     "shortDescription": "Bëhuni pjesë e komunitetit ION në Reddit.",
+     "longDescription": "Bashkohuni me subreddit-in e Ice Open Network për të bashkëvepruar me komunitetin dhe për të marrë përditësime.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi kontrolloni nëse jeni bashkuar me subreddit-in e ION dhe provoni përsëri."
+   },
+   "sv": {
+     "title": "Gå med i ION på Reddit",
+     "shortDescription": "Bli en del av ION-gemenskapen på Reddit.",
+     "longDescription": "Gå med i Ice Open Network-subredditen för att engagera dig i gemenskapen och få uppdateringar.",
+     "errorDescription": "Verifiering misslyckades. Kontrollera om du gick med i ION-subredditen och försök igen."
+   },
+   "te": {
+     "title": "ION ను Reddit లో చేరండి",
+     "shortDescription": "Reddit లో ION సమూహంలో భాగం అవ్వండి.",
+     "longDescription": "సమూహంతో నిమగ్నం అవ్వడానికి మరియు నవీకరణలను పొందడానికి Ice Open Network యొక్క subreddit లో చేరండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు ION subreddit లో చేరారా అని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "เข้าร่วม ION บน Reddit",
+     "shortDescription": "เป็นส่วนหนึ่งของชุมชน ION บน Reddit",
+     "longDescription": "เข้าร่วม subreddit ของ Ice Open Network เพื่อมีส่วนร่วมกับชุมชนและรับการอัปเดต",
+     "errorDescription": "การยืนยันล้มเหลว โปรดตรวจสอบว่าคุณได้เข้าร่วม subreddit ของ ION แล้วและลองใหม่อีกครั้ง"
+   },
+   "tr": {
+     "title": "Reddit'te ION'a katılın",
+     "shortDescription": "Reddit'teki ION topluluğunun bir parçası olun.",
+     "longDescription": "Toplulukla etkileşimde bulunmak ve güncellemeleri almak için Ice Open Network subreddit'ine katılın.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen ION subreddit'ine katılıp katılmadığınızı kontrol edin ve tekrar deneyin."
+   },
+   "uk": {
+     "title": "Приєднуйтесь до ION на Reddit",
+     "shortDescription": "Станьте частиною спільноти ION на Reddit.",
+     "longDescription": "Приєднуйтесь до сабреддіту Ice Open Network, щоб взаємодіяти зі спільнотою та отримувати оновлення.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, перевірте, чи приєдналися ви до сабреддіту ION, і спробуйте ще раз."
+   },
+   "ur": {
+     "title": "ION میں Reddit پر شامل ہوں",
+     "shortDescription": "Reddit پر ION کمیونٹی کا حصہ بنیں۔",
+     "longDescription": "کمیونٹی کے ساتھ شامل ہونے اور اپ ڈیٹس حاصل کرنے کے لیے Ice Open Network کے سبریڈٹ میں شامل ہوں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم چیک کریں کہ آپ ION سبریڈٹ میں شامل ہوئے ہیں اور دوبارہ کوشش کریں۔"
+   },
+   "vi": {
+     "title": "Tham gia ION trên Reddit",
+     "shortDescription": "Hãy là một phần của cộng đồng ION trên Reddit.",
+     "longDescription": "Tham gia subreddit của Ice Open Network để tương tác với cộng đồng và nhận các bản cập nhật.",
+     "errorDescription": "Xác minh không thành công. Vui lòng kiểm tra xem bạn đã tham gia subreddit của ION chưa và thử lại."
+   },
+   "zh-hant": {
+     "title": "在 Reddit 加入 ION",
+     "shortDescription": "成為 Reddit 上 ION 社群的一部分。",
+     "longDescription": "加入 Ice Open Network 的 subreddit，與社群互動並獲取更新。",
+     "errorDescription": "驗證失敗。請檢查您是否已加入 ION 的 subreddit，然後再試一次。"
+   },
+   "zh": {
+     "title": "在 Reddit 加入 ION",
+     "shortDescription": "成为 Reddit 上 ION 社区的一员。",
+     "longDescription": "加入 Ice Open Network 的 subreddit，与社区互动并获取更新。",
+     "errorDescription": "验证失败。请检查您是否已加入 ION 的 subreddit，然后重试。"
    }
-}
+ }
+ 

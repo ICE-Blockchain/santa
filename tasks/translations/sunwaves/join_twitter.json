@@ -1,8 +1,260 @@
 {
-   "en":{
-      "title":"Follow us on X",
-      "shortDescription":"Stay connected for news and updates.",
-      "longDescription":"Follow us on X to stay updated with the latest news and ecosystem developments.",
-      "errorDescription":"Verification failed. Please check if you followed us and try again."
-   }
+  "af": {
+    "title": "Volg ons op X",
+    "shortDescription": "Bly verbind vir nuus en opdaterings.",
+    "longDescription": "Volg ons op X om op hoogte te bly van die nuutste nuus en ekosisteemontwikkelings.",
+    "errorDescription": "Verifikasie het misluk. Kyk asseblief of jy ons gevolg het en probeer weer."
+  },
+  "ar": {
+    "title": "تابعنا على X",
+    "shortDescription": "ابقَ على اتصال للحصول على الأخبار والتحديثات.",
+    "longDescription": "تابعنا على X للبقاء على اطلاع بآخر الأخبار وتطورات النظام البيئي.",
+    "errorDescription": "فشل التحقق. يرجى التحقق مما إذا كنت قد تابعتنا وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "X-də bizi izləyin",
+    "shortDescription": "Xəbərlər və yeniliklər üçün əlaqədə qalın.",
+    "longDescription": "Son xəbərlər və ekosistem yenilikləri ilə tanış olmaq üçün X-də bizi izləyin.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa bizi izləyib-izləmədiyinizi yoxlayın və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Следвайте ни в X",
+    "shortDescription": "Останете свързани за новини и актуализации.",
+    "longDescription": "Следвайте ни в X, за да получавате най-новите новини и разработки на екосистемата.",
+    "errorDescription": "Проверката не бе успешна. Моля, проверете дали сте ни последвали и опитайте отново."
+  },
+  "bn": {
+    "title": "X-এ আমাদের অনুসরণ করুন",
+    "shortDescription": "সংবাদ এবং আপডেটের জন্য সংযুক্ত থাকুন।",
+    "longDescription": "সর্বশেষ সংবাদ এবং ইকোসিস্টেমের উন্নয়নের সাথে আপডেট থাকতে X-এ আমাদের অনুসরণ করুন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন আপনি আমাদের অনুসরণ করেছেন এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Sledujte nás na X",
+    "shortDescription": "Zůstaňte připojeni pro novinky a aktualizace.",
+    "longDescription": "Sledujte nás na X, abyste zůstali v obraze o nejnovějších zprávách a vývoji ekosystému.",
+    "errorDescription": "Ověření selhalo. Zkontrolujte, zda nás sledujete, a zkuste to znovu."
+  },
+  "de": {
+    "title": "Folge uns auf X",
+    "shortDescription": "Bleibe für Nachrichten und Updates verbunden.",
+    "longDescription": "Folge uns auf X, um immer über die neuesten Nachrichten und Entwicklungen im Ökosystem informiert zu bleiben.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte überprüfe, ob du uns gefolgt bist, und versuche es erneut."
+  },
+  "el": {
+    "title": "Ακολουθήστε μας στο X",
+    "shortDescription": "Μείνετε συνδεδεμένοι για νέα και ενημερώσεις.",
+    "longDescription": "Ακολουθήστε μας στο X για να ενημερώνεστε για τα τελευταία νέα και τις εξελίξεις στο οικοσύστημα.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Ελέγξτε αν μας ακολουθήσατε και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Follow us on X",
+    "shortDescription": "Stay connected for news and updates.",
+    "longDescription": "Follow us on X to stay updated with the latest news and ecosystem developments.",
+    "errorDescription": "Verification failed. Please check if you followed us and try again."
+  },
+  "es": {
+    "title": "Síguenos en X",
+    "shortDescription": "Mantente conectado para recibir noticias y actualizaciones.",
+    "longDescription": "Síguenos en X para mantenerte al día con las últimas noticias y desarrollos del ecosistema.",
+    "errorDescription": "La verificación falló. Por favor, revisa si nos sigues e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "ما را در X دنبال کنید",
+    "shortDescription": "برای اخبار و به‌روزرسانی‌ها در ارتباط باشید.",
+    "longDescription": "برای اطلاع از آخرین اخبار و تحولات اکوسیستم، ما را در X دنبال کنید.",
+    "errorDescription": "اعتبارسنجی شکست خورد. لطفاً بررسی کنید که آیا ما را دنبال کرده‌اید و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Suivez-nous sur X",
+    "shortDescription": "Restez connecté pour les nouvelles et les mises à jour.",
+    "longDescription": "Suivez-nous sur X pour rester informé des dernières nouvelles et des développements de l'écosystème.",
+    "errorDescription": "Échec de la vérification. Veuillez vérifier si vous nous avez suivis et réessayer."
+  },
+  "gu": {
+    "title": "X પર અમને અનુસરો",
+    "shortDescription": "સમાચાર અને અપડેટ્સ માટે જોડાયેલા રહો.",
+    "longDescription": "નવીનતમ સમાચાર અને ઈકોસિસ્ટમ વિકાસ સાથે અપડેટ રહેવા માટે X પર અમને અનુસરો.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને તપાસો કે તમે અમને અનુસર્યું છે અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "עקבו אחרינו ב-X",
+    "shortDescription": "הישארו מחוברים לחדשות ועדכונים.",
+    "longDescription": "עקבו אחרינו ב-X כדי להישאר מעודכנים בחדשות האחרונות ובהתפתחויות האקוסיסטם.",
+    "errorDescription": "האימות נכשל. אנא בדקו אם עקבתם אחרינו ונסו שוב."
+  },
+  "hi": {
+    "title": "X पर हमें फॉलो करें",
+    "shortDescription": "समाचार और अपडेट के लिए जुड़े रहें।",
+    "longDescription": "नवीनतम समाचारों और इकोसिस्टम विकासों के साथ अपडेट रहने के लिए X पर हमें फॉलो करें।",
+    "errorDescription": "सत्यापन विफल। कृपया जांचें कि आपने हमें फॉलो किया है और फिर से प्रयास करें।"
+  },
+  "hu": {
+    "title": "Kövess minket az X-en",
+    "shortDescription": "Maradj kapcsolatban a hírekért és frissítésekért.",
+    "longDescription": "Kövess minket az X-en, hogy értesülj a legfrissebb hírekről és ökoszisztéma-fejlesztésekről.",
+    "errorDescription": "Az ellenőrzés sikertelen volt. Ellenőrizd, hogy követtél-e minket, és próbáld újra."
+  },
+  "id": {
+    "title": "Ikuti kami di X",
+    "shortDescription": "Tetap terhubung untuk berita dan pembaruan.",
+    "longDescription": "Ikuti kami di X untuk tetap mendapatkan berita terbaru dan perkembangan ekosistem.",
+    "errorDescription": "Verifikasi gagal. Silakan periksa apakah Anda mengikuti kami dan coba lagi."
+  },
+  "it": {
+    "title": "Segui noi su X",
+    "shortDescription": "Rimani connesso per le notizie e gli aggiornamenti.",
+    "longDescription": "Segui noi su X per rimanere aggiornato con le ultime notizie e gli sviluppi dell'ecosistema.",
+    "errorDescription": "Verifica fallita. Controlla se ci hai seguito e riprova."
+  },
+  "ja": {
+    "title": "Xで私たちをフォローする",
+    "shortDescription": "ニュースとアップデートを受け取るために接続してください。",
+    "longDescription": "最新ニュースやエコシステムの進展を把握するために、Xで私たちをフォローしてください。",
+    "errorDescription": "確認に失敗しました。私たちをフォローしたかどうか確認し、もう一度試してください。"
+  },
+  "jv": {
+    "title": "Tindakake kita ing X",
+    "shortDescription": "Tetep nyambung kanggo warta lan pembaruan.",
+    "longDescription": "Tindakake kita ing X kanggo tetep nganyari karo warta paling anyar lan perkembangan ekosistem.",
+    "errorDescription": "Verifikasi gagal. Priksa manawa sampeyan wis ngetutake kita lan coba maneh."
+  },
+  "kn": {
+    "title": "X ನಲ್ಲಿ ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ",
+    "shortDescription": "ಸುದ್ದಿಗಳು ಮತ್ತು ನವೀಕರಣಗಳಿಗಾಗಿ ಸಂಪರ್ಕದಲ್ಲಿರಿ.",
+    "longDescription": "ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು ಮತ್ತು ಪರಿಸರದ ಅಭಿವೃದ್ಧಿಗಳೊಂದಿಗೆ ನವೀಕರಿಸಲು X ನಲ್ಲಿ ನಮ್ಮನ್ನು ಅನುಸರಿಸಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನೀವು ನಮ್ಮನ್ನು ಅನುಸರಿಸಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "X에서 우리를 팔로우하세요",
+    "shortDescription": "뉴스와 업데이트를 위해 연결을 유지하세요.",
+    "longDescription": "최신 뉴스 및 생태계 개발에 대한 업데이트를 받기 위해 X에서 우리를 팔로우하세요.",
+    "errorDescription": "인증에 실패했습니다. 우리를 팔로우했는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "X वर आम्हाला फॉलो करा",
+    "shortDescription": "बातम्या आणि अद्यतनांसाठी कनेक्ट रहा.",
+    "longDescription": "नवीनतम बातम्या आणि इकोसिस्टम विकासांसह अद्यतनित राहण्यासाठी X वर आम्हाला फॉलो करा.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तपासा की तुम्ही आम्हाला फॉलो केले आहे आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Ikuti kami di X",
+    "shortDescription": "Terus berhubung untuk berita dan kemas kini.",
+    "longDescription": "Ikuti kami di X untuk terus dikemas kini dengan berita terkini dan perkembangan ekosistem.",
+    "errorDescription": "Pengesahan gagal. Sila semak sama ada anda mengikuti kami dan cuba lagi."
+  },
+  "nb": {
+    "title": "Følg oss på X",
+    "shortDescription": "Hold deg oppdatert på nyheter og oppdateringer.",
+    "longDescription": "Følg oss på X for å holde deg oppdatert med de siste nyhetene og utviklingene i økosystemet.",
+    "errorDescription": "Verifisering mislyktes. Vennligst sjekk om du fulgte oss og prøv igjen."
+  },
+  "nn": {
+    "title": "Følg oss på X",
+    "shortDescription": "Hald deg oppdatert på nyheiter og oppdateringar.",
+    "longDescription": "Følg oss på X for å halde deg oppdatert med dei siste nyheitene og utviklingane i økosystemet.",
+    "errorDescription": "Verifisering mislukkast. Ver venleg å sjå om du følgde oss og prøv igjen."
+  },
+  "pa": {
+    "title": "X 'ਤੇ ਸਾਨੂੰ ਫਾਲੋ ਕਰੋ",
+    "shortDescription": "ਖ਼ਬਰਾਂ ਅਤੇ ਅੱਪਡੇਟਾਂ ਲਈ ਜੁੜੇ ਰਹੋ।",
+    "longDescription": "ਨਵੀਆਂ ਖ਼ਬਰਾਂ ਅਤੇ ਪਰੀਸਥਿਤਕੀ ਵਿਕਾਸਾਂ ਨਾਲ ਅੱਪਡੇਟ ਰਹਿਣ ਲਈ X 'ਤੇ ਸਾਨੂੰ ਫਾਲੋ ਕਰੋ।",
+    "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚੋ ਕਿ ਤੁਸੀਂ ਸਾਨੂੰ ਫਾਲੋ ਕੀਤਾ ਹੈ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  },
+  "pl": {
+    "title": "Śledź nas na X",
+    "shortDescription": "Pozostań w kontakcie, aby otrzymywać wiadomości i aktualizacje.",
+    "longDescription": "Śledź nas na X, aby być na bieżąco z najnowszymi wiadomościami i rozwojem ekosystemu.",
+    "errorDescription": "Weryfikacja nie powiodła się. Sprawdź, czy nas śledzisz i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Siga-nos no X",
+    "shortDescription": "Fique conectado para notícias e atualizações.",
+    "longDescription": "Siga-nos no X para se manter atualizado com as últimas notícias e desenvolvimentos do ecossistema.",
+    "errorDescription": "Falha na verificação. Verifique se você nos seguiu e tente novamente."
+  },
+  "ro": {
+    "title": "Urmărește-ne pe X",
+    "shortDescription": "Rămâi conectat pentru noutăți și actualizări.",
+    "longDescription": "Urmărește-ne pe X pentru a rămâne la curent cu cele mai recente știri și dezvoltări din ecosistem.",
+    "errorDescription": "Verificarea a eșuat. Te rugăm să verifici dacă ne-ai urmărit și să încerci din nou."
+  },
+  "ru": {
+    "title": "Подписывайтесь на нас в X",
+    "shortDescription": "Оставайтесь на связи для новостей и обновлений.",
+    "longDescription": "Подписывайтесь на нас в X, чтобы быть в курсе последних новостей и развития экосистемы.",
+    "errorDescription": "Не удалось выполнить проверку. Пожалуйста, проверьте, подписались ли вы на нас, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Sledujte nás na X",
+    "shortDescription": "Zostaňte v kontakte pre novinky a aktualizácie.",
+    "longDescription": "Sledujte nás na X, aby ste boli v obraze o najnovších správach a vývoji ekosystému.",
+    "errorDescription": "Overenie zlyhalo. Skontrolujte, či nás sledujete, a skúste to znovu."
+  },
+  "sl": {
+    "title": "Spremljajte nas na X",
+    "shortDescription": "Ostanite povezani za novice in posodobitve.",
+    "longDescription": "Spremljajte nas na X, da boste na tekočem z najnovejšimi novicami in razvojem ekosistema.",
+    "errorDescription": "Preverjanje ni uspelo. Preverite, ali nas spremljate, in poskusite znova."
+  },
+  "sq": {
+    "title": "Na ndiqni në X",
+    "shortDescription": "Qëndroni të lidhur për lajme dhe përditësime.",
+    "longDescription": "Na ndiqni në X për të qëndruar të përditësuar me lajmet më të fundit dhe zhvillimet e ekosistemit.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi kontrolloni nëse na keni ndjekur dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Följ oss på X",
+    "shortDescription": "Håll kontakten för nyheter och uppdateringar.",
+    "longDescription": "Följ oss på X för att hålla dig uppdaterad med de senaste nyheterna och utvecklingen i ekosystemet.",
+    "errorDescription": "Verifiering misslyckades. Kontrollera om du följde oss och försök igen."
+  },
+  "te": {
+    "title": "X లో మమ్మల్ని అనుసరించండి",
+    "shortDescription": "వార్తలు మరియు నవీకరణల కోసం కనెక్ట్ గా ఉండండి.",
+    "longDescription": "తాజా వార్తలు మరియు పర్యావరణ వ్యవస్థ అభివృద్ధులతో నవీకరించబడటానికి X లో మమ్మల్ని అనుసరించండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు మమ్మల్ని అనుసరించారా అని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "ติดตามเราบน X",
+    "shortDescription": "เชื่อมต่อเพื่อรับข่าวสารและการอัปเดต",
+    "longDescription": "ติดตามเราบน X เพื่อรับข่าวสารล่าสุดและการพัฒนาของระบบนิเวศ",
+    "errorDescription": "การยืนยันล้มเหลว โปรดตรวจสอบว่าคุณติดตามเราแล้วและลองใหม่อีกครั้ง"
+  },
+  "tr": {
+    "title": "X'te bizi takip edin",
+    "shortDescription": "Haberler ve güncellemeler için bağlı kalın.",
+    "longDescription": "En son haberler ve ekosistem gelişmelerinden haberdar olmak için X'te bizi takip edin.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen bizi takip edip etmediğinizi kontrol edin ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Слідкуйте за нами у X",
+    "shortDescription": "Залишайтеся на зв’язку для новин та оновлень.",
+    "longDescription": "Слідкуйте за нами у X, щоб бути в курсі останніх новин і розвитку екосистеми.",
+    "errorDescription": "Перевірка не вдалася. Будь ласка, перевірте, чи слідкуєте ви за нами, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "ہمیں X پر فالو کریں",
+    "shortDescription": "خبریں اور اپ ڈیٹس کے لیے جڑے رہیں۔",
+    "longDescription": "تازہ ترین خبروں اور ماحولیاتی نظام کی ترقیات کے بارے میں اپ ڈیٹ رہنے کے لیے X پر ہمیں فالو کریں۔",
+    "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم چیک کریں کہ آپ نے ہمیں فالو کیا ہے اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Theo dõi chúng tôi trên X",
+    "shortDescription": "Kết nối để nhận tin tức và cập nhật.",
+    "longDescription": "Theo dõi chúng tôi trên X để luôn cập nhật với tin tức mới nhất và các phát triển của hệ sinh thái.",
+    "errorDescription": "Xác minh không thành công. Vui lòng kiểm tra xem bạn đã theo dõi chúng tôi và thử lại."
+  },
+  "zh-hant": {
+    "title": "在 X 上關注我們",
+    "shortDescription": "保持聯繫以獲取新聞和更新。",
+    "longDescription": "在 X 上關注我們，隨時掌握最新新聞和生態系統的發展。",
+    "errorDescription": "驗證失敗。請檢查您是否關注了我們，然後再試一次。"
+  },
+  "zh": {
+    "title": "在 X 上关注我们",
+    "shortDescription": "保持联系以获取新闻和更新。",
+    "longDescription": "在 X 上关注我们，随时了解最新新闻和生态系统的发展。",
+    "errorDescription": "验证失败。请检查您是否关注了我们，然后重试。"
+  }
 }

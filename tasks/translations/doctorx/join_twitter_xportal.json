@@ -1,0 +1,260 @@
+{
+  "af": {
+    "title": "Volg xPortal op X",
+    "shortDescription": "Kry opdaterings en nuus van xPortal.",
+    "longDescription": "Volg xPortal op X vir die nuutste nuus en ontwikkelinge van die app.",
+    "errorDescription": "Verifikasie het misluk. Kyk asseblief of jy xPortal gevolg het en probeer weer."
+  },
+  "ar": {
+    "title": "تابع xPortal على X",
+    "shortDescription": "احصل على التحديثات والأخبار من xPortal.",
+    "longDescription": "تابع xPortal على X للحصول على أحدث الأخبار والتطورات في التطبيق.",
+    "errorDescription": "فشل التحقق. يرجى التحقق مما إذا كنت قد تابعت xPortal وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "X-də xPortal-i izləyin",
+    "shortDescription": "xPortal-dan yenilikləri və xəbərləri əldə edin.",
+    "longDescription": "Tətbiqin son xəbərləri və inkişafları üçün X-də xPortal-i izləyin.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa, xPortal-i izləyib-izləmədiyinizi yoxlayın və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Следвайте xPortal в X",
+    "shortDescription": "Получавайте новини и актуализации от xPortal.",
+    "longDescription": "Следвайте xPortal в X за последните новини и развития на приложението.",
+    "errorDescription": "Проверката не бе успешна. Моля, проверете дали сте последвали xPortal и опитайте отново."
+  },
+  "bn": {
+    "title": "X-এ xPortal অনুসরণ করুন",
+    "shortDescription": "xPortal থেকে আপডেট এবং খবর পান।",
+    "longDescription": "অ্যাপের সর্বশেষ খবর এবং উন্নয়নের জন্য X-এ xPortal অনুসরণ করুন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে দেখুন আপনি xPortal অনুসরণ করেছেন কিনা এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Sledujte xPortal na X",
+    "shortDescription": "Získejte novinky a aktualizace od xPortal.",
+    "longDescription": "Sledujte xPortal na X pro nejnovější zprávy a vývoj aplikace.",
+    "errorDescription": "Ověření selhalo. Zkontrolujte, zda sledujete xPortal, a zkuste to znovu."
+  },
+  "de": {
+    "title": "Folge xPortal auf X",
+    "shortDescription": "Erhalte Updates und Neuigkeiten von xPortal.",
+    "longDescription": "Folge xPortal auf X für die neuesten Nachrichten und Entwicklungen der App.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte überprüfe, ob du xPortal folgst, und versuche es erneut."
+  },
+  "el": {
+    "title": "Ακολουθήστε το xPortal στο X",
+    "shortDescription": "Λάβετε ενημερώσεις και ειδήσεις από το xPortal.",
+    "longDescription": "Ακολουθήστε το xPortal στο X για τα τελευταία νέα και εξελίξεις της εφαρμογής.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Ελέγξτε αν ακολουθήσατε το xPortal και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Follow xPortal on X",
+    "shortDescription": "Get updates and news from xPortal.",
+    "longDescription": "Follow xPortal on X for the latest news and developments of the app.",
+    "errorDescription": "Verification failed. Please check if you followed xPortal and try again."
+  },
+  "es": {
+    "title": "Sigue a xPortal en X",
+    "shortDescription": "Recibe actualizaciones y noticias de xPortal.",
+    "longDescription": "Sigue a xPortal en X para obtener las últimas noticias y desarrollos de la aplicación.",
+    "errorDescription": "La verificación falló. Por favor, verifica si sigues a xPortal e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "xPortal را در X دنبال کنید",
+    "shortDescription": "به‌روزرسانی‌ها و اخبار xPortal را دریافت کنید.",
+    "longDescription": "برای آخرین اخبار و توسعه‌های اپلیکیشن، xPortal را در X دنبال کنید.",
+    "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً بررسی کنید که آیا xPortal را دنبال کرده‌اید و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Suivez xPortal sur X",
+    "shortDescription": "Recevez des mises à jour et des nouvelles de xPortal.",
+    "longDescription": "Suivez xPortal sur X pour les dernières nouvelles et développements de l'application.",
+    "errorDescription": "Échec de la vérification. Veuillez vérifier si vous avez suivi xPortal et réessayez."
+  },
+  "gu": {
+    "title": "X પર xPortal ને અનુસરો",
+    "shortDescription": "xPortal ની નવીનતમ અપડેટ્સ અને સમાચાર મેળવો.",
+    "longDescription": "xPortal એપની તાજેતરની અફડેટ્સ અને વિકાસ માટે X પર અનુસરો.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને તમે xPortal ને અનુસર્યું છે કે કેમ તે તપાસો અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "עקבו אחרי xPortal ב-X",
+    "shortDescription": "קבלו עדכונים וחדשות מ-xPortal.",
+    "longDescription": "עקבו אחרי xPortal ב-X לקבלת החדשות וההתפתחויות האחרונות של האפליקציה.",
+    "errorDescription": "האימות נכשל. אנא בדקו אם עקבתם אחרי xPortal ונסו שוב."
+  },
+  "hi": {
+    "title": "xPortal को X पर फॉलो करें",
+    "shortDescription": "xPortal से अपडेट और समाचार प्राप्त करें।",
+    "longDescription": "ऐप की नवीनतम खबरों और विकासों के लिए X पर xPortal को फॉलो करें।",
+    "errorDescription": "सत्यापन विफल। कृपया जाँचें कि आपने xPortal को फॉलो किया है और फिर से प्रयास करें।"
+  },
+  "hu": {
+    "title": "Kövessétek a xPortal-t X-en",
+    "shortDescription": "Kapj híreket és frissítéseket a xPortal-ról.",
+    "longDescription": "Kövessétek a xPortal-t X-en az alkalmazás legfrissebb híreiért és fejlesztéseiért.",
+    "errorDescription": "Az ellenőrzés nem sikerült. Ellenőrizd, hogy követed-e a xPortal-t, és próbáld újra."
+  },
+  "id": {
+    "title": "Ikuti xPortal di X",
+    "shortDescription": "Dapatkan pembaruan dan berita dari xPortal.",
+    "longDescription": "Ikuti xPortal di X untuk berita terbaru dan perkembangan aplikasi.",
+    "errorDescription": "Verifikasi gagal. Silakan periksa apakah Anda mengikuti xPortal dan coba lagi."
+  },
+  "it": {
+    "title": "Segui xPortal su X",
+    "shortDescription": "Ricevi aggiornamenti e notizie da xPortal.",
+    "longDescription": "Segui xPortal su X per le ultime notizie e sviluppi dell'app.",
+    "errorDescription": "Verifica fallita. Controlla se hai seguito xPortal e riprova."
+  },
+  "ja": {
+    "title": "XでxPortalをフォローする",
+    "shortDescription": "xPortalの最新ニュースを受け取る。",
+    "longDescription": "アプリの最新ニュースと開発情報を得るために、XでxPortalをフォローしてください。",
+    "errorDescription": "確認に失敗しました。xPortalをフォローしているか確認して、もう一度お試しください。"
+  },
+  "jv": {
+    "title": "Tindakake xPortal ing X",
+    "shortDescription": "Entuk apdet lan kabar saka xPortal.",
+    "longDescription": "Tindakake xPortal ing X kanggo kabar paling anyar lan pangembangan aplikasi.",
+    "errorDescription": "Verifikasi gagal. Mangga priksa manawa sampeyan wis ngetutake xPortal lan coba maneh."
+  },
+  "kn": {
+    "title": "X ನಲ್ಲಿ xPortal ಅನ್ನು ಅನುಸರಿಸಿ",
+    "shortDescription": "xPortal ನಿಂದ ತಾಜಾ ಸುದ್ದಿಗಳು ಮತ್ತು ಅಪ್ಡೇಟುಗಳನ್ನು ಪಡೆಯಿರಿ.",
+    "longDescription": "ಆ್ಯಪ್‌ನ ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು ಮತ್ತು ಅಭಿವೃದ್ಧಿಗಾಗಿ X ನಲ್ಲಿ xPortal ಅನ್ನು ಅನುಸರಿಸಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ನೀವು xPortal ಅನ್ನು ಅನುಸರಿಸಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "X에서 xPortal 팔로우하기",
+    "shortDescription": "xPortal의 업데이트와 뉴스를 받아보세요.",
+    "longDescription": "앱의 최신 뉴스 및 개발 사항을 위해 X에서 xPortal을 팔로우하세요.",
+    "errorDescription": "인증에 실패했습니다. xPortal을 팔로우했는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "X वर xPortal चे अनुसरण करा",
+    "shortDescription": "xPortal कडून अद्यतने आणि बातम्या मिळवा.",
+    "longDescription": "अ‍ॅपच्या ताज्या बातम्या आणि घडामोडींसाठी X वर xPortal चे अनुसरण करा.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुम्ही xPortal चे अनुसरण केले आहे का ते तपासा आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Ikuti xPortal di X",
+    "shortDescription": "Dapatkan kemas kini dan berita daripada xPortal.",
+    "longDescription": "Ikuti xPortal di X untuk berita dan perkembangan terkini apl.",
+    "errorDescription": "Pengesahan gagal. Sila periksa sama ada anda telah mengikuti xPortal dan cuba lagi."
+  },
+  "nb": {
+    "title": "Følg xPortal på X",
+    "shortDescription": "Få oppdateringer og nyheter fra xPortal.",
+    "longDescription": "Følg xPortal på X for de siste nyhetene og utviklingene av appen.",
+    "errorDescription": "Verifiseringen mislyktes. Sjekk om du følger xPortal og prøv igjen."
+  },
+  "nn": {
+    "title": "Følg xPortal på X",
+    "shortDescription": "Få oppdateringar og nyhende frå xPortal.",
+    "longDescription": "Følg xPortal på X for dei siste nyhenda og utviklingane av appen.",
+    "errorDescription": "Verifisering mislukkast. Sjekk om du følgjer xPortal og prøv igjen."
+  },
+  "pa": {
+    "title": "X 'ਤੇ xPortal ਨੂੰ ਫਾਲੋ ਕਰੋ",
+    "shortDescription": "xPortal ਤੋਂ ਅਪਡੇਟ ਅਤੇ ਖ਼ਬਰਾਂ ਪ੍ਰਾਪਤ ਕਰੋ।",
+    "longDescription": "ਐਪ ਦੇ ਤਾਜ਼ਾ ਅਪਡੇਟਾਂ, ਵਿਕਾਸ ਅਤੇ ਖ਼ਬਰਾਂ ਲਈ X 'ਤੇ xPortal ਨੂੰ ਫਾਲੋ ਕਰੋ।",
+    "errorDescription": "ਤਸਦੀਕ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਚੈਕ ਕਰੋ ਕਿ ਤੁਸੀਂ xPortal ਨੂੰ ਫਾਲੋ ਕੀਤਾ ਹੈ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  },
+  "pl": {
+    "title": "Obserwuj xPortal na X",
+    "shortDescription": "Otrzymuj aktualizacje i wiadomości od xPortal.",
+    "longDescription": "Obserwuj xPortal na X, aby otrzymywać najnowsze wiadomości i aktualizacje aplikacji.",
+    "errorDescription": "Weryfikacja nie powiodła się. Sprawdź, czy obserwujesz xPortal i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Siga xPortal no X",
+    "shortDescription": "Receba atualizações e notícias do xPortal.",
+    "longDescription": "Siga xPortal no X para obter as últimas notícias e desenvolvimentos do aplicativo.",
+    "errorDescription": "Falha na verificação. Verifique se você seguiu o xPortal e tente novamente."
+  },
+  "ro": {
+    "title": "Urmărește xPortal pe X",
+    "shortDescription": "Primește actualizări și știri de la xPortal.",
+    "longDescription": "Urmărește xPortal pe X pentru ultimele noutăți și evoluții ale aplicației.",
+    "errorDescription": "Verificarea a eșuat. Verifică dacă ai urmărit xPortal și încearcă din nou."
+  },
+  "ru": {
+    "title": "Подпишитесь на xPortal в X",
+    "shortDescription": "Получайте обновления и новости от xPortal.",
+    "longDescription": "Подпишитесь на xPortal в X, чтобы получать последние новости и обновления приложения.",
+    "errorDescription": "Не удалось выполнить проверку. Пожалуйста, проверьте, подписались ли вы на xPortal, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Sledujte xPortal na X",
+    "shortDescription": "Získajte aktualizácie a novinky od xPortal.",
+    "longDescription": "Sledujte xPortal na X pre najnovšie správy a vývoj aplikácie.",
+    "errorDescription": "Overenie zlyhalo. Skontrolujte, či sledujete xPortal, a skúste to znova."
+  },
+  "sl": {
+    "title": "Spremljajte xPortal na X",
+    "shortDescription": "Prejmite posodobitve in novice iz xPortal.",
+    "longDescription": "Spremljajte xPortal na X za najnovejše novice in razvoj aplikacije.",
+    "errorDescription": "Preverjanje ni uspelo. Preverite, ali spremljate xPortal, in poskusite znova."
+  },
+  "sq": {
+    "title": "Ndiq xPortal në X",
+    "shortDescription": "Merrni përditësime dhe lajme nga xPortal.",
+    "longDescription": "Ndiq xPortal në X për të rejat dhe zhvillimet më të fundit të aplikacionit.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi kontrolloni nëse ndiqni xPortal dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Följ xPortal på X",
+    "shortDescription": "Få uppdateringar och nyheter från xPortal.",
+    "longDescription": "Följ xPortal på X för de senaste nyheterna och utvecklingen av appen.",
+    "errorDescription": "Verifieringen misslyckades. Kontrollera om du följer xPortal och försök igen."
+  },
+  "te": {
+    "title": "X లో xPortal ను ఫాలో చేయండి",
+    "shortDescription": "xPortal నుండి నవీకరణలు మరియు వార్తలను పొందండి.",
+    "longDescription": "అనువర్తనానికి సంబంధించిన తాజా వార్తలు మరియు అభివృద్ధుల కోసం X లో xPortal ను ఫాలో చేయండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు xPortal ను ఫాలో చేస్తున్నారా అని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "ติดตาม xPortal บน X",
+    "shortDescription": "รับข่าวสารและการอัปเดตจาก xPortal",
+    "longDescription": "ติดตาม xPortal บน X สำหรับข่าวสารและการพัฒนาใหม่ล่าสุดของแอป",
+    "errorDescription": "การยืนยันล้มเหลว โปรดตรวจสอบว่าคุณติดตาม xPortal แล้วลองอีกครั้ง"
+  },
+  "tr": {
+    "title": "X'te xPortal'i Takip Et",
+    "shortDescription": "xPortal'dan güncellemeleri ve haberleri alın.",
+    "longDescription": "Uygulamanın en son haberleri ve gelişmeleri için X'te xPortal'i takip edin.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen xPortal'i takip ettiğinizden emin olun ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Слідкуйте за xPortal на X",
+    "shortDescription": "Отримуйте оновлення та новини від xPortal.",
+    "longDescription": "Слідкуйте за xPortal на X, щоб отримувати останні новини та оновлення програми.",
+    "errorDescription": "Перевірка не вдалася. Будь ласка, перевірте, чи підписані ви на xPortal, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "X پر xPortal کو فالو کریں",
+    "shortDescription": "xPortal سے اپ ڈیٹس اور خبریں حاصل کریں۔",
+    "longDescription": "ایپ کی تازہ ترین خبروں اور ترقیات کے لیے X پر xPortal کو فالو کریں۔",
+    "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم چیک کریں کہ آپ نے xPortal کو فالو کیا ہے اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Theo dõi xPortal trên X",
+    "shortDescription": "Nhận cập nhật và tin tức từ xPortal.",
+    "longDescription": "Theo dõi xPortal trên X để nhận những tin tức và phát triển mới nhất của ứng dụng.",
+    "errorDescription": "Xác minh không thành công. Vui lòng kiểm tra xem bạn đã theo dõi xPortal và thử lại."
+  },
+  "zh-hant": {
+    "title": "在 X 上關注 xPortal",
+    "shortDescription": "獲取來自 xPortal 的更新和新聞。",
+    "longDescription": "在 X 上關注 xPortal，了解應用程式的最新消息和發展。",
+    "errorDescription": "驗證失敗。請檢查是否關注了 xPortal，然後再試一次。"
+  },
+  "zh": {
+    "title": "在 X 上关注 xPortal",
+    "shortDescription": "获取来自 xPortal 的更新和新闻。",
+    "longDescription": "在 X 上关注 xPortal，了解应用程序的最新消息和发展。",
+    "errorDescription": "验证失败。请检查您是否关注了 xPortal，然后重试。"
+  }
+}

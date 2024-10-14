@@ -1,8 +1,261 @@
 {
-   "en":{
-      "title":"Watch our video",
-      "shortDescription":"Check out our latest video content.",
-      "longDescription":"Watch the YouTube video and enter the confirmation code mentioned in it.",
-      "errorDescription":"Code verification failed. Please watch the video and enter the correct code."
+   "af": {
+     "title": "Kyk na ons video",
+     "shortDescription": "Kyk na ons nuutste video-inhoud.",
+     "longDescription": "Kyk na die YouTube-video en voer die bevestigingskode in wat daarin genoem word.",
+     "errorDescription": "Kodeverifikasie het misluk. Kyk asseblief na die video en voer die korrekte kode in."
+   },
+   "ar": {
+     "title": "شاهد الفيديو الخاص بنا",
+     "shortDescription": "تحقق من أحدث محتوى الفيديو لدينا.",
+     "longDescription": "شاهد فيديو YouTube وأدخل رمز التأكيد المذكور فيه.",
+     "errorDescription": "فشل التحقق من الرمز. يرجى مشاهدة الفيديو وإدخال الرمز الصحيح."
+   },
+   "az": {
+     "title": "Videomuzu izləyin",
+     "shortDescription": "Ən son video məzmunumuzu yoxlayın.",
+     "longDescription": "YouTube videosuna baxın və orada göstərilən təsdiq kodunu daxil edin.",
+     "errorDescription": "Kod doğrulama uğursuz oldu. Videoya baxın və düzgün kodu daxil edin."
+   },
+   "bg": {
+     "title": "Гледайте нашето видео",
+     "shortDescription": "Вижте нашето най-ново видео съдържание.",
+     "longDescription": "Гледайте видеото в YouTube и въведете кода за потвърждение, споменат в него.",
+     "errorDescription": "Проверката на кода не бе успешна. Моля, гледайте видеото и въведете правилния код."
+   },
+   "bn": {
+     "title": "আমাদের ভিডিও দেখুন",
+     "shortDescription": "আমাদের সর্বশেষ ভিডিও সামগ্রী দেখুন।",
+     "longDescription": "YouTube ভিডিওটি দেখুন এবং এতে উল্লেখিত নিশ্চিতকরণ কোডটি লিখুন।",
+     "errorDescription": "কোড যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে ভিডিওটি দেখুন এবং সঠিক কোড লিখুন।"
+   },
+   "cs": {
+     "title": "Sledujte naše video",
+     "shortDescription": "Podívejte se na náš nejnovější video obsah.",
+     "longDescription": "Sledujte video na YouTube a zadejte potvrzovací kód uvedený v něm.",
+     "errorDescription": "Ověření kódu selhalo. Podívejte se na video a zadejte správný kód."
+   },
+   "de": {
+     "title": "Schau dir unser Video an",
+     "shortDescription": "Sieh dir unseren neuesten Videoinhalt an.",
+     "longDescription": "Schau dir das YouTube-Video an und gib den darin erwähnten Bestätigungscode ein.",
+     "errorDescription": "Code-Überprüfung fehlgeschlagen. Bitte sieh dir das Video an und gib den richtigen Code ein."
+   },
+   "el": {
+     "title": "Παρακολουθήστε το βίντεό μας",
+     "shortDescription": "Δείτε το πιο πρόσφατο βίντεό μας.",
+     "longDescription": "Παρακολουθήστε το βίντεο στο YouTube και εισαγάγετε τον κωδικό επιβεβαίωσης που αναφέρεται σε αυτό.",
+     "errorDescription": "Η επαλήθευση του κωδικού απέτυχε. Παρακαλούμε παρακολουθήστε το βίντεο και εισαγάγετε τον σωστό κωδικό."
+   },
+   "en": {
+     "title": "Watch our video",
+     "shortDescription": "Check out our latest video content.",
+     "longDescription": "Watch the YouTube video and enter the confirmation code mentioned in it.",
+     "errorDescription": "Code verification failed. Please watch the video and enter the correct code."
+   },
+   "es": {
+     "title": "Mira nuestro video",
+     "shortDescription": "Mira nuestro último contenido de video.",
+     "longDescription": "Mira el video de YouTube e ingresa el código de confirmación mencionado en él.",
+     "errorDescription": "La verificación del código falló. Por favor, mira el video e ingresa el código correcto."
+   },
+   "fa": {
+     "title": "ویدیوی ما را تماشا کنید",
+     "shortDescription": "آخرین محتوای ویدیویی ما را بررسی کنید.",
+     "longDescription": "ویدیوی YouTube را تماشا کرده و کد تأییدی که در آن ذکر شده است را وارد کنید.",
+     "errorDescription": "اعتبارسنجی کد ناموفق بود. لطفاً ویدیو را تماشا کرده و کد صحیح را وارد کنید."
+   },
+   "fr": {
+     "title": "Regardez notre vidéo",
+     "shortDescription": "Découvrez notre dernier contenu vidéo.",
+     "longDescription": "Regardez la vidéo YouTube et saisissez le code de confirmation mentionné dedans.",
+     "errorDescription": "La vérification du code a échoué. Veuillez regarder la vidéo et saisir le code correct."
+   },
+   "gu": {
+     "title": "અમારો વિડિયો જુઓ",
+     "shortDescription": "અમારી નવીનતમ વિડિયો સામગ્રી તપાસો.",
+     "longDescription": "YouTube વિડિયો જુઓ અને તેમાં ઉલ્લેખિત કન્ફર્મેશન કોડ દાખલ કરો.",
+     "errorDescription": "કોડ ચકાસણી નિષ્ફળ. કૃપા કરીને વિડિયો જુઓ અને યોગ્ય કોડ દાખલ કરો."
+   },
+   "he": {
+     "title": "צפו בסרטון שלנו",
+     "shortDescription": "בדוק את התוכן הווידאו העדכני ביותר שלנו.",
+     "longDescription": "צפה בסרטון YouTube והזן את קוד האישור שמופיע בו.",
+     "errorDescription": "האימות נכשל. אנא צפה בסרטון והזן את הקוד הנכון."
+   },
+   "hi": {
+     "title": "हमारा वीडियो देखें",
+     "shortDescription": "हमारी नवीनतम वीडियो सामग्री देखें।",
+     "longDescription": "YouTube वीडियो देखें और उसमें उल्लेखित पुष्टिकरण कोड दर्ज करें।",
+     "errorDescription": "कोड सत्यापन विफल। कृपया वीडियो देखें और सही कोड दर्ज करें।"
+   },
+   "hu": {
+     "title": "Nézd meg a videónkat",
+     "shortDescription": "Nézd meg legújabb videótartalmunkat.",
+     "longDescription": "Nézd meg a YouTube-videót, és írd be az abban említett megerősítő kódot.",
+     "errorDescription": "A kód ellenőrzése nem sikerült. Nézd meg a videót, és írd be a helyes kódot."
+   },
+   "id": {
+     "title": "Tonton video kami",
+     "shortDescription": "Lihat konten video terbaru kami.",
+     "longDescription": "Tonton video YouTube dan masukkan kode konfirmasi yang disebutkan di dalamnya.",
+     "errorDescription": "Verifikasi kode gagal. Harap tonton video dan masukkan kode yang benar."
+   },
+   "it": {
+     "title": "Guarda il nostro video",
+     "shortDescription": "Guarda il nostro ultimo contenuto video.",
+     "longDescription": "Guarda il video su YouTube e inserisci il codice di conferma menzionato in esso.",
+     "errorDescription": "La verifica del codice non è riuscita. Guarda il video e inserisci il codice corretto."
+   },
+   "ja": {
+     "title": "私たちのビデオを見てください",
+     "shortDescription": "最新のビデオコンテンツをチェックしてください。",
+     "longDescription": "YouTubeのビデオを見て、そこに記載されている確認コードを入力してください。",
+     "errorDescription": "コードの確認に失敗しました。ビデオを見て、正しいコードを入力してください。"
+   },
+   "jv": {
+     "title": "Nonton video kita",
+     "shortDescription": "Deleng konten video paling anyar saka kita.",
+     "longDescription": "Nonton video YouTube lan lebokaké kode konfirmasi sing kasebut ing jerone.",
+     "errorDescription": "Verifikasi kode gagal. Tulung nonton video lan lebokaké kode sing bener."
+   },
+   "kn": {
+     "title": "ನಮ್ಮ ವೀಡಿಯೊ ನೋಡಿ",
+     "shortDescription": "ನಮ್ಮ ಇತ್ತೀಚಿನ ವೀಡಿಯೊ ವಿಷಯವನ್ನು ನೋಡಿ.",
+     "longDescription": "YouTube ವೀಡಿಯೊವನ್ನು ನೋಡಿ ಮತ್ತು ಅದರಲ್ಲಿ ಹೇಳಿರುವ ದೃಢೀಕರಣ ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿ.",
+     "errorDescription": "ಕೋಡ್ ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ವೀಡಿಯೊವನ್ನು ನೋಡಿ ಮತ್ತು ಸರಿಯಾದ ಕೋಡ್ ನಮೂದಿಸಿ."
+   },
+   "ko": {
+     "title": "우리의 영상을 시청하세요",
+     "shortDescription": "최신 비디오 콘텐츠를 확인하세요.",
+     "longDescription": "YouTube 영상을 시청하고 그 안에 언급된 확인 코드를 입력하세요.",
+     "errorDescription": "코드 확인에 실패했습니다. 영상을 시청하고 올바른 코드를 입력하세요."
+   },
+   "mr": {
+     "title": "आमचा व्हिडिओ पहा",
+     "shortDescription": "आमचे नवीनतम व्हिडिओ सामग्री पहा.",
+     "longDescription": "YouTube व्हिडिओ पहा आणि त्यात उल्लेख केलेला पुष्टीकरण कोड प्रविष्ट करा.",
+     "errorDescription": "कोड सत्यापन अयशस्वी झाले. कृपया व्हिडिओ पहा आणि योग्य कोड प्रविष्ट करा."
+   },
+   "ms": {
+     "title": "Tonton video kami",
+     "shortDescription": "Lihat kandungan video terbaru kami.",
+     "longDescription": "Tonton video YouTube dan masukkan kod pengesahan yang dinyatakan di dalamnya.",
+     "errorDescription": "Pengesahan kod gagal. Sila tonton video dan masukkan kod yang betul."
+   },
+   "nb": {
+     "title": "Se vår video",
+     "shortDescription": "Sjekk ut vårt nyeste videoinnhold.",
+     "longDescription": "Se YouTube-videoen og skriv inn bekreftelseskoden som er nevnt i den.",
+     "errorDescription": "Kodeverifiseringen mislyktes. Se videoen og skriv inn riktig kode."
+   },
+   "nn": {
+     "title": "Sjå videoen vår",
+     "shortDescription": "Sjekk ut vårt nyaste videoinnhald.",
+     "longDescription": "Sjå YouTube-videoen og skriv inn bekreftingskoden som er nemnd der.",
+     "errorDescription": "Kodeverifisering mislukkast. Sjå videoen og skriv inn riktig kode."
+   },
+   "pa": {
+     "title": "ਸਾਡਾ ਵੀਡੀਓ ਵੇਖੋ",
+     "shortDescription": "ਸਾਡਾ ਨਵਾਂ ਵੀਡੀਓ ਸਮੱਗਰੀ ਵੇਖੋ।",
+     "longDescription": "YouTube ਵੀਡੀਓ ਵੇਖੋ ਅਤੇ ਉਸ ਵਿੱਚ ਦਿੱਤਾ ਗਿਆ ਪੁਸ਼ਟੀਕਰਨ ਕੋਡ ਦਾਖਲ ਕਰੋ।",
+     "errorDescription": "ਕੋਡ ਦੀ ਸੱਟੀ ਫੇਲ੍ਹ ਹੋ ਗਈ। ਕਿਰਪਾ ਕਰਕੇ ਵੀਡੀਓ ਵੇਖੋ ਅਤੇ ਸਹੀ ਕੋਡ ਦਾਖਲ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Obejrzyj nasz film",
+     "shortDescription": "Sprawdź nasze najnowsze treści wideo.",
+     "longDescription": "Obejrzyj film na YouTube i wprowadź podany w nim kod potwierdzenia.",
+     "errorDescription": "Weryfikacja kodu nie powiodła się. Obejrzyj film i wprowadź poprawny kod."
+   },
+   "pt": {
+     "title": "Assista ao nosso vídeo",
+     "shortDescription": "Confira nosso conteúdo de vídeo mais recente.",
+     "longDescription": "Assista ao vídeo no YouTube e insira o código de confirmação mencionado nele.",
+     "errorDescription": "A verificação do código falhou. Por favor, assista ao vídeo e insira o código correto."
+   },
+   "ro": {
+     "title": "Urmărește videoclipul nostru",
+     "shortDescription": "Verifică cel mai recent conținut video al nostru.",
+     "longDescription": "Urmărește videoclipul YouTube și introdu codul de confirmare menționat în el.",
+     "errorDescription": "Verificarea codului a eșuat. Vă rugăm să urmăriți videoclipul și să introduceți codul corect."
+   },
+   "ru": {
+     "title": "Посмотрите наше видео",
+     "shortDescription": "Посмотрите наш последний видеоконтент.",
+     "longDescription": "Посмотрите видео на YouTube и введите указанный в нем код подтверждения.",
+     "errorDescription": "Не удалось проверить код. Пожалуйста, посмотрите видео и введите правильный код."
+   },
+   "sk": {
+     "title": "Sledujte naše video",
+     "shortDescription": "Pozrite si náš najnovší videoobsah.",
+     "longDescription": "Pozrite si video na YouTube a zadajte v ňom uvedený potvrdzovací kód.",
+     "errorDescription": "Overenie kódu zlyhalo. Sledujte video a zadajte správny kód."
+   },
+   "sl": {
+     "title": "Oglejte si naš video",
+     "shortDescription": "Oglejte si našo najnovejšo video vsebino.",
+     "longDescription": "Oglejte si video na YouTubu in vnesite potrditveno kodo, omenjeno v njem.",
+     "errorDescription": "Preverjanje kode ni uspelo. Oglejte si video in vnesite pravilno kodo."
+   },
+   "sq": {
+     "title": "Shikoni videon tonë",
+     "shortDescription": "Shikoni përmbajtjen tonë më të fundit të videos.",
+     "longDescription": "Shikoni videon në YouTube dhe futni kodin e konfirmimit të përmendur në të.",
+     "errorDescription": "Verifikimi i kodit dështoi. Ju lutemi shikoni videon dhe futni kodin e saktë."
+   },
+   "sv": {
+     "title": "Titta på vår video",
+     "shortDescription": "Kolla in vårt senaste videoinnehåll.",
+     "longDescription": "Titta på YouTube-videon och ange bekräftelsekoden som nämns i den.",
+     "errorDescription": "Kodverifieringen misslyckades. Vänligen titta på videon och ange rätt kod."
+   },
+   "te": {
+     "title": "మా వీడియోను చూడండి",
+     "shortDescription": "మా తాజా వీడియో కంటెంట్‌ను తనిఖీ చేయండి.",
+     "longDescription": "YouTube వీడియోను చూడండి మరియు అందులో పేర్కొన్న నిర్ధారణ కోడ్‌ను నమోదు చేయండి.",
+     "errorDescription": "కోడ్ ధృవీకరణ విఫలమైంది. వీడియోను చూడండి మరియు సరైన కోడ్‌ని నమోదు చేయండి."
+   },
+   "th": {
+     "title": "ดูวิดีโอของเรา",
+     "shortDescription": "ดูเนื้อหาวิดีโอล่าสุดของเรา",
+     "longDescription": "ดูวิดีโอบน YouTube แล้วป้อนรหัสยืนยันที่ระบุไว้",
+     "errorDescription": "การตรวจสอบรหัสล้มเหลว โปรดดูวิดีโอและป้อนรหัสที่ถูกต้อง"
+   },
+   "tr": {
+     "title": "Videomuzu izle",
+     "shortDescription": "En son video içeriğimizi kontrol edin.",
+     "longDescription": "YouTube videosunu izleyin ve içinde belirtilen onay kodunu girin.",
+     "errorDescription": "Kod doğrulaması başarısız oldu. Lütfen videoyu izleyin ve doğru kodu girin."
+   },
+   "uk": {
+     "title": "Подивіться наше відео",
+     "shortDescription": "Перегляньте наш останній відеоконтент.",
+     "longDescription": "Подивіться відео на YouTube і введіть код підтвердження, зазначений у ньому.",
+     "errorDescription": "Перевірка коду не вдалася. Будь ласка, перегляньте відео та введіть правильний код."
+   },
+   "ur": {
+     "title": "ہماری ویڈیو دیکھیں",
+     "shortDescription": "ہماری تازہ ترین ویڈیو مواد دیکھیں۔",
+     "longDescription": "YouTube ویڈیو دیکھیں اور اس میں ذکر کردہ تصدیقی کوڈ درج کریں۔",
+     "errorDescription": "کوڈ کی تصدیق ناکام ہوگئی۔ براہ کرم ویڈیو دیکھیں اور صحیح کوڈ درج کریں۔"
+   },
+   "vi": {
+     "title": "Xem video của chúng tôi",
+     "shortDescription": "Xem nội dung video mới nhất của chúng tôi.",
+     "longDescription": "Xem video trên YouTube và nhập mã xác nhận được đề cập trong đó.",
+     "errorDescription": "Xác minh mã không thành công. Vui lòng xem video và nhập mã chính xác."
+   },
+   "zh-hant": {
+     "title": "觀看我們的影片",
+     "shortDescription": "查看我們的最新視頻內容。",
+     "longDescription": "觀看 YouTube 視頻並輸入其中提到的確認碼。",
+     "errorDescription": "代碼驗證失敗。請觀看視頻並輸入正確的代碼。"
+   },
+   "zh": {
+     "title": "观看我们的视频",
+     "shortDescription": "查看我们最新的视频内容。",
+     "longDescription": "观看 YouTube 视频并输入其中提到的确认码。",
+     "errorDescription": "代码验证失败。请观看视频并输入正确的代码。"
    }
-}
+ }
+ 

@@ -1,0 +1,260 @@
+{
+  "af": {
+    "title": "Volg MultiversX op X",
+    "shortDescription": "Bly op hoogte met MultiversX-insigte en nuus.",
+    "longDescription": "Volg MultiversX op X vir die nuutste opdaterings, aankondigings en besprekings.",
+    "errorDescription": "Verifikasie het misluk. Kyk asseblief of jy MultiversX gevolg het en probeer weer."
+  },
+  "ar": {
+    "title": "تابع MultiversX على X",
+    "shortDescription": "ابقَ على اطلاع بآخر أخبار MultiversX والرؤى.",
+    "longDescription": "تابع MultiversX على X للحصول على أحدث التحديثات والإعلانات والمناقشات.",
+    "errorDescription": "فشل التحقق. يرجى التحقق مما إذا كنت قد تابعت MultiversX وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "X-də MultiversX-i izləyin",
+    "shortDescription": "MultiversX ilə bağlı yeniliklər və xəbərləri izləyin.",
+    "longDescription": "Son yeniliklər, elanlar və müzakirələr üçün X-də MultiversX-i izləyin.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa, MultiversX-i izləyib-izləmədiyinizi yoxlayın və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Следвайте MultiversX в X",
+    "shortDescription": "Бъдете в крак с новостите и прозренията на MultiversX.",
+    "longDescription": "Следвайте MultiversX в X за най-новите актуализации, съобщения и дискусии.",
+    "errorDescription": "Проверката не бе успешна. Моля, проверете дали сте последвали MultiversX и опитайте отново."
+  },
+  "bn": {
+    "title": "X-এ MultiversX অনুসরণ করুন",
+    "shortDescription": "MultiversX অন্তর্দৃষ্টি এবং খবরের সাথে আপডেট থাকুন।",
+    "longDescription": "সর্বশেষ আপডেট, ঘোষণা এবং আলোচনার জন্য X-এ MultiversX অনুসরণ করুন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে দেখুন আপনি MultiversX অনুসরণ করেছেন কিনা এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Sledujte MultiversX na X",
+    "shortDescription": "Sledujte novinky a poznatky od MultiversX.",
+    "longDescription": "Sledujte MultiversX na X pro nejnovější aktualizace, oznámení a diskuze.",
+    "errorDescription": "Ověření selhalo. Zkontrolujte, zda sledujete MultiversX, a zkuste to znovu."
+  },
+  "de": {
+    "title": "Folge MultiversX auf X",
+    "shortDescription": "Bleib auf dem Laufenden mit MultiversX-Einblicken und Neuigkeiten.",
+    "longDescription": "Folge MultiversX auf X für die neuesten Updates, Ankündigungen und Diskussionen.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte überprüfe, ob du MultiversX folgst, und versuche es erneut."
+  },
+  "el": {
+    "title": "Ακολουθήστε το MultiversX στο X",
+    "shortDescription": "Μείνετε ενημερωμένοι με πληροφορίες και νέα του MultiversX.",
+    "longDescription": "Ακολουθήστε το MultiversX στο X για τις τελευταίες ενημερώσεις, ανακοινώσεις και συζητήσεις.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Ελέγξτε αν ακολουθήσατε το MultiversX και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Follow MultiversX on X",
+    "shortDescription": "Stay updated with MultiversX insights and news.",
+    "longDescription": "Follow MultiversX on X for the latest updates, announcements, and discussions.",
+    "errorDescription": "Verification failed. Please check if you followed MultiversX and try again."
+  },
+  "es": {
+    "title": "Sigue a MultiversX en X",
+    "shortDescription": "Mantente al día con las novedades y noticias de MultiversX.",
+    "longDescription": "Sigue a MultiversX en X para obtener las últimas actualizaciones, anuncios y discusiones.",
+    "errorDescription": "La verificación falló. Por favor, verifica si sigues a MultiversX e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "MultiversX را در X دنبال کنید",
+    "shortDescription": "با اخبار و دیدگاه‌های MultiversX به‌روز بمانید.",
+    "longDescription": "برای آخرین به‌روزرسانی‌ها، اعلامیه‌ها و بحث‌ها، MultiversX را در X دنبال کنید.",
+    "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً بررسی کنید که آیا MultiversX را دنبال کرده‌اید و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Suivez MultiversX sur X",
+    "shortDescription": "Restez informé des actualités et des perspectives de MultiversX.",
+    "longDescription": "Suivez MultiversX sur X pour les dernières mises à jour, annonces et discussions.",
+    "errorDescription": "Échec de la vérification. Veuillez vérifier si vous avez suivi MultiversX et réessayez."
+  },
+  "gu": {
+    "title": "X પર MultiversX ને અનુસરો",
+    "shortDescription": "MultiversXની તાજેતરની સમાચાર અને અભિપ્રાયો સાથે અપડેટ રહો.",
+    "longDescription": "MultiversXના નવીનતમ અપડેટ્સ, જાહેરાતો અને ચર્ચાઓ માટે X પર MultiversXને અનુસરો.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને MultiversX ને અનુસરો છો કે કેમ તે તપાસો અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "עקבו אחרי MultiversX ב-X",
+    "shortDescription": "הישארו מעודכנים עם תובנות וחדשות של MultiversX.",
+    "longDescription": "עקבו אחרי MultiversX ב-X לקבלת העדכונים, ההכרזות והדיונים האחרונים.",
+    "errorDescription": "האימות נכשל. אנא בדקו אם עקבתם אחרי MultiversX ונסו שוב."
+  },
+  "hi": {
+    "title": "MultiversX को X पर फॉलो करें",
+    "shortDescription": "MultiversX के अंतर्दृष्टि और समाचारों के साथ अपडेट रहें।",
+    "longDescription": "नवीनतम अपडेट, घोषणाओं और चर्चाओं के लिए X पर MultiversX को फॉलो करें।",
+    "errorDescription": "सत्यापन विफल। कृपया जाँचें कि आपने MultiversX को फॉलो किया है और फिर से प्रयास करें।"
+  },
+  "hu": {
+    "title": "Kövessétek a MultiversX-et X-en",
+    "shortDescription": "Maradj naprakész a MultiversX hírekkel és betekintésekkel.",
+    "longDescription": "Kövessétek a MultiversX-et X-en a legfrissebb hírekért, bejelentésekért és vitákért.",
+    "errorDescription": "Az ellenőrzés nem sikerült. Ellenőrizd, hogy követed-e a MultiversX-et, és próbáld újra."
+  },
+  "id": {
+    "title": "Ikuti MultiversX di X",
+    "shortDescription": "Tetap terbarui dengan wawasan dan berita dari MultiversX.",
+    "longDescription": "Ikuti MultiversX di X untuk pembaruan, pengumuman, dan diskusi terbaru.",
+    "errorDescription": "Verifikasi gagal. Silakan periksa apakah Anda mengikuti MultiversX dan coba lagi."
+  },
+  "it": {
+    "title": "Segui MultiversX su X",
+    "shortDescription": "Rimani aggiornato con le notizie e approfondimenti di MultiversX.",
+    "longDescription": "Segui MultiversX su X per gli ultimi aggiornamenti, annunci e discussioni.",
+    "errorDescription": "Verifica fallita. Controlla se hai seguito MultiversX e riprova."
+  },
+  "ja": {
+    "title": "XでMultiversXをフォローする",
+    "shortDescription": "MultiversXの最新ニュースとインサイトをチェックしよう。",
+    "longDescription": "最新のアップデート、発表、ディスカッションのために、XでMultiversXをフォローしてください。",
+    "errorDescription": "確認に失敗しました。MultiversXをフォローしているか確認して、もう一度お試しください。"
+  },
+  "jv": {
+    "title": "Tindakake MultiversX ing X",
+    "shortDescription": "Tetep dianyari karo wawasan lan kabar saka MultiversX.",
+    "longDescription": "Tindakake MultiversX ing X kanggo apdet paling anyar, pengumuman, lan diskusi.",
+    "errorDescription": "Verifikasi gagal. Mangga priksa manawa sampeyan wis ngetutake MultiversX lan coba maneh."
+  },
+  "kn": {
+    "title": "X ನಲ್ಲಿ MultiversX ಅನ್ನು ಅನುಸರಿಸಿ",
+    "shortDescription": "MultiversX ನ ಅಧ್ಯಯನಗಳು ಮತ್ತು ಸುದ್ದಿಗಳೊಂದಿಗೆ ನವೀಕರಿಸಿರಿ.",
+    "longDescription": "ಇತ್ತೀಚಿನ ನವೀಕರಣಗಳು, ಘೋಷಣೆಗಳು ಮತ್ತು ಚರ್ಚೆಗಳಿಗಾಗಿ X ನಲ್ಲಿ MultiversX ಅನ್ನು ಅನುಸರಿಸಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ನೀವು MultiversX ಅನ್ನು ಅನುಸರಿಸಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "X에서 MultiversX 팔로우하기",
+    "shortDescription": "MultiversX 인사이트 및 뉴스로 최신 정보를 유지하세요.",
+    "longDescription": "최신 업데이트, 발표 및 토론을 위해 X에서 MultiversX를 팔로우하세요.",
+    "errorDescription": "인증에 실패했습니다. MultiversX를 팔로우했는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "X वर MultiversX चे अनुसरण करा",
+    "shortDescription": "MultiversX अंतर्दृष्टी आणि बातम्यांमध्ये अद्ययावत रहा.",
+    "longDescription": "नवीनतम अद्यतने, घोषणा आणि चर्चांसाठी X वर MultiversX चे अनुसरण करा.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुम्ही MultiversX चे अनुसरण केले आहे का ते तपासा आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Ikuti MultiversX di X",
+    "shortDescription": "Dapatkan kemas kini dengan pandangan dan berita MultiversX.",
+    "longDescription": "Ikuti MultiversX di X untuk mendapatkan kemas kini, pengumuman dan perbincangan terkini.",
+    "errorDescription": "Pengesahan gagal. Sila periksa sama ada anda telah mengikuti MultiversX dan cuba lagi."
+  },
+  "nb": {
+    "title": "Følg MultiversX på X",
+    "shortDescription": "Hold deg oppdatert med MultiversX innsikt og nyheter.",
+    "longDescription": "Følg MultiversX på X for de siste oppdateringene, kunngjøringene og diskusjonene.",
+    "errorDescription": "Verifiseringen mislyktes. Sjekk om du følger MultiversX og prøv igjen."
+  },
+  "nn": {
+    "title": "Følg MultiversX på X",
+    "shortDescription": "Hald deg oppdatert med innsikt og nyhende frå MultiversX.",
+    "longDescription": "Følg MultiversX på X for dei siste oppdateringane, kunngjeringane og diskusjonane.",
+    "errorDescription": "Verifisering mislukkast. Sjekk om du følgjer MultiversX og prøv igjen."
+  },
+  "pa": {
+    "title": "MultiversX ਨੂੰ X 'ਤੇ ਫਾਲੋ ਕਰੋ",
+    "shortDescription": "MultiversX ਦੇ ਅੰਦਰੂਨੀ ਜਾਣਕਾਰੀ ਅਤੇ ਖ਼ਬਰਾਂ ਨਾਲ ਅਪਡੇਟ ਰਹੋ।",
+    "longDescription": "ਤਾਜ਼ਾ ਅਪਡੇਟਾਂ, ਐਲਾਨਾਂ ਅਤੇ ਗੱਲਬਾਤਾਂ ਲਈ MultiversX ਨੂੰ X 'ਤੇ ਫਾਲੋ ਕਰੋ।",
+    "errorDescription": "ਤਸਦੀਕ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਚੈਕ ਕਰੋ ਕਿ ਤੁਸੀਂ MultiversX ਨੂੰ ਫਾਲੋ ਕੀਤਾ ਹੈ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  },
+  "pl": {
+    "title": "Obserwuj MultiversX na X",
+    "shortDescription": "Bądź na bieżąco z nowościami i informacjami o MultiversX.",
+    "longDescription": "Obserwuj MultiversX na X, aby uzyskać najnowsze aktualizacje, ogłoszenia i dyskusje.",
+    "errorDescription": "Weryfikacja nie powiodła się. Sprawdź, czy obserwujesz MultiversX i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Siga MultiversX no X",
+    "shortDescription": "Fique atualizado com as notícias e insights do MultiversX.",
+    "longDescription": "Siga MultiversX no X para as últimas atualizações, anúncios e discussões.",
+    "errorDescription": "Falha na verificação. Verifique se você seguiu o MultiversX e tente novamente."
+  },
+  "ro": {
+    "title": "Urmărește MultiversX pe X",
+    "shortDescription": "Rămâi la curent cu știrile și informațiile de la MultiversX.",
+    "longDescription": "Urmărește MultiversX pe X pentru cele mai recente actualizări, anunțuri și discuții.",
+    "errorDescription": "Verificarea a eșuat. Verifică dacă ai urmărit MultiversX și încearcă din nou."
+  },
+  "ru": {
+    "title": "Подпишитесь на MultiversX в X",
+    "shortDescription": "Будьте в курсе новостей и аналитики MultiversX.",
+    "longDescription": "Подпишитесь на MultiversX в X, чтобы получать последние обновления, объявления и обсуждения.",
+    "errorDescription": "Не удалось выполнить проверку. Пожалуйста, проверьте, подписались ли вы на MultiversX, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Sledujte MultiversX na X",
+    "shortDescription": "Zostaňte informovaní o novinkách a poznatkoch MultiversX.",
+    "longDescription": "Sledujte MultiversX na X pre najnovšie aktualizácie, oznámenia a diskusie.",
+    "errorDescription": "Overenie zlyhalo. Skontrolujte, či sledujete MultiversX, a skúste to znova."
+  },
+  "sl": {
+    "title": "Spremljajte MultiversX na X",
+    "shortDescription": "Ostanite na tekočem z novicami in vpogledi v MultiversX.",
+    "longDescription": "Spremljajte MultiversX na X za najnovejše posodobitve, objave in razprave.",
+    "errorDescription": "Preverjanje ni uspelo. Preverite, ali spremljate MultiversX, in poskusite znova."
+  },
+  "sq": {
+    "title": "Ndiq MultiversX në X",
+    "shortDescription": "Qëndroni të përditësuar me njohuritë dhe lajmet e MultiversX.",
+    "longDescription": "Ndiq MultiversX në X për përditësimet, njoftimet dhe diskutimet më të fundit.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi kontrolloni nëse ndiqni MultiversX dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Följ MultiversX på X",
+    "shortDescription": "Håll dig uppdaterad med insikter och nyheter från MultiversX.",
+    "longDescription": "Följ MultiversX på X för de senaste uppdateringarna, tillkännagivandena och diskussionerna.",
+    "errorDescription": "Verifieringen misslyckades. Kontrollera om du följer MultiversX och försök igen."
+  },
+  "te": {
+    "title": "X లో MultiversX ను ఫాలో చేయండి",
+    "shortDescription": "MultiversX అంతర్దృష్టులు మరియు వార్తలతో అప్‌డేట్‌గా ఉండండి.",
+    "longDescription": "తాజా నవీకరణలు, ప్రకటనలు మరియు చర్చల కోసం X లో MultiversX ను ఫాలో చేయండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు MultiversX ను ఫాలో చేస్తున్నారా అని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "ติดตาม MultiversX บน X",
+    "shortDescription": "ติดตามข่าวสารและข้อมูลเชิงลึกจาก MultiversX",
+    "longDescription": "ติดตาม MultiversX บน X สำหรับการอัปเดตล่าสุด ประกาศ และการสนทนา",
+    "errorDescription": "การยืนยันล้มเหลว โปรดตรวจสอบว่าคุณติดตาม MultiversX แล้วลองอีกครั้ง"
+  },
+  "tr": {
+    "title": "X'te MultiversX'i Takip Et",
+    "shortDescription": "MultiversX ile ilgili en son haberler ve bilgileri takip edin.",
+    "longDescription": "Son güncellemeler, duyurular ve tartışmalar için X'te MultiversX'i takip edin.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen MultiversX'i takip ettiğinizden emin olun ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Слідкуйте за MultiversX на X",
+    "shortDescription": "Будьте в курсі новин та аналітики MultiversX.",
+    "longDescription": "Слідкуйте за MultiversX на X, щоб отримувати останні оновлення, оголошення та обговорення.",
+    "errorDescription": "Перевірка не вдалася. Будь ласка, перевірте, чи підписані ви на MultiversX, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "X پر MultiversX کو فالو کریں",
+    "shortDescription": "MultiversX کی بصیرتوں اور خبروں سے اپ ڈیٹ رہیں۔",
+    "longDescription": "تازہ ترین اپ ڈیٹس، اعلانات اور مباحثوں کے لیے X پر MultiversX کو فالو کریں۔",
+    "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم چیک کریں کہ آپ نے MultiversX کو فالو کیا ہے اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Theo dõi MultiversX trên X",
+    "shortDescription": "Cập nhật những tin tức và thông tin chi tiết về MultiversX.",
+    "longDescription": "Theo dõi MultiversX trên X để nhận những cập nhật, thông báo và thảo luận mới nhất.",
+    "errorDescription": "Xác minh không thành công. Vui lòng kiểm tra xem bạn đã theo dõi MultiversX và thử lại."
+  },
+  "zh-hant": {
+    "title": "在 X 上關注 MultiversX",
+    "shortDescription": "隨時了解 MultiversX 的見解和新聞。",
+    "longDescription": "在 X 上關注 MultiversX，獲取最新更新、公告和討論。",
+    "errorDescription": "驗證失敗。請檢查是否關注了 MultiversX，然後再試一次。"
+  },
+  "zh": {
+    "title": "在 X 上关注 MultiversX",
+    "shortDescription": "及时了解 MultiversX 的见解和新闻。",
+    "longDescription": "在 X 上关注 MultiversX，获取最新更新、公告和讨论。",
+    "errorDescription": "验证失败。请检查您是否关注了 MultiversX，然后重试。"
+  }
+}

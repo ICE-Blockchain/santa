@@ -1,0 +1,260 @@
+{
+  "af": {
+    "title": "Sluit aan by MultiversX op Telegram",
+    "shortDescription": "Skakel met die MultiversX-gemeenskap.",
+    "longDescription": "Sluit aan by die MultiversX Telegram-kanaal om met die gemeenskap te skakel en opdaterings te kry.",
+    "errorDescription": "Verifikasie het misluk. Kyk asseblief of jy by die Telegram-kanaal aangesluit het en probeer weer."
+  },
+  "ar": {
+    "title": "انضم إلى MultiversX على Telegram",
+    "shortDescription": "تواصل مع مجتمع MultiversX.",
+    "longDescription": "انضم إلى قناة MultiversX على Telegram للتفاعل مع المجتمع والحصول على التحديثات.",
+    "errorDescription": "فشل التحقق. يرجى التحقق مما إذا كنت قد انضممت إلى قناة Telegram وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "MultiversX Telegram-da qoşulun",
+    "shortDescription": "MultiversX icması ilə əlaqə saxlayın.",
+    "longDescription": "MultiversX Telegram kanalına qoşulun, icma ilə əlaqə saxlayın və yeniliklərdən xəbərdar olun.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa Telegram kanalına qoşulub-olmadığınızı yoxlayın və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Присъединете се към MultiversX в Telegram",
+    "shortDescription": "Свържете се с общността на MultiversX.",
+    "longDescription": "Присъединете се към канала на MultiversX в Telegram, за да се ангажирате с общността и да получавате актуализации.",
+    "errorDescription": "Проверката не бе успешна. Моля, проверете дали сте се присъединили към канала в Telegram и опитайте отново."
+  },
+  "bn": {
+    "title": "Telegram-এ MultiversX-এ যোগ দিন",
+    "shortDescription": "MultiversX সম্প্রদায়ের সাথে সংযোগ করুন।",
+    "longDescription": "MultiversX সম্প্রদায়ের সাথে যুক্ত হতে এবং আপডেট পেতে MultiversX Telegram চ্যানেলে যোগ দিন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। দয়া করে দেখুন আপনি Telegram চ্যানেলে যোগদান করেছেন কিনা এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Připojte se k MultiversX na Telegramu",
+    "shortDescription": "Spojte se s komunitou MultiversX.",
+    "longDescription": "Připojte se k kanálu MultiversX na Telegramu, abyste se zapojili do komunity a získali aktualizace.",
+    "errorDescription": "Ověření selhalo. Zkontrolujte, zda jste se připojili ke kanálu na Telegramu, a zkuste to znovu."
+  },
+  "de": {
+    "title": "Tritt MultiversX auf Telegram bei",
+    "shortDescription": "Verbinde dich mit der MultiversX-Community.",
+    "longDescription": "Tritt dem MultiversX-Telegram-Kanal bei, um mit der Community in Kontakt zu treten und Updates zu erhalten.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte überprüfe, ob du dem Telegram-Kanal beigetreten bist, und versuche es erneut."
+  },
+  "el": {
+    "title": "Γίνετε μέλος του MultiversX στο Telegram",
+    "shortDescription": "Συνδεθείτε με την κοινότητα του MultiversX.",
+    "longDescription": "Γίνετε μέλος του καναλιού του MultiversX στο Telegram για να αλληλεπιδράσετε με την κοινότητα και να λαμβάνετε ενημερώσεις.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Ελέγξτε αν έχετε εγγραφεί στο κανάλι Telegram και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Join MultiversX on Telegram",
+    "shortDescription": "Connect with the MultiversX community.",
+    "longDescription": "Join the MultiversX Telegram channel to engage with the community and get updates.",
+    "errorDescription": "Verification failed. Please check if you joined the Telegram channel and try again."
+  },
+  "es": {
+    "title": "Únete a MultiversX en Telegram",
+    "shortDescription": "Conéctate con la comunidad de MultiversX.",
+    "longDescription": "Únete al canal de Telegram de MultiversX para interactuar con la comunidad y recibir actualizaciones.",
+    "errorDescription": "La verificación falló. Por favor, verifica si te uniste al canal de Telegram e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "به MultiversX در Telegram بپیوندید",
+    "shortDescription": "با جامعه MultiversX در ارتباط باشید.",
+    "longDescription": "به کانال Telegram MultiversX بپیوندید تا با جامعه در تعامل باشید و به‌روزرسانی‌ها را دریافت کنید.",
+    "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً بررسی کنید که آیا به کانال Telegram پیوسته‌اید و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Rejoignez MultiversX sur Telegram",
+    "shortDescription": "Connectez-vous avec la communauté MultiversX.",
+    "longDescription": "Rejoignez la chaîne Telegram de MultiversX pour interagir avec la communauté et obtenir des mises à jour.",
+    "errorDescription": "Échec de la vérification. Veuillez vérifier si vous avez rejoint la chaîne Telegram et réessayez."
+  },
+  "gu": {
+    "title": "Telegram પર MultiversXમાં જોડાઓ",
+    "shortDescription": "MultiversX સમુદાય સાથે કનેક્ટ કરો.",
+    "longDescription": "સમુદાય સાથે સંલગ્ન થવા અને અપડેટ્સ મેળવવા માટે MultiversX Telegram ચેનલમાં જોડાઓ.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને તપાસો કે તમે Telegram ચેનલમાં જોડાયા છો અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "הצטרפו ל-MultiversX ב-Telegram",
+    "shortDescription": "התחברו לקהילת MultiversX.",
+    "longDescription": "הצטרפו לערוץ ה-Telegram של MultiversX כדי לתקשר עם הקהילה ולקבל עדכונים.",
+    "errorDescription": "האימות נכשל. אנא בדקו אם הצטרפתם לערוץ ה-Telegram ונסו שוב."
+  },
+  "hi": {
+    "title": "MultiversX को Telegram पर जॉइन करें",
+    "shortDescription": "MultiversX समुदाय से जुड़ें।",
+    "longDescription": "MultiversX Telegram चैनल से जुड़ें, समुदाय के साथ बातचीत करें और अपडेट प्राप्त करें।",
+    "errorDescription": "सत्यापन विफल। कृपया जांचें कि आपने Telegram चैनल जॉइन किया है और फिर से प्रयास करें।"
+  },
+  "hu": {
+    "title": "Csatlakozzatok a MultiversX-hez Telegramon",
+    "shortDescription": "Kapcsolódj a MultiversX közösséghez.",
+    "longDescription": "Csatlakozz a MultiversX Telegram csatornához, hogy részt vegyél a közösségben és frissítéseket kapj.",
+    "errorDescription": "Az ellenőrzés nem sikerült. Ellenőrizd, hogy csatlakoztál-e a Telegram csatornához, és próbáld újra."
+  },
+  "id": {
+    "title": "Bergabung dengan MultiversX di Telegram",
+    "shortDescription": "Terhubung dengan komunitas MultiversX.",
+    "longDescription": "Bergabunglah dengan saluran Telegram MultiversX untuk berinteraksi dengan komunitas dan mendapatkan pembaruan.",
+    "errorDescription": "Verifikasi gagal. Silakan periksa apakah Anda sudah bergabung dengan saluran Telegram dan coba lagi."
+  },
+  "it": {
+    "title": "Unisciti a MultiversX su Telegram",
+    "shortDescription": "Connettiti con la community di MultiversX.",
+    "longDescription": "Unisciti al canale Telegram di MultiversX per interagire con la community e ottenere aggiornamenti.",
+    "errorDescription": "Verifica fallita. Controlla se hai aderito al canale Telegram e riprova."
+  },
+  "ja": {
+    "title": "TelegramでMultiversXに参加する",
+    "shortDescription": "MultiversXコミュニティとつながりましょう。",
+    "longDescription": "MultiversXのTelegramチャンネルに参加して、コミュニティと交流し、最新情報を取得しましょう。",
+    "errorDescription": "確認に失敗しました。Telegramチャンネルに参加しているか確認して、もう一度お試しください。"
+  },
+  "jv": {
+    "title": "Gabung MultiversX ing Telegram",
+    "shortDescription": "Nyambung karo komunitas MultiversX.",
+    "longDescription": "Gabung karo saluran Telegram MultiversX kanggo melu karo komunitas lan entuk apdet.",
+    "errorDescription": "Verifikasi gagal. Mangga priksa manawa sampeyan gabung karo saluran Telegram lan coba maneh."
+  },
+  "kn": {
+    "title": "Telegram ನಲ್ಲಿ MultiversX ಗೆ ಸೇರಿ",
+    "shortDescription": "MultiversX ಸಮುದಾಯದೊಂದಿಗೆ ಸಂಪರ್ಕವನ್ನು ಸ್ಥಾಪಿಸಿ.",
+    "longDescription": "ಸಮುದಾಯದೊಂದಿಗೆ ತೊಡಗಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ನವೀಕರಣಗಳನ್ನು ಪಡೆಯಲು MultiversX Telegram ಚಾನಲ್ ಅನ್ನು ಸೇರಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ನೀವು Telegram ಚಾನಲ್ ಅನ್ನು ಸೇರಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "Telegram에서 MultiversX에 가입하세요",
+    "shortDescription": "MultiversX 커뮤니티와 연결하세요.",
+    "longDescription": "MultiversX Telegram 채널에 가입하여 커뮤니티와 교류하고 최신 업데이트를 받으세요.",
+    "errorDescription": "인증에 실패했습니다. Telegram 채널에 가입했는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "Telegram वर MultiversX मध्ये सामील व्हा",
+    "shortDescription": "MultiversX समुदायाशी कनेक्ट करा.",
+    "longDescription": "समुदायाशी संवाद साधण्यासाठी आणि अपडेट्स मिळवण्यासाठी MultiversX Telegram चॅनेलमध्ये सामील व्हा.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुम्ही Telegram चॅनेलमध्ये सामील झाला आहात का ते तपासा आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Sertai MultiversX di Telegram",
+    "shortDescription": "Berhubung dengan komuniti MultiversX.",
+    "longDescription": "Sertai saluran Telegram MultiversX untuk berinteraksi dengan komuniti dan mendapatkan kemas kini.",
+    "errorDescription": "Pengesahan gagal. Sila semak sama ada anda telah menyertai saluran Telegram dan cuba lagi."
+  },
+  "nb": {
+    "title": "Bli med i MultiversX på Telegram",
+    "shortDescription": "Koble deg til MultiversX-fellesskapet.",
+    "longDescription": "Bli med i MultiversX Telegram-kanalen for å engasjere deg med fellesskapet og få oppdateringer.",
+    "errorDescription": "Verifiseringen mislyktes. Sjekk om du har blitt med i Telegram-kanalen og prøv igjen."
+  },
+  "nn": {
+    "title": "Bli med i MultiversX på Telegram",
+    "shortDescription": "Koble deg til MultiversX-fellesskapet.",
+    "longDescription": "Bli med i MultiversX Telegram-kanalen for å få kontakt med fellesskapet og få oppdateringar.",
+    "errorDescription": "Verifisering mislukkast. Sjekk om du har blitt med i Telegram-kanalen og prøv igjen."
+  },
+  "pa": {
+    "title": "Telegram 'ਤੇ MultiversX ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+    "shortDescription": "MultiversX ਭਾਈਚਾਰੇ ਨਾਲ ਜੁੜੋ।",
+    "longDescription": "ਭਾਈਚਾਰੇ ਨਾਲ ਜੁੜਨ ਅਤੇ ਅਪਡੇਟ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ MultiversX Telegram ਚੈਨਲ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।",
+    "errorDescription": "ਤਸਦੀਕ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਚੈਕ ਕਰੋ ਕਿ ਤੁਸੀਂ Telegram ਚੈਨਲ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ ਹੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  },
+  "pl": {
+    "title": "Dołącz do MultiversX na Telegramie",
+    "shortDescription": "Połącz się ze społecznością MultiversX.",
+    "longDescription": "Dołącz do kanału MultiversX na Telegramie, aby zaangażować się w społeczność i otrzymywać aktualizacje.",
+    "errorDescription": "Weryfikacja nie powiodła się. Sprawdź, czy dołączyłeś do kanału Telegram i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Junte-se ao MultiversX no Telegram",
+    "shortDescription": "Conecte-se com a comunidade MultiversX.",
+    "longDescription": "Junte-se ao canal do Telegram MultiversX para interagir com a comunidade e receber atualizações.",
+    "errorDescription": "Falha na verificação. Verifique se você se juntou ao canal do Telegram e tente novamente."
+  },
+  "ro": {
+    "title": "Alătură-te MultiversX pe Telegram",
+    "shortDescription": "Conectează-te cu comunitatea MultiversX.",
+    "longDescription": "Alătură-te canalului Telegram MultiversX pentru a interacționa cu comunitatea și a primi actualizări.",
+    "errorDescription": "Verificarea a eșuat. Verifică dacă te-ai alăturat canalului Telegram și încearcă din nou."
+  },
+  "ru": {
+    "title": "Присоединяйтесь к MultiversX в Telegram",
+    "shortDescription": "Свяжитесь с сообществом MultiversX.",
+    "longDescription": "Присоединяйтесь к каналу MultiversX в Telegram, чтобы взаимодействовать с сообществом и получать обновления.",
+    "errorDescription": "Не удалось выполнить проверку. Пожалуйста, проверьте, присоединились ли вы к каналу Telegram, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Pripojte sa k MultiversX na Telegrame",
+    "shortDescription": "Spojte sa s komunitou MultiversX.",
+    "longDescription": "Pripojte sa ku kanálu MultiversX na Telegrame a zapojte sa do komunity a získajte aktualizácie.",
+    "errorDescription": "Overenie zlyhalo. Skontrolujte, či ste sa pripojili ku kanálu na Telegrame, a skúste to znova."
+  },
+  "sl": {
+    "title": "Pridružite se MultiversX na Telegramu",
+    "shortDescription": "Povežite se s skupnostjo MultiversX.",
+    "longDescription": "Pridružite se kanalu Telegram MultiversX, da sodelujete s skupnostjo in prejmete posodobitve.",
+    "errorDescription": "Preverjanje ni uspelo. Preverite, ali ste se pridružili kanalu Telegram, in poskusite znova."
+  },
+  "sq": {
+    "title": "Bashkohuni me MultiversX në Telegram",
+    "shortDescription": "Lidhu me komunitetin e MultiversX.",
+    "longDescription": "Bashkohuni me kanalin Telegram të MultiversX për të bashkëvepruar me komunitetin dhe për të marrë përditësime.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi kontrolloni nëse jeni bashkuar me kanalin Telegram dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Gå med i MultiversX på Telegram",
+    "shortDescription": "Anslut med MultiversX-gemenskapen.",
+    "longDescription": "Gå med i MultiversX:s Telegram-kanal för att engagera dig med gemenskapen och få uppdateringar.",
+    "errorDescription": "Verifieringen misslyckades. Kontrollera om du har gått med i Telegram-kanalen och försök igen."
+  },
+  "te": {
+    "title": "Telegramలో MultiversXను చేరండి",
+    "shortDescription": "MultiversX కమ్యూనిటితో కనెక్ట్ అవ్వండి.",
+    "longDescription": "కమ్యూనిటితో ఎంగేజ్ అయ్యేందుకు మరియు అప్‌డేట్స్ పొందడానికి MultiversX Telegram ఛానెల్‌లో చేరండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు Telegram ఛానెల్‌లో చేరారో లేదో తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "เข้าร่วม MultiversX บน Telegram",
+    "shortDescription": "เชื่อมต่อกับชุมชน MultiversX",
+    "longDescription": "เข้าร่วมช่อง Telegram ของ MultiversX เพื่อมีส่วนร่วมกับชุมชนและรับการอัปเดต",
+    "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าคุณเข้าร่วมช่อง Telegram แล้วลองอีกครั้ง"
+  },
+  "tr": {
+    "title": "Telegram'da MultiversX'e Katıl",
+    "shortDescription": "MultiversX topluluğuyla bağlantı kurun.",
+    "longDescription": "Toplulukla etkileşimde bulunmak ve güncellemeleri almak için MultiversX Telegram kanalına katılın.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen Telegram kanalına katıldığınızdan emin olun ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Приєднуйтесь до MultiversX у Telegram",
+    "shortDescription": "Зв'яжіться зі спільнотою MultiversX.",
+    "longDescription": "Приєднуйтесь до каналу MultiversX у Telegram, щоб взаємодіяти зі спільнотою та отримувати оновлення.",
+    "errorDescription": "Перевірка не вдалася. Будь ласка, перевірте, чи приєдналися ви до каналу Telegram, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "Telegram پر MultiversX میں شامل ہوں",
+    "shortDescription": "MultiversX کمیونٹی سے جڑیں۔",
+    "longDescription": "کمیونٹی کے ساتھ مشغول ہونے اور اپ ڈیٹس حاصل کرنے کے لیے MultiversX Telegram چینل میں شامل ہوں۔",
+    "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم چیک کریں کہ آپ نے Telegram چینل میں شمولیت اختیار کی ہے اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Tham gia MultiversX trên Telegram",
+    "shortDescription": "Kết nối với cộng đồng MultiversX.",
+    "longDescription": "Tham gia kênh Telegram của MultiversX để tương tác với cộng đồng và nhận thông tin cập nhật.",
+    "errorDescription": "Xác minh không thành công. Vui lòng kiểm tra xem bạn đã tham gia kênh Telegram và thử lại."
+  },
+  "zh-hant": {
+    "title": "加入 MultiversX Telegram 頻道",
+    "shortDescription": "與 MultiversX 社群聯繫。",
+    "longDescription": "加入 MultiversX Telegram 頻道，與社群互動並獲取更新。",
+    "errorDescription": "驗證失敗。請檢查您是否已加入 Telegram 頻道，然後再試一次。"
+  },
+  "zh": {
+    "title": "加入 MultiversX Telegram 频道",
+    "shortDescription": "与 MultiversX 社区联系。",
+    "longDescription": "加入 MultiversX Telegram 频道，与社区互动并获取更新。",
+    "errorDescription": "验证失败。请检查您是否已加入 Telegram 频道，然后重试。"
+  }
+}

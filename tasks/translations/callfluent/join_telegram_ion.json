@@ -1,8 +1,261 @@
 {
-   "en":{
-      "title":"Join ION Telegram channel",
-      "shortDescription":"Be part of ION growing community.",
-      "longDescription":"Join ION Telegram channel to receive important updates and community news.",
-      "errorDescription":"Verification failed. Please check if you joined the channel and try again."
+   "af": {
+     "title": "Sluit aan by die ION Telegram-kanaal",
+     "shortDescription": "Wees deel van die groeiende ION-gemeenskap.",
+     "longDescription": "Sluit aan by die ION Telegram-kanaal om belangrike opdaterings en gemeenskapsnuus te ontvang.",
+     "errorDescription": "Verifikasie het misluk. Kyk asseblief of jy by die kanaal aangesluit het en probeer weer."
+   },
+   "ar": {
+     "title": "انضم إلى قناة ION على تيليجرام",
+     "shortDescription": "كن جزءًا من مجتمع ION المتنامي.",
+     "longDescription": "انضم إلى قناة ION على تيليجرام لتلقي التحديثات الهامة وأخبار المجتمع.",
+     "errorDescription": "فشل التحقق. يرجى التحقق مما إذا كنت قد انضممت إلى القناة وحاول مرة أخرى."
+   },
+   "az": {
+     "title": "ION Telegram kanalına qoşulun",
+     "shortDescription": "Böyüyən ION icmasının bir hissəsi olun.",
+     "longDescription": "Əhəmiyyətli yenilikləri və icma xəbərlərini almaq üçün ION Telegram kanalına qoşulun.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa kanala qoşulub-qatılmadığınızı yoxlayın və yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Присъединете се към канала на ION в Telegram",
+     "shortDescription": "Бъдете част от растящата общност на ION.",
+     "longDescription": "Присъединете се към канала на ION в Telegram, за да получавате важни актуализации и новини от общността.",
+     "errorDescription": "Проверката не бе успешна. Моля, проверете дали сте се присъединили към канала и опитайте отново."
+   },
+   "bn": {
+     "title": "ION Telegram চ্যানেলে যোগ দিন",
+     "shortDescription": "ION-এর ক্রমবর্ধমান কমিউনিটির অংশ হন।",
+     "longDescription": "গুরুত্বপূর্ণ আপডেট এবং সম্প্রদায়ের খবর পেতে ION Telegram চ্যানেলে যোগ দিন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন আপনি চ্যানেলে যোগ দিয়েছেন এবং আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Připojte se k Telegram kanálu ION",
+     "shortDescription": "Staňte se součástí rostoucí komunity ION.",
+     "longDescription": "Připojte se k Telegram kanálu ION, abyste dostávali důležité aktualizace a novinky z komunity.",
+     "errorDescription": "Ověření selhalo. Zkontrolujte, zda jste se připojili ke kanálu, a zkuste to znovu."
+   },
+   "de": {
+     "title": "Tritt dem ION Telegram-Kanal bei",
+     "shortDescription": "Sei Teil der wachsenden ION-Community.",
+     "longDescription": "Tritt dem ION Telegram-Kanal bei, um wichtige Updates und Community-News zu erhalten.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte überprüfe, ob du dem Kanal beigetreten bist, und versuche es erneut."
+   },
+   "el": {
+     "title": "Γίνετε μέλος του καναλιού ION στο Telegram",
+     "shortDescription": "Γίνετε μέρος της αυξανόμενης κοινότητας ION.",
+     "longDescription": "Γίνετε μέλος του καναλιού ION στο Telegram για να λαμβάνετε σημαντικές ενημερώσεις και νέα της κοινότητας.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Ελέγξτε αν γίνατε μέλος του καναλιού και δοκιμάστε ξανά."
+   },
+   "en": {
+     "title": "Join ION Telegram channel",
+     "shortDescription": "Be part of ION growing community.",
+     "longDescription": "Join ION Telegram channel to receive important updates and community news.",
+     "errorDescription": "Verification failed. Please check if you joined the channel and try again."
+   },
+   "es": {
+     "title": "Únete al canal de ION en Telegram",
+     "shortDescription": "Sé parte de la creciente comunidad de ION.",
+     "longDescription": "Únete al canal de ION en Telegram para recibir actualizaciones importantes y noticias de la comunidad.",
+     "errorDescription": "La verificación falló. Por favor, revisa si te uniste al canal e inténtalo de nuevo."
+   },
+   "fa": {
+     "title": "به کانال ION در تلگرام بپیوندید",
+     "shortDescription": "جزئی از جامعه در حال رشد ION باشید.",
+     "longDescription": "برای دریافت به‌روزرسانی‌های مهم و اخبار جامعه، به کانال ION در تلگرام بپیوندید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً بررسی کنید که آیا به کانال پیوسته‌اید و دوباره تلاش کنید."
+   },
+   "fr": {
+     "title": "Rejoignez le canal Telegram de ION",
+     "shortDescription": "Faites partie de la communauté grandissante de ION.",
+     "longDescription": "Rejoignez le canal Telegram de ION pour recevoir des mises à jour importantes et des nouvelles de la communauté.",
+     "errorDescription": "Échec de la vérification. Veuillez vérifier si vous avez rejoint le canal et réessayer."
+   },
+   "gu": {
+     "title": "ION Telegram ચેનલમાં જોડાઓ",
+     "shortDescription": "ION ની વધતી સમુદાયનો ભાગ બનો.",
+     "longDescription": "મહત્વપૂર્ણ અપડેટ્સ અને સમુદાયના સમાચાર મેળવવા માટે ION Telegram ચેનલમાં જોડાઓ.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને તપાસો કે તમે ચેનલમાં જોડાયા છો કે નહીં અને ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "הצטרפו לערוץ ה-Telegram של ION",
+     "shortDescription": "היו חלק מהקהילה הצומחת של ION.",
+     "longDescription": "הצטרפו לערוץ ה-Telegram של ION כדי לקבל עדכונים חשובים וחדשות מהקהילה.",
+     "errorDescription": "האימות נכשל. אנא בדקו אם הצטרפתם לערוץ ונסו שוב."
+   },
+   "hi": {
+     "title": "ION Telegram चैनल से जुड़ें",
+     "shortDescription": "ION के बढ़ते समुदाय का हिस्सा बनें।",
+     "longDescription": "महत्वपूर्ण अपडेट और सामुदायिक समाचार प्राप्त करने के लिए ION Telegram चैनल से जुड़ें।",
+     "errorDescription": "सत्यापन विफल। कृपया जांचें कि आप चैनल से जुड़े हैं और फिर से प्रयास करें।"
+   },
+   "hu": {
+     "title": "Csatlakozz az ION Telegram csatornához",
+     "shortDescription": "Légy része az ION növekvő közösségének.",
+     "longDescription": "Csatlakozz az ION Telegram csatornához, hogy megkapd a fontos frissítéseket és közösségi híreket.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Ellenőrizd, hogy csatlakoztál-e a csatornához, és próbáld újra."
+   },
+   "id": {
+     "title": "Bergabung dengan saluran Telegram ION",
+     "shortDescription": "Jadilah bagian dari komunitas ION yang berkembang.",
+     "longDescription": "Bergabunglah dengan saluran Telegram ION untuk menerima pembaruan penting dan berita komunitas.",
+     "errorDescription": "Verifikasi gagal. Silakan periksa apakah Anda bergabung dengan saluran dan coba lagi."
+   },
+   "it": {
+     "title": "Unisciti al canale Telegram di ION",
+     "shortDescription": "Fai parte della crescente comunità di ION.",
+     "longDescription": "Unisciti al canale Telegram di ION per ricevere aggiornamenti importanti e notizie della comunità.",
+     "errorDescription": "Verifica fallita. Controlla se ti sei unito al canale e riprova."
+   },
+   "ja": {
+     "title": "ION Telegram チャンネルに参加する",
+     "shortDescription": "成長しているIONコミュニティの一員になりましょう。",
+     "longDescription": "重要なアップデートやコミュニティニュースを受け取るために、IONのTelegramチャンネルに参加してください。",
+     "errorDescription": "確認に失敗しました。チャンネルに参加しているか確認し、もう一度試してください。"
+   },
+   "jv": {
+     "title": "Gabung kanal Telegram ION",
+     "shortDescription": "Dadi bagian saka komunitas ION sing saya gedhe.",
+     "longDescription": "Gabung kanal Telegram ION kanggo nampa pembaruan penting lan warta komunitas.",
+     "errorDescription": "Verifikasi gagal. Priksa manawa sampeyan wis gabung karo kanal lan coba maneh."
+   },
+   "kn": {
+     "title": "ION Telegram ಚಾನೆಲ್ ಗೆ ಸೇರಿಕೊಳ್ಳಿ",
+     "shortDescription": "ION の ಬೆಳೆಯುತ್ತಿರುವ ಸಮುದಾಯದ ಭಾಗವಿರಿ.",
+     "longDescription": "ಪ್ರಮುಖ ನವೀಕರಣಗಳು ಮತ್ತು ಸಮುದಾಯದ ಸುದ್ದಿಗಳನ್ನು ಪಡೆಯಲು ION Telegram ಚಾನೆಲ್ ಗೆ ಸೇರಿಕೊಳ್ಳಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನೀವು ಚಾನೆಲ್ ಗೆ ಸೇರಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "ION Telegram 채널에 가입하세요",
+     "shortDescription": "성장하는 ION 커뮤니티의 일원이 되세요.",
+     "longDescription": "중요한 업데이트와 커뮤니티 뉴스를 받기 위해 ION Telegram 채널에 가입하세요.",
+     "errorDescription": "인증에 실패했습니다. 채널에 가입했는지 확인하고 다시 시도하세요."
+   },
+   "mr": {
+     "title": "ION Telegram चॅनेलमध्ये सामील व्हा",
+     "shortDescription": "वाढणाऱ्या ION समुदायाचा भाग व्हा.",
+     "longDescription": "महत्त्वाच्या अद्यतनांसाठी आणि समुदायाच्या बातम्यांसाठी ION Telegram चॅनेलमध्ये सामील व्हा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तपासा की तुम्ही चॅनेलमध्ये सामील झाला आहात आणि पुन्हा प्रयत्न करा."
+   },
+   "ms": {
+     "title": "Sertai saluran Telegram ION",
+     "shortDescription": "Jadilah sebahagian daripada komuniti ION yang berkembang.",
+     "longDescription": "Sertai saluran Telegram ION untuk menerima kemas kini penting dan berita komuniti.",
+     "errorDescription": "Pengesahan gagal. Sila semak jika anda menyertai saluran dan cuba lagi."
+   },
+   "nb": {
+     "title": "Bli med i ION Telegram-kanal",
+     "shortDescription": "Bli en del av ION sitt voksende fellesskap.",
+     "longDescription": "Bli med i ION Telegram-kanal for å motta viktige oppdateringer og fellesskapsnyheter.",
+     "errorDescription": "Verifisering mislyktes. Vennligst sjekk om du ble med i kanalen og prøv igjen."
+   },
+   "nn": {
+     "title": "Bli med i ION Telegram-kanal",
+     "shortDescription": "Bli ein del av ION sitt veksande fellesskap.",
+     "longDescription": "Bli med i ION Telegram-kanal for å motta viktige oppdateringar og fellesskapsnyheiter.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å sjå om du blei med i kanalen og prøv igjen."
+   },
+   "pa": {
+     "title": "ION Telegram ਚੈਨਲ 'ਤੇ ਸ਼ਾਮਲ ਹੋਵੋ",
+     "shortDescription": "ਵਧ ਰਹੀ ION ਕਮਿਊਨਿਟੀ ਦਾ ਹਿੱਸਾ ਬਣੋ।",
+     "longDescription": "ਮਹੱਤਵਪੂਰਣ ਅਪਡੇਟਾਂ ਅਤੇ ਕਮਿਊਨਿਟੀ ਦੀਆਂ ਖਬਰਾਂ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ION Telegram ਚੈਨਲ 'ਤੇ ਸ਼ਾਮਲ ਹੋਵੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚੋ ਕਿ ਤੁਸੀਂ ਚੈਨਲ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ ਹੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Dołącz do kanału ION na Telegramie",
+     "shortDescription": "Bądź częścią rozwijającej się społeczności ION.",
+     "longDescription": "Dołącz do kanału ION na Telegramie, aby otrzymywać ważne aktualizacje i wiadomości społecznościowe.",
+     "errorDescription": "Weryfikacja nie powiodła się. Sprawdź, czy dołączyłeś do kanału, i spróbuj ponownie."
+   },
+   "pt": {
+     "title": "Junte-se ao canal do ION no Telegram",
+     "shortDescription": "Faça parte da crescente comunidade do ION.",
+     "longDescription": "Junte-se ao canal do ION no Telegram para receber atualizações importantes e notícias da comunidade.",
+     "errorDescription": "Falha na verificação. Verifique se você entrou no canal e tente novamente."
+   },
+   "ro": {
+     "title": "Alătură-te canalului ION pe Telegram",
+     "shortDescription": "Fii parte din comunitatea în creștere ION.",
+     "longDescription": "Alătură-te canalului ION pe Telegram pentru a primi actualizări importante și noutăți din comunitate.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să verifici dacă te-ai alăturat canalului și încearcă din nou."
+   },
+   "ru": {
+     "title": "Присоединяйтесь к каналу ION в Telegram",
+     "shortDescription": "Станьте частью растущего сообщества ION.",
+     "longDescription": "Присоединяйтесь к каналу ION в Telegram, чтобы получать важные обновления и новости сообщества.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, проверьте, присоединились ли вы к каналу, и попробуйте снова."
+   },
+   "sk": {
+     "title": "Pripojte sa ku kanálu ION na Telegrame",
+     "shortDescription": "Buďte súčasťou rastúcej komunity ION.",
+     "longDescription": "Pripojte sa ku kanálu ION na Telegrame, aby ste dostávali dôležité aktualizácie a správy z komunity.",
+     "errorDescription": "Overenie zlyhalo. Skontrolujte, či ste sa pripojili ku kanálu, a skúste to znovu."
+   },
+   "sl": {
+     "title": "Pridružite se kanalu ION na Telegramu",
+     "shortDescription": "Bodite del rastoče skupnosti ION.",
+     "longDescription": "Pridružite se kanalu ION na Telegramu, da prejmete pomembne posodobitve in novice skupnosti.",
+     "errorDescription": "Preverjanje ni uspelo. Preverite, ali ste se pridružili kanalu, in poskusite znova."
+   },
+   "sq": {
+     "title": "Bashkohuni me kanalin e ION në Telegram",
+     "shortDescription": "Bëhuni pjesë e komunitetit në rritje të ION.",
+     "longDescription": "Bashkohuni me kanalin e ION në Telegram për të marrë përditësime të rëndësishme dhe lajme nga komuniteti.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi kontrolloni nëse jeni bashkuar me kanalin dhe provoni përsëri."
+   },
+   "sv": {
+     "title": "Gå med i ION Telegram-kanalen",
+     "shortDescription": "Bli en del av ION:s växande gemenskap.",
+     "longDescription": "Gå med i ION Telegram-kanalen för att få viktiga uppdateringar och nyheter från gemenskapen.",
+     "errorDescription": "Verifiering misslyckades. Kontrollera om du gick med i kanalen och försök igen."
+   },
+   "te": {
+     "title": "ION Telegram ఛానెల్ లో చేరండి",
+     "shortDescription": "వృద్ధి చెందుతున్న ION సమూహంలో భాగం అవ్వండి.",
+     "longDescription": "ప్రాముఖ్యమైన నవీకరణలు మరియు సమూహ వార్తలను అందుకోవడానికి ION Telegram ఛానెల్ లో చేరండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు ఛానెల్ లో చేరారా అని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "เข้าร่วมช่อง ION บน Telegram",
+     "shortDescription": "เป็นส่วนหนึ่งของชุมชน ION ที่กำลังเติบโต",
+     "longDescription": "เข้าร่วมช่อง ION บน Telegram เพื่อรับการอัปเดตที่สำคัญและข่าวสารจากชุมชน",
+     "errorDescription": "การยืนยันล้มเหลว โปรดตรวจสอบว่าคุณเข้าร่วมช่องแล้วและลองใหม่อีกครั้ง"
+   },
+   "tr": {
+     "title": "ION Telegram kanalına katılın",
+     "shortDescription": "Büyüyen ION topluluğunun bir parçası olun.",
+     "longDescription": "Önemli güncellemeleri ve topluluk haberlerini almak için ION Telegram kanalına katılın.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen kanala katılıp katılmadığınızı kontrol edin ve tekrar deneyin."
+   },
+   "uk": {
+     "title": "Приєднуйтесь до каналу ION у Telegram",
+     "shortDescription": "Станьте частиною зростаючої спільноти ION.",
+     "longDescription": "Приєднуйтесь до каналу ION у Telegram, щоб отримувати важливі оновлення та новини спільноти.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, перевірте, чи приєдналися ви до каналу, і спробуйте ще раз."
+   },
+   "ur": {
+     "title": "ION Telegram چینل میں شامل ہوں",
+     "shortDescription": "بڑھتی ہوئی ION کمیونٹی کا حصہ بنیں۔",
+     "longDescription": "اہم اپ ڈیٹس اور کمیونٹی کی خبریں حاصل کرنے کے لیے ION Telegram چینل میں شامل ہوں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم چیک کریں کہ آپ نے چینل میں شمولیت اختیار کی ہے اور دوبارہ کوشش کریں۔"
+   },
+   "vi": {
+     "title": "Tham gia kênh Telegram của ION",
+     "shortDescription": "Hãy là một phần của cộng đồng ION đang phát triển.",
+     "longDescription": "Tham gia kênh Telegram của ION để nhận các bản cập nhật quan trọng và tin tức cộng đồng.",
+     "errorDescription": "Xác minh không thành công. Vui lòng kiểm tra xem bạn đã tham gia kênh chưa và thử lại."
+   },
+   "zh-hant": {
+     "title": "加入 ION Telegram 頻道",
+     "shortDescription": "成為 ION 成長中的社群的一部分。",
+     "longDescription": "加入 ION 的 Telegram 頻道，接收重要更新和社群新聞。",
+     "errorDescription": "驗證失敗。請檢查您是否已加入該頻道，然後再試一次。"
+   },
+   "zh": {
+     "title": "加入 ION Telegram 频道",
+     "shortDescription": "成为 ION 成长中的社区的一员。",
+     "longDescription": "加入 ION 的 Telegram 频道，以接收重要更新和社区新闻。",
+     "errorDescription": "验证失败。请检查您是否已加入频道，然后重试。"
    }
-}
+ }
+ 

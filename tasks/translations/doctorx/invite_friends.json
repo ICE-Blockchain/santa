@@ -1,8 +1,260 @@
 {
-   "en":{
-      "title":"Invite {{.RequiredFriendsInvitedCount}} friends",
-      "shortDescription":"Bring your friends and earn together.",
-      "longDescription":"Invite {{.RequiredFriendsInvitedCount}} friends to join your team and start earning DRX tokens together.",
-      "errorDescription":"Verification failed. Please invite {{.RequiredFriendsInvitedCount}} friends and try again."
+   "af": {
+     "title": "Nooi {{.RequiredFriendsInvitedCount}} vriende",
+     "shortDescription": "Bring jou vriende en verdien saam.",
+     "longDescription": "Nooi {{.RequiredFriendsInvitedCount}} vriende om by jou span aan te sluit en saam te begin verdien.",
+     "errorDescription": "Verifikasie het misluk. Nooi asseblief {{.RequiredFriendsInvitedCount}} vriende en probeer weer."
+   },
+   "ar": {
+     "title": "ادعو {{.RequiredFriendsInvitedCount}} أصدقاء",
+     "shortDescription": "اجلب أصدقائك واربحوا معًا.",
+     "longDescription": "ادعو {{.RequiredFriendsInvitedCount}} من الأصدقاء للانضمام إلى فريقك وابدأوا الربح معًا.",
+     "errorDescription": "فشل التحقق. يرجى دعوة {{.RequiredFriendsInvitedCount}} أصدقاء والمحاولة مرة أخرى."
+   },
+   "az": {
+     "title": "{{.RequiredFriendsInvitedCount}} dostunuzu dəvət edin",
+     "shortDescription": "Dostlarınızı gətirin və birlikdə qazanın.",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} dostunuzu dəvət edin, komandanıza qoşulsunlar və birlikdə qazanın.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa {{.RequiredFriendsInvitedCount}} dostunuzu dəvət edin və yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Поканете {{.RequiredFriendsInvitedCount}} приятели",
+     "shortDescription": "Донесете своите приятели и печелете заедно.",
+     "longDescription": "Поканете {{.RequiredFriendsInvitedCount}} приятели да се присъединят към вашия екип и започнете да печелите заедно.",
+     "errorDescription": "Проверката не бе успешна. Моля, поканете {{.RequiredFriendsInvitedCount}} приятели и опитайте отново."
+   },
+   "bn": {
+     "title": "{{.RequiredFriendsInvitedCount}} বন্ধুদের আমন্ত্রণ জানান",
+     "shortDescription": "আপনার বন্ধুদের নিয়ে আসুন এবং একসাথে উপার্জন করুন।",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} বন্ধুদের আপনার দলে যোগ দিতে আমন্ত্রণ জানান এবং একসাথে উপার্জন করা শুরু করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে {{.RequiredFriendsInvitedCount}} বন্ধুদের আমন্ত্রণ জানান এবং আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Pozvěte {{.RequiredFriendsInvitedCount}} přátel",
+     "shortDescription": "Přiveďte své přátele a vydělávejte spolu.",
+     "longDescription": "Pozvěte {{.RequiredFriendsInvitedCount}} přátel, aby se připojili k vašemu týmu a začněte společně vydělávat.",
+     "errorDescription": "Ověření selhalo. Pozvěte {{.RequiredFriendsInvitedCount}} přátel a zkuste to znovu."
+   },
+   "de": {
+     "title": "Lade {{.RequiredFriendsInvitedCount}} Freunde ein",
+     "shortDescription": "Bring deine Freunde mit und verdient zusammen.",
+     "longDescription": "Lade {{.RequiredFriendsInvitedCount}} Freunde ein, um deinem Team beizutreten und gemeinsam zu verdienen.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte lade {{.RequiredFriendsInvitedCount}} Freunde ein und versuche es erneut."
+   },
+   "el": {
+     "title": "Προσκαλέστε {{.RequiredFriendsInvitedCount}} φίλους",
+     "shortDescription": "Φέρτε τους φίλους σας και κερδίστε μαζί.",
+     "longDescription": "Προσκαλέστε {{.RequiredFriendsInvitedCount}} φίλους να συμμετάσχουν στην ομάδα σας και αρχίστε να κερδίζετε μαζί.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Προσκαλέστε {{.RequiredFriendsInvitedCount}} φίλους και δοκιμάστε ξανά."
+   },
+   "en": {
+     "title": "Invite {{.RequiredFriendsInvitedCount}} friends",
+     "shortDescription": "Bring your friends and earn together.",
+     "longDescription": "Invite {{.RequiredFriendsInvitedCount}} friends to join your team and start earning together.",
+     "errorDescription": "Verification failed. Please invite {{.RequiredFriendsInvitedCount}} friends and try again."
+   },
+   "es": {
+     "title": "Invita a {{.RequiredFriendsInvitedCount}} amigos",
+     "shortDescription": "Trae a tus amigos y ganen juntos.",
+     "longDescription": "Invita a {{.RequiredFriendsInvitedCount}} amigos a unirse a tu equipo y empiecen a ganar juntos.",
+     "errorDescription": "La verificación falló. Por favor, invita a {{.RequiredFriendsInvitedCount}} amigos e inténtalo de nuevo."
+   },
+   "fa": {
+     "title": "{{.RequiredFriendsInvitedCount}} دوست را دعوت کنید",
+     "shortDescription": "دوستان خود را بیاورید و با هم درآمد کسب کنید.",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} دوست را برای پیوستن به تیم خود دعوت کنید و با هم شروع به درآمدزایی کنید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً {{.RequiredFriendsInvitedCount}} دوست را دعوت کنید و دوباره تلاش کنید."
+   },
+   "fr": {
+     "title": "Invitez {{.RequiredFriendsInvitedCount}} amis",
+     "shortDescription": "Amenez vos amis et gagnez ensemble.",
+     "longDescription": "Invitez {{.RequiredFriendsInvitedCount}} amis à rejoindre votre équipe et commencez à gagner ensemble.",
+     "errorDescription": "Échec de la vérification. Veuillez inviter {{.RequiredFriendsInvitedCount}} amis et réessayer."
+   },
+   "gu": {
+     "title": "{{.RequiredFriendsInvitedCount}} મિત્રોનું આમંત્રણ આપો",
+     "shortDescription": "તમારા મિત્રો લાવો અને સાથેમાં કમાઓ.",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} મિત્રોનું આમંત્રણ આપો કે તેઓ તમારી ટીમમાં જોડાય અને સાથે કમાણી કરવાની શરૂઆત કરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને {{.RequiredFriendsInvitedCount}} મિત્રોનું આમંત્રણ આપો અને ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "הזמינו {{.RequiredFriendsInvitedCount}} חברים",
+     "shortDescription": "הביאו את חבריכם והרוויחו יחד.",
+     "longDescription": "הזמינו {{.RequiredFriendsInvitedCount}} חברים להצטרף לצוות שלכם והתחילו להרוויח יחד.",
+     "errorDescription": "האימות נכשל. אנא הזמינו {{.RequiredFriendsInvitedCount}} חברים ונסו שוב."
+   },
+   "hi": {
+     "title": "{{.RequiredFriendsInvitedCount}} दोस्तों को आमंत्रित करें",
+     "shortDescription": "अपने दोस्तों को लाएं और साथ में कमाएं।",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} दोस्तों को अपनी टीम में शामिल होने के लिए आमंत्रित करें और साथ में कमाना शुरू करें।",
+     "errorDescription": "सत्यापन विफल। कृपया {{.RequiredFriendsInvitedCount}} दोस्तों को आमंत्रित करें और फिर से प्रयास करें।"
+   },
+   "hu": {
+     "title": "Hívd meg {{.RequiredFriendsInvitedCount}} barátodat",
+     "shortDescription": "Hívd meg barátaidat, és keressetek együtt.",
+     "longDescription": "Hívd meg {{.RequiredFriendsInvitedCount}} barátodat, hogy csatlakozzanak a csapatodhoz, és kezdjetek el együtt keresni.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Hívd meg {{.RequiredFriendsInvitedCount}} barátodat, és próbáld újra."
+   },
+   "id": {
+     "title": "Undang {{.RequiredFriendsInvitedCount}} teman",
+     "shortDescription": "Bawa teman-temanmu dan dapatkan bersama.",
+     "longDescription": "Undang {{.RequiredFriendsInvitedCount}} teman untuk bergabung dengan tim Anda dan mulai menghasilkan bersama.",
+     "errorDescription": "Verifikasi gagal. Silakan undang {{.RequiredFriendsInvitedCount}} teman dan coba lagi."
+   },
+   "it": {
+     "title": "Invita {{.RequiredFriendsInvitedCount}} amici",
+     "shortDescription": "Porta i tuoi amici e guadagnate insieme.",
+     "longDescription": "Invita {{.RequiredFriendsInvitedCount}} amici a unirsi al tuo team e iniziate a guadagnare insieme.",
+     "errorDescription": "Verifica fallita. Invita {{.RequiredFriendsInvitedCount}} amici e riprova."
+   },
+   "ja": {
+     "title": "{{.RequiredFriendsInvitedCount}} 人の友達を招待する",
+     "shortDescription": "友達を招待して一緒に稼ぎましょう。",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} 人の友達を招待して、チームに参加して一緒に稼ぎ始めましょう。",
+     "errorDescription": "確認に失敗しました。{{.RequiredFriendsInvitedCount}} 人の友達を招待して、もう一度試してください。"
+   },
+   "jv": {
+     "title": "Ngundang {{.RequiredFriendsInvitedCount}} kanca",
+     "shortDescription": "Gawa kanca-kancamu lan entuk bareng-bareng.",
+     "longDescription": "Ngundang {{.RequiredFriendsInvitedCount}} kanca kanggo gabung karo tim sampeyan lan miwiti entuk bareng.",
+     "errorDescription": "Verifikasi gagal. Coba undang {{.RequiredFriendsInvitedCount}} kanca lan coba maneh."
+   },
+   "kn": {
+     "title": "{{.RequiredFriendsInvitedCount}} ಸ್ನೇಹಿತರನ್ನು ಆಹ್ವಾನಿಸಿ",
+     "shortDescription": "ನಿಮ್ಮ ಸ್ನೇಹಿತರನ್ನು ಕರೆತಂದು ಒಟ್ಟಾಗಿ ಸಂಪಾದಿಸಿ.",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} ಸ್ನೇಹಿತರನ್ನು ನಿಮ್ಮ ತಂಡಕ್ಕೆ ಸೇರಲು ಆಹ್ವಾನಿಸಿ ಮತ್ತು ಒಟ್ಟಾಗಿ ಸಂಪಾದಿಸಲು ಪ್ರಾರಂಭಿಸಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. {{.RequiredFriendsInvitedCount}} ಸ್ನೇಹಿತರನ್ನು ಆಹ್ವಾನಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "{{.RequiredFriendsInvitedCount}} 명의 친구를 초대하세요",
+     "shortDescription": "친구를 데리고 함께 수익을 올리세요.",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} 명의 친구를 초대하여 팀에 가입하고 함께 수익을 올리기 시작하세요.",
+     "errorDescription": "인증에 실패했습니다. {{.RequiredFriendsInvitedCount}} 명의 친구를 초대하고 다시 시도하세요."
+   },
+   "mr": {
+     "title": "{{.RequiredFriendsInvitedCount}} मित्रांना आमंत्रित करा",
+     "shortDescription": "तुमचे मित्र आणा आणि एकत्र कमवा.",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} मित्रांना तुमच्या टीममध्ये सामील होण्यासाठी आमंत्रित करा आणि एकत्र कमवायला सुरुवात करा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया {{.RequiredFriendsInvitedCount}} मित्रांना आमंत्रित करा आणि पुन्हा प्रयत्न करा."
+   },
+   "ms": {
+     "title": "Jemput {{.RequiredFriendsInvitedCount}} rakan",
+     "shortDescription": "Bawa rakan anda dan dapatkan bersama.",
+     "longDescription": "Jemput {{.RequiredFriendsInvitedCount}} rakan untuk sertai pasukan anda dan mula mendapatkan bersama.",
+     "errorDescription": "Pengesahan gagal. Sila jemput {{.RequiredFriendsInvitedCount}} rakan dan cuba lagi."
+   },
+   "nb": {
+     "title": "Inviter {{.RequiredFriendsInvitedCount}} venner",
+     "shortDescription": "Ta med vennene dine og tjen sammen.",
+     "longDescription": "Inviter {{.RequiredFriendsInvitedCount}} venner til å bli med på laget ditt og begynn å tjene sammen.",
+     "errorDescription": "Verifisering mislyktes. Vennligst inviter {{.RequiredFriendsInvitedCount}} venner og prøv igjen."
+   },
+   "nn": {
+     "title": "Inviter {{.RequiredFriendsInvitedCount}} vener",
+     "shortDescription": "Ta med venene dine og tener saman.",
+     "longDescription": "Inviter {{.RequiredFriendsInvitedCount}} vener til å bli med på laget ditt og byrje å tena saman.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å inviter {{.RequiredFriendsInvitedCount}} vener og prøv igjen."
+   },
+   "pa": {
+     "title": "{{.RequiredFriendsInvitedCount}} ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ",
+     "shortDescription": "ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ ਲਿਆਓ ਅਤੇ ਇੱਕਠੇ ਕਮਾਓ।",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ ਆਪਣੇ ਟੀਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਣ ਲਈ ਅਤੇ ਇੱਕਠੇ ਕਮਾਣਾ ਸ਼ੁਰੂ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ {{.RequiredFriendsInvitedCount}} ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦਿਓ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Zaproś {{.RequiredFriendsInvitedCount}} znajomych",
+     "shortDescription": "Zaproś znajomych i zarabiajcie razem.",
+     "longDescription": "Zaproś {{.RequiredFriendsInvitedCount}} znajomych do swojej drużyny i zacznijcie zarabiać razem.",
+     "errorDescription": "Weryfikacja nie powiodła się. Proszę zaprosić {{.RequiredFriendsInvitedCount}} znajomych i spróbować ponownie."
+   },
+   "pt": {
+     "title": "Convide {{.RequiredFriendsInvitedCount}} amigos",
+     "shortDescription": "Traga seus amigos e ganhem juntos.",
+     "longDescription": "Convide {{.RequiredFriendsInvitedCount}} amigos para se juntar à sua equipe e comece a ganhar juntos.",
+     "errorDescription": "Falha na verificação. Por favor, convide {{.RequiredFriendsInvitedCount}} amigos e tente novamente."
+   },
+   "ro": {
+     "title": "Invită {{.RequiredFriendsInvitedCount}} prieteni",
+     "shortDescription": "Adu-ți prietenii și câștigați împreună.",
+     "longDescription": "Invită {{.RequiredFriendsInvitedCount}} prieteni să se alăture echipei tale și începeți să câștigați împreună.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să inviți {{.RequiredFriendsInvitedCount}} prieteni și să încerci din nou."
+   },
+   "ru": {
+     "title": "Пригласите {{.RequiredFriendsInvitedCount}} друзей",
+     "shortDescription": "Пригласите друзей и зарабатывайте вместе.",
+     "longDescription": "Пригласите {{.RequiredFriendsInvitedCount}} друзей присоединиться к вашей команде и начните зарабатывать вместе.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, пригласите {{.RequiredFriendsInvitedCount}} друзей и попробуйте снова."
+   },
+   "sk": {
+     "title": "Pozvite {{.RequiredFriendsInvitedCount}} priateľov",
+     "shortDescription": "Pozvite svojich priateľov a zarábajte spolu.",
+     "longDescription": "Pozvite {{.RequiredFriendsInvitedCount}} priateľov, aby sa pripojili k vášmu tímu a začnite spolu zarábať.",
+     "errorDescription": "Overenie zlyhalo. Pozvite {{.RequiredFriendsInvitedCount}} priateľov a skúste to znova."
+   },
+   "sl": {
+     "title": "Povabite {{.RequiredFriendsInvitedCount}} prijateljev",
+     "shortDescription": "Pripelji svoje prijatelje in zaslužite skupaj.",
+     "longDescription": "Povabite {{.RequiredFriendsInvitedCount}} prijateljev, da se pridružijo vaši ekipi in začnite zaslužiti skupaj.",
+     "errorDescription": "Preverjanje ni uspelo. Prosimo, povabite {{.RequiredFriendsInvitedCount}} prijateljev in poskusite znova."
+   },
+   "sq": {
+     "title": "Ftoni {{.RequiredFriendsInvitedCount}} miq",
+     "shortDescription": "Sillni miqtë tuaj dhe fitoni së bashku.",
+     "longDescription": "Ftoni {{.RequiredFriendsInvitedCount}} miq që t'i bashkohen ekipit tuaj dhe filloni të fitoni së bashku.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi ftoni {{.RequiredFriendsInvitedCount}} miq dhe provoni përsëri."
+   },
+   "sv": {
+     "title": "Bjud in {{.RequiredFriendsInvitedCount}} vänner",
+     "shortDescription": "Ta med dina vänner och tjäna tillsammans.",
+     "longDescription": "Bjud in {{.RequiredFriendsInvitedCount}} vänner att gå med i ditt team och börja tjäna tillsammans.",
+     "errorDescription": "Verifiering misslyckades. Bjud in {{.RequiredFriendsInvitedCount}} vänner och försök igen."
+   },
+   "te": {
+     "title": "{{.RequiredFriendsInvitedCount}} స్నేహితులను ఆహ్వానించండి",
+     "shortDescription": "మీ స్నేహితులను తీసుకురండి మరియు కలిసి సంపాదించండి.",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} స్నేహితులను మీ బృందంలో చేరేందుకు ఆహ్వానించండి మరియు కలిసి సంపాదించడం ప్రారంభించండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. {{.RequiredFriendsInvitedCount}} స్నేహితులను ఆహ్వానించండి మరియు మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "เชิญเพื่อน {{.RequiredFriendsInvitedCount}} คน",
+     "shortDescription": "ชวนเพื่อนมาร่วมกันและเริ่มทำรายได้ด้วยกัน",
+     "longDescription": "เชิญเพื่อน {{.RequiredFriendsInvitedCount}} คนมาร่วมทีมกับคุณและเริ่มทำรายได้ด้วยกัน",
+     "errorDescription": "การยืนยันล้มเหลว โปรดเชิญเพื่อน {{.RequiredFriendsInvitedCount}} คนและลองใหม่อีกครั้ง"
+   },
+   "tr": {
+     "title": "{{.RequiredFriendsInvitedCount}} arkadaşınızı davet edin",
+     "shortDescription": "Arkadaşlarınızı getirin ve birlikte kazanın.",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} arkadaşınızı davet edin, takımınıza katılsınlar ve birlikte kazanmaya başlayın.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen {{.RequiredFriendsInvitedCount}} arkadaşınızı davet edin ve tekrar deneyin."
+   },
+   "uk": {
+     "title": "Запросіть {{.RequiredFriendsInvitedCount}} друзів",
+     "shortDescription": "Запросіть своїх друзів і заробляйте разом.",
+     "longDescription": "Запросіть {{.RequiredFriendsInvitedCount}} друзів приєднатися до вашої команди і почніть заробляти разом.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, запросіть {{.RequiredFriendsInvitedCount}} друзів і спробуйте ще раз."
+   },
+   "ur": {
+     "title": "{{.RequiredFriendsInvitedCount}} دوستوں کو مدعو کریں",
+     "shortDescription": "اپنے دوستوں کو لائیں اور ساتھ میں کمائیں۔",
+     "longDescription": "{{.RequiredFriendsInvitedCount}} دوستوں کو اپنی ٹیم میں شامل ہونے کی دعوت دیں اور ساتھ میں کمانا شروع کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم {{.RequiredFriendsInvitedCount}} دوستوں کو مدعو کریں اور دوبارہ کوشش کریں۔"
+   },
+   "vi": {
+     "title": "Mời {{.RequiredFriendsInvitedCount}} bạn bè",
+     "shortDescription": "Mang theo bạn bè của bạn và cùng nhau kiếm tiền.",
+     "longDescription": "Mời {{.RequiredFriendsInvitedCount}} bạn bè tham gia vào nhóm của bạn và bắt đầu kiếm tiền cùng nhau.",
+     "errorDescription": "Xác minh không thành công. Vui lòng mời {{.RequiredFriendsInvitedCount}} bạn bè và thử lại."
+   },
+   "zh-hant": {
+     "title": "邀請 {{.RequiredFriendsInvitedCount}} 位朋友",
+     "shortDescription": "帶上你的朋友，一起賺錢。",
+     "longDescription": "邀請 {{.RequiredFriendsInvitedCount}} 位朋友加入你的團隊，一起開始賺錢。",
+     "errorDescription": "驗證失敗。請邀請 {{.RequiredFriendsInvitedCount}} 位朋友後再試一次。"
+   },
+   "zh": {
+     "title": "邀请 {{.RequiredFriendsInvitedCount}} 位朋友",
+     "shortDescription": "带上您的朋友，一起赚钱。",
+     "longDescription": "邀请 {{.RequiredFriendsInvitedCount}} 位朋友加入您的团队，并一起开始赚钱。",
+     "errorDescription": "验证失败。请邀请 {{.RequiredFriendsInvitedCount}} 位朋友后重试。"
    }
-}
+ } 
