@@ -1,8 +1,261 @@
 {
-   "en":{
-      "title":"Follow ION on Instagram",
-      "shortDescription":"Check out ION’s exclusive content on Instagram.",
-      "longDescription":"Follow the Ice Open Network on Instagram for updates, news, and exclusive content.",
-      "errorDescription":"Verification failed. Please check if you followed ION and try again."
+   "af": {
+     "title": "Volg ION op Instagram",
+     "shortDescription": "Kyk na ION se eksklusiewe inhoud op Instagram.",
+     "longDescription": "Volg die Ice Open Network op Instagram vir opdaterings, nuus en eksklusiewe inhoud.",
+     "errorDescription": "Verifikasie het misluk. Kyk asseblief of jy ION gevolg het en probeer weer."
+   },
+   "ar": {
+     "title": "تابع ION على إنستغرام",
+     "shortDescription": "تحقق من المحتوى الحصري لـ ION على إنستغرام.",
+     "longDescription": "تابع Ice Open Network على إنستغرام للحصول على التحديثات والأخبار والمحتوى الحصري.",
+     "errorDescription": "فشل التحقق. يرجى التحقق مما إذا كنت قد تابعت ION وحاول مرة أخرى."
+   },
+   "az": {
+     "title": "ION-u Instagram-da izləyin",
+     "shortDescription": "ION-un eksklüziv məzmununu Instagram-da yoxlayın.",
+     "longDescription": "Ice Open Network-i Instagram-da izləyin, yeniliklər, xəbərlər və eksklüziv məzmun üçün.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa ION-u izləyib-izləmədiyinizi yoxlayın və yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Следвайте ION в Instagram",
+     "shortDescription": "Вижте ексклузивното съдържание на ION в Instagram.",
+     "longDescription": "Следвайте Ice Open Network в Instagram за актуализации, новини и ексклузивно съдържание.",
+     "errorDescription": "Проверката не бе успешна. Моля, проверете дали сте последвали ION и опитайте отново."
+   },
+   "bn": {
+     "title": "ION-কে Instagram-এ অনুসরণ করুন",
+     "shortDescription": "Instagram-এ ION-এর এক্সক্লুসিভ কনটেন্ট দেখুন।",
+     "longDescription": "আপডেট, খবর এবং এক্সক্লুসিভ কনটেন্টের জন্য Ice Open Network-কে Instagram-এ অনুসরণ করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন আপনি ION-কে অনুসরণ করেছেন এবং আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Sledujte ION na Instagramu",
+     "shortDescription": "Podívejte se na exkluzivní obsah ION na Instagramu.",
+     "longDescription": "Sledujte Ice Open Network na Instagramu pro aktualizace, novinky a exkluzivní obsah.",
+     "errorDescription": "Ověření selhalo. Zkontrolujte, zda sledujete ION, a zkuste to znovu."
+   },
+   "de": {
+     "title": "Folge ION auf Instagram",
+     "shortDescription": "Sieh dir IONs exklusiven Inhalt auf Instagram an.",
+     "longDescription": "Folge Ice Open Network auf Instagram für Updates, Neuigkeiten und exklusive Inhalte.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte überprüfe, ob du ION folgst, und versuche es erneut."
+   },
+   "el": {
+     "title": "Ακολουθήστε το ION στο Instagram",
+     "shortDescription": "Δείτε το αποκλειστικό περιεχόμενο του ION στο Instagram.",
+     "longDescription": "Ακολουθήστε το Ice Open Network στο Instagram για ενημερώσεις, νέα και αποκλειστικό περιεχόμενο.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Ελέγξτε αν ακολουθήσατε το ION και δοκιμάστε ξανά."
+   },
+   "en": {
+     "title": "Follow ION on Instagram",
+     "shortDescription": "Check out ION’s exclusive content on Instagram.",
+     "longDescription": "Follow the Ice Open Network on Instagram for updates, news, and exclusive content.",
+     "errorDescription": "Verification failed. Please check if you followed ION and try again."
+   },
+   "es": {
+     "title": "Sigue a ION en Instagram",
+     "shortDescription": "Consulta el contenido exclusivo de ION en Instagram.",
+     "longDescription": "Sigue a Ice Open Network en Instagram para actualizaciones, noticias y contenido exclusivo.",
+     "errorDescription": "La verificación falló. Por favor, revisa si sigues a ION e inténtalo de nuevo."
+   },
+   "fa": {
+     "title": "ION را در اینستاگرام دنبال کنید",
+     "shortDescription": "محتوای انحصاری ION در اینستاگرام را بررسی کنید.",
+     "longDescription": "برای به‌روزرسانی‌ها، اخبار و محتوای انحصاری، Ice Open Network را در اینستاگرام دنبال کنید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً بررسی کنید که آیا ION را دنبال کرده‌اید و دوباره تلاش کنید."
+   },
+   "fr": {
+     "title": "Suivez ION sur Instagram",
+     "shortDescription": "Découvrez le contenu exclusif de ION sur Instagram.",
+     "longDescription": "Suivez Ice Open Network sur Instagram pour des mises à jour, des nouvelles et du contenu exclusif.",
+     "errorDescription": "Échec de la vérification. Veuillez vérifier si vous suivez ION et réessayer."
+   },
+   "gu": {
+     "title": "Instagram પર ION ને અનુસરો",
+     "shortDescription": "Instagram પર ION ની વિશિષ્ટ સામગ્રી જુઓ.",
+     "longDescription": "અપડેટ્સ, સમાચાર અને વિશિષ્ટ સામગ્રી માટે Instagram પર Ice Open Network ને અનુસરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને તપાસો કે તમે ION ને અનુસર્યું છે અને ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "עקבו אחרי ION באינסטגרם",
+     "shortDescription": "בדקו את התוכן הבלעדי של ION באינסטגרם.",
+     "longDescription": "עקבו אחרי Ice Open Network באינסטגרם לעדכונים, חדשות ותוכן בלעדי.",
+     "errorDescription": "האימות נכשל. אנא בדקו אם עקבתם אחרי ION ונסו שוב."
+   },
+   "hi": {
+     "title": "ION को Instagram पर फॉलो करें",
+     "shortDescription": "Instagram पर ION की एक्सक्लूसिव सामग्री देखें।",
+     "longDescription": "अपडेट्स, समाचार और एक्सक्लूसिव सामग्री के लिए Ice Open Network को Instagram पर फॉलो करें।",
+     "errorDescription": "सत्यापन विफल। कृपया जांचें कि आपने ION को फॉलो किया है और फिर से प्रयास करें।"
+   },
+   "hu": {
+     "title": "Kövessétek az ION-t az Instagramon",
+     "shortDescription": "Nézd meg az ION exkluzív tartalmait az Instagramon.",
+     "longDescription": "Kövessétek az Ice Open Network-öt az Instagramon frissítések, hírek és exkluzív tartalmakért.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Ellenőrizd, hogy követed-e az ION-t, és próbáld újra."
+   },
+   "id": {
+     "title": "Ikuti ION di Instagram",
+     "shortDescription": "Lihat konten eksklusif ION di Instagram.",
+     "longDescription": "Ikuti Ice Open Network di Instagram untuk pembaruan, berita, dan konten eksklusif.",
+     "errorDescription": "Verifikasi gagal. Silakan periksa apakah Anda sudah mengikuti ION dan coba lagi."
+   },
+   "it": {
+     "title": "Segui ION su Instagram",
+     "shortDescription": "Guarda i contenuti esclusivi di ION su Instagram.",
+     "longDescription": "Segui Ice Open Network su Instagram per aggiornamenti, novità e contenuti esclusivi.",
+     "errorDescription": "Verifica fallita. Controlla se hai seguito ION e riprova."
+   },
+   "ja": {
+     "title": "InstagramでIONをフォローする",
+     "shortDescription": "InstagramでIONの限定コンテンツをチェックしましょう。",
+     "longDescription": "更新、ニュース、限定コンテンツのために、InstagramでIce Open Networkをフォローしてください。",
+     "errorDescription": "確認に失敗しました。IONをフォローしたかどうか確認して、もう一度試してください。"
+   },
+   "jv": {
+     "title": "Tindakake ION ing Instagram",
+     "shortDescription": "Priksa konten eksklusif ION ing Instagram.",
+     "longDescription": "Tindakake Ice Open Network ing Instagram kanggo nganyari, warta, lan konten eksklusif.",
+     "errorDescription": "Verifikasi gagal. Priksa manawa sampeyan wis ngetutake ION lan coba maneh."
+   },
+   "kn": {
+     "title": "ION ಅನ್ನು Instagram ನಲ್ಲಿ ಅನುಸರಿಸಿ",
+     "shortDescription": "Instagram ನಲ್ಲಿ ION ನ ವಿಶೇಷ ವಿಷಯವನ್ನು ನೋಡಿ.",
+     "longDescription": "ಅಪ್ಡೇಟ್ಗಳು, ಸುದ್ದಿ ಮತ್ತು ವಿಶೇಷ ವಿಷಯಕ್ಕಾಗಿ Instagram ನಲ್ಲಿ Ice Open Network ಅನ್ನು ಅನುಸರಿಸಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನೀವು ION ಅನ್ನು ಅನುಸರಿಸಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "Instagram에서 ION을 팔로우하세요",
+     "shortDescription": "Instagram에서 ION의 독점 콘텐츠를 확인하세요.",
+     "longDescription": "업데이트, 뉴스 및 독점 콘텐츠를 위해 Instagram에서 Ice Open Network를 팔로우하세요.",
+     "errorDescription": "인증에 실패했습니다. ION을 팔로우했는지 확인하고 다시 시도하세요."
+   },
+   "mr": {
+     "title": "ION ला Instagram वर फॉलो करा",
+     "shortDescription": "Instagram वर ION ची खास सामग्री पाहा.",
+     "longDescription": "अपडेट्स, बातम्या आणि खास सामग्रीसाठी Instagram वर Ice Open Network ला फॉलो करा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया ION ला फॉलो केले आहे का ते तपासा आणि पुन्हा प्रयत्न करा."
+   },
+   "ms": {
+     "title": "Ikuti ION di Instagram",
+     "shortDescription": "Lihat kandungan eksklusif ION di Instagram.",
+     "longDescription": "Ikuti Ice Open Network di Instagram untuk kemas kini, berita dan kandungan eksklusif.",
+     "errorDescription": "Pengesahan gagal. Sila semak sama ada anda mengikuti ION dan cuba lagi."
+   },
+   "nb": {
+     "title": "Følg ION på Instagram",
+     "shortDescription": "Sjekk ut IONs eksklusive innhold på Instagram.",
+     "longDescription": "Følg Ice Open Network på Instagram for oppdateringer, nyheter og eksklusivt innhold.",
+     "errorDescription": "Verifisering mislyktes. Vennligst sjekk om du fulgte ION og prøv igjen."
+   },
+   "nn": {
+     "title": "Følg ION på Instagram",
+     "shortDescription": "Sjekk ut ION sitt eksklusive innhald på Instagram.",
+     "longDescription": "Følg Ice Open Network på Instagram for oppdateringar, nyheiter og eksklusivt innhald.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å sjå om du følgde ION og prøv igjen."
+   },
+   "pa": {
+     "title": "ION ਨੂੰ Instagram 'ਤੇ ਫਾਲੋ ਕਰੋ",
+     "shortDescription": "Instagram 'ਤੇ ION ਦੀ ਵਿਸ਼ੇਸ਼ ਸਮੱਗਰੀ ਵੇਖੋ।",
+     "longDescription": "ਅਪਡੇਟਾਂ, ਖ਼ਬਰਾਂ ਅਤੇ ਵਿਸ਼ੇਸ਼ ਸਮੱਗਰੀ ਲਈ Instagram 'ਤੇ Ice Open Network ਨੂੰ ਫਾਲੋ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚੋ ਕਿ ਤੁਸੀਂ ION ਨੂੰ ਫਾਲੋ ਕੀਤਾ ਹੈ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Śledź ION na Instagramie",
+     "shortDescription": "Sprawdź ekskluzywne treści ION na Instagramie.",
+     "longDescription": "Śledź Ice Open Network na Instagramie, aby otrzymywać aktualizacje, wiadomości i ekskluzywne treści.",
+     "errorDescription": "Weryfikacja nie powiodła się. Sprawdź, czy śledzisz ION i spróbuj ponownie."
+   },
+   "pt": {
+     "title": "Siga ION no Instagram",
+     "shortDescription": "Confira o conteúdo exclusivo do ION no Instagram.",
+     "longDescription": "Siga o Ice Open Network no Instagram para atualizações, notícias e conteúdo exclusivo.",
+     "errorDescription": "Falha na verificação. Verifique se você seguiu o ION e tente novamente."
+   },
+   "ro": {
+     "title": "Urmărește ION pe Instagram",
+     "shortDescription": "Verifică conținutul exclusiv ION pe Instagram.",
+     "longDescription": "Urmărește Ice Open Network pe Instagram pentru actualizări, noutăți și conținut exclusiv.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să verifici dacă ai urmărit ION și să încerci din nou."
+   },
+   "ru": {
+     "title": "Подпишитесь на ION в Instagram",
+     "shortDescription": "Посмотрите эксклюзивный контент ION в Instagram.",
+     "longDescription": "Подпишитесь на Ice Open Network в Instagram, чтобы получать обновления, новости и эксклюзивный контент.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, проверьте, подписались ли вы на ION, и попробуйте снова."
+   },
+   "sk": {
+     "title": "Sledujte ION na Instagrame",
+     "shortDescription": "Pozrite si exkluzívny obsah ION na Instagrame.",
+     "longDescription": "Sledujte Ice Open Network na Instagrame pre aktualizácie, novinky a exkluzívny obsah.",
+     "errorDescription": "Overenie zlyhalo. Skontrolujte, či sledujete ION, a skúste to znova."
+   },
+   "sl": {
+     "title": "Spremljajte ION na Instagramu",
+     "shortDescription": "Oglejte si ekskluzivne vsebine ION na Instagramu.",
+     "longDescription": "Spremljajte Ice Open Network na Instagramu za posodobitve, novice in ekskluzivne vsebine.",
+     "errorDescription": "Preverjanje ni uspelo. Preverite, ali spremljate ION, in poskusite znova."
+   },
+   "sq": {
+     "title": "Ndiqni ION në Instagram",
+     "shortDescription": "Shikoni përmbajtjen ekskluzive të ION në Instagram.",
+     "longDescription": "Ndiqni Ice Open Network në Instagram për përditësime, lajme dhe përmbajtje ekskluzive.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi kontrolloni nëse keni ndjekur ION dhe provoni përsëri."
+   },
+   "sv": {
+     "title": "Följ ION på Instagram",
+     "shortDescription": "Kolla in IONs exklusiva innehåll på Instagram.",
+     "longDescription": "Följ Ice Open Network på Instagram för uppdateringar, nyheter och exklusivt innehåll.",
+     "errorDescription": "Verifiering misslyckades. Kontrollera om du följde ION och försök igen."
+   },
+   "te": {
+     "title": "ION ను Instagram లో ఫాలో చేయండి",
+     "shortDescription": "Instagram లో ION యొక్క ప్రత్యేక కంటెంట్ ను చూడండి.",
+     "longDescription": "అప్డేట్స్, వార్తలు మరియు ప్రత్యేక కంటెంట్ కోసం Instagram లో Ice Open Network ను ఫాలో చేయండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు ION ను ఫాలో చేసారా అని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "ติดตาม ION บน Instagram",
+     "shortDescription": "ดูเนื้อหาพิเศษของ ION บน Instagram",
+     "longDescription": "ติดตาม Ice Open Network บน Instagram เพื่ออัปเดตข่าวสารและเนื้อหาพิเศษ",
+     "errorDescription": "การยืนยันล้มเหลว โปรดตรวจสอบว่าคุณติดตาม ION แล้วและลองใหม่อีกครั้ง"
+   },
+   "tr": {
+     "title": "ION'u Instagram'da takip et",
+     "shortDescription": "ION'un Instagram'daki özel içeriklerini inceleyin.",
+     "longDescription": "Güncellemeler, haberler ve özel içerikler için Instagram'da Ice Open Network'ü takip edin.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen ION'u takip edip etmediğinizi kontrol edin ve tekrar deneyin."
+   },
+   "uk": {
+     "title": "Слідкуйте за ION в Instagram",
+     "shortDescription": "Перегляньте ексклюзивний контент ION в Instagram.",
+     "longDescription": "Слідкуйте за Ice Open Network в Instagram, щоб отримувати оновлення, новини та ексклюзивний контент.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, перевірте, чи стежите ви за ION, і спробуйте ще раз."
+   },
+   "ur": {
+     "title": "ION کو Instagram پر فالو کریں",
+     "shortDescription": "Instagram پر ION کا خصوصی مواد دیکھیں۔",
+     "longDescription": "اپ ڈیٹس، خبروں اور خصوصی مواد کے لیے Instagram پر Ice Open Network کو فالو کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم چیک کریں کہ آپ نے ION کو فالو کیا ہے اور دوبارہ کوشش کریں۔"
+   },
+   "vi": {
+     "title": "Theo dõi ION trên Instagram",
+     "shortDescription": "Xem nội dung độc quyền của ION trên Instagram.",
+     "longDescription": "Theo dõi Ice Open Network trên Instagram để nhận thông tin cập nhật, tin tức và nội dung độc quyền.",
+     "errorDescription": "Xác minh không thành công. Vui lòng kiểm tra xem bạn đã theo dõi ION và thử lại."
+   },
+   "zh-hant": {
+     "title": "在 Instagram 上關注 ION",
+     "shortDescription": "查看 ION 在 Instagram 上的獨家內容。",
+     "longDescription": "在 Instagram 上關注 Ice Open Network，獲取更新、新聞和獨家內容。",
+     "errorDescription": "驗證失敗。請檢查您是否關注了 ION 並再試一次。"
+   },
+   "zh": {
+     "title": "在 Instagram 上关注 ION",
+     "shortDescription": "查看 ION 在 Instagram 上的独家内容。",
+     "longDescription": "在 Instagram 上关注 Ice Open Network，获取更新、新闻和独家内容。",
+     "errorDescription": "验证失败。请检查您是否关注了 ION 并重试。"
    }
-}
+ }
+ 

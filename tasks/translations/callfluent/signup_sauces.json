@@ -1,8 +1,261 @@
 {
-   "en":{
-      "title":"Join Sauces",
-      "shortDescription":"Sign up on the Sauces tap-to-earn app.",
-      "longDescription":"Sign up on the Sauces app and start earning SAUCE tokens today.",
-      "errorDescription":"Verification failed. Please make sure you have entered your correct nickname."
+   "af": {
+     "title": "Sluit aan by Sauces",
+     "shortDescription": "Teken in op die Sauces tap-to-earn app.",
+     "longDescription": "Teken in op die Sauces app en begin vandag nog SAUCE tokens verdien.",
+     "errorDescription": "Verifikasie het misluk. Maak asseblief seker dat jy jou korrekte bynaam ingevoer het."
+   },
+   "ar": {
+     "title": "انضم إلى Sauces",
+     "shortDescription": "سجل في تطبيق Sauces tap-to-earn.",
+     "longDescription": "سجل في تطبيق Sauces وابدأ في كسب رموز SAUCE اليوم.",
+     "errorDescription": "فشل التحقق. يرجى التأكد من أنك قد أدخلت لقبك الصحيح."
+   },
+   "az": {
+     "title": "Sauces-ə qoşulun",
+     "shortDescription": "Sauces tap-to-earn tətbiqinə qeydiyyatdan keçin.",
+     "longDescription": "Sauces tətbiqinə qeydiyyatdan keçin və bu gün SAUCE tokenləri qazanmağa başlayın.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa düzgün ləqəbinizi daxil etdiyinizə əmin olun."
+   },
+   "bg": {
+     "title": "Присъединете се към Sauces",
+     "shortDescription": "Регистрирайте се в приложението Sauces tap-to-earn.",
+     "longDescription": "Регистрирайте се в приложението Sauces и започнете да печелите SAUCE токени днес.",
+     "errorDescription": "Проверката не бе успешна. Моля, уверете се, че сте въвели правилния си прякор."
+   },
+   "bn": {
+     "title": "Sauces-এ যোগ দিন",
+     "shortDescription": "Sauces tap-to-earn অ্যাপে সাইন আপ করুন।",
+     "longDescription": "Sauces অ্যাপে সাইন আপ করুন এবং আজই SAUCE টোকেন অর্জন করতে শুরু করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন আপনি আপনার সঠিক ডাকনাম প্রবেশ করেছেন।"
+   },
+   "cs": {
+     "title": "Připojte se k Sauces",
+     "shortDescription": "Zaregistrujte se v aplikaci Sauces tap-to-earn.",
+     "longDescription": "Zaregistrujte se v aplikaci Sauces a začněte dnes vydělávat tokeny SAUCE.",
+     "errorDescription": "Ověření selhalo. Ujistěte se, že jste zadali správnou přezdívku."
+   },
+   "de": {
+     "title": "Tritt Sauces bei",
+     "shortDescription": "Melde dich in der Sauces Tap-to-Earn-App an.",
+     "longDescription": "Melde dich in der Sauces-App an und beginne noch heute mit dem Verdienen von SAUCE-Token.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte stelle sicher, dass du deinen richtigen Spitznamen eingegeben hast."
+   },
+   "el": {
+     "title": "Γίνετε μέλος του Sauces",
+     "shortDescription": "Εγγραφείτε στην εφαρμογή Sauces tap-to-earn.",
+     "longDescription": "Εγγραφείτε στην εφαρμογή Sauces και ξεκινήστε να κερδίζετε SAUCE tokens σήμερα.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Βεβαιωθείτε ότι έχετε εισαγάγει το σωστό ψευδώνυμο."
+   },
+   "en": {
+     "title": "Join Sauces",
+     "shortDescription": "Sign up on the Sauces tap-to-earn app.",
+     "longDescription": "Sign up on the Sauces app and start earning SAUCE tokens today.",
+     "errorDescription": "Verification failed. Please make sure you have entered your correct nickname."
+   },
+   "es": {
+     "title": "Únete a Sauces",
+     "shortDescription": "Regístrate en la aplicación Sauces tap-to-earn.",
+     "longDescription": "Regístrate en la aplicación Sauces y empieza a ganar tokens SAUCE hoy mismo.",
+     "errorDescription": "La verificación falló. Por favor, asegúrate de haber introducido tu apodo correcto."
+   },
+   "fa": {
+     "title": "به Sauces بپیوندید",
+     "shortDescription": "در برنامه Sauces tap-to-earn ثبت‌نام کنید.",
+     "longDescription": "در برنامه Sauces ثبت‌نام کنید و از همین امروز شروع به کسب توکن‌های SAUCE کنید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً مطمئن شوید که نام مستعار صحیح خود را وارد کرده‌اید."
+   },
+   "fr": {
+     "title": "Rejoignez Sauces",
+     "shortDescription": "Inscrivez-vous sur l'application Sauces tap-to-earn.",
+     "longDescription": "Inscrivez-vous sur l'application Sauces et commencez à gagner des tokens SAUCE dès aujourd'hui.",
+     "errorDescription": "Échec de la vérification. Veuillez vous assurer que vous avez entré votre surnom correct."
+   },
+   "gu": {
+     "title": "Sauces માં જોડાઓ",
+     "shortDescription": "Sauces tap-to-earn એપ પર સાઇન અપ કરો.",
+     "longDescription": "Sauces એપ પર સાઇન અપ કરો અને આજે જ SAUCE ટોકન્સ કમાવા શરુ કરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમે તમારું યોગ્ય ઉપનામ દાખલ કર્યું છે."
+   },
+   "he": {
+     "title": "הצטרפו ל-Sauces",
+     "shortDescription": "הירשמו לאפליקציית Sauces tap-to-earn.",
+     "longDescription": "הירשמו לאפליקציית Sauces והתחילו להרוויח אסימוני SAUCE כבר היום.",
+     "errorDescription": "האימות נכשל. אנא וודאו שהזנתם את הכינוי הנכון."
+   },
+   "hi": {
+     "title": "Sauces से जुड़ें",
+     "shortDescription": "Sauces tap-to-earn ऐप पर साइन अप करें।",
+     "longDescription": "Sauces ऐप पर साइन अप करें और आज ही SAUCE टोकन कमाना शुरू करें।",
+     "errorDescription": "सत्यापन विफल। कृपया सुनिश्चित करें कि आपने सही उपनाम दर्ज किया है।"
+   },
+   "hu": {
+     "title": "Csatlakozz a Sauceshez",
+     "shortDescription": "Iratkozz fel a Sauces tap-to-earn alkalmazásra.",
+     "longDescription": "Iratkozz fel a Sauces alkalmazásra, és kezdj el SAUCE tokeneket keresni még ma.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Kérjük, ellenőrizd, hogy a megfelelő becenevet adtad meg."
+   },
+   "id": {
+     "title": "Bergabung dengan Sauces",
+     "shortDescription": "Daftar di aplikasi Sauces tap-to-earn.",
+     "longDescription": "Daftar di aplikasi Sauces dan mulai hasilkan token SAUCE hari ini.",
+     "errorDescription": "Verifikasi gagal. Pastikan Anda telah memasukkan nama panggilan yang benar."
+   },
+   "it": {
+     "title": "Unisciti a Sauces",
+     "shortDescription": "Iscriviti all'app tap-to-earn di Sauces.",
+     "longDescription": "Iscriviti all'app Sauces e inizia a guadagnare token SAUCE oggi stesso.",
+     "errorDescription": "Verifica fallita. Assicurati di aver inserito il soprannome corretto."
+   },
+   "ja": {
+     "title": "Saucesに参加する",
+     "shortDescription": "Sauces tap-to-earnアプリにサインアップしてください。",
+     "longDescription": "Saucesアプリにサインアップして、今日からSAUCEトークンを獲得し始めましょう。",
+     "errorDescription": "確認に失敗しました。正しいニックネームを入力したか確認してください。"
+   },
+   "jv": {
+     "title": "Gabung Sauces",
+     "shortDescription": "Mlebu ing aplikasi Sauces tap-to-earn.",
+     "longDescription": "Mlebu ing aplikasi Sauces lan wiwiti entuk token SAUCE dina iki.",
+     "errorDescription": "Verifikasi gagal. Priksa manawa sampeyan wis ngetik jeneng julukan sing bener."
+   },
+   "kn": {
+     "title": "Sauces ಗೆ ಸೇರಿಕೊಳ್ಳಿ",
+     "shortDescription": "Sauces tap-to-earn ಆಪ್ ನಲ್ಲಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ.",
+     "longDescription": "Sauces ಆಪ್ ನಲ್ಲಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ ಮತ್ತು ಇಂದು SAUCE ಟೋಕನ್ ಗಳಿಸುವುದನ್ನು ಪ್ರಾರಂಭಿಸಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನೀವು ನಿಮ್ಮ ಸರಿಯಾದ ಮೆಚ್ಚಿನ ಹೆಸರನ್ನು ನಮೂದಿಸಿದ್ದೀರಾ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
+   },
+   "ko": {
+     "title": "Sauces에 가입하세요",
+     "shortDescription": "Sauces tap-to-earn 앱에 가입하세요.",
+     "longDescription": "Sauces 앱에 가입하고 오늘 SAUCE 토큰을 받기 시작하세요.",
+     "errorDescription": "인증에 실패했습니다. 올바른 별명을 입력했는지 확인하세요."
+   },
+   "mr": {
+     "title": "Sauces मध्ये सामील व्हा",
+     "shortDescription": "Sauces tap-to-earn अॅपवर साइन अप करा.",
+     "longDescription": "Sauces अॅपवर साइन अप करा आणि आजच SAUCE टोकन्स मिळवणे सुरू करा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुमचे योग्य टोपणनाव प्रविष्ट केले आहे याची खात्री करा."
+   },
+   "ms": {
+     "title": "Sertai Sauces",
+     "shortDescription": "Daftar di aplikasi Sauces tap-to-earn.",
+     "longDescription": "Daftar di aplikasi Sauces dan mula mendapatkan token SAUCE hari ini.",
+     "errorDescription": "Pengesahan gagal. Pastikan anda telah memasukkan nama samaran yang betul."
+   },
+   "nb": {
+     "title": "Bli med i Sauces",
+     "shortDescription": "Meld deg på Sauces tap-to-earn-appen.",
+     "longDescription": "Meld deg på Sauces-appen og begynn å tjene SAUCE-tokens i dag.",
+     "errorDescription": "Verifisering mislyktes. Vennligst sørg for at du har skrevet inn riktig kallenavn."
+   },
+   "nn": {
+     "title": "Bli med i Sauces",
+     "shortDescription": "Meld deg på Sauces tap-to-earn-appen.",
+     "longDescription": "Meld deg på Sauces-appen og begynn å tene SAUCE-tokens i dag.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å sjå om du har skrive inn riktig kallenamn."
+   },
+   "pa": {
+     "title": "Sauces ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+     "shortDescription": "Sauces tap-to-earn ਐਪ 'ਤੇ ਸਾਇਨ ਅੱਪ ਕਰੋ।",
+     "longDescription": "Sauces ਐਪ 'ਤੇ ਸਾਇਨ ਅੱਪ ਕਰੋ ਅਤੇ ਅੱਜ ਹੀ SAUCE ਟੋਕਨ ਕਮਾਣਾ ਸ਼ੁਰੂ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ ਆਪਣਾ ਸਹੀ ਉਪਨਾਮ ਦਰਜ ਕੀਤਾ ਹੈ।"
+   },
+   "pl": {
+     "title": "Dołącz do Sauces",
+     "shortDescription": "Zarejestruj się w aplikacji Sauces tap-to-earn.",
+     "longDescription": "Zarejestruj się w aplikacji Sauces i zacznij zarabiać tokeny SAUCE już dziś.",
+     "errorDescription": "Weryfikacja nie powiodła się. Upewnij się, że wprowadziłeś poprawny pseudonim."
+   },
+   "pt": {
+     "title": "Junte-se ao Sauces",
+     "shortDescription": "Cadastre-se no aplicativo Sauces tap-to-earn.",
+     "longDescription": "Cadastre-se no aplicativo Sauces e comece a ganhar tokens SAUCE hoje.",
+     "errorDescription": "Falha na verificação. Verifique se você inseriu o apelido correto."
+   },
+   "ro": {
+     "title": "Alăturați-vă Sauces",
+     "shortDescription": "Înscrieți-vă pe aplicația Sauces tap-to-earn.",
+     "longDescription": "Înscrieți-vă pe aplicația Sauces și începeți să câștigați astăzi tokenuri SAUCE.",
+     "errorDescription": "Verificarea a eșuat. Vă rugăm să vă asigurați că ați introdus porecla corectă."
+   },
+   "ru": {
+     "title": "Присоединяйтесь к Sauces",
+     "shortDescription": "Зарегистрируйтесь в приложении Sauces tap-to-earn.",
+     "longDescription": "Зарегистрируйтесь в приложении Sauces и начните зарабатывать токены SAUCE уже сегодня.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, убедитесь, что вы ввели правильный никнейм."
+   },
+   "sk": {
+     "title": "Pripojte sa k Sauces",
+     "shortDescription": "Zaregistrujte sa v aplikácii Sauces tap-to-earn.",
+     "longDescription": "Zaregistrujte sa v aplikácii Sauces a začnite dnes zarábať tokeny SAUCE.",
+     "errorDescription": "Overenie zlyhalo. Uistite sa, že ste zadali správnu prezývku."
+   },
+   "sl": {
+     "title": "Pridružite se Sauces",
+     "shortDescription": "Prijavite se v aplikacijo Sauces tap-to-earn.",
+     "longDescription": "Prijavite se v aplikacijo Sauces in začnite zaslužiti SAUCE žetone danes.",
+     "errorDescription": "Preverjanje ni uspelo. Preverite, ali ste vnesli pravilno vzdevek."
+   },
+   "sq": {
+     "title": "Bashkohuni me Sauces",
+     "shortDescription": "Regjistrohuni në aplikacionin Sauces tap-to-earn.",
+     "longDescription": "Regjistrohuni në aplikacionin Sauces dhe filloni të fitoni tokenë SAUCE sot.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi sigurohuni që keni futur pseudonimin e saktë."
+   },
+   "sv": {
+     "title": "Gå med i Sauces",
+     "shortDescription": "Registrera dig på Sauces tap-to-earn-appen.",
+     "longDescription": "Registrera dig på Sauces-appen och börja tjäna SAUCE-tokens idag.",
+     "errorDescription": "Verifieringen misslyckades. Kontrollera att du har angett rätt smeknamn."
+   },
+   "te": {
+     "title": "Saucesలో చేరండి",
+     "shortDescription": "Sauces tap-to-earn యాప్‌లో సైన్ అప్ చేయండి.",
+     "longDescription": "Sauces యాప్‌లో సైన్ అప్ చేయండి మరియు ఈ రోజు నుండే SAUCE టోకెన్లను పొందడం ప్రారంభించండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు సరైన పేరు నమోదు చేశారా అని నిర్ధారించుకోండి."
+   },
+   "th": {
+     "title": "เข้าร่วม Sauces",
+     "shortDescription": "สมัครแอป Sauces tap-to-earn",
+     "longDescription": "สมัครแอป Sauces และเริ่มรับโทเค็น SAUCE วันนี้",
+     "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าคุณได้ป้อนชื่อเล่นที่ถูกต้อง"
+   },
+   "tr": {
+     "title": "Sauces'e Katıl",
+     "shortDescription": "Sauces tap-to-earn uygulamasına kaydolun.",
+     "longDescription": "Sauces uygulamasına kaydolun ve bugün SAUCE tokenleri kazanmaya başlayın.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen doğru takma adınızı girdiğinizden emin olun."
+   },
+   "uk": {
+     "title": "Приєднуйтесь до Sauces",
+     "shortDescription": "Зареєструйтеся у додатку Sauces tap-to-earn.",
+     "longDescription": "Зареєструйтеся у додатку Sauces і почніть заробляти токени SAUCE вже сьогодні.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, переконайтеся, що ви ввели правильне прізвисько."
+   },
+   "ur": {
+     "title": "Sauces میں شامل ہوں",
+     "shortDescription": "Sauces tap-to-earn ایپ پر سائن اپ کریں۔",
+     "longDescription": "Sauces ایپ پر سائن اپ کریں اور آج ہی SAUCE ٹوکن حاصل کرنا شروع کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم یقینی بنائیں کہ آپ نے اپنا صحیح عرفی نام درج کیا ہے۔"
+   },
+   "vi": {
+     "title": "Tham gia Sauces",
+     "shortDescription": "Đăng ký trên ứng dụng Sauces tap-to-earn.",
+     "longDescription": "Đăng ký trên ứng dụng Sauces và bắt đầu kiếm token SAUCE ngay hôm nay.",
+     "errorDescription": "Xác minh không thành công. Vui lòng đảm bảo bạn đã nhập đúng biệt danh."
+   },
+   "zh-hant": {
+     "title": "加入 Sauces",
+     "shortDescription": "在 Sauces tap-to-earn 應用程式上註冊。",
+     "longDescription": "在 Sauces 應用程式上註冊，並立即開始賺取 SAUCE 代幣。",
+     "errorDescription": "驗證失敗。請確保您輸入了正確的暱稱。"
+   },
+   "zh": {
+     "title": "加入 Sauces",
+     "shortDescription": "在 Sauces tap-to-earn 应用程序上注册。",
+     "longDescription": "在 Sauces 应用程序上注册，并立即开始赚取 SAUCE 代币。",
+     "errorDescription": "验证失败。请确保您输入了正确的昵称。"
    }
-}
+ }
+ 

@@ -1,0 +1,261 @@
+{
+   "af": {
+     "title": "Sluit aan by DoctorX",
+     "shortDescription": "Teken in op die DoctorX tap-to-earn app.",
+     "longDescription": "Teken in op die DoctorX app en begin vandag nog DRX tokens verdien.",
+     "errorDescription": "Verifikasie het misluk. Maak asseblief seker dat jy jou korrekte bynaam ingevoer het."
+   },
+   "ar": {
+     "title": "انضم إلى DoctorX",
+     "shortDescription": "سجل في تطبيق DoctorX tap-to-earn.",
+     "longDescription": "سجل في تطبيق DoctorX وابدأ في كسب رموز DRX اليوم.",
+     "errorDescription": "فشل التحقق. يرجى التأكد من أنك قد أدخلت لقبك الصحيح."
+   },
+   "az": {
+     "title": "DoctorX-ə qoşulun",
+     "shortDescription": "DoctorX tap-to-earn tətbiqinə qeydiyyatdan keçin.",
+     "longDescription": "DoctorX tətbiqinə qeydiyyatdan keçin və bu gün DRX tokenləri qazanmağa başlayın.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa düzgün ləqəbinizi daxil etdiyinizə əmin olun."
+   },
+   "bg": {
+     "title": "Присъединете се към DoctorX",
+     "shortDescription": "Регистрирайте се в приложението DoctorX tap-to-earn.",
+     "longDescription": "Регистрирайте се в приложението DoctorX и започнете да печелите DRX токени днес.",
+     "errorDescription": "Проверката не бе успешна. Моля, уверете се, че сте въвели правилния си прякор."
+   },
+   "bn": {
+     "title": "DoctorX-এ যোগ দিন",
+     "shortDescription": "DoctorX tap-to-earn অ্যাপে সাইন আপ করুন।",
+     "longDescription": "DoctorX অ্যাপে সাইন আপ করুন এবং আজই DRX টোকেন অর্জন করতে শুরু করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন আপনি আপনার সঠিক ডাকনাম প্রবেশ করেছেন।"
+   },
+   "cs": {
+     "title": "Připojte se k DoctorX",
+     "shortDescription": "Zaregistrujte se v aplikaci DoctorX tap-to-earn.",
+     "longDescription": "Zaregistrujte se v aplikaci DoctorX a začněte dnes vydělávat tokeny DRX.",
+     "errorDescription": "Ověření selhalo. Ujistěte se, že jste zadali správnou přezdívku."
+   },
+   "de": {
+     "title": "Tritt DoctorX bei",
+     "shortDescription": "Melde dich in der DoctorX Tap-to-Earn-App an.",
+     "longDescription": "Melde dich in der DoctorX-App an und beginne noch heute mit dem Verdienen von DRX-Token.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte stelle sicher, dass du deinen richtigen Spitznamen eingegeben hast."
+   },
+   "el": {
+     "title": "Γίνετε μέλος του DoctorX",
+     "shortDescription": "Εγγραφείτε στην εφαρμογή DoctorX tap-to-earn.",
+     "longDescription": "Εγγραφείτε στην εφαρμογή DoctorX και ξεκινήστε να κερδίζετε DRX tokens σήμερα.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Βεβαιωθείτε ότι έχετε εισαγάγει το σωστό ψευδώνυμο."
+   },
+   "en": {
+     "title": "Join DoctorX",
+     "shortDescription": "Sign up on the DoctorX tap-to-earn app.",
+     "longDescription": "Sign up on the DoctorX app and start earning DRX tokens today.",
+     "errorDescription": "Verification failed. Please make sure you have entered your correct nickname."
+   },
+   "es": {
+     "title": "Únete a DoctorX",
+     "shortDescription": "Regístrate en la aplicación DoctorX tap-to-earn.",
+     "longDescription": "Regístrate en la aplicación DoctorX y empieza a ganar tokens DRX hoy mismo.",
+     "errorDescription": "La verificación falló. Por favor, asegúrate de haber introducido tu apodo correcto."
+   },
+   "fa": {
+     "title": "به DoctorX بپیوندید",
+     "shortDescription": "در برنامه DoctorX tap-to-earn ثبت‌نام کنید.",
+     "longDescription": "در برنامه DoctorX ثبت‌نام کنید و از همین امروز شروع به کسب توکن‌های DRX کنید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً مطمئن شوید که نام مستعار صحیح خود را وارد کرده‌اید."
+   },
+   "fr": {
+     "title": "Rejoignez DoctorX",
+     "shortDescription": "Inscrivez-vous sur l'application DoctorX tap-to-earn.",
+     "longDescription": "Inscrivez-vous sur l'application DoctorX et commencez à gagner des tokens DRX dès aujourd'hui.",
+     "errorDescription": "Échec de la vérification. Veuillez vous assurer que vous avez entré votre surnom correct."
+   },
+   "gu": {
+     "title": "DoctorX માં જોડાઓ",
+     "shortDescription": "DoctorX tap-to-earn એપ પર સાઇન અપ કરો.",
+     "longDescription": "DoctorX એપ પર સાઇન અપ કરો અને આજે જ DRX ટોકન્સ કમાવા શરુ કરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમે તમારું યોગ્ય ઉપનામ દાખલ કર્યું છે."
+   },
+   "he": {
+     "title": "הצטרפו ל-DoctorX",
+     "shortDescription": "הירשמו לאפליקציית DoctorX tap-to-earn.",
+     "longDescription": "הירשמו לאפליקציית DoctorX והתחילו להרוויח אסימוני DRX כבר היום.",
+     "errorDescription": "האימות נכשל. אנא וודאו שהזנתם את הכינוי הנכון."
+   },
+   "hi": {
+     "title": "DoctorX से जुड़ें",
+     "shortDescription": "DoctorX tap-to-earn ऐप पर साइन अप करें।",
+     "longDescription": "DoctorX ऐप पर साइन अप करें और आज ही DRX टोकन कमाना शुरू करें।",
+     "errorDescription": "सत्यापन विफल। कृपया सुनिश्चित करें कि आपने सही उपनाम दर्ज किया है।"
+   },
+   "hu": {
+     "title": "Csatlakozz a DoctorXhez",
+     "shortDescription": "Iratkozz fel a DoctorX tap-to-earn alkalmazásra.",
+     "longDescription": "Iratkozz fel a DoctorX alkalmazásra, és kezdj el DRX tokeneket keresni még ma.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Kérjük, ellenőrizd, hogy a megfelelő becenevet adtad meg."
+   },
+   "id": {
+     "title": "Bergabung dengan DoctorX",
+     "shortDescription": "Daftar di aplikasi DoctorX tap-to-earn.",
+     "longDescription": "Daftar di aplikasi DoctorX dan mulai hasilkan token DRX hari ini.",
+     "errorDescription": "Verifikasi gagal. Pastikan Anda telah memasukkan nama panggilan yang benar."
+   },
+   "it": {
+     "title": "Unisciti a DoctorX",
+     "shortDescription": "Iscriviti all'app tap-to-earn di DoctorX.",
+     "longDescription": "Iscriviti all'app DoctorX e inizia a guadagnare token DRX oggi stesso.",
+     "errorDescription": "Verifica fallita. Assicurati di aver inserito il soprannome corretto."
+   },
+   "ja": {
+     "title": "DoctorXに参加する",
+     "shortDescription": "DoctorX tap-to-earnアプリにサインアップしてください。",
+     "longDescription": "DoctorXアプリにサインアップして、今日からDRXトークンを獲得し始めましょう。",
+     "errorDescription": "確認に失敗しました。正しいニックネームを入力したか確認してください。"
+   },
+   "jv": {
+     "title": "Gabung DoctorX",
+     "shortDescription": "Mlebu ing aplikasi DoctorX tap-to-earn.",
+     "longDescription": "Mlebu ing aplikasi DoctorX lan wiwiti entuk token DRX dina iki.",
+     "errorDescription": "Verifikasi gagal. Priksa manawa sampeyan wis ngetik jeneng julukan sing bener."
+   },
+   "kn": {
+     "title": "DoctorX ಗೆ ಸೇರಿಕೊಳ್ಳಿ",
+     "shortDescription": "DoctorX tap-to-earn ಆಪ್ ನಲ್ಲಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ.",
+     "longDescription": "DoctorX ಆಪ್ ನಲ್ಲಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ ಮತ್ತು ಇಂದು DRX ಟೋಕನ್ ಗಳಿಸುವುದನ್ನು ಪ್ರಾರಂಭಿಸಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನೀವು ನಿಮ್ಮ ಸರಿಯಾದ ಮೆಚ್ಚಿನ ಹೆಸರನ್ನು ನಮೂದಿಸಿದ್ದೀರಾ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
+   },
+   "ko": {
+     "title": "DoctorX에 가입하세요",
+     "shortDescription": "DoctorX tap-to-earn 앱에 가입하세요.",
+     "longDescription": "DoctorX 앱에 가입하고 오늘 DRX 토큰을 받기 시작하세요.",
+     "errorDescription": "인증에 실패했습니다. 올바른 별명을 입력했는지 확인하세요."
+   },
+   "mr": {
+     "title": "DoctorX मध्ये सामील व्हा",
+     "shortDescription": "DoctorX tap-to-earn अॅपवर साइन अप करा.",
+     "longDescription": "DoctorX अॅपवर साइन अप करा आणि आजच DRX टोकन्स मिळवणे सुरू करा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुमचे योग्य टोपणनाव प्रविष्ट केले आहे याची खात्री करा."
+   },
+   "ms": {
+     "title": "Sertai DoctorX",
+     "shortDescription": "Daftar di aplikasi DoctorX tap-to-earn.",
+     "longDescription": "Daftar di aplikasi DoctorX dan mula mendapatkan token DRX hari ini.",
+     "errorDescription": "Pengesahan gagal. Pastikan anda telah memasukkan nama samaran yang betul."
+   },
+   "nb": {
+     "title": "Bli med i DoctorX",
+     "shortDescription": "Meld deg på DoctorX tap-to-earn-appen.",
+     "longDescription": "Meld deg på DoctorX-appen og begynn å tjene DRX-tokens i dag.",
+     "errorDescription": "Verifisering mislyktes. Vennligst sørg for at du har skrevet inn riktig kallenavn."
+   },
+   "nn": {
+     "title": "Bli med i DoctorX",
+     "shortDescription": "Meld deg på DoctorX tap-to-earn-appen.",
+     "longDescription": "Meld deg på DoctorX-appen og begynn å tene DRX-tokens i dag.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å sjå om du har skrive inn riktig kallenamn."
+   },
+   "pa": {
+     "title": "DoctorX ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+     "shortDescription": "DoctorX tap-to-earn ਐਪ 'ਤੇ ਸਾਇਨ ਅੱਪ ਕਰੋ।",
+     "longDescription": "DoctorX ਐਪ 'ਤੇ ਸਾਇਨ ਅੱਪ ਕਰੋ ਅਤੇ ਅੱਜ ਹੀ DRX ਟੋਕਨ ਕਮਾਣਾ ਸ਼ੁਰੂ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ ਆਪਣਾ ਸਹੀ ਉਪਨਾਮ ਦਰਜ ਕੀਤਾ ਹੈ।"
+   },
+   "pl": {
+     "title": "Dołącz do DoctorX",
+     "shortDescription": "Zarejestruj się w aplikacji DoctorX tap-to-earn.",
+     "longDescription": "Zarejestruj się w aplikacji DoctorX i zacznij zarabiać tokeny DRX już dziś.",
+     "errorDescription": "Weryfikacja nie powiodła się. Upewnij się, że wprowadziłeś poprawny pseudonim."
+   },
+   "pt": {
+     "title": "Junte-se ao DoctorX",
+     "shortDescription": "Cadastre-se no aplicativo DoctorX tap-to-earn.",
+     "longDescription": "Cadastre-se no aplicativo DoctorX e comece a ganhar tokens DRX hoje.",
+     "errorDescription": "Falha na verificação. Verifique se você inseriu o apelido correto."
+   },
+   "ro": {
+     "title": "Alăturați-vă DoctorX",
+     "shortDescription": "Înscrieți-vă pe aplicația DoctorX tap-to-earn.",
+     "longDescription": "Înscrieți-vă pe aplicația DoctorX și începeți să câștigați astăzi tokenuri DRX.",
+     "errorDescription": "Verificarea a eșuat. Vă rugăm să vă asigurați că ați introdus porecla corectă."
+   },
+   "ru": {
+     "title": "Присоединяйтесь к DoctorX",
+     "shortDescription": "Зарегистрируйтесь в приложении DoctorX tap-to-earn.",
+     "longDescription": "Зарегистрируйтесь в приложении DoctorX и начните зарабатывать токены DRX уже сегодня.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, убедитесь, что вы ввели правильный никнейм."
+   },
+   "sk": {
+     "title": "Pripojte sa k DoctorX",
+     "shortDescription": "Zaregistrujte sa v aplikácii DoctorX tap-to-earn.",
+     "longDescription": "Zaregistrujte sa v aplikácii DoctorX a začnite dnes zarábať tokeny DRX.",
+     "errorDescription": "Overenie zlyhalo. Uistite sa, že ste zadali správnu prezývku."
+   },
+   "sl": {
+     "title": "Pridružite se DoctorX",
+     "shortDescription": "Prijavite se v aplikacijo DoctorX tap-to-earn.",
+     "longDescription": "Prijavite se v aplikacijo DoctorX in začnite zaslužiti DRX žetone danes.",
+     "errorDescription": "Preverjanje ni uspelo. Preverite, ali ste vnesli pravilno vzdevek."
+   },
+   "sq": {
+     "title": "Bashkohuni me DoctorX",
+     "shortDescription": "Regjistrohuni në aplikacionin DoctorX tap-to-earn.",
+     "longDescription": "Regjistrohuni në aplikacionin DoctorX dhe filloni të fitoni tokenë DRX sot.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi sigurohuni që keni futur pseudonimin e saktë."
+   },
+   "sv": {
+     "title": "Gå med i DoctorX",
+     "shortDescription": "Registrera dig på DoctorX tap-to-earn-appen.",
+     "longDescription": "Registrera dig på DoctorX-appen och börja tjäna DRX-tokens idag.",
+     "errorDescription": "Verifieringen misslyckades. Kontrollera att du har angett rätt smeknamn."
+   },
+   "te": {
+     "title": "DoctorXలో చేరండి",
+     "shortDescription": "DoctorX tap-to-earn యాప్‌లో సైన్ అప్ చేయండి.",
+     "longDescription": "DoctorX యాప్‌లో సైన్ అప్ చేయండి మరియు ఈ రోజు నుండే DRX టోకెన్లను పొందడం ప్రారంభించండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు సరైన పేరు నమోదు చేశారా అని నిర్ధారించుకోండి."
+   },
+   "th": {
+     "title": "เข้าร่วม DoctorX",
+     "shortDescription": "สมัครแอป DoctorX tap-to-earn",
+     "longDescription": "สมัครแอป DoctorX และเริ่มรับโทเค็น DRX วันนี้",
+     "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าคุณได้ป้อนชื่อเล่นที่ถูกต้อง"
+   },
+   "tr": {
+     "title": "DoctorX'e Katıl",
+     "shortDescription": "DoctorX tap-to-earn uygulamasına kaydolun.",
+     "longDescription": "DoctorX uygulamasına kaydolun ve bugün DRX tokenleri kazanmaya başlayın.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen doğru takma adınızı girdiğinizden emin olun."
+   },
+   "uk": {
+     "title": "Приєднуйтесь до DoctorX",
+     "shortDescription": "Зареєструйтеся у додатку DoctorX tap-to-earn.",
+     "longDescription": "Зареєструйтеся у додатку DoctorX і почніть заробляти токени DRX вже сьогодні.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, переконайтеся, що ви ввели правильне прізвисько."
+   },
+   "ur": {
+     "title": "DoctorX میں شامل ہوں",
+     "shortDescription": "DoctorX tap-to-earn ایپ پر سائن اپ کریں۔",
+     "longDescription": "DoctorX ایپ پر سائن اپ کریں اور آج ہی DRX ٹوکن حاصل کرنا شروع کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم یقینی بنائیں کہ آپ نے اپنا صحیح عرفی نام درج کیا ہے۔"
+   },
+   "vi": {
+     "title": "Tham gia DoctorX",
+     "shortDescription": "Đăng ký trên ứng dụng DoctorX tap-to-earn.",
+     "longDescription": "Đăng ký trên ứng dụng DoctorX và bắt đầu kiếm token DRX ngay hôm nay.",
+     "errorDescription": "Xác minh không thành công. Vui lòng đảm bảo bạn đã nhập đúng biệt danh."
+   },
+   "zh-hant": {
+     "title": "加入 DoctorX",
+     "shortDescription": "在 DoctorX tap-to-earn 應用程式上註冊。",
+     "longDescription": "在 DoctorX 應用程式上註冊，並立即開始賺取 DRX 代幣。",
+     "errorDescription": "驗證失敗。請確保您輸入了正確的暱稱。"
+   },
+   "zh": {
+     "title": "加入 DoctorX",
+     "shortDescription": "在 DoctorX tap-to-earn 应用程序上注册。",
+     "longDescription": "在 DoctorX 应用程序上注册，并立即开始赚取 DRX 代币。",
+     "errorDescription": "验证失败。请确保您输入了正确的昵称。"
+   }
+ }
+ 

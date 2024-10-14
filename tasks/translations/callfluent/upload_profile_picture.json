@@ -1,8 +1,261 @@
 {
-   "en":{
-      "title":"Set profile picture",
-      "shortDescription":"Upload your profile picture.",
-      "longDescription":"Add a profile picture to personalize your account and make it stand out.",
-      "errorDescription":"Verification failed. Please update your profile picture and try again."
+   "af": {
+     "title": "Stel profielfoto in",
+     "shortDescription": "Laai jou profielfoto op.",
+     "longDescription": "Voeg 'n profielfoto by om jou rekening persoonlik te maak en dit uit te laat staan.",
+     "errorDescription": "Verifikasie het misluk. Werk jou profielfoto op en probeer weer."
+   },
+   "ar": {
+     "title": "تعيين صورة الملف الشخصي",
+     "shortDescription": "قم بتحميل صورة ملفك الشخصي.",
+     "longDescription": "أضف صورة ملف شخصي لتخصيص حسابك وجعله مميزًا.",
+     "errorDescription": "فشل التحقق. يرجى تحديث صورة ملفك الشخصي والمحاولة مرة أخرى."
+   },
+   "az": {
+     "title": "Profil şəklini təyin edin",
+     "shortDescription": "Profil şəklinizi yükləyin.",
+     "longDescription": "Hesabınızı fərdiləşdirmək və onu seçilən etmək üçün profil şəklinizi əlavə edin.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa profil şəklinizi yeniləyin və yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Задайте профилна снимка",
+     "shortDescription": "Качете своя профилна снимка.",
+     "longDescription": "Добавете профилна снимка, за да персонализирате своя акаунт и да го направите уникален.",
+     "errorDescription": "Проверката не бе успешна. Моля, актуализирайте своята профилна снимка и опитайте отново."
+   },
+   "bn": {
+     "title": "প্রোফাইল ছবি সেট করুন",
+     "shortDescription": "আপনার প্রোফাইল ছবি আপলোড করুন।",
+     "longDescription": "আপনার অ্যাকাউন্ট ব্যক্তিগতকৃত করতে এবং এটি আলাদা করতে একটি প্রোফাইল ছবি যোগ করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। আপনার প্রোফাইল ছবি আপডেট করুন এবং আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Nastavit profilový obrázek",
+     "shortDescription": "Nahrajte svůj profilový obrázek.",
+     "longDescription": "Přidejte profilový obrázek, aby byl váš účet osobnější a více vynikl.",
+     "errorDescription": "Ověření selhalo. Aktualizujte svůj profilový obrázek a zkuste to znovu."
+   },
+   "de": {
+     "title": "Profilbild einstellen",
+     "shortDescription": "Lade dein Profilbild hoch.",
+     "longDescription": "Füge ein Profilbild hinzu, um dein Konto zu personalisieren und es hervorzuheben.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte aktualisiere dein Profilbild und versuche es erneut."
+   },
+   "el": {
+     "title": "Ορίστε εικόνα προφίλ",
+     "shortDescription": "Ανεβάστε την εικόνα προφίλ σας.",
+     "longDescription": "Προσθέστε μια εικόνα προφίλ για να εξατομικεύσετε τον λογαριασμό σας και να τον κάνετε να ξεχωρίζει.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Ενημερώστε την εικόνα προφίλ σας και δοκιμάστε ξανά."
+   },
+   "en": {
+     "title": "Set profile picture",
+     "shortDescription": "Upload your profile picture.",
+     "longDescription": "Add a profile picture to personalize your account and make it stand out.",
+     "errorDescription": "Verification failed. Please update your profile picture and try again."
+   },
+   "es": {
+     "title": "Establecer imagen de perfil",
+     "shortDescription": "Sube tu foto de perfil.",
+     "longDescription": "Añade una imagen de perfil para personalizar tu cuenta y hacer que destaque.",
+     "errorDescription": "La verificación falló. Por favor, actualiza tu foto de perfil e inténtalo de nuevo."
+   },
+   "fa": {
+     "title": "تنظیم تصویر پروفایل",
+     "shortDescription": "تصویر پروفایل خود را آپلود کنید.",
+     "longDescription": "یک تصویر پروفایل اضافه کنید تا حساب خود را شخصی‌سازی کرده و برجسته کنید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً تصویر پروفایل خود را به‌روزرسانی کنید و دوباره تلاش کنید."
+   },
+   "fr": {
+     "title": "Définir une photo de profil",
+     "shortDescription": "Téléchargez votre photo de profil.",
+     "longDescription": "Ajoutez une photo de profil pour personnaliser votre compte et le faire ressortir.",
+     "errorDescription": "Échec de la vérification. Veuillez mettre à jour votre photo de profil et réessayer."
+   },
+   "gu": {
+     "title": "પ્રોફાઇલ ચિત્ર સેટ કરો",
+     "shortDescription": "તમારું પ્રોફાઇલ ચિત્ર અપલોડ કરો.",
+     "longDescription": "તમારા એકાઉન્ટને વ્યક્તિગત બનાવવામાં અને તેને અલગ બનાવવા માટે પ્રોફાઇલ ચિત્ર ઉમેરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. તમારું પ્રોફાઇલ ચિત્ર અપડેટ કરો અને ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "הגדר תמונת פרופיל",
+     "shortDescription": "העלה את תמונת הפרופיל שלך.",
+     "longDescription": "הוסף תמונת פרופיל כדי להתאים אישית את החשבון שלך ולהפוך אותו לייחודי.",
+     "errorDescription": "האימות נכשל. אנא עדכן את תמונת הפרופיל שלך ונסה שוב."
+   },
+   "hi": {
+     "title": "प्रोफ़ाइल चित्र सेट करें",
+     "shortDescription": "अपनी प्रोफ़ाइल तस्वीर अपलोड करें।",
+     "longDescription": "अपने खाते को व्यक्तिगत बनाने और इसे अलग दिखाने के लिए प्रोफ़ाइल चित्र जोड़ें।",
+     "errorDescription": "सत्यापन विफल। कृपया अपनी प्रोफ़ाइल तस्वीर अपडेट करें और फिर से प्रयास करें।"
+   },
+   "hu": {
+     "title": "Profilkép beállítása",
+     "shortDescription": "Töltsd fel a profilképed.",
+     "longDescription": "Adj hozzá egy profilképet, hogy személyre szabd a fiókodat, és kitűnjön a többi közül.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Kérjük, frissítsd a profilképed, és próbáld újra."
+   },
+   "id": {
+     "title": "Setel foto profil",
+     "shortDescription": "Unggah foto profil Anda.",
+     "longDescription": "Tambahkan foto profil untuk mempersonalisasi akun Anda dan membuatnya menonjol.",
+     "errorDescription": "Verifikasi gagal. Harap perbarui foto profil Anda dan coba lagi."
+   },
+   "it": {
+     "title": "Imposta immagine profilo",
+     "shortDescription": "Carica la tua immagine del profilo.",
+     "longDescription": "Aggiungi un'immagine del profilo per personalizzare il tuo account e farlo risaltare.",
+     "errorDescription": "Verifica fallita. Aggiorna la tua immagine del profilo e riprova."
+   },
+   "ja": {
+     "title": "プロフィール写真を設定",
+     "shortDescription": "プロフィール写真をアップロードしてください。",
+     "longDescription": "アカウントをパーソナライズして目立たせるためにプロフィール写真を追加してください。",
+     "errorDescription": "確認に失敗しました。プロフィール写真を更新して、もう一度お試しください。"
+   },
+   "jv": {
+     "title": "Setel gambar profil",
+     "shortDescription": "Unggah gambar profil sampeyan.",
+     "longDescription": "Tambahake gambar profil kanggo nggawe akun sampeyan luwih pribadi lan nggawe katon beda.",
+     "errorDescription": "Verifikasi gagal. Mangga nganyari gambar profil sampeyan lan coba maneh."
+   },
+   "kn": {
+     "title": "ಪ್ರೊಫೈಲ್ ಚಿತ್ರವನ್ನು ಸೆಟ್ ಮಾಡಿ",
+     "shortDescription": "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಚಿತ್ರವನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಿ.",
+     "longDescription": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ವೈಯಕ್ತೀಕರಿಸಲು ಮತ್ತು ಅದನ್ನು目ಚ್ಚಿಗೆದಾಗಿಸಲು ಪ್ರೊಫೈಲ್ ಚಿತ್ರವನ್ನು ಸೇರಿಸಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಚಿತ್ರವನ್ನು ನವೀಕರಿಸಿ ಮತ್ತು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "프로필 사진 설정",
+     "shortDescription": "프로필 사진을 업로드하세요.",
+     "longDescription": "프로필 사진을 추가하여 계정을 맞춤 설정하고 돋보이게 하세요.",
+     "errorDescription": "인증에 실패했습니다. 프로필 사진을 업데이트하고 다시 시도하세요."
+   },
+   "mr": {
+     "title": "प्रोफाइल चित्र सेट करा",
+     "shortDescription": "तुमचे प्रोफाइल चित्र अपलोड करा.",
+     "longDescription": "तुमचे खाते वैयक्तिकृत करण्यासाठी आणि ते वेगळे करण्यासाठी एक प्रोफाइल चित्र जोडा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुमचे प्रोफाइल चित्र अद्यतनित करा आणि पुन्हा प्रयत्न करा."
+   },
+   "ms": {
+     "title": "Tetapkan gambar profil",
+     "shortDescription": "Muat naik gambar profil anda.",
+     "longDescription": "Tambahkan gambar profil untuk mempersonalisasikan akaun anda dan menyerlahkannya.",
+     "errorDescription": "Pengesahan gagal. Sila kemas kini gambar profil anda dan cuba lagi."
+   },
+   "nb": {
+     "title": "Sett profilbilde",
+     "shortDescription": "Last opp profilbildet ditt.",
+     "longDescription": "Legg til et profilbilde for å tilpasse kontoen din og få den til å skille seg ut.",
+     "errorDescription": "Verifisering mislyktes. Vennligst oppdater profilbildet ditt og prøv igjen."
+   },
+   "nn": {
+     "title": "Set profilbilete",
+     "shortDescription": "Last opp profilbiletet ditt.",
+     "longDescription": "Legg til eit profilbilete for å tilpasse kontoen din og få den til å skilje seg ut.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å oppdater profilbiletet ditt og prøv igjen."
+   },
+   "pa": {
+     "title": "ਪ੍ਰੋਫਾਈਲ ਤਸਵੀਰ ਸੈੱਟ ਕਰੋ",
+     "shortDescription": "ਆਪਣੀ ਪ੍ਰੋਫਾਈਲ ਤਸਵੀਰ ਅੱਪਲੋਡ ਕਰੋ।",
+     "longDescription": "ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਨਿੱਜੀ ਬਣਾਉਣ ਲਈ ਅਤੇ ਇਸਨੂੰ ਵੱਖਰਾ ਬਣਾਉਣ ਲਈ ਪ੍ਰੋਫਾਈਲ ਤਸਵੀਰ ਸ਼ਾਮਲ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ ਪ੍ਰੋਫਾਈਲ ਤਸਵੀਰ ਅੱਪਡੇਟ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Ustaw zdjęcie profilowe",
+     "shortDescription": "Prześlij swoje zdjęcie profilowe.",
+     "longDescription": "Dodaj zdjęcie profilowe, aby spersonalizować swoje konto i wyróżnić się.",
+     "errorDescription": "Weryfikacja nie powiodła się. Zaktualizuj swoje zdjęcie profilowe i spróbuj ponownie."
+   },
+   "pt": {
+     "title": "Definir foto de perfil",
+     "shortDescription": "Envie sua foto de perfil.",
+     "longDescription": "Adicione uma foto de perfil para personalizar sua conta e destacá-la.",
+     "errorDescription": "Falha na verificação. Atualize sua foto de perfil e tente novamente."
+   },
+   "ro": {
+     "title": "Setați poza de profil",
+     "shortDescription": "Încărcați poza de profil.",
+     "longDescription": "Adăugați o poză de profil pentru a personaliza contul și a-l face să iasă în evidență.",
+     "errorDescription": "Verificarea a eșuat. Vă rugăm să actualizați poza de profil și să încercați din nou."
+   },
+   "ru": {
+     "title": "Установите фото профиля",
+     "shortDescription": "Загрузите свое фото профиля.",
+     "longDescription": "Добавьте фото профиля, чтобы персонализировать свой аккаунт и выделиться.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, обновите фото профиля и попробуйте снова."
+   },
+   "sk": {
+     "title": "Nastavte profilový obrázok",
+     "shortDescription": "Nahrajte svoj profilový obrázok.",
+     "longDescription": "Pridajte profilový obrázok, aby ste si prispôsobili svoj účet a vynikli.",
+     "errorDescription": "Overenie zlyhalo. Aktualizujte svoj profilový obrázok a skúste to znova."
+   },
+   "sl": {
+     "title": "Nastavi profilno sliko",
+     "shortDescription": "Naložite svojo profilno sliko.",
+     "longDescription": "Dodajte profilno sliko, da prilagodite svoj račun in izstopate.",
+     "errorDescription": "Preverjanje ni uspelo. Posodobite svojo profilno sliko in poskusite znova."
+   },
+   "sq": {
+     "title": "Vendosni foton e profilit",
+     "shortDescription": "Ngarkoni foton tuaj të profilit.",
+     "longDescription": "Shtoni një foto profili për të personalizuar llogarinë tuaj dhe për ta bërë atë të dallohet.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi përditësoni foton tuaj të profilit dhe provoni përsëri."
+   },
+   "sv": {
+     "title": "Ställ in profilbild",
+     "shortDescription": "Ladda upp din profilbild.",
+     "longDescription": "Lägg till en profilbild för att anpassa ditt konto och få det att sticka ut.",
+     "errorDescription": "Verifieringen misslyckades. Uppdatera din profilbild och försök igen."
+   },
+   "te": {
+     "title": "ప్రొఫైల్ చిత్రాన్ని సెట్ చేయండి",
+     "shortDescription": "మీ ప్రొఫైల్ చిత్రాన్ని అప్లోడ్ చేయండి.",
+     "longDescription": "మీ ఖాతాను వ్యక్తిగతీకరించడానికి మరియు ప్రత్యేకంగా నిలిచేందుకు ప్రొఫైల్ చిత్రాన్ని జోడించండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీ ప్రొఫైల్ చిత్రాన్ని అప్డేట్ చేసి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "ตั้งค่ารูปโปรไฟล์",
+     "shortDescription": "อัปโหลดรูปโปรไฟล์ของคุณ",
+     "longDescription": "เพิ่มรูปโปรไฟล์เพื่อปรับแต่งบัญชีของคุณและทำให้โดดเด่น",
+     "errorDescription": "การตรวจสอบล้มเหลว โปรดอัปเดตรูปโปรไฟล์ของคุณและลองอีกครั้ง"
+   },
+   "tr": {
+     "title": "Profil resmini ayarla",
+     "shortDescription": "Profil resminizi yükleyin.",
+     "longDescription": "Hesabınızı kişiselleştirmek ve öne çıkarmak için bir profil resmi ekleyin.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen profil resminizi güncelleyip tekrar deneyin."
+   },
+   "uk": {
+     "title": "Встановіть фото профілю",
+     "shortDescription": "Завантажте своє фото профілю.",
+     "longDescription": "Додайте фото профілю, щоб персоналізувати свій акаунт і зробити його унікальним.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, оновіть своє фото профілю та спробуйте ще раз."
+   },
+   "ur": {
+     "title": "پروفائل تصویر سیٹ کریں",
+     "shortDescription": "اپنی پروفائل تصویر اپلوڈ کریں۔",
+     "longDescription": "اپنے اکاؤنٹ کو ذاتی بنانے اور اسے نمایاں کرنے کے لیے ایک پروفائل تصویر شامل کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم اپنی پروفائل تصویر کو اپ ڈیٹ کریں اور دوبارہ کوشش کریں۔"
+   },
+   "vi": {
+     "title": "Đặt ảnh hồ sơ",
+     "shortDescription": "Tải lên ảnh hồ sơ của bạn.",
+     "longDescription": "Thêm ảnh hồ sơ để cá nhân hóa tài khoản của bạn và làm cho nó nổi bật.",
+     "errorDescription": "Xác minh không thành công. Vui lòng cập nhật ảnh hồ sơ của bạn và thử lại."
+   },
+   "zh-hant": {
+     "title": "設置個人資料圖片",
+     "shortDescription": "上傳您的個人資料圖片。",
+     "longDescription": "添加個人資料圖片來個性化您的帳戶並使其脫穎而出。",
+     "errorDescription": "驗證失敗。請更新您的個人資料圖片，然後再試一次。"
+   },
+   "zh": {
+     "title": "设置个人资料图片",
+     "shortDescription": "上传您的个人资料图片。",
+     "longDescription": "添加个人资料图片来个性化您的帐户并使其脱颖而出。",
+     "errorDescription": "验证失败。请更新您的个人资料图片，然后重试。"
    }
-}
+ }
+ 
