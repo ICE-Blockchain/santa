@@ -154,6 +154,12 @@ definitions:
     - join_twitter_ion
     - join_telegram_ion
     - join_youtube
+    - join_twitter_multiversx
+    - join_twitter_xportal
+    - join_telegram_multiversx
+    - join_bulllish_cmc
+    - join_ion_cmc
+    - join_watchlist_cmc
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -230,6 +236,12 @@ definitions:
     - JoinTwitterIONType
     - JoinTelegramIONType
     - JoinYoutubeType
+    - JoinTwitterMultiversxType
+    - JoinTwitterXPortalType
+    - JoinTelegramMultiversxType
+    - JoinBullishCMCType
+    - JoinIONCMCType
+    - JoinWatchListCMCType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
@@ -543,6 +555,12 @@ paths:
         - signup_callfluent
         - signup_sauces
         - signup_sealsend
+        - join_twitter_multiversx
+        - join_twitter_xportal
+        - join_telegram_multiversx
+        - join_bulllish_cmc
+        - join_ion_cmc
+        - join_watchlist_cmc
         in: path
         name: taskType
         required: true
@@ -742,6 +760,12 @@ paths:
         - signup_callfluent
         - signup_sauces
         - signup_sealsend
+        - join_twitter_multiversx
+        - join_twitter_xportal
+        - join_telegram_multiversx
+        - join_bulllish_cmc
+        - join_ion_cmc
+        - join_watchlist_cmc
         in: path
         name: taskType
         required: true

@@ -28,6 +28,18 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_watchlist_cmc
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://coinmarketcap.com
+  - type: join_ion_cmc
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://coinmarketcap.com
+  - type: join_bullish_cmc
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://coinmarketcap.com
   - type: claim_username
     prize: 500
     icon: https://ice-staging.b-cdn.net/task.svg
@@ -354,6 +366,10 @@ tasksList: &tasksList
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
     url: www.sunwavestoken.com/@callfluent
+  - type: signup_sunwaves
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: www.sunwavestoken.com/@callfluent
   - type: signup_sauces
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
@@ -362,6 +378,18 @@ tasksList: &tasksList
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
     url: www.sunwavestoken.com/@sealsend
+  - type: join_twitter_multiversx
+    prize: 1500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://x.com/MultiversX
+  - type: join_twitter_xportal
+    prize: 1500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://x.com/xPortalApp
+  - type: join_telegram_multiversx
+    prize: 1500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/MultiversXAnn
 badgesList: &badgesList
   levels:
     - name: Wave Starter
