@@ -30,16 +30,17 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task, dryRun 
 	if err != nil && !errors.Is(err, ErrRelationNotFound) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", task.UserID)
 	}
-	completed := userProgress.checkTaskCompleted(r, task)
-	if dryRun && r.tasksV2Enabled(task.UserID) {
-		if !completed {
+	if r.tasksV2Enabled(task.UserID) {
+		if dryRun {
+			if userProgress == nil || !userProgress.checkTaskCompleted(r, task) {
+				return errors.Wrapf(ErrTaskNotCompleted, "task is not completed for: %v", task.UserID)
+			}
+
+			return nil
+		}
+		if userProgress != nil && !userProgress.checkTaskCompleted(r, task) {
 			return errors.Wrapf(ErrTaskNotCompleted, "task is not completed for: %v", task.UserID)
 		}
-
-		return nil
-	}
-	if userProgress != nil && !completed && r.tasksV2Enabled(task.UserID) {
-		return errors.Wrapf(ErrTaskNotCompleted, "task is not completed for: %v", task.UserID)
 	}
 	if userProgress == nil {
 		userProgress = new(progress)
