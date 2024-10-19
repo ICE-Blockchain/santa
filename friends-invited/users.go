@@ -73,7 +73,7 @@ func (s *userTableSource) deleteFriendsInvited(ctx context.Context, us *users.Us
 		if _, errDelUser := storage.Exec(ctx, tx, `DELETE FROM friends_invited WHERE user_id = $1`, us.Before.ID); errDelUser != nil {
 			return errors.Wrapf(errDelUser, "failed to delete friends-invited for:%#v", us)
 		}
-		if us.Before.ReferredBy == "" || us.Before.ReferredBy == us.Before.ID || !us.Before.IsHuman() {
+		if us.Before.ReferredBy == "" || us.Before.ReferredBy == us.Before.ID {
 			return nil
 		}
 		sql := `INSERT INTO referrals(user_id,referred_by, processed_at, deleted) VALUES ($1,$2,$3, true)`
