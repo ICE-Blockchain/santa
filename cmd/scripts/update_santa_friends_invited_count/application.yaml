@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: ice License 1.0
+
+development: false
+logger:
+  encoder: console
+  level: info
+santa: &santa
+  wintr/connectors/storage/v2:
+    runDDL: true
+    primaryURL: postgresql://root:pass@localhost:5436/ice # TODO: Change to santa production primary URL.
+    credentials:
+      user: root      # TODO: Change to production santa user.
+      password: pass  # TODO: Change to production santa password.
+    replicaURLs:
+      - postgresql://root:pass@localhost:5436/ice # TODO: Change to santa production replica URL.
+santa_test:
+  <<: *santa
+users: &users
+  skipIp2LocationBinary: true
+  disableConsumer: true
+  wintr/connectors/storage/v2:
+    runDDL: true
+    primaryURL: postgresql://root:pass@localhost:5433/eskimo # TODO: Change to eskimo production primary URL.
+    credentials:
+      user: root     # TODO: Change to production eskimo user.     
+      password: pass # TODO: Change to production eskimo password.
+    replicaURLs:
+      - postgresql://root:pass@localhost:5433/eskimo # TODO: Change to eskimo production replica URL.
+users_test:
+  <<: *users
