@@ -91,7 +91,7 @@ func (u *updater) update(ctx context.Context) {
 		}
 
 		/******************************************************************************************************************************************************
-			2. Fetching tasks and badges specific data.
+			2. Fetching tasks progress data.
 		******************************************************************************************************************************************************/
 		var userKeysProgress []string
 		actualFriendsInvitedCount := make(map[string]uint64, len(usrs))
