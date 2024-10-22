@@ -51,7 +51,7 @@
     "title": "Add ION to CoinGecko portfolio",
     "shortDescription": "Easily track $ICE performance.",
     "longDescription": "Press Start to open Ice Open Network’s page on CoinGecko, and press the “Add to Portfolio” button to keep track with $ICE performance.",
-    "errorDescription": "Verification failed. Please ensure added ION to your CoinGecko portfolio and try again."
+    "errorDescription": "Verification failed. Please ensure you added ION to your CoinGecko portfolio and try again."
   },
   "es": {
     "title": "Añade ION a tu portafolio de CoinGecko",
