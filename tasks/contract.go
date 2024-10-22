@@ -42,6 +42,7 @@ const (
 	JoinBullishCMCType         Type = "join_bulllish_cmc"
 	JoinIONCMCType             Type = "join_ion_cmc"
 	JoinWatchListCMCType       Type = "join_watchlist_cmc"
+	JoinPortfolioCoinGeckoType Type = "join_portfolio_coingecko"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"

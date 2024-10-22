@@ -40,6 +40,10 @@ tasksList: &tasksList
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
     url: https://coinmarketcap.com
+  - type: join_portfolio_coingecko
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://www.coingecko.com/en/coins/ice-network
   - type: claim_username
     prize: 500
     icon: https://ice-staging.b-cdn.net/task.svg
