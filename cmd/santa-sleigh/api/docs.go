@@ -449,7 +449,8 @@ const docTemplate = `{
                             "join_telegram_multiversx",
                             "join_bulllish_cmc",
                             "join_ion_cmc",
-                            "join_watchlist_cmc"
+                            "join_watchlist_cmc",
+                            "join_portfolio_coingecko"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -620,7 +621,8 @@ const docTemplate = `{
                             "join_telegram_multiversx",
                             "join_bulllish_cmc",
                             "join_ion_cmc",
-                            "join_watchlist_cmc"
+                            "join_watchlist_cmc",
+                            "join_portfolio_coingecko"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -922,6 +924,7 @@ const docTemplate = `{
                 "join_bulllish_cmc",
                 "join_ion_cmc",
                 "join_watchlist_cmc",
+                "join_portfolio_coingecko",
                 "watch_video_with_code_confirmation_1",
                 "invite_friends_5",
                 "invite_friends_10",
@@ -1004,6 +1007,7 @@ const docTemplate = `{
                 "JoinBullishCMCType",
                 "JoinIONCMCType",
                 "JoinWatchListCMCType",
+                "JoinPortfolioCoinGeckoType",
                 "WatchVideoWithCodeConfirmation1Type",
                 "InviteFriends5Type",
                 "InviteFriends10Type",
