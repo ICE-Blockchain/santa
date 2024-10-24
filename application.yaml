@@ -43,7 +43,11 @@ tasksList: &tasksList
   - type: join_portfolio_coingecko
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
-    url: https://www.coingecko.com/en/coins/ice-network
+    url: https://www.coingecko.com/en/coins/ice-network 
+  - type: join_holdcoin
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/theHoldCoinBot/app?startapp=ref_yZzpv1mm
   - type: claim_username
     prize: 500
     icon: https://ice-staging.b-cdn.net/task.svg
