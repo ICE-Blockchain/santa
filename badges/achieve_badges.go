@@ -225,12 +225,11 @@ func (s *userTableSource) upsertProgress(ctx context.Context, us *users.UserSnap
 				   DO UPDATE
 					   SET hide_badges = EXCLUDED.hide_badges
 				   WHERE COALESCE(badge_progress.hide_badges, FALSE) != COALESCE(EXCLUDED.hide_badges, FALSE)`
-	_, err := storage.Exec(ctx, s.db, sql, us.ID, hideBadges)
+	if _, err := storage.Exec(ctx, s.db, sql, us.ID, hideBadges); err != nil {
+		return errors.Wrapf(err, "failed to upsert progress for %#v", us)
+	}
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(err, "failed to upsert progress for %#v", us),
-		errors.Wrapf(s.sendTryAchieveBadgesCommandMessage(ctx, us.ID), "failed to sendTryAchieveBadgesCommandMessage for userID:%v", us.ID),
-	).ErrorOrNil()
+	return nil
 }
 
 func (s *userTableSource) handleUserDeletion(ctx context.Context, us *users.UserSnapshot) error {
@@ -286,11 +285,26 @@ func (f *friendsInvitedSource) Process(ctx context.Context, msg *messagebroker.M
 	if err := json.UnmarshalContext(ctx, msg.Value, friends); err != nil {
 		return errors.Wrapf(err, "cannot unmarshal %v into %#v", string(msg.Value), friends)
 	}
+	pr, err := f.getProgress(ctx, friends.UserID, true)
+	if err != nil && !errors.Is(err, storage.ErrRelationNotFound) {
+		return errors.Wrapf(err, "failed to getProgress for userID:%v", friends.UserID)
+	}
+	if uErr := f.updateFriendsInvited(ctx, friends); uErr != nil {
+		return errors.Wrapf(uErr, "failed to update friends invited count for %#v", friends)
+	}
+	if pr == nil {
+		pr = &progress{
+			UserID:         friends.UserID,
+			AchievedBadges: &users.Enum[Type]{},
+		}
+	}
+	pr.FriendsInvited = int64(friends.FriendsInvited) //nolint:gosec // .
+	achievedBadge := pr.reEvaluateAchievedBadges()
+	if achievedBadge == nil || (pr.AchievedBadges != nil && len(*pr.AchievedBadges) == len(*achievedBadge)) {
+		return nil
+	}
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(f.updateFriendsInvited(ctx, friends), "failed to update badges friendsInvited for %#v", friends),
-		errors.Wrapf(f.sendTryAchieveBadgesCommandMessage(ctx, friends.UserID), "failed to sendTryAchieveBadgesCommandMessage for userID:%v", friends.UserID),
-	).ErrorOrNil()
+	return errors.Wrapf(f.sendTryAchieveBadgesCommandMessage(ctx, friends.UserID), "failed to sendTryAchieveBadgesCommandMessage for userID:%v", friends.UserID)
 }
 
 func (f *friendsInvitedSource) updateFriendsInvited(ctx context.Context, friends *friendsinvited.Count) error {
@@ -369,6 +383,7 @@ func (s *balancesTableSource) Process(ctx context.Context, msg *messagebroker.Me
 	return errors.Wrapf(s.upsertProgress(ctx, int64(bal.Standard+bal.PreStaking), bal.UserID), "failed to upsertProgress for Balances:%#v", bal)
 }
 
+//nolint:funlen,gocyclo,revive,cyclop // .
 func (s *balancesTableSource) upsertProgress(ctx context.Context, balance int64, userID string) error {
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "context failed")
@@ -387,12 +402,22 @@ func (s *balancesTableSource) upsertProgress(ctx context.Context, balance int64,
 				DO UPDATE
 					SET balance = EXCLUDED.balance
 				WHERE COALESCE(badge_progress.balance, 0) != COALESCE(EXCLUDED.balance, 0)`
-	_, err = storage.Exec(ctx, s.db, sql, userID, balance)
+	if _, err = storage.Exec(ctx, s.db, sql, userID, balance); err != nil {
+		return errors.Wrapf(err, "failed to insert/update progress balance:%v for userID:%v", balance, userID)
+	}
+	if pr == nil {
+		pr = &progress{
+			UserID:         userID,
+			AchievedBadges: &users.Enum[Type]{},
+		}
+	}
+	pr.Balance = balance
+	achievedBadges := pr.reEvaluateAchievedBadges()
+	if achievedBadges == nil || (pr.AchievedBadges != nil && len(*pr.AchievedBadges) == len(*achievedBadges)) {
+		return nil
+	}
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(err, "failed to insert/update progress balance:%v for userID:%v", balance, userID),
-		errors.Wrapf(s.sendTryAchieveBadgesCommandMessage(ctx, userID), "failed to sendTryAchieveBadgesCommandMessage for userID:%v", userID),
-	).ErrorOrNil()
+	return errors.Wrapf(s.sendTryAchieveBadgesCommandMessage(ctx, userID), "failed to sendTryAchieveBadgesCommandMessage for userID:%v", userID)
 }
 
 func (s *globalTableSource) Process(ctx context.Context, msg *messagebroker.Message) error {

@@ -43,28 +43,40 @@ func (s *miningSessionSource) Process(ctx context.Context, msg *messagebroker.Me
 	return errors.Wrapf(s.upsertProgress(ctx, ms.MiningStreak, ms.UserID), "failed to upsertProgress for miningSession:%#v", ms)
 }
 
+//nolint:funlen // .
 func (s *miningSessionSource) upsertProgress(ctx context.Context, miningStreak uint64, userID string) error {
 	if ctx.Err() != nil {
 		return errors.Wrap(ctx.Err(), "context failed")
 	}
-	if pr, err := s.getProgress(ctx, userID, true); err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
+	pr, err := s.getProgress(ctx, userID, true)
+	if err != nil && !errors.Is(err, storage.ErrRelationNotFound) ||
 		(pr != nil && pr.CompletedLevels != nil &&
 			(len(*pr.CompletedLevels) == len(&AllLevelTypes) ||
 				AreLevelsCompleted(pr.CompletedLevels, Level1Type, Level2Type, Level3Type, Level4Type, Level5Type))) {
 		return errors.Wrapf(err, "failed to getProgress for userID:%v", userID)
 	}
 	insertTuple := &progress{UserID: userID, MiningStreak: miningStreak}
-	_, err := storage.Exec(ctx, s.db, `
+	_, err = storage.Exec(ctx, s.db, `
 		INSERT INTO levels_and_roles_progress(user_id, mining_streak) VALUES ($1,$2)
 		ON CONFLICT (user_id) DO UPDATE 
 			SET mining_streak = EXCLUDED.mining_streak
 		WHERE levels_and_roles_progress.mining_streak != EXCLUDED.mining_streak`, insertTuple.UserID, insertTuple.MiningStreak)
+	if err != nil {
+		return errors.Wrapf(err, "failed to upsert progress for %#v", insertTuple)
+	}
+	if pr == nil {
+		pr = &progress{
+			UserID:          userID,
+			CompletedLevels: &users.Enum[LevelType]{},
+		}
+	}
+	pr.MiningStreak = miningStreak
+	completedLevels := pr.reEvaluateCompletedLevels(s.repository)
+	if completedLevels == nil || (pr.CompletedLevels != nil && len(*pr.CompletedLevels) == len(*completedLevels)) {
+		return nil
+	}
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(err, "failed to upsert progress for %#v", insertTuple),
-		errors.Wrapf(s.sendTryCompleteLevelsCommandMessage(ctx, userID),
-			"failed to sendTryCompleteLevelsCommandMessage for userID:%v", userID),
-	).ErrorOrNil()
+	return errors.Wrapf(s.sendTryCompleteLevelsCommandMessage(ctx, userID), "failed to sendTryCompleteLevelsCommandMessage for userID:%v", userID)
 }
 
 func (s *completedTasksSource) Process(ctx context.Context, msg *messagebroker.Message) error {
@@ -219,13 +231,17 @@ func (s *userTableSource) upsertProgress(ctx context.Context, us *users.UserSnap
 			}
 		}
 	}
+	pr, err := s.getProgress(ctx, us.ID, true)
+	if err != nil && !errors.Is(err, storage.ErrRelationNotFound) {
+		return errors.Wrapf(err, "failed to getProgress for userID:%v", us.ID)
+	}
 	insertTuple := &progress{
 		UserID:          us.ID,
 		PhoneNumberHash: &us.PhoneNumberHash,
 		HideLevel:       hideLevel,
 		HideRole:        hideRole,
 	}
-	_, err := storage.Exec(ctx, s.db, `
+	_, err = storage.Exec(ctx, s.db, `
 		INSERT INTO levels_and_roles_progress(user_id, phone_number_hash, hide_level, hide_role)
 			VALUES ($1, $2, $3, $4)
 			ON CONFLICT (user_id) DO UPDATE SET 
@@ -236,11 +252,14 @@ func (s *userTableSource) upsertProgress(ctx context.Context, us *users.UserSnap
 			   OR levels_and_roles_progress.hide_level != EXCLUDED.hide_level
 			   OR levels_and_roles_progress.hide_role != EXCLUDED.hide_role`,
 		insertTuple.UserID, insertTuple.PhoneNumberHash, insertTuple.HideLevel, insertTuple.HideRole)
+	if err != nil {
+		return errors.Wrapf(err, "failed to upsert progress for %#v", insertTuple)
+	}
+	if pr != nil && pr.PhoneNumberHash == &us.PhoneNumberHash {
+		return nil
+	}
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(err, "failed to upsert progress for %#v", insertTuple),
-		errors.Wrapf(s.sendTryCompleteLevelsCommandMessage(ctx, us.ID), "failed to sendTryCompleteLevelsCommandMessage for userID:%v", us.ID),
-	).ErrorOrNil()
+	return errors.Wrapf(s.sendTryCompleteLevelsCommandMessage(ctx, us.ID), "failed to sendTryCompleteLevelsCommandMessage for userID:%v", us.ID)
 }
 
 func (f *friendsInvitedSource) Process(ctx context.Context, msg *messagebroker.Message) error {
@@ -250,15 +269,30 @@ func (f *friendsInvitedSource) Process(ctx context.Context, msg *messagebroker.M
 	if len(msg.Value) == 0 {
 		return nil
 	}
+	pr, err := f.getProgress(ctx, msg.Key, true)
+	if err != nil && !errors.Is(err, storage.ErrRelationNotFound) {
+		return errors.Wrapf(err, "failed to getProgress for userID:%v", msg.Key)
+	}
 	friends := new(friendsinvited.Count)
-	if err := json.UnmarshalContext(ctx, msg.Value, friends); err != nil {
-		return errors.Wrapf(err, "cannot unmarshal %v into %#v", string(msg.Value), friends)
+	if uErr := json.UnmarshalContext(ctx, msg.Value, friends); uErr != nil {
+		return errors.Wrapf(uErr, "cannot unmarshal %v into %#v", string(msg.Value), friends)
+	}
+	if upErr := f.updateFriendsInvited(ctx, friends); upErr != nil {
+		return errors.Wrapf(upErr, "failed to update levels friends invited count for %#v", friends)
+	}
+	if pr == nil {
+		pr = &progress{
+			UserID:       friends.UserID,
+			EnabledRoles: &users.Enum[RoleType]{},
+		}
+	}
+	pr.FriendsInvited = friends.FriendsInvited
+	enabledRoles := pr.reEvaluateEnabledRoles(f.repository)
+	if enabledRoles == nil || (pr.EnabledRoles != nil && len(*pr.EnabledRoles) == len(*enabledRoles)) {
+		return nil
 	}
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(f.updateFriendsInvited(ctx, friends), "failed to update levels friends invited count for %#v", friends),
-		errors.Wrapf(f.sendTryCompleteLevelsCommandMessage(ctx, friends.UserID), "failed to sendTryCompleteLevelsCommandMessage for userID:%v", friends.UserID),
-	).ErrorOrNil()
+	return errors.Wrapf(f.sendTryCompleteLevelsCommandMessage(ctx, friends.UserID), "failed to sendTryCompleteLevelsCommandMessage for userID:%v", friends.UserID)
 }
 
 func (f *friendsInvitedSource) updateFriendsInvited(ctx context.Context, friends *friendsinvited.Count) error {

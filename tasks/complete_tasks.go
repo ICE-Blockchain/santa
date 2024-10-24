@@ -77,10 +77,15 @@ func (r *repository) PseudoCompleteTask(ctx context.Context, task *Task, dryRun 
 				prize = r.cfg.TasksList[ix].Prize
 			}
 		}
+		completedTasks, ok := params[2].(*users.Enum[Type])
+		if !ok {
+			log.Panic("failed to cast completed tasks")
+		}
 		sErr = r.sendCompletedTaskMessage(ctx, &CompletedTask{
-			UserID: task.UserID,
-			Type:   task.Type,
-			Prize:  prize,
+			UserID:         task.UserID,
+			Type:           task.Type,
+			CompletedTasks: uint64(len(*completedTasks)),
+			Prize:          prize,
 		})
 	}
 	if sErr != nil {
@@ -523,11 +528,14 @@ func (s *miningSessionSource) upsertProgress(ctx context.Context, userID string)
 			WHERE task_progress.mining_started != EXCLUDED.mining_started;`
 	_, err := storage.Exec(ctx, s.db, sql, userID, true)
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(err, "failed to upsert progress for %v %v", userID, true),
-		errors.Wrapf(s.sendTryCompleteTasksCommandMessage(ctx, userID),
-			"failed to sendTryCompleteTasksCommandMessage for userID:%v", userID),
-	).ErrorOrNil()
+	var errs *multierror.Error
+	errs = multierror.Append(errors.Wrapf(err, "failed to upsert progress for %v %v", userID, true))
+	if !s.tasksV2Enabled(userID) {
+		errs = multierror.Append(errs, errors.Wrapf(s.sendTryCompleteTasksCommandMessage(ctx, userID),
+			"failed to sendTryCompleteTasksCommandMessage for userID:%v", userID))
+	}
+
+	return errors.Wrapf(errs.ErrorOrNil(), "failed to upsert progress for %v %v", userID, true)
 }
 
 func (s *userTableSource) Process(ctx context.Context, msg *messagebroker.Message) error {
@@ -568,10 +576,14 @@ func (s *userTableSource) upsertProgress(ctx context.Context, us *users.UserSnap
 			   OR task_progress.profile_picture_set != EXCLUDED.profile_picture_set;`
 	_, err := storage.Exec(ctx, s.db, sql, insertTuple.UserID, insertTuple.UsernameSet, insertTuple.ProfilePictureSet)
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(err, "failed to upsert progress for %#v", us),
-		errors.Wrapf(s.sendTryCompleteTasksCommandMessage(ctx, us.ID), "failed to sendTryCompleteTasksCommandMessage for userID:%v", us.ID),
-	).ErrorOrNil()
+	var errs *multierror.Error
+	errs = multierror.Append(errs, errors.Wrapf(err, "failed to upsert progress for %#v", us))
+	if !s.tasksV2Enabled(us.ID) {
+		errs = multierror.Append(errs, errors.Wrapf(s.sendTryCompleteTasksCommandMessage(ctx, us.ID),
+			"failed to sendTryCompleteTasksCommandMessage for userID:%v", us.ID))
+	}
+
+	return errors.Wrapf(errs.ErrorOrNil(), "failed to upsert progress for %#v", us)
 }
 
 func (f *friendsInvitedSource) Process(ctx context.Context, msg *messagebroker.Message) error {
@@ -586,10 +598,14 @@ func (f *friendsInvitedSource) Process(ctx context.Context, msg *messagebroker.M
 		return errors.Wrapf(err, "cannot unmarshal %v into %#v", string(msg.Value), friends)
 	}
 
-	return multierror.Append( //nolint:wrapcheck // Not needed.
-		errors.Wrapf(f.updateFriendsInvited(ctx, friends), "failed to update tasks friends invited for %#v", friends),
-		errors.Wrapf(f.sendTryCompleteTasksCommandMessage(ctx, friends.UserID), "failed to sendTryCompleteTasksCommandMessage for userID:%v", friends.UserID),
-	).ErrorOrNil()
+	var errs *multierror.Error
+	errs = multierror.Append(errs, errors.Wrapf(f.updateFriendsInvited(ctx, friends), "failed to update tasks friends invited for %#v", friends))
+	if !f.tasksV2Enabled(friends.UserID) {
+		errs = multierror.Append(errs, errors.Wrapf(f.sendTryCompleteTasksCommandMessage(ctx, friends.UserID),
+			"failed to sendTryCompleteTasksCommandMessage for userID:%v", friends.UserID))
+	}
+
+	return errors.Wrapf(errs.ErrorOrNil(), "failed to Process for %#v", friends)
 }
 
 func (f *friendsInvitedSource) updateFriendsInvited(ctx context.Context, friends *friendsinvited.Count) error {
