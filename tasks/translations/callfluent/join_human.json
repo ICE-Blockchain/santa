@@ -1,0 +1,260 @@
+{
+  "af": {
+    "title": "Sluit aan by HUMAN",
+    "shortDescription": "Voorspel, deel en verdien.",
+    "longDescription": "Betrokke raak by werklike gebeure, bou 'n reputasie, en verbind met ander deur gedeelde voorspellings.",
+    "errorDescription": "Verifikasie het misluk. Maak asseblief seker dat jy by HUMAN aangesluit het en probeer weer."
+  },
+  "ar": {
+    "title": "انضم إلى HUMAN",
+    "shortDescription": "توقع، شارك واكسب.",
+    "longDescription": "شارك في الأحداث الواقعية، وابنِ سمعة، واتصل بالآخرين من خلال التوقعات المشتركة.",
+    "errorDescription": "فشل التحقق. يرجى التأكد من أنك انضممت إلى HUMAN وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "HUMAN-a qoşulun",
+    "shortDescription": "Proqnoz ver, paylaş və qazan.",
+    "longDescription": "Real hadisələrdə iştirak edin, nüfuz qazanın və ortaq proqnozlarla başqaları ilə əlaqə qurun.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa HUMAN-a qoşulduğunuzdan əmin olun və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Присъединете се към HUMAN",
+    "shortDescription": "Прогнозирайте, споделяйте и печелете.",
+    "longDescription": "Включете се в реални събития, изградете репутация и се свържете с други чрез споделени прогнози.",
+    "errorDescription": "Проверката не бе успешна. Моля, уверете се, че сте се присъединили към HUMAN и опитайте отново."
+  },
+  "bn": {
+    "title": "HUMAN-এ যোগ দিন",
+    "shortDescription": "ভবিষ্যদ্বাণী করুন, শেয়ার করুন এবং উপার্জন করুন।",
+    "longDescription": "বাস্তব-বিশ্বের ঘটনাগুলিতে জড়িত হন, একটি খ্যাতি তৈরি করুন এবং ভাগ করা পূর্বাভাসের মাধ্যমে অন্যদের সাথে সংযোগ করুন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন যে আপনি HUMAN-এ যোগ দিয়েছেন এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Připojte se k HUMAN",
+    "shortDescription": "Předpovídejte, sdílejte a vydělávejte.",
+    "longDescription": "Zapojte se do reálných událostí, budujte si reputaci a propojte se s ostatními prostřednictvím sdílených předpovědí.",
+    "errorDescription": "Ověření selhalo. Ujistěte se, že jste se připojili k HUMAN, a zkuste to znovu."
+  },
+  "de": {
+    "title": "Tritt HUMAN bei",
+    "shortDescription": "Prognostizieren, teilen und verdienen.",
+    "longDescription": "Beteiligen Sie sich an realen Ereignissen, bauen Sie einen Ruf auf und verbinden Sie sich mit anderen durch gemeinsame Prognosen.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte stelle sicher, dass du HUMAN beigetreten bist, und versuche es erneut."
+  },
+  "el": {
+    "title": "Γίνετε μέλος του HUMAN",
+    "shortDescription": "Προβλέψτε, μοιραστείτε και κερδίστε.",
+    "longDescription": "Συμμετάσχετε σε πραγματικά γεγονότα, χτίστε μια φήμη και συνδεθείτε με άλλους μέσω κοινών προβλέψεων.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Βεβαιωθείτε ότι έχετε εγγραφεί στο HUMAN και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Join HUMAN",
+    "shortDescription": "Predict, share and earn.",
+    "longDescription": "Engage with real-world events, build a reputation, and connect with others through shared forecasts.",
+    "errorDescription": "Verification failed. Please ensure you joined HUMAN and try again."
+  },
+  "es": {
+    "title": "Únete a HUMAN",
+    "shortDescription": "Predice, comparte y gana.",
+    "longDescription": "Involúcrate en eventos reales, construye una reputación y conéctate con otros a través de pronósticos compartidos.",
+    "errorDescription": "La verificación falló. Por favor, asegúrate de haberte unido a HUMAN e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "به HUMAN بپیوندید",
+    "shortDescription": "پیش‌بینی کنید، به اشتراک بگذارید و کسب درآمد کنید.",
+    "longDescription": "با رویدادهای واقعی درگیر شوید، شهرت ایجاد کنید و از طریق پیش‌بینی‌های مشترک با دیگران ارتباط برقرار کنید.",
+    "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً مطمئن شوید که به HUMAN پیوسته‌اید و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Rejoignez HUMAN",
+    "shortDescription": "Prédisez, partagez et gagnez.",
+    "longDescription": "Participez aux événements réels, construisez une réputation et connectez-vous avec les autres grâce aux prévisions partagées.",
+    "errorDescription": "Échec de la vérification. Veuillez vous assurer que vous avez rejoint HUMAN et réessayez."
+  },
+  "gu": {
+    "title": "HUMAN માં જોડાઓ",
+    "shortDescription": "અનુમાન કરો, શેર કરો અને કમાવો.",
+    "longDescription": "વાસ્તવિક ઇવેન્ટ્સમાં જોડાઓ, પ્રતિષ્ઠા બનાવો અને શેર કરેલી આગાહી દ્વારા અન્ય સાથે જોડાઓ.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમે HUMAN માં જોડાયા છો અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "הצטרפו ל-HUMAN",
+    "shortDescription": "תחזו, שתפו והרווחו.",
+    "longDescription": "השתתפו באירועים אמיתיים, בנו מוניטין והתחברו לאחרים דרך תחזיות משותפות.",
+    "errorDescription": "האימות נכשל. אנא ודא שהצטרפת ל-HUMAN ונסה שוב."
+  },
+  "hi": {
+    "title": "HUMAN से जुड़ें",
+    "shortDescription": "पूर्वानुमान लगाएं, साझा करें और कमाएं।",
+    "longDescription": "वास्तविक-जीवन घटनाओं में भाग लें, प्रतिष्ठा बनाएं और साझा पूर्वानुमानों के माध्यम से दूसरों से जुड़ें।",
+    "errorDescription": "सत्यापन विफल। कृपया सुनिश्चित करें कि आपने HUMAN में शामिल हो गए हैं और फिर से प्रयास करें।"
+  },
+  "hu": {
+    "title": "Csatlakozz a HUMAN-hoz",
+    "shortDescription": "Előrejelezd, oszd meg és keress.",
+    "longDescription": "Vegyél részt valós eseményeken, építs hírnevet, és kapcsolódj másokhoz megosztott előrejelzéseken keresztül.",
+    "errorDescription": "Az ellenőrzés nem sikerült. Győződj meg róla, hogy csatlakoztál a HUMAN-hoz, és próbáld újra."
+  },
+  "id": {
+    "title": "Bergabunglah dengan HUMAN",
+    "shortDescription": "Prediksi, bagikan, dan hasilkan.",
+    "longDescription": "Terlibatlah dalam peristiwa dunia nyata, bangun reputasi, dan hubungkan dengan orang lain melalui perkiraan bersama.",
+    "errorDescription": "Verifikasi gagal. Pastikan Anda bergabung dengan HUMAN dan coba lagi."
+  },
+  "it": {
+    "title": "Unisciti a HUMAN",
+    "shortDescription": "Prevedi, condividi e guadagna.",
+    "longDescription": "Partecipa a eventi reali, costruisci una reputazione e connettiti con gli altri attraverso previsioni condivise.",
+    "errorDescription": "Verifica fallita. Assicurati di esserti unito a HUMAN e riprova."
+  },
+  "ja": {
+    "title": "HUMANに参加",
+    "shortDescription": "予測、共有して稼ぐ。",
+    "longDescription": "現実世界のイベントに参加し、評判を築き、共有された予測を通じて他の人とつながりましょう。",
+    "errorDescription": "確認に失敗しました。HUMANに参加したことを確認して、もう一度お試しください。"
+  },
+  "jv": {
+    "title": "Gabung HUMAN",
+    "shortDescription": "Prediksi, barengake lan entuk.",
+    "longDescription": "Melu acara nyata, mbangun reputasi, lan nyambung karo wong liya liwat ramalan sing dibagi.",
+    "errorDescription": "Verifikasi gagal. Mangga priksa manawa sampeyan wis gabung HUMAN lan coba maneh."
+  },
+  "kn": {
+    "title": "HUMAN ಗೆ ಸೇರಿ",
+    "shortDescription": "ಊಹಿಸಿ, ಹಂಚಿಕೊಳ್ಳಿ ಮತ್ತು ಸಂಪಾದಿಸಿ.",
+    "longDescription": "ನಿಜವಾದ ಘಟನೆಗಳಲ್ಲಿ ತೊಡಗಿಸಿ, ಕೈಗುಣ್ಯವನ್ನು ನಿರ್ಮಿಸಿ, ಮತ್ತು ಹಂಚಿಕೆ ಮಾಡಿದ ನಿರೀಕ್ಷೆಗಳ ಮೂಲಕ ಇತರರೊಡನೆ ಸಂಪರ್ಕಿಸಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. HUMAN ಗೆ ಸೇರಿದ್ದೀರೆಂದು ಖಚಿತಪಡಿಸಿ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "HUMAN에 가입하세요",
+    "shortDescription": "예측하고, 공유하고, 수익을 창출하세요.",
+    "longDescription": "현실 세계의 이벤트에 참여하고, 명성을 쌓고, 공유된 예측을 통해 다른 사람들과 연결하세요.",
+    "errorDescription": "인증에 실패했습니다. HUMAN에 가입했는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "HUMAN मध्ये सामील व्हा",
+    "shortDescription": "अंदाज लावा, सामायिक करा आणि कमवा.",
+    "longDescription": "वास्तविक-जगाच्या घटनांमध्ये गुंतवा, प्रतिष्ठा निर्माण करा आणि सामायिक अंदाजांद्वारे इतरांशी कनेक्ट व्हा.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया आपण HUMAN मध्ये सामील झालात का ते सुनिश्चित करा आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Sertai HUMAN",
+    "shortDescription": "Ramalkan, kongsi dan dapatkan.",
+    "longDescription": "Terlibat dengan acara dunia nyata, bina reputasi, dan hubungkan dengan orang lain melalui ramalan yang dikongsi.",
+    "errorDescription": "Pengesahan gagal. Pastikan anda menyertai HUMAN dan cuba lagi."
+  },
+  "nb": {
+    "title": "Bli med i HUMAN",
+    "shortDescription": "Forutsi, del og tjen.",
+    "longDescription": "Engasjer deg i virkelige hendelser, bygg et omdømme, og knytt kontakt med andre gjennom delte prognoser.",
+    "errorDescription": "Verifiseringen mislyktes. Vennligst sørg for at du har blitt med i HUMAN, og prøv igjen."
+  },
+  "nn": {
+    "title": "Bli med i HUMAN",
+    "shortDescription": "Forutsjå, del og tent.",
+    "longDescription": "Engasjer deg i verkelege hendingar, bygg eit omdøme, og knytt kontakt med andre gjennom delte prognosar.",
+    "errorDescription": "Verifisering mislukkast. Ver venleg å sjekka at du har blitt med i HUMAN, og prøv igjen."
+  },
+  "pa": {
+    "title": "HUMAN ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+    "shortDescription": "ਅੰਦਾਜ਼ਾ ਲਗਾਓ, ਸਾਂਝ ਕਰੋ ਅਤੇ ਕਮਾਓ।",
+    "longDescription": "ਅਸਲ-ਜਗਤ ਦੀਆਂ ਘਟਨਾਵਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ, ਇੱਕ ਖ਼ੁਦ ਦੀ ਖੁਦ ਮੁਹਿੰਮ ਬਣਾਓ ਅਤੇ ਸਾਂਝੇ ਤਜਰਬਿਆਂ ਰਾਹੀਂ ਹੋਰਾਂ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।",
+    "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ HUMAN ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ ਹੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  },
+  "pl": {
+    "title": "Dołącz do HUMAN",
+    "shortDescription": "Przewiduj, dziel się i zarabiaj.",
+    "longDescription": "Zaangażuj się w wydarzenia ze świata rzeczywistego, buduj reputację i nawiązuj kontakty z innymi poprzez wspólne prognozy.",
+    "errorDescription": "Weryfikacja nie powiodła się. Upewnij się, że dołączyłeś do HUMAN i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Junte-se ao HUMAN",
+    "shortDescription": "Preveja, compartilhe e ganhe.",
+    "longDescription": "Envolva-se com eventos do mundo real, construa uma reputação e conecte-se com outras pessoas através de previsões compartilhadas.",
+    "errorDescription": "Falha na verificação. Verifique se você se juntou ao HUMAN e tente novamente."
+  },
+  "ro": {
+    "title": "Alătură-te HUMAN",
+    "shortDescription": "Prezice, împărtășește și câștigă.",
+    "longDescription": "Implică-te în evenimente reale, construiește o reputație și conectează-te cu alții prin prognoze comune.",
+    "errorDescription": "Verificarea a eșuat. Asigură-te că te-ai alăturat HUMAN și încearcă din nou."
+  },
+  "ru": {
+    "title": "Присоединяйтесь к HUMAN",
+    "shortDescription": "Предсказывайте, делитесь и зарабатывайте.",
+    "longDescription": "Участвуйте в реальных событиях, зарабатывайте репутацию и общайтесь с другими через совместные прогнозы.",
+    "errorDescription": "Не удалось выполнить проверку. Убедитесь, что вы присоединились к HUMAN, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Pripojte sa k HUMAN",
+    "shortDescription": "Predpovedajte, zdieľajte a zarábajte.",
+    "longDescription": "Zapojte sa do reálnych udalostí, budujte si reputáciu a spájajte sa s ostatnými prostredníctvom spoločných predpovedí.",
+    "errorDescription": "Overenie zlyhalo. Uistite sa, že ste sa pripojili k HUMAN, a skúste to znova."
+  },
+  "sl": {
+    "title": "Pridružite se HUMAN",
+    "shortDescription": "Napovedujte, delite in zaslužite.",
+    "longDescription": "Sodelujte v resničnih dogodkih, gradite ugled in se povežite z drugimi preko deljenih napovedi.",
+    "errorDescription": "Preverjanje ni uspelo. Prepričajte se, da ste se pridružili HUMAN, in poskusite znova."
+  },
+  "sq": {
+    "title": "Bashkohuni me HUMAN",
+    "shortDescription": "Parashiko, ndaje dhe fito.",
+    "longDescription": "Angazhohu në ngjarje të botës reale, ndërto një reputacion dhe lidhu me të tjerët përmes parashikimeve të përbashkëta.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi sigurohuni që të jeni bashkuar me HUMAN dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Gå med i HUMAN",
+    "shortDescription": "Förutsäg, dela och tjäna.",
+    "longDescription": "Delta i verkliga händelser, bygg upp ett rykte och koppla ihop med andra genom delade prognoser.",
+    "errorDescription": "Verifieringen misslyckades. Kontrollera att du har gått med i HUMAN och försök igen."
+  },
+  "te": {
+    "title": "HUMAN లో చేరండి",
+    "shortDescription": "అంచనా వేయండి, పంచుకోండి మరియు సంపాదించండి.",
+    "longDescription": "వాస్తవ సంఘటనలలో పాల్గొనండి, పేరు పొందండి మరియు పంచుకున్న అంచనాల ద్వారా ఇతరులతో కనెక్ట్ అవ్వండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. HUMAN లో చేరారని నిర్ధారించుకుని మళ్లీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "เข้าร่วม HUMAN",
+    "shortDescription": "ทำนาย แบ่งปัน และรับรายได้",
+    "longDescription": "มีส่วนร่วมกับเหตุการณ์จริง สร้างชื่อเสียง และเชื่อมต่อกับผู้อื่นผ่านการคาดการณ์ที่แชร์",
+    "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าคุณเข้าร่วม HUMAN แล้วลองอีกครั้ง"
+  },
+  "tr": {
+    "title": "HUMAN'a Katıl",
+    "shortDescription": "Tahmin et, paylaş ve kazan.",
+    "longDescription": "Gerçek dünya olaylarına katıl, itibar oluştur ve ortak tahminler aracılığıyla diğerleriyle bağlantı kur.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen HUMAN'a katıldığınızdan emin olun ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Приєднайтеся до HUMAN",
+    "shortDescription": "Прогнозуйте, діліться та заробляйте.",
+    "longDescription": "Беріть участь у подіях реального світу, будуйте репутацію та зв'язуйтеся з іншими через спільні прогнози.",
+    "errorDescription": "Перевірка не вдалася. Переконайтеся, що ви приєдналися до HUMAN, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "HUMAN میں شامل ہوں",
+    "shortDescription": "پیشگوئی کریں، شیئر کریں اور کمائیں۔",
+    "longDescription": "حقیقی دنیا کے واقعات میں شامل ہوں، شہرت بنائیں، اور مشترکہ پیشگوئیوں کے ذریعے دوسروں سے جڑیں۔",
+    "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم یقینی بنائیں کہ آپ HUMAN میں شامل ہو گئے ہیں اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Tham gia HUMAN",
+    "shortDescription": "Dự đoán, chia sẻ và kiếm tiền.",
+    "longDescription": "Tham gia các sự kiện thực tế, xây dựng danh tiếng và kết nối với những người khác thông qua các dự đoán chung.",
+    "errorDescription": "Xác minh không thành công. Vui lòng đảm bảo rằng bạn đã tham gia HUMAN và thử lại."
+  },
+  "zh-hant": {
+    "title": "加入 HUMAN",
+    "shortDescription": "預測、分享和賺取收益。",
+    "longDescription": "參與現實世界事件，建立聲譽，並通過共享預測與他人聯繫。",
+    "errorDescription": "驗證失敗。請確保您已加入 HUMAN，然後再試一次。"
+  },
+  "zh": {
+    "title": "加入 HUMAN",
+    "shortDescription": "预测、分享并赚取收益。",
+    "longDescription": "参与现实世界的事件，建立声誉，通过共享预测与他人联系。",
+    "errorDescription": "验证失败。请确保您已加入 HUMAN，然后重试。"
+  }
+}

@@ -451,7 +451,8 @@ const docTemplate = `{
                             "join_ion_cmc",
                             "join_watchlist_cmc",
                             "join_portfolio_coingecko",
-                            "join_holdcoin"
+                            "join_holdcoin",
+                            "join_human"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -624,7 +625,8 @@ const docTemplate = `{
                             "join_ion_cmc",
                             "join_watchlist_cmc",
                             "join_portfolio_coingecko",
-                            "join_holdcoin"
+                            "join_holdcoin",
+                            "join_human"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -928,6 +930,7 @@ const docTemplate = `{
                 "join_watchlist_cmc",
                 "join_portfolio_coingecko",
                 "join_holdcoin",
+                "join_juman",
                 "watch_video_with_code_confirmation_1",
                 "invite_friends_5",
                 "invite_friends_10",
@@ -1012,6 +1015,7 @@ const docTemplate = `{
                 "JoinWatchListCMCType",
                 "JoinPortfolioCoinGeckoType",
                 "JoinHoldCoinType",
+                "JoinHumanType",
                 "WatchVideoWithCodeConfirmation1Type",
                 "InviteFriends5Type",
                 "InviteFriends10Type",
