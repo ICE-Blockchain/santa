@@ -79,7 +79,7 @@ func (u *updater) update(ctx context.Context) {
 				JOIN referral_acquisition_history rah
 					ON u.id = rah.user_id
 				GROUP BY u.id, rah.t1
-				ORDER BY u.hash_code ASC
+				ORDER BY u.created_at ASC
 				LIMIT $1
 				OFFSET $2`
 		usrs, err := storagepg.Select[eskimoUser](ctx, u.dbEskimo, sql, maxLimit, offset)
@@ -128,6 +128,9 @@ func (u *updater) update(ctx context.Context) {
 			concurrencyGuard <- struct{}{}
 			go func() {
 				defer wg.Done()
+				if bErr := u.updateBadges(ctx, usr, actualFriendsInvitedCount[usr.UserID]); bErr != nil {
+					log.Panic("can't update badges, userID:", usr.UserID, bErr)
+				}
 				if uErr := u.updateTasks(ctx, usr, actualFriendsInvitedCount[usr.UserID]); uErr != nil {
 					log.Panic("can't update tasks, userID:", usr.UserID, uErr)
 				}
@@ -144,6 +147,16 @@ func (u *updater) update(ctx context.Context) {
 		offset += maxLimit
 	}
 	wg.Wait()
+}
+
+func (u *updater) updateBadges(ctx context.Context, usr *commonUser, actualFriendsInvited uint64) error {
+	sql := `UPDATE badge_progress
+								SET friends_invited = $2
+							WHERE user_id = $1
+								  AND friends_invited != $2`
+	_, err := storagepg.Exec(ctx, u.dbSanta, sql, usr.UserID, actualFriendsInvited)
+
+	return errors.Wrapf(err, "failed to update badge_progress, userID:%v, friendsInvited:%v", usr.UserID, actualFriendsInvited)
 }
 
 func (u *updater) updateTasks(ctx context.Context, usr *commonUser, actualFriendsInvited uint64) error {

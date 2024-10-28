@@ -125,7 +125,7 @@ func (u *updater) update(ctx context.Context, bugfixStartTimestamp *time.Time) {
 				WHERE u.created_at < $1
 				GROUP BY u.id, rah.t1, rah.t2
 				HAVING rah.t1 != COUNT(DISTINCT t1.id) OR rah.t2 != COUNT(DISTINCT t2.id)
-				ORDER BY u.hash_code ASC
+				ORDER BY u.created_at ASC
 				LIMIT $2
 				OFFSET $3`
 		usrs, err := storagepg.Select[eskimoUser](ctx, u.dbEskimo, sql, bugfixStartTimestamp.Time, maxLimit, offset)
