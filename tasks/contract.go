@@ -39,7 +39,7 @@ const (
 	JoinTwitterMultiversxType  Type = "join_twitter_multiversx"
 	JoinTwitterXPortalType     Type = "join_twitter_xportal"
 	JoinTelegramMultiversxType Type = "join_telegram_multiversx"
-	JoinBullishCMCType         Type = "join_bulllish_cmc"
+	JoinBullishCMCType         Type = "join_bullish_cmc"
 	JoinIONCMCType             Type = "join_ion_cmc"
 	JoinWatchListCMCType       Type = "join_watchlist_cmc"
 	JoinPortfolioCoinGeckoType Type = "join_portfolio_coingecko"
