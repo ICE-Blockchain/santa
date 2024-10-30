@@ -563,7 +563,7 @@ const docTemplate = `{
                 "join_twitter_multiversx",
                 "join_twitter_xportal",
                 "join_telegram_multiversx",
-                "join_bulllish_cmc",
+                "join_bullish_cmc",
                 "join_ion_cmc",
                 "join_watchlist_cmc",
                 "join_portfolio_coingecko",
