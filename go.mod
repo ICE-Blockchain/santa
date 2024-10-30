@@ -8,7 +8,6 @@ require (
 	github.com/ice-blockchain/eskimo v1.416.0
 	github.com/ice-blockchain/wintr v1.154.0
 	github.com/pkg/errors v0.9.1
-	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475
 	github.com/stretchr/testify v1.9.0
 	github.com/swaggo/swag v1.16.4
 	github.com/testcontainers/testcontainers-go v0.34.0
