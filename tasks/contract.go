@@ -45,6 +45,7 @@ const (
 	JoinPortfolioCoinGeckoType Type = "join_portfolio_coingecko"
 	JoinHoldCoinType           Type = "join_holdcoin"
 	JoinHumanType              Type = "join_human"
+	JoinHipoType               Type = "join_hipo"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"
@@ -59,6 +60,7 @@ const (
 	SignUpSealsendType   Type = "signup_sealsend"
 	SignUpSunwavesType   Type = "signup_sunwaves"
 	SignUpDoctorxType    Type = "signup_doctorx"
+	SignUpTokeroType     Type = "signup_tokero"
 
 	ClaimLevelBadge1Type Type = "claim_badge_l1"
 	ClaimLevelBadge2Type Type = "claim_badge_l2"

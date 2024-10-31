@@ -159,6 +159,7 @@ definitions:
     - join_portfolio_coingecko
     - join_holdcoin
     - join_human
+    - join_hipo
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -171,6 +172,7 @@ definitions:
     - signup_sealsend
     - signup_sunwaves
     - signup_doctorx
+    - signup_tokero
     - claim_badge_l1
     - claim_badge_l2
     - claim_badge_l3
@@ -246,6 +248,7 @@ definitions:
     - JoinPortfolioCoinGeckoType
     - JoinHoldCoinType
     - JoinHumanType
+    - JoinHipoType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
@@ -258,6 +261,7 @@ definitions:
     - SignUpSealsendType
     - SignUpSunwavesType
     - SignUpDoctorxType
+    - SignUpTokeroType
     - ClaimLevelBadge1Type
     - ClaimLevelBadge2Type
     - ClaimLevelBadge3Type

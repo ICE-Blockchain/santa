@@ -1,0 +1,261 @@
+{
+   "af": {
+     "title": "Voltooi {{.RequiredMiningStreakNumber}}-Dag Streep",
+     "shortDescription": "Hou jou mynboustreek vir {{.RequiredMiningStreakNumber}} dae aaneen.",
+     "longDescription": "Voltooi mynbou vir {{.RequiredMiningStreakNumber}} agtereenvolgende dae om 'n spesiale beloning te verdien.",
+     "errorDescription": "Streekverifikasie het misluk. Maak seker dat jy {{.RequiredMiningStreakNumber}} agtereenvolgende dae voltooi het."
+   },
+   "ar": {
+     "title": "أكمل سلسلة تعدين لمدة {{.RequiredMiningStreakNumber}} أيام",
+     "shortDescription": "احتفظ بسلسلة التعدين الخاصة بك لمدة {{.RequiredMiningStreakNumber}} أيام متتالية.",
+     "longDescription": "أكمل جلسات التعدين لمدة {{.RequiredMiningStreakNumber}} أيام متتالية للحصول على مكافأة خاصة.",
+     "errorDescription": "فشلت عملية التحقق من السلسلة. يرجى التأكد من أنك أكملت {{.RequiredMiningStreakNumber}} أيام متتالية."
+   },
+   "az": {
+     "title": "{{.RequiredMiningStreakNumber}} Günlük Seriyanı Tamamlayın",
+     "shortDescription": "Mədənçiliyinizi ardıcıl {{.RequiredMiningStreakNumber}} gün davam etdirin.",
+     "longDescription": "Xüsusi mükafat qazanmaq üçün ardıcıl {{.RequiredMiningStreakNumber}} gün mədənçilik sessiyalarını tamamlayın.",
+     "errorDescription": "Seriya təsdiqi uğursuz oldu. Zəhmət olmasa ardıcıl {{.RequiredMiningStreakNumber}} günü tamamladığınıza əmin olun."
+   },
+   "bg": {
+     "title": "Завършете серия от {{.RequiredMiningStreakNumber}} дни",
+     "shortDescription": "Запазете своята серия от добив в продължение на {{.RequiredMiningStreakNumber}} поредни дни.",
+     "longDescription": "Завършете добивните сесии за {{.RequiredMiningStreakNumber}} последователни дни, за да спечелите специална награда.",
+     "errorDescription": "Проверката на серията не бе успешна. Моля, уверете се, че сте завършили {{.RequiredMiningStreakNumber}} последователни дни."
+   },
+   "bn": {
+     "title": "{{.RequiredMiningStreakNumber}}-দিনের স্ট্রীক সম্পূর্ণ করুন",
+     "shortDescription": "টানা {{.RequiredMiningStreakNumber}} দিন আপনার মাইনিং স্ট্রীক বজায় রাখুন।",
+     "longDescription": "একটি বিশেষ পুরস্কার অর্জন করতে টানা {{.RequiredMiningStreakNumber}} দিনের জন্য মাইনিং সেশন সম্পূর্ণ করুন।",
+     "errorDescription": "স্ট্রীক যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন আপনি টানা {{.RequiredMiningStreakNumber}} দিন সম্পূর্ণ করেছেন।"
+   },
+   "cs": {
+     "title": "Dokončete sérii {{.RequiredMiningStreakNumber}} dní",
+     "shortDescription": "Udržujte svou těžební sérii po dobu {{.RequiredMiningStreakNumber}} dní v kuse.",
+     "longDescription": "Dokončete těžební seance po dobu {{.RequiredMiningStreakNumber}} po sobě jdoucích dní a získejte speciální odměnu.",
+     "errorDescription": "Ověření série selhalo. Ujistěte se, že jste dokončili těžbu {{.RequiredMiningStreakNumber}} po sobě jdoucích dní."
+   },
+   "de": {
+     "title": "Beende eine {{.RequiredMiningStreakNumber}}-Tage-Serie",
+     "shortDescription": "Halte deine Mining-Serie für {{.RequiredMiningStreakNumber}} Tage durch.",
+     "longDescription": "Beende Mining-Sitzungen für {{.RequiredMiningStreakNumber}} aufeinanderfolgende Tage, um eine spezielle Belohnung zu erhalten.",
+     "errorDescription": "Die Serienverifizierung ist fehlgeschlagen. Bitte stelle sicher, dass du {{.RequiredMiningStreakNumber}} aufeinanderfolgende Tage abgeschlossen hast."
+   },
+   "el": {
+     "title": "Ολοκληρώστε το σερί {{.RequiredMiningStreakNumber}} ημερών",
+     "shortDescription": "Διατηρήστε το σερί εξόρυξής σας για {{.RequiredMiningStreakNumber}} συνεχόμενες ημέρες.",
+     "longDescription": "Ολοκληρώστε τις συνεδρίες εξόρυξης για {{.RequiredMiningStreakNumber}} συνεχόμενες ημέρες για να κερδίσετε μια ειδική ανταμοιβή.",
+     "errorDescription": "Η επαλήθευση της σειράς απέτυχε. Βεβαιωθείτε ότι έχετε ολοκληρώσει {{.RequiredMiningStreakNumber}} συνεχόμενες ημέρες."
+   },
+   "en": {
+     "title": "Complete {{.RequiredMiningStreakNumber}}-Day Streak",
+     "shortDescription": "Keep your mining streak for {{.RequiredMiningStreakNumber}} days straight.",
+     "longDescription": "Complete mining sessions for {{.RequiredMiningStreakNumber}} consecutive days to earn a special reward.",
+     "errorDescription": "Streak verification failed. Please ensure you’ve completed {{.RequiredMiningStreakNumber}} consecutive days."
+   },
+   "es": {
+     "title": "Completa una racha de {{.RequiredMiningStreakNumber}} días",
+     "shortDescription": "Mantén tu racha de minería durante {{.RequiredMiningStreakNumber}} días seguidos.",
+     "longDescription": "Completa sesiones de minería durante {{.RequiredMiningStreakNumber}} días consecutivos para ganar una recompensa especial.",
+     "errorDescription": "La verificación de la racha falló. Por favor, asegúrate de haber completado {{.RequiredMiningStreakNumber}} días consecutivos."
+   },
+   "fa": {
+     "title": "تکمیل {{.RequiredMiningStreakNumber}} روز پیوسته",
+     "shortDescription": "روند استخراج خود را به مدت {{.RequiredMiningStreakNumber}} روز متوالی ادامه دهید.",
+     "longDescription": "جلسات استخراج را برای {{.RequiredMiningStreakNumber}} روز متوالی کامل کنید تا پاداش ویژه‌ای دریافت کنید.",
+     "errorDescription": "تأیید روند انجام نشد. لطفاً مطمئن شوید که {{.RequiredMiningStreakNumber}} روز متوالی را تکمیل کرده‌اید."
+   },
+   "fr": {
+     "title": "Complétez une série de {{.RequiredMiningStreakNumber}} jours",
+     "shortDescription": "Maintenez votre série de minage pendant {{.RequiredMiningStreakNumber}} jours consécutifs.",
+     "longDescription": "Complétez des sessions de minage pendant {{.RequiredMiningStreakNumber}} jours consécutifs pour gagner une récompense spéciale.",
+     "errorDescription": "Échec de la vérification de la série. Veuillez vous assurer que vous avez complété {{.RequiredMiningStreakNumber}} jours consécutifs."
+   },
+   "gu": {
+     "title": "{{.RequiredMiningStreakNumber}}-દિવસની શ્રેણી પૂર્ણ કરો",
+     "shortDescription": "તમારી માઇનિંગ શ્રેણી {{.RequiredMiningStreakNumber}} દિવસો સુધી ચાલુ રાખો.",
+     "longDescription": "વિશિષ્ટ ઈનામ મેળવા માટે સતત {{.RequiredMiningStreakNumber}} દિવસો સુધી માઇનિંગ સત્રો પૂર્ણ કરો.",
+     "errorDescription": "સ્ટ્રીક ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમે સતત {{.RequiredMiningStreakNumber}} દિવસ પૂર્ણ કર્યા છે."
+   },
+   "he": {
+     "title": "השלם רצף של {{.RequiredMiningStreakNumber}} ימים",
+     "shortDescription": "שמור על רצף הכרייה שלך במשך {{.RequiredMiningStreakNumber}} ימים רצופים.",
+     "longDescription": "השלם סשני כרייה למשך {{.RequiredMiningStreakNumber}} ימים רצופים כדי להרוויח תגמול מיוחד.",
+     "errorDescription": "האימות נכשל. אנא ודא שהשלמת {{.RequiredMiningStreakNumber}} ימים רצופים."
+   },
+   "hi": {
+     "title": "{{.RequiredMiningStreakNumber}}-दिवसीय स्ट्रीक पूरी करें",
+     "shortDescription": "अपनी माइनिंग स्ट्रीक को लगातार {{.RequiredMiningStreakNumber}} दिनों तक बनाए रखें।",
+     "longDescription": "विशेष इनाम पाने के लिए लगातार {{.RequiredMiningStreakNumber}} दिनों तक माइनिंग सत्र पूरा करें।",
+     "errorDescription": "स्ट्रीक सत्यापन विफल। कृपया सुनिश्चित करें कि आपने लगातार {{.RequiredMiningStreakNumber}} दिन पूरे किए हैं।"
+   },
+   "hu": {
+     "title": "Teljesítsd a {{.RequiredMiningStreakNumber}} napos sorozatot",
+     "shortDescription": "Tartsd meg a bányászati sorozatodat {{.RequiredMiningStreakNumber}} napon keresztül.",
+     "longDescription": "{{.RequiredMiningStreakNumber}} egymást követő nap bányászati munkamenetek teljesítésével szerezz különleges jutalmat.",
+     "errorDescription": "A sorozat ellenőrzése sikertelen volt. Győződj meg róla, hogy teljesítetted a {{.RequiredMiningStreakNumber}} egymást követő napot."
+   },
+   "id": {
+     "title": "Selesaikan Rangkaian {{.RequiredMiningStreakNumber}} Hari",
+     "shortDescription": "Pertahankan rangkaian penambangan Anda selama {{.RequiredMiningStreakNumber}} hari berturut-turut.",
+     "longDescription": "Selesaikan sesi penambangan selama {{.RequiredMiningStreakNumber}} hari berturut-turut untuk mendapatkan hadiah spesial.",
+     "errorDescription": "Verifikasi rangkaian gagal. Pastikan Anda telah menyelesaikan {{.RequiredMiningStreakNumber}} hari berturut-turut."
+   },
+   "it": {
+     "title": "Completa una serie di {{.RequiredMiningStreakNumber}} giorni",
+     "shortDescription": "Mantieni la tua serie di mining per {{.RequiredMiningStreakNumber}} giorni consecutivi.",
+     "longDescription": "Completa sessioni di mining per {{.RequiredMiningStreakNumber}} giorni consecutivi per guadagnare una ricompensa speciale.",
+     "errorDescription": "Verifica della serie fallita. Assicurati di aver completato {{.RequiredMiningStreakNumber}} giorni consecutivi."
+   },
+   "ja": {
+     "title": "{{.RequiredMiningStreakNumber}} 日連続ストリークを達成",
+     "shortDescription": "{{.RequiredMiningStreakNumber}} 日間連続してマイニングストリークを維持してください。",
+     "longDescription": "{{.RequiredMiningStreakNumber}} 日間連続してマイニングセッションを完了すると、特別な報酬を獲得できます。",
+     "errorDescription": "ストリークの確認に失敗しました。{{.RequiredMiningStreakNumber}} 日間連続で完了したか確認してください。"
+   },
+   "jv": {
+     "title": "Rampungake Streak {{.RequiredMiningStreakNumber}} Dina",
+     "shortDescription": "Tahan streak penambangan sampeyan kanggo {{.RequiredMiningStreakNumber}} dina berturut-turut.",
+     "longDescription": "Rampungake sesi penambangan kanggo {{.RequiredMiningStreakNumber}} dina berturut-turut kanggo entuk hadiah khusus.",
+     "errorDescription": "Verifikasi streak gagal. Priksa manawa sampeyan wis ngrampungake {{.RequiredMiningStreakNumber}} dina berturut-turut."
+   },
+   "kn": {
+     "title": "{{.RequiredMiningStreakNumber}}-ದಿನಗಳ ಸ್ಟ್ರೀಕ್ ಪೂರ್ಣಗೊಳಿಸಿ",
+     "shortDescription": "{{.RequiredMiningStreakNumber}} ದಿನಗಳ ಕಾಲ ನಿಮ್ಮ ಮೈನಿಂಗ್ ಸ್ಟ್ರೀಕ್ ಅನ್ನು ಮುಂದುವರಿಸಿ.",
+     "longDescription": "{{.RequiredMiningStreakNumber}} ನಿರಂತರ ದಿನಗಳ ಕಾಲ ಮೈನಿಂಗ್ ಸೆಷನ್‌ಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ ಮತ್ತು ವಿಶೇಷ ಬಹುಮಾನವನ್ನು ಗಳಿಸಿ.",
+     "errorDescription": "ಸ್ಟ್ರೀಕ್ ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನೀವು {{.RequiredMiningStreakNumber}} ನಿರಂತರ ದಿನಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಾ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."
+   },
+   "ko": {
+     "title": "{{.RequiredMiningStreakNumber}}일 연속 채굴 완료",
+     "shortDescription": "{{.RequiredMiningStreakNumber}}일 동안 연속 채굴을 유지하세요.",
+     "longDescription": "{{.RequiredMiningStreakNumber}}일 연속 채굴 세션을 완료하여 특별 보상을 받으세요.",
+     "errorDescription": "연속 확인에 실패했습니다. {{.RequiredMiningStreakNumber}}일 연속으로 완료했는지 확인하세요."
+   },
+   "mr": {
+     "title": "{{.RequiredMiningStreakNumber}}-दिवसांची स्ट्रीक पूर्ण करा",
+     "shortDescription": "तुमची माइनिंग स्ट्रीक सलग {{.RequiredMiningStreakNumber}} दिवसांसाठी कायम ठेवा.",
+     "longDescription": "विशेष बक्षीस मिळवण्यासाठी सलग {{.RequiredMiningStreakNumber}} दिवसांसाठी माइनिंग सत्रे पूर्ण करा.",
+     "errorDescription": "स्ट्रीक सत्यापन अयशस्वी झाले. कृपया खात्री करा की आपण सलग {{.RequiredMiningStreakNumber}} दिवस पूर्ण केले आहेत."
+   },
+   "ms": {
+     "title": "Lengkapkan Rangkaian {{.RequiredMiningStreakNumber}} Hari",
+     "shortDescription": "Teruskan rangkaian perlombongan anda selama {{.RequiredMiningStreakNumber}} hari berturut-turut.",
+     "longDescription": "Lengkapkan sesi perlombongan selama {{.RequiredMiningStreakNumber}} hari berturut-turut untuk mendapat ganjaran istimewa.",
+     "errorDescription": "Pengesahan rangkaian gagal. Pastikan anda telah melengkapkan {{.RequiredMiningStreakNumber}} hari berturut-turut."
+   },
+   "nb": {
+     "title": "Fullfør {{.RequiredMiningStreakNumber}}-dagers streak",
+     "shortDescription": "Hold mining-streaken i {{.RequiredMiningStreakNumber}} dager på rad.",
+     "longDescription": "Fullfør mining-økter i {{.RequiredMiningStreakNumber}} sammenhengende dager for å tjene en spesiell belønning.",
+     "errorDescription": "Streak-verifisering mislyktes. Vennligst sørg for at du har fullført {{.RequiredMiningStreakNumber}} sammenhengende dager."
+   },
+   "nn": {
+     "title": "Fullfør {{.RequiredMiningStreakNumber}}-dagars streak",
+     "shortDescription": "Hald mining-streaken din i {{.RequiredMiningStreakNumber}} dagar på rad.",
+     "longDescription": "Fullfør mining-økter i {{.RequiredMiningStreakNumber}} samanhengande dagar for å tene ei spesiell belønning.",
+     "errorDescription": "Streak-verifisering mislukkast. Ver venleg å sørge for at du har fullført {{.RequiredMiningStreakNumber}} samanhengande dagar."
+   },
+   "pa": {
+     "title": "{{.RequiredMiningStreakNumber}}-ਦਿਨ ਦੀ ਲੜੀ ਪੂਰੀ ਕਰੋ",
+     "shortDescription": "{{.RequiredMiningStreakNumber}} ਦਿਨਾਂ ਲਈ ਆਪਣੀ ਮਾਈਨਿੰਗ ਲੜੀ ਜਾਰੀ ਰੱਖੋ।",
+     "longDescription": "ਇੱਕ ਖ਼ਾਸ ਇਨਾਮ ਕਮਾਉਣ ਲਈ {{.RequiredMiningStreakNumber}} ਲਗਾਤਾਰ ਦਿਨਾਂ ਲਈ ਮਾਈਨਿੰਗ ਸੈਸ਼ਨ ਪੂਰੇ ਕਰੋ।",
+     "errorDescription": "ਲੜੀ ਦੀ ਪੁਸ਼ਟੀ ਫੇਲ੍ਹ ਹੋ ਗਈ। ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ ਲਗਾਤਾਰ {{.RequiredMiningStreakNumber}} ਦਿਨ ਪੂਰੇ ਕੀਤੇ ਹਨ।"
+   },
+   "pl": {
+     "title": "Ukończ serię {{.RequiredMiningStreakNumber}} dni",
+     "shortDescription": "Zachowaj ciągłość wydobycia przez {{.RequiredMiningStreakNumber}} dni z rzędu.",
+     "longDescription": "Ukończ sesje wydobycia przez {{.RequiredMiningStreakNumber}} dni z rzędu, aby zdobyć specjalną nagrodę.",
+     "errorDescription": "Weryfikacja serii nie powiodła się. Upewnij się, że ukończyłeś {{.RequiredMiningStreakNumber}} dni z rzędu."
+   },
+   "pt": {
+     "title": "Complete uma série de {{.RequiredMiningStreakNumber}} dias",
+     "shortDescription": "Mantenha sua sequência de mineração por {{.RequiredMiningStreakNumber}} dias consecutivos.",
+     "longDescription": "Complete sessões de mineração por {{.RequiredMiningStreakNumber}} dias consecutivos para ganhar uma recompensa especial.",
+     "errorDescription": "A verificação da sequência falhou. Certifique-se de ter completado {{.RequiredMiningStreakNumber}} dias consecutivos."
+   },
+   "ro": {
+     "title": "Finalizează o serie de {{.RequiredMiningStreakNumber}} zile",
+     "shortDescription": "Menține seria de mining timp de {{.RequiredMiningStreakNumber}} zile consecutive.",
+     "longDescription": "Finalizează sesiuni de mining timp de {{.RequiredMiningStreakNumber}} zile consecutive pentru a câștiga o recompensă specială.",
+     "errorDescription": "Verificarea seriei a eșuat. Te rugăm să te asiguri că ai completat {{.RequiredMiningStreakNumber}} zile consecutive."
+   },
+   "ru": {
+     "title": "Завершите серию из {{.RequiredMiningStreakNumber}} дней",
+     "shortDescription": "Сохраняйте свою серию майнинга в течение {{.RequiredMiningStreakNumber}} дней подряд.",
+     "longDescription": "Завершайте майнинг-сессии в течение {{.RequiredMiningStreakNumber}} подряд идущих дней, чтобы заработать особую награду.",
+     "errorDescription": "Ошибка проверки серии. Пожалуйста, убедитесь, что вы завершили {{.RequiredMiningStreakNumber}} подряд идущих дней."
+   },
+   "sk": {
+     "title": "Dokončite sériu {{.RequiredMiningStreakNumber}} dní",
+     "shortDescription": "Udržujte svoju sériu ťažby po dobu {{.RequiredMiningStreakNumber}} dní v kuse.",
+     "longDescription": "Dokončite ťažobné relácie počas {{.RequiredMiningStreakNumber}} po sebe idúcich dní a získajte špeciálnu odmenu.",
+     "errorDescription": "Overenie série zlyhalo. Uistite sa, že ste dokončili ťažbu počas {{.RequiredMiningStreakNumber}} po sebe idúcich dní."
+   },
+   "sl": {
+     "title": "Dokončajte niz {{.RequiredMiningStreakNumber}} dni",
+     "shortDescription": "Ohranite svoj rudarniški niz {{.RequiredMiningStreakNumber}} dni zapored.",
+     "longDescription": "Dokončajte rudarniške seje {{.RequiredMiningStreakNumber}} zaporednih dni in si prislužite posebno nagrado.",
+     "errorDescription": "Preverjanje niza ni uspelo. Preverite, ali ste dokončali {{.RequiredMiningStreakNumber}} zaporednih dni."
+   },
+   "sq": {
+     "title": "Përfundo serinë {{.RequiredMiningStreakNumber}} ditore",
+     "shortDescription": "Mbajeni serinë tuaj të minierës për {{.RequiredMiningStreakNumber}} ditë rresht.",
+     "longDescription": "Përfundoni seancat e minierave për {{.RequiredMiningStreakNumber}} ditë rresht për të fituar një shpërblim të veçantë.",
+     "errorDescription": "Verifikimi i serisë dështoi. Ju lutemi sigurohuni që keni përfunduar {{.RequiredMiningStreakNumber}} ditë rresht."
+   },
+   "sv": {
+     "title": "Slutför {{.RequiredMiningStreakNumber}}-dagars streak",
+     "shortDescription": "Behåll din mining-streak i {{.RequiredMiningStreakNumber}} dagar i rad.",
+     "longDescription": "Slutför miningsessioner i {{.RequiredMiningStreakNumber}} dagar i rad för att tjäna en speciell belöning.",
+     "errorDescription": "Streak-verifiering misslyckades. Kontrollera att du har slutfört {{.RequiredMiningStreakNumber}} dagar i rad."
+   },
+   "te": {
+     "title": "{{.RequiredMiningStreakNumber}}-రోజుల స్ట్రీక్ ను పూర్తి చేయండి",
+     "shortDescription": "{{.RequiredMiningStreakNumber}} రోజుల పాటు మీ మైనింగ్ స్ట్రీక్ ను కొనసాగించండి.",
+     "longDescription": "{{.RequiredMiningStreakNumber}} వరుస రోజుల పాటు మైనింగ్ సెషన్లను పూర్తి చేసి ప్రత్యేక బహుమతిని పొందండి.",
+     "errorDescription": "స్ట్రీక్ ధృవీకరణ విఫలమైంది. మీరు {{.RequiredMiningStreakNumber}} వరుస రోజులు పూర్తి చేశారా అని నిర్ధారించండి."
+   },
+   "th": {
+     "title": "ทำสตรีค {{.RequiredMiningStreakNumber}} วันให้สำเร็จ",
+     "shortDescription": "รักษาสตรีคการขุดของคุณเป็นเวลา {{.RequiredMiningStreakNumber}} วันติดต่อกัน",
+     "longDescription": "ทำการขุดให้เสร็จสิ้นติดต่อกัน {{.RequiredMiningStreakNumber}} วันเพื่อรับรางวัลพิเศษ",
+     "errorDescription": "การยืนยันสตรีคล้มเหลว โปรดตรวจสอบให้แน่ใจว่าคุณได้ทำครบ {{.RequiredMiningStreakNumber}} วันติดต่อกัน"
+   },
+   "tr": {
+     "title": "{{.RequiredMiningStreakNumber}} Günlük Seriyi Tamamlayın",
+     "shortDescription": "Madencilik serinizi {{.RequiredMiningStreakNumber}} gün boyunca devam ettirin.",
+     "longDescription": "Özel bir ödül kazanmak için {{.RequiredMiningStreakNumber}} gün üst üste madencilik seanslarını tamamlayın.",
+     "errorDescription": "Seri doğrulaması başarısız oldu. Lütfen {{.RequiredMiningStreakNumber}} gün üst üste tamamladığınızdan emin olun."
+   },
+   "uk": {
+     "title": "Завершіть серію з {{.RequiredMiningStreakNumber}} днів",
+     "shortDescription": "Продовжуйте свою серію майнінгу протягом {{.RequiredMiningStreakNumber}} днів поспіль.",
+     "longDescription": "Завершуйте сеанси майнінгу протягом {{.RequiredMiningStreakNumber}} днів поспіль, щоб отримати спеціальну винагороду.",
+     "errorDescription": "Перевірка серії не вдалася. Переконайтеся, що ви завершили {{.RequiredMiningStreakNumber}} днів поспіль."
+   },
+   "ur": {
+     "title": "{{.RequiredMiningStreakNumber}}-دن کی سٹریک مکمل کریں",
+     "shortDescription": "{{.RequiredMiningStreakNumber}} دن تک اپنی مائننگ سٹریک برقرار رکھیں۔",
+     "longDescription": "ایک خاص انعام حاصل کرنے کے لیے مسلسل {{.RequiredMiningStreakNumber}} دن کے لیے مائننگ سیشنز مکمل کریں۔",
+     "errorDescription": "سٹریک کی تصدیق ناکام ہو گئی۔ براہ کرم یقینی بنائیں کہ آپ نے مسلسل {{.RequiredMiningStreakNumber}} دن مکمل کیے ہیں۔"
+   },
+   "vi": {
+     "title": "Hoàn thành chuỗi {{.RequiredMiningStreakNumber}} ngày",
+     "shortDescription": "Giữ chuỗi khai thác của bạn trong {{.RequiredMiningStreakNumber}} ngày liên tiếp.",
+     "longDescription": "Hoàn thành các phiên khai thác trong {{.RequiredMiningStreakNumber}} ngày liên tiếp để nhận phần thưởng đặc biệt.",
+     "errorDescription": "Xác minh chuỗi không thành công. Vui lòng đảm bảo bạn đã hoàn thành đủ {{.RequiredMiningStreakNumber}} ngày liên tiếp."
+   },
+   "zh-hant": {
+     "title": "完成{{.RequiredMiningStreakNumber}}天連續記錄",
+     "shortDescription": "保持您的挖礦連續記錄達到{{.RequiredMiningStreakNumber}}天。",
+     "longDescription": "完成{{.RequiredMiningStreakNumber}}天連續挖礦以獲得特別獎勵。",
+     "errorDescription": "連續記錄驗證失敗。請確保您已連續完成{{.RequiredMiningStreakNumber}}天。"
+   },
+   "zh": {
+     "title": "完成{{.RequiredMiningStreakNumber}}天连续记录",
+     "shortDescription": "保持您的挖矿连续记录达到{{.RequiredMiningStreakNumber}}天。",
+     "longDescription": "完成{{.RequiredMiningStreakNumber}}天连续挖矿以获得特别奖励。",
+     "errorDescription": "连续记录验证失败。请确保您已连续完成{{.RequiredMiningStreakNumber}}天。"
+   }
+ }
+ 

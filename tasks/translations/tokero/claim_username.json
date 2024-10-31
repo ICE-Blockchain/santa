@@ -1,0 +1,260 @@
+{
+   "af": {
+     "title": "Eis jou gebruikersnaam",
+     "shortDescription": "Skep jou unieke gebruikersnaam.",
+     "longDescription": "Stel 'n unieke gebruikersnaam op om jou rekening te personaliseer en begin jou vriende nooi.",
+     "errorDescription": "Verifikasie het misluk. Stel asseblief jou gebruikersnaam en probeer weer."
+   },
+   "ar": {
+     "title": "مطالبة باسم المستخدم الخاص بك",
+     "shortDescription": "أنشئ اسم المستخدم الفريد الخاص بك.",
+     "longDescription": "قم بإعداد اسم مستخدم فريد لتخصيص حسابك وابدأ بدعوة الأصدقاء.",
+     "errorDescription": "فشل التحقق. يرجى إعداد اسم المستخدم الخاص بك والمحاولة مرة أخرى."
+   },
+   "az": {
+     "title": "İstifadəçi adınızı tələb edin",
+     "shortDescription": "Unikal istifadəçi adınızı yaradın.",
+     "longDescription": "Hesabınızı fərdiləşdirmək və dostlarınızı dəvət etməyə başlamaq üçün unikal istifadəçi adı yaradın.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa istifadəçi adınızı təyin edin və yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Заявете вашето потребителско име",
+     "shortDescription": "Създайте своето уникално потребителско име.",
+     "longDescription": "Настройте уникално потребителско име, за да персонализирате своя акаунт и започнете да каните приятели.",
+     "errorDescription": "Проверката не бе успешна. Моля, задайте своето потребителско име и опитайте отново."
+   },
+   "bn": {
+     "title": "আপনার ব্যবহারকারীর নাম দাবি করুন",
+     "shortDescription": "আপনার অনন্য ব্যবহারকারীর নাম তৈরি করুন।",
+     "longDescription": "আপনার অ্যাকাউন্টকে ব্যক্তিগতকৃত করতে এবং বন্ধুদের আমন্ত্রণ জানানো শুরু করতে একটি অনন্য ব্যবহারকারীর নাম সেট করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে আপনার ব্যবহারকারীর নাম সেট করুন এবং আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Získejte své uživatelské jméno",
+     "shortDescription": "Vytvořte si své jedinečné uživatelské jméno.",
+     "longDescription": "Nastavte si jedinečné uživatelské jméno pro personalizaci svého účtu a začněte zvát přátele.",
+     "errorDescription": "Ověření selhalo. Nastavte své uživatelské jméno a zkuste to znovu."
+   },
+   "de": {
+     "title": "Fordere deinen Benutzernamen an",
+     "shortDescription": "Erstelle deinen einzigartigen Benutzernamen.",
+     "longDescription": "Richte einen einzigartigen Benutzernamen ein, um dein Konto zu personalisieren und beginne damit, Freunde einzuladen.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte lege deinen Benutzernamen fest und versuche es erneut."
+   },
+   "el": {
+     "title": "Διεκδικήστε το όνομα χρήστη σας",
+     "shortDescription": "Δημιουργήστε το μοναδικό όνομα χρήστη σας.",
+     "longDescription": "Ρυθμίστε ένα μοναδικό όνομα χρήστη για να εξατομικεύσετε τον λογαριασμό σας και να αρχίσετε να προσκαλείτε φίλους.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Παρακαλώ ορίστε το όνομα χρήστη σας και δοκιμάστε ξανά."
+   },
+   "en": {
+     "title": "Claim your nickname",
+     "shortDescription": "Create your unique nickname.",
+     "longDescription": "Set up a unique nickname to personalize your account and start inviting friends.",
+     "errorDescription": "Verification failed. Please set your nickname and try again."
+   },
+   "es": {
+     "title": "Reclama tu nombre de usuario",
+     "shortDescription": "Crea tu nombre de usuario único.",
+     "longDescription": "Configura un nombre de usuario único para personalizar tu cuenta y comenzar a invitar amigos.",
+     "errorDescription": "La verificación falló. Por favor, establece tu nombre de usuario e inténtalo de nuevo."
+   },
+   "fa": {
+     "title": "نام کاربری خود را انتخاب کنید",
+     "shortDescription": "نام کاربری منحصر به فرد خود را ایجاد کنید.",
+     "longDescription": "یک نام کاربری منحصر به فرد تنظیم کنید تا حساب خود را شخصی‌سازی کرده و شروع به دعوت از دوستان کنید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً نام کاربری خود را تنظیم کرده و دوباره تلاش کنید."
+   },
+   "fr": {
+     "title": "Réclamez votre nom d'utilisateur",
+     "shortDescription": "Créez votre nom d'utilisateur unique.",
+     "longDescription": "Configurez un nom d'utilisateur unique pour personnaliser votre compte et commencez à inviter des amis.",
+     "errorDescription": "Échec de la vérification. Veuillez définir votre nom d'utilisateur et réessayer."
+   },
+   "gu": {
+     "title": "તમારું વપરાશકર્તા નામ દાવો કરો",
+     "shortDescription": "તમારું અનન્ય વપરાશકર્તા નામ બનાવો.",
+     "longDescription": "તમારું એક અનન્ય વપરાશકર્તા નામ સેટ કરો તમારા ખાતાને વૈવિધ્યપૂર્ણ બનાવવા અને મિત્રોનું આમંત્રણ શરૂ કરવા માટે.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. તમારું વપરાશકર્તા નામ સેટ કરો અને ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "תבע את שם המשתמש שלך",
+     "shortDescription": "צור את שם המשתמש הייחודי שלך.",
+     "longDescription": "הגדר שם משתמש ייחודי כדי להתאים אישית את החשבון שלך ולהתחיל להזמין חברים.",
+     "errorDescription": "האימות נכשל. אנא הגדר את שם המשתמש שלך ונסה שוב."
+   },
+   "hi": {
+     "title": "अपना उपयोगकर्ता नाम का दावा करें",
+     "shortDescription": "अपना अनूठा उपयोगकर्ता नाम बनाएं।",
+     "longDescription": "अपना खाता व्यक्तिगत बनाने और दोस्तों को आमंत्रित करने के लिए एक अनूठा उपयोगकर्ता नाम सेट करें।",
+     "errorDescription": "सत्यापन विफल। कृपया अपना उपयोगकर्ता नाम सेट करें और फिर से प्रयास करें।"
+   },
+   "hu": {
+     "title": "Igényeld a felhasználónevedet",
+     "shortDescription": "Hozd létre az egyedi felhasználónevedet.",
+     "longDescription": "Állítsd be az egyedi felhasználónevedet, hogy testreszabhasd a fiókodat és kezdj el barátokat meghívni.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Kérlek, állítsd be a felhasználónevedet és próbáld újra."
+   },
+   "id": {
+     "title": "Klaim nama pengguna Anda",
+     "shortDescription": "Buat nama pengguna unik Anda.",
+     "longDescription": "Atur nama pengguna unik untuk mempersonalisasi akun Anda dan mulai mengundang teman.",
+     "errorDescription": "Verifikasi gagal. Silakan atur nama pengguna Anda dan coba lagi."
+   },
+   "it": {
+     "title": "Richiedi il tuo nome utente",
+     "shortDescription": "Crea il tuo nome utente univoco.",
+     "longDescription": "Imposta un nome utente univoco per personalizzare il tuo account e iniziare a invitare amici.",
+     "errorDescription": "Verifica fallita. Imposta il tuo nome utente e riprova."
+   },
+   "ja": {
+     "title": "ユーザー名を請求する",
+     "shortDescription": "あなたのユニークなユーザー名を作成してください。",
+     "longDescription": "アカウントをパーソナライズして友達を招待し始めるために、ユニークなユーザー名を設定しましょう。",
+     "errorDescription": "確認に失敗しました。ユーザー名を設定して、もう一度試してください。"
+   },
+   "jv": {
+     "title": "Ngaku jeneng pangguna sampeyan",
+     "shortDescription": "Gawe jeneng pangguna unik sampeyan.",
+     "longDescription": "Atur jeneng pangguna unik kanggo nggawe akun sampeyan luwih pribadi lan miwiti ngajak kanca.",
+     "errorDescription": "Verifikasi gagal. Mangga atur jeneng pangguna sampeyan lan coba maneh."
+   },
+   "kn": {
+     "title": "ನಿಮ್ಮ ಬಳಕೆದಾರ ಹೆಸರನ್ನು ದಾವಿ ಮಾಡಿ",
+     "shortDescription": "ನಿಮ್ಮ ವಿಶಿಷ್ಟ ಬಳಕೆದಾರ ಹೆಸರನ್ನು ರಚಿಸಿ.",
+     "longDescription": "ನಿಮ್ಮ ಖಾತೆಯನ್ನು ವೈಯಕ್ತೀಕರಿಸಲು ಮತ್ತು ಸ್ನೇಹಿತರನ್ನು ಆಹ್ವಾನಿಸಲು ನಿಮ್ಮ ವಿಶಿಷ್ಟ ಬಳಕೆದಾರ ಹೆಸರನ್ನು ಹೊಂದಿಸಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಬಳಕೆದಾರ ಹೆಸರನ್ನು ಹೊಂದಿಸಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "사용자 이름을 요청하세요",
+     "shortDescription": "고유한 사용자 이름을 만드세요.",
+     "longDescription": "고유한 사용자 이름을 설정하여 계정을 개인화하고 친구를 초대하기 시작하세요.",
+     "errorDescription": "인증에 실패했습니다. 사용자 이름을 설정하고 다시 시도하세요."
+   },
+   "mr": {
+     "title": "तुमचे वापरकर्तानाव दावा करा",
+     "shortDescription": "तुमचे अनन्य वापरकर्तानाव तयार करा.",
+     "longDescription": "तुमचे खाते वैयक्तिकृत करण्यासाठी आणि मित्रांना आमंत्रित करण्यासाठी एक अद्वितीय वापरकर्तानाव सेट करा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुमचे वापरकर्तानाव सेट करा आणि पुन्हा प्रयत्न करा."
+   },
+   "ms": {
+     "title": "Tuntut nama pengguna anda",
+     "shortDescription": "Cipta nama pengguna unik anda.",
+     "longDescription": "Tetapkan nama pengguna unik untuk memperibadikan akaun anda dan mula menjemput rakan.",
+     "errorDescription": "Pengesahan gagal. Sila tetapkan nama pengguna anda dan cuba lagi."
+   },
+   "nb": {
+     "title": "Krev brukernavnet ditt",
+     "shortDescription": "Lag ditt unike brukernavn.",
+     "longDescription": "Sett opp et unikt brukernavn for å tilpasse kontoen din og begynne å invitere venner.",
+     "errorDescription": "Verifisering mislyktes. Vennligst sett brukernavnet ditt og prøv igjen."
+   },
+   "nn": {
+     "title": "Krev brukarnamnet ditt",
+     "shortDescription": "Lag ditt unike brukarnamn.",
+     "longDescription": "Sett opp eit unikt brukarnamn for å tilpasse kontoen din og byrje å invitere vener.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å sett brukarnamnet ditt og prøv igjen."
+   },
+   "pa": {
+     "title": "ਆਪਣਾ ਯੂਜ਼ਰਨਾਮ ਕਲੈਮ ਕਰੋ",
+     "shortDescription": "ਆਪਣਾ ਵਿਲੱਖਣ ਯੂਜ਼ਰਨਾਮ ਬਣਾਓ।",
+     "longDescription": "ਆਪਣੇ ਖਾਤੇ ਨੂੰ ਨਿੱਜੀ ਬਣਾਉਣ ਅਤੇ ਦੋਸਤਾਂ ਨੂੰ ਸੱਦਾ ਦੇਣਾ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਇੱਕ ਵਿਲੱਖਣ ਯੂਜ਼ਰਨਾਮ ਸੈੱਟ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਯੂਜ਼ਰਨਾਮ ਸੈੱਟ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Zgłoś swoją nazwę użytkownika",
+     "shortDescription": "Utwórz swoją unikalną nazwę użytkownika.",
+     "longDescription": "Ustaw unikalną nazwę użytkownika, aby spersonalizować swoje konto i zacząć zapraszać znajomych.",
+     "errorDescription": "Weryfikacja nie powiodła się. Ustaw swoją nazwę użytkownika i spróbuj ponownie."
+   },
+   "pt": {
+     "title": "Reivindique seu nome de usuário",
+     "shortDescription": "Crie seu nome de usuário exclusivo.",
+     "longDescription": "Defina um nome de usuário exclusivo para personalizar sua conta e começar a convidar amigos.",
+     "errorDescription": "Falha na verificação. Defina seu nome de usuário e tente novamente."
+   },
+   "ro": {
+     "title": "Revendică-ți numele de utilizator",
+     "shortDescription": "Creează-ți un nume de utilizator unic.",
+     "longDescription": "Setează un nume de utilizator unic pentru a-ți personaliza contul și începe să inviți prieteni.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să-ți setezi numele de utilizator și să încerci din nou."
+   },
+   "ru": {
+     "title": "Получите ваше имя пользователя",
+     "shortDescription": "Создайте уникальное имя пользователя.",
+     "longDescription": "Настройте уникальное имя пользователя, чтобы персонализировать свою учетную запись и начать приглашать друзей.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, задайте имя пользователя и попробуйте снова."
+   },
+   "sk": {
+     "title": "Získajte svoje používateľské meno",
+     "shortDescription": "Vytvorte si svoje jedinečné používateľské meno.",
+     "longDescription": "Nastavte si jedinečné používateľské meno, aby ste prispôsobili svoj účet a začali pozývať priateľov.",
+     "errorDescription": "Overenie zlyhalo. Nastavte svoje používateľské meno a skúste to znova."
+   },
+   "sl": {
+     "title": "Zahtevajte svoje uporabniško ime",
+     "shortDescription": "Ustvarite svoje edinstveno uporabniško ime.",
+     "longDescription": "Nastavite si edinstveno uporabniško ime za prilagoditev računa in začnite vabiti prijatelje.",
+     "errorDescription": "Preverjanje ni uspelo. Prosimo, nastavite svoje uporabniško ime in poskusite znova."
+   },
+   "sq": {
+     "title": "Kërkoni emrin tuaj të përdoruesit",
+     "shortDescription": "Krijoni emrin tuaj unik të përdoruesit.",
+     "longDescription": "Vendosni një emër unik përdoruesi për të personalizuar llogarinë tuaj dhe për të filluar të ftoni miq.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi vendosni emrin tuaj të përdoruesit dhe provoni përsëri."
+   },
+   "sv": {
+     "title": "Kräv ditt användarnamn",
+     "shortDescription": "Skapa ditt unika användarnamn.",
+     "longDescription": "Ställ in ett unikt användarnamn för att anpassa ditt konto och börja bjuda in vänner.",
+     "errorDescription": "Verifiering misslyckades. Ställ in ditt användarnamn och försök igen."
+   },
+   "te": {
+     "title": "మీ వినియోగదారుని పేరు క్లెయిమ్ చేయండి",
+     "shortDescription": "మీ వినియోగదారుని ప్రత్యేకమైన పేరు సృష్టించండి.",
+     "longDescription": "మీ ఖాతాను వ్యక్తిగతం చేసుకోవడానికి మరియు స్నేహితులను ఆహ్వానించడం ప్రారంభించడానికి ఒక ప్రత్యేక వినియోగదారు పేరు సెట్ చేయండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీ వినియోగదారు పేరును సెట్ చేసి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "รับชื่อผู้ใช้ของคุณ",
+     "shortDescription": "สร้างชื่อผู้ใช้เฉพาะของคุณ",
+     "longDescription": "ตั้งค่าชื่อผู้ใช้เฉพาะเพื่อปรับแต่งบัญชีของคุณและเริ่มเชิญเพื่อน",
+     "errorDescription": "การยืนยันล้มเหลว โปรดตั้งค่าชื่อผู้ใช้ของคุณและลองอีกครั้ง"
+   },
+   "tr": {
+     "title": "Kullanıcı adınızı talep edin",
+     "shortDescription": "Benzersiz kullanıcı adınızı oluşturun.",
+     "longDescription": "Hesabınızı kişiselleştirmek ve arkadaşlarınızı davet etmeye başlamak için benzersiz bir kullanıcı adı oluşturun.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen kullanıcı adınızı belirleyin ve tekrar deneyin."
+   },
+   "uk": {
+     "title": "Отримайте своє ім'я користувача",
+     "shortDescription": "Створіть своє унікальне ім'я користувача.",
+     "longDescription": "Налаштуйте унікальне ім'я користувача, щоб персоналізувати свій обліковий запис і почати запрошувати друзів.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, задайте своє ім'я користувача і спробуйте ще раз."
+   },
+   "ur": {
+     "title": "اپنا یوزر نیم حاصل کریں",
+     "shortDescription": "اپنا منفرد یوزر نیم بنائیں۔",
+     "longDescription": "اپنے اکاؤنٹ کو ذاتی نوعیت کا بنانے اور دوستوں کو مدعو کرنے کے لیے ایک منفرد یوزر نیم سیٹ کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم اپنا یوزر نیم سیٹ کریں اور دوبارہ کوشش کریں۔"
+   },
+   "vi": {
+     "title": "Nhận tên người dùng của bạn",
+     "shortDescription": "Tạo tên người dùng duy nhất của bạn.",
+     "longDescription": "Thiết lập tên người dùng duy nhất để cá nhân hóa tài khoản của bạn và bắt đầu mời bạn bè.",
+     "errorDescription": "Xác minh không thành công. Vui lòng đặt tên người dùng của bạn và thử lại."
+   },
+   "zh-hant": {
+     "title": "申請您的使用者名稱",
+     "shortDescription": "創建您的唯一使用者名稱。",
+     "longDescription": "設定一個唯一的使用者名稱來個人化您的帳戶並開始邀請朋友。",
+     "errorDescription": "驗證失敗。請設定您的使用者名稱並再試一次。"
+   },
+   "zh": {
+     "title": "领取您的用户名",
+     "shortDescription": "创建您的唯一用户名。",
+     "longDescription": "设置一个唯一的用户名来个性化您的帐户并开始邀请朋友。",
+     "errorDescription": "验证失败。请设置您的用户名并重试。"
+   }
+ } 

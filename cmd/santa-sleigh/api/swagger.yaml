@@ -163,6 +163,7 @@ definitions:
     - join_portfolio_coingecko
     - join_holdcoin
     - join_human
+    - join_hipo
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -175,6 +176,7 @@ definitions:
     - signup_sealsend
     - signup_sunwaves
     - signup_doctorx
+    - signup_tokero
     - claim_badge_l1
     - claim_badge_l2
     - claim_badge_l3
@@ -250,6 +252,7 @@ definitions:
     - JoinPortfolioCoinGeckoType
     - JoinHoldCoinType
     - JoinHumanType
+    - JoinHipoType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
@@ -262,6 +265,7 @@ definitions:
     - SignUpSealsendType
     - SignUpSunwavesType
     - SignUpDoctorxType
+    - SignUpTokeroType
     - ClaimLevelBadge1Type
     - ClaimLevelBadge2Type
     - ClaimLevelBadge3Type
@@ -562,9 +566,12 @@ paths:
         - join_instagram_ion
         - join_twitter_ion
         - join_telegram_ion
+        - signup_sunwaves
         - signup_callfluent
         - signup_sauces
         - signup_sealsend
+        - singup_doctorx
+        - signup_tokero
         - join_twitter_multiversx
         - join_twitter_xportal
         - join_telegram_multiversx
@@ -574,6 +581,7 @@ paths:
         - join_portfolio_coingecko
         - join_holdcoin
         - join_human
+        - join_hipo
         in: path
         name: taskType
         required: true
@@ -770,9 +778,12 @@ paths:
         - join_instagram_ion
         - join_twitter_ion
         - join_telegram_ion
+        - signup_sunwaves
         - signup_callfluent
         - signup_sauces
         - signup_sealsend
+        - singup_doctorx
+        - signup_tokero
         - join_twitter_multiversx
         - join_twitter_xportal
         - join_telegram_multiversx
@@ -782,6 +793,7 @@ paths:
         - join_portfolio_coingecko
         - join_holdcoin
         - join_human
+        - join_hipo
         in: path
         name: taskType
         required: true

@@ -1,0 +1,261 @@
+{
+   "af": {
+     "title": "Begin om te verdien",
+     "shortDescription": "Begin jou eerste inskrywing sessie.",
+     "longDescription": "Begin jou eerste inskrywing sessie om tokens in die app te begin versamel.",
+     "errorDescription": "Verifikasie het misluk. Probeer asseblief weer om te begin verdien."
+   },
+   "ar": {
+     "title": "ابدأ في الكسب",
+     "shortDescription": "ابدأ جلستك الأولى لتسجيل الوصول.",
+     "longDescription": "ابدأ جلستك الأولى لتسجيل الوصول لبدء جمع الرموز في التطبيق.",
+     "errorDescription": "فشلت عملية التحقق. يرجى المحاولة مرة أخرى لبدء كسب الرموز."
+   },
+   "az": {
+     "title": "Qazanc əldə etməyə başlayın",
+     "shortDescription": "İlk yoxlama sessiyanıza başlayın.",
+     "longDescription": "Tətbiqdə tokenləri toplamağa başlamaq üçün ilk yoxlama sessiyanıza başlayın.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Token qazanmağa başlamaq üçün yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Започнете да печелите",
+     "shortDescription": "Започнете първата си сесия за регистрация.",
+     "longDescription": "Започнете първата си сесия за регистрация, за да започнете да събирате токени в приложението.",
+     "errorDescription": "Проверката не бе успешна. Моля, опитайте отново, за да започнете да печелите токени."
+   },
+   "bn": {
+     "title": "উপার্জন শুরু করুন",
+     "shortDescription": "আপনার প্রথম চেক-ইন সেশন শুরু করুন।",
+     "longDescription": "অ্যাপে টোকেন সংগ্রহ শুরু করতে আপনার প্রথম চেক-ইন সেশন শুরু করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। টোকেন উপার্জন শুরু করতে আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Začněte vydělávat",
+     "shortDescription": "Zahajte svou první check-in relaci.",
+     "longDescription": "Zahajte svou první check-in relaci a začněte sbírat tokeny v aplikaci.",
+     "errorDescription": "Ověření selhalo. Zkuste to znovu, abyste začali vydělávat tokeny."
+   },
+   "de": {
+     "title": "Starte mit dem Verdienen",
+     "shortDescription": "Beginne deine erste Check-in-Sitzung.",
+     "longDescription": "Beginne deine erste Check-in-Sitzung, um mit dem Sammeln von Token in der App zu beginnen.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte versuche es erneut, um mit dem Verdienen von Token zu beginnen."
+   },
+   "el": {
+     "title": "Ξεκινήστε να κερδίζετε",
+     "shortDescription": "Ξεκινήστε την πρώτη σας συνεδρία check-in.",
+     "longDescription": "Ξεκινήστε την πρώτη σας συνεδρία check-in για να αρχίσετε να συλλέγετε tokens στην εφαρμογή.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Δοκιμάστε ξανά για να αρχίσετε να κερδίζετε tokens."
+   },
+   "en": {
+     "title": "Start earning",
+     "shortDescription": "Begin your first check-in session.",
+     "longDescription": "Start your first check-in session to begin collecting tokens in the app.",
+     "errorDescription": "Verification failed. Please try again to begin earning tokens."
+   },
+   "es": {
+     "title": "Empieza a ganar",
+     "shortDescription": "Comienza tu primera sesión de check-in.",
+     "longDescription": "Comienza tu primera sesión de check-in para empezar a recolectar tokens en la aplicación.",
+     "errorDescription": "La verificación falló. Por favor, intenta de nuevo para comenzar a ganar tokens."
+   },
+   "fa": {
+     "title": "شروع به کسب درآمد",
+     "shortDescription": "جلسه چک‌این اول خود را شروع کنید.",
+     "longDescription": "جلسه چک‌این اول خود را شروع کنید تا توکن‌ها را در اپلیکیشن جمع‌آوری کنید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً دوباره تلاش کنید تا کسب توکن را شروع کنید."
+   },
+   "fr": {
+     "title": "Commencez à gagner",
+     "shortDescription": "Commencez votre première session de check-in.",
+     "longDescription": "Commencez votre première session de check-in pour commencer à collecter des tokens dans l'application.",
+     "errorDescription": "Échec de la vérification. Veuillez réessayer pour commencer à gagner des tokens."
+   },
+   "gu": {
+     "title": "કમાવા શરૂ કરો",
+     "shortDescription": "તમારો પહેલો ચેક-ઈન સેશન શરૂ કરો.",
+     "longDescription": "અપ્લિકેશનમાં ટોકન્સ એકઠા કરવાનું શરૂ કરવા માટે તમારું પહેલું ચેક-ઈન સેશન શરૂ કરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. ટોકન્સ કમાવા શરૂ કરવા માટે ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "התחל להרוויח",
+     "shortDescription": "התחל את הפעלת הצ'ק-אין הראשונה שלך.",
+     "longDescription": "התחל את הפעלת הצ'ק-אין הראשונה שלך כדי להתחיל לאסוף אסימונים באפליקציה.",
+     "errorDescription": "האימות נכשל. אנא נסה שוב כדי להתחיל להרוויח אסימונים."
+   },
+   "hi": {
+     "title": "कमाई शुरू करें",
+     "shortDescription": "अपना पहला चेक-इन सत्र शुरू करें।",
+     "longDescription": "ऐप में टोकन एकत्र करना शुरू करने के लिए अपना पहला चेक-इन सत्र शुरू करें।",
+     "errorDescription": "सत्यापन विफल। टोकन कमाना शुरू करने के लिए कृपया फिर से प्रयास करें।"
+   },
+   "hu": {
+     "title": "Kezdj el keresni",
+     "shortDescription": "Kezdd el az első bejelentkezési szekciódat.",
+     "longDescription": "Kezdd el az első bejelentkezési szekciódat, hogy elkezdhess tokeneket gyűjteni az alkalmazásban.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Próbáld újra a tokenek keresésének megkezdéséhez."
+   },
+   "id": {
+     "title": "Mulai menghasilkan",
+     "shortDescription": "Mulai sesi check-in pertama Anda.",
+     "longDescription": "Mulai sesi check-in pertama Anda untuk mulai mengumpulkan token di aplikasi.",
+     "errorDescription": "Verifikasi gagal. Silakan coba lagi untuk mulai mendapatkan token."
+   },
+   "it": {
+     "title": "Inizia a guadagnare",
+     "shortDescription": "Inizia la tua prima sessione di check-in.",
+     "longDescription": "Inizia la tua prima sessione di check-in per iniziare a raccogliere token nell'app.",
+     "errorDescription": "Verifica fallita. Riprova per iniziare a guadagnare token."
+   },
+   "ja": {
+     "title": "収益を開始",
+     "shortDescription": "最初のチェックインセッションを開始します。",
+     "longDescription": "最初のチェックインセッションを開始して、アプリでトークンを収集し始めましょう。",
+     "errorDescription": "確認に失敗しました。トークンの獲得を開始するには、もう一度お試しください。"
+   },
+   "jv": {
+     "title": "Wiwihe diwiwiti",
+     "shortDescription": "Miwiti sesi check-in pisanan.",
+     "longDescription": "Miwiti sesi check-in pisanan kanggo miwiti nglumpukake token ing aplikasi.",
+     "errorDescription": "Verifikasi gagal. Coba maneh kanggo miwiti entuk token."
+   },
+   "kn": {
+     "title": "ಆರಂಭಿಸಲು ಸಂಪಾದಿಸಿ",
+     "shortDescription": "ನಿಮ್ಮ ಮೊದಲ ಚೆಕ್-ಇನ್ ಸೆಷನ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಿ.",
+     "longDescription": "ಆಪ್‌ನಲ್ಲಿ ಟೋಕನ್‌ಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು ನಿಮ್ಮ ಮೊದಲ ಚೆಕ್-ಇನ್ ಸೆಷನ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ಟೋಕನ್ ಗಳಿಸುವುದನ್ನು ಪ್ರಾರಂಭಿಸಲು ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "수익 시작",
+     "shortDescription": "첫 체크인 세션을 시작하세요.",
+     "longDescription": "앱에서 토큰을 수집하기 위해 첫 체크인 세션을 시작하세요.",
+     "errorDescription": "인증에 실패했습니다. 토큰 수익을 시작하려면 다시 시도해 주세요."
+   },
+   "mr": {
+     "title": "उपार्जन सुरू करा",
+     "shortDescription": "तुमची पहिली चेक-इन सत्र सुरू करा.",
+     "longDescription": "अॅपमध्ये टोकन्स गोळा करण्यासाठी तुमची पहिली चेक-इन सत्र सुरू करा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया टोकन्स मिळवणे सुरू करण्यासाठी पुन्हा प्रयत्न करा."
+   },
+   "ms": {
+     "title": "Mulakan pendapatan",
+     "shortDescription": "Mulakan sesi daftar masuk pertama anda.",
+     "longDescription": "Mulakan sesi daftar masuk pertama anda untuk mula mengumpul token dalam apl.",
+     "errorDescription": "Pengesahan gagal. Sila cuba lagi untuk mula memperoleh token."
+   },
+   "nb": {
+     "title": "Begynn å tjene",
+     "shortDescription": "Begynn din første innsjekkingsøkt.",
+     "longDescription": "Begynn din første innsjekkingsøkt for å begynne å samle inn tokens i appen.",
+     "errorDescription": "Verifisering mislyktes. Vennligst prøv igjen for å begynne å tjene tokens."
+   },
+   "nn": {
+     "title": "Byrja å tena",
+     "shortDescription": "Byrja den første innsjekkingsøkta di.",
+     "longDescription": "Byrja den første innsjekkingsøkta di for å byrja å samla inn tokens i appen.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å prøva igjen for å byrja å tena tokens."
+   },
+   "pa": {
+     "title": "ਕਮਾਈ ਸ਼ੁਰੂ ਕਰੋ",
+     "shortDescription": "ਆਪਣਾ ਪਹਿਲਾ ਚੈੱਕ-ਇਨ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰੋ।",
+     "longDescription": "ਐਪ ਵਿੱਚ ਟੋਕਨ ਇਕੱਠਾ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਆਪਣਾ ਪਹਿਲਾ ਚੈੱਕ-ਇਨ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਟੋਕਨ ਕਮਾਉਣ ਲਈ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Zacznij zarabiać",
+     "shortDescription": "Rozpocznij swoją pierwszą sesję check-in.",
+     "longDescription": "Rozpocznij swoją pierwszą sesję check-in, aby zacząć zbierać tokeny w aplikacji.",
+     "errorDescription": "Weryfikacja nie powiodła się. Spróbuj ponownie, aby zacząć zarabiać tokeny."
+   },
+   "pt": {
+     "title": "Comece a ganhar",
+     "shortDescription": "Inicie sua primeira sessão de check-in.",
+     "longDescription": "Inicie sua primeira sessão de check-in para começar a coletar tokens no aplicativo.",
+     "errorDescription": "Falha na verificação. Tente novamente para começar a ganhar tokens."
+   },
+   "ro": {
+     "title": "Începe să câștigi",
+     "shortDescription": "Începe prima ta sesiune de check-in.",
+     "longDescription": "Începe prima ta sesiune de check-in pentru a începe să colectezi tokenuri în aplicație.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să încerci din nou pentru a începe să câștigi tokenuri."
+   },
+   "ru": {
+     "title": "Начните зарабатывать",
+     "shortDescription": "Начните свою первую сессию регистрации.",
+     "longDescription": "Начните свою первую сессию регистрации, чтобы начать собирать токены в приложении.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, попробуйте еще раз, чтобы начать зарабатывать токены."
+   },
+   "sk": {
+     "title": "Začnite zarábať",
+     "shortDescription": "Začnite svoju prvú check-in reláciu.",
+     "longDescription": "Začnite svoju prvú check-in reláciu a začnite zbierať tokeny v aplikácii.",
+     "errorDescription": "Overenie zlyhalo. Skúste to znova, aby ste začali zarábať tokeny."
+   },
+   "sl": {
+     "title": "Začnite zaslužiti",
+     "shortDescription": "Začnite svojo prvo sejo prijave.",
+     "longDescription": "Začnite svojo prvo sejo prijave, da začnete zbirati žetone v aplikaciji.",
+     "errorDescription": "Preverjanje ni uspelo. Poskusite znova začeti zaslužiti žetone."
+   },
+   "sq": {
+     "title": "Filloni të fitoni",
+     "shortDescription": "Filloni seancën tuaj të parë të check-in.",
+     "longDescription": "Filloni seancën tuaj të parë të check-in për të filluar mbledhjen e tokenëve në aplikacion.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi provoni përsëri për të filluar fitimin e tokenëve."
+   },
+   "sv": {
+     "title": "Börja tjäna",
+     "shortDescription": "Börja din första incheckningssession.",
+     "longDescription": "Börja din första incheckningssession för att börja samla tokens i appen.",
+     "errorDescription": "Verifieringen misslyckades. Försök igen för att börja tjäna tokens."
+   },
+   "te": {
+     "title": "సంపాదించడం ప్రారంభించండి",
+     "shortDescription": "మీ మొదటి చెక్-ఇన్ సెషన్‌ను ప్రారంభించండి.",
+     "longDescription": "యాప్‌లో టోకెన్లు సేకరించడం ప్రారంభించడానికి మీ మొదటి చెక్-ఇన్ సెషన్‌ను ప్రారంభించండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. టోకెన్లు సంపాదించడం ప్రారంభించడానికి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "เริ่มรับรายได้",
+     "shortDescription": "เริ่มเซสชันเช็คอินครั้งแรกของคุณ",
+     "longDescription": "เริ่มเซสชันเช็คอินครั้งแรกของคุณเพื่อเริ่มสะสมโทเค็นในแอป",
+     "errorDescription": "การตรวจสอบล้มเหลว โปรดลองอีกครั้งเพื่อเริ่มรับโทเค็น"
+   },
+   "tr": {
+     "title": "Kazanmaya başla",
+     "shortDescription": "İlk check-in oturumunu başlat.",
+     "longDescription": "Uygulamada token toplamaya başlamak için ilk check-in oturumunu başlat.",
+     "errorDescription": "Doğrulama başarısız oldu. Token kazanmaya başlamak için lütfen tekrar deneyin."
+   },
+   "uk": {
+     "title": "Почніть заробляти",
+     "shortDescription": "Почніть свою першу сесію реєстрації.",
+     "longDescription": "Почніть свою першу сесію реєстрації, щоб почати збирати токени в додатку.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, спробуйте ще раз, щоб почати заробляти токени."
+   },
+   "ur": {
+     "title": "کمانا شروع کریں",
+     "shortDescription": "اپنا پہلا چیک ان سیشن شروع کریں۔",
+     "longDescription": "ایپ میں ٹوکن جمع کرنا شروع کرنے کے لیے اپنا پہلا چیک ان سیشن شروع کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم ٹوکن کمانا شروع کرنے کے لیے دوبارہ کوشش کریں۔"
+   },
+   "vi": {
+     "title": "Bắt đầu kiếm tiền",
+     "shortDescription": "Bắt đầu phiên check-in đầu tiên của bạn.",
+     "longDescription": "Bắt đầu phiên check-in đầu tiên của bạn để bắt đầu thu thập token trong ứng dụng.",
+     "errorDescription": "Xác minh không thành công. Vui lòng thử lại để bắt đầu kiếm token."
+   },
+   "zh-hant": {
+     "title": "開始賺取",
+     "shortDescription": "開始您的首次簽到會議。",
+     "longDescription": "開始您的首次簽到會議以開始在應用程式中收集代幣。",
+     "errorDescription": "驗證失敗。請重試以開始賺取代幣。"
+   },
+   "zh": {
+     "title": "开始赚取",
+     "shortDescription": "开始您的首次签到会话。",
+     "longDescription": "开始您的首次签到会话以开始在应用程序中收集代币。",
+     "errorDescription": "验证失败。请重试以开始赚取代币。"
+   }
+ }
+ 
