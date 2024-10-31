@@ -1,0 +1,261 @@
+{
+   "af": {
+     "title": "Teken in op YouTube",
+     "shortDescription": "Moet nie ION se nuutste video's en opdaterings misloop nie.",
+     "longDescription": "Teken in op Ice Open Network se YouTube-kanaal vir opdaterings en eksklusiewe inhoud.",
+     "errorDescription": "Verifikasie het misluk. Kyk asseblief of jy ingeteken het en probeer weer."
+   },
+   "ar": {
+     "title": "اشترك على YouTube",
+     "shortDescription": "لا تفوت أحدث مقاطع الفيديو والتحديثات من ION.",
+     "longDescription": "اشترك في قناة Ice Open Network على YouTube للحصول على التحديثات والمحتوى الحصري.",
+     "errorDescription": "فشل التحقق. يرجى التحقق مما إذا كنت قد اشتركت وحاول مرة أخرى."
+   },
+   "az": {
+     "title": "YouTube-da abunə olun",
+     "shortDescription": "ION-un ən son videolarını və yeniliklərini qaçırmayın.",
+     "longDescription": "Yeniliklər və eksklüziv məzmun üçün Ice Open Network-un YouTube kanalına abunə olun.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa abunə olub-olmadığınızı yoxlayın və yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Абонирайте се в YouTube",
+     "shortDescription": "Не пропускайте последните видеоклипове и актуализации на ION.",
+     "longDescription": "Абонирайте се за YouTube канала на Ice Open Network, за да получавате актуализации и ексклузивно съдържание.",
+     "errorDescription": "Проверката не бе успешна. Моля, проверете дали сте се абонирали и опитайте отново."
+   },
+   "bn": {
+     "title": "YouTube-এ সাবস্ক্রাইব করুন",
+     "shortDescription": "ION-এর সর্বশেষ ভিডিও এবং আপডেটগুলি মিস করবেন না।",
+     "longDescription": "আপডেট এবং এক্সক্লুসিভ সামগ্রীর জন্য Ice Open Network-এর YouTube চ্যানেলে সাবস্ক্রাইব করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন আপনি সাবস্ক্রাইব করেছেন এবং আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Přihlaste se k odběru na YouTube",
+     "shortDescription": "Nenechte si ujít nejnovější videa a aktualizace ION.",
+     "longDescription": "Přihlaste se k odběru kanálu Ice Open Network na YouTube, abyste dostávali aktualizace a exkluzivní obsah.",
+     "errorDescription": "Ověření selhalo. Zkontrolujte, zda jste se přihlásili k odběru, a zkuste to znovu."
+   },
+   "de": {
+     "title": "Auf YouTube abonnieren",
+     "shortDescription": "Verpassen Sie nicht die neuesten Videos und Updates von ION.",
+     "longDescription": "Abonnieren Sie den YouTube-Kanal von Ice Open Network für Updates und exklusiven Inhalt.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte überprüfen Sie, ob Sie abonniert haben, und versuchen Sie es erneut."
+   },
+   "el": {
+     "title": "Εγγραφείτε στο YouTube",
+     "shortDescription": "Μην χάσετε τα τελευταία βίντεο και ενημερώσεις του ION.",
+     "longDescription": "Εγγραφείτε στο κανάλι του Ice Open Network στο YouTube για ενημερώσεις και αποκλειστικό περιεχόμενο.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Ελέγξτε αν εγγραφήκατε και δοκιμάστε ξανά."
+   },
+   "en": {
+     "title": "Subscribe on YouTube",
+     "shortDescription": "Don’t miss ION latest videos and updates.",
+     "longDescription": "Subscribe to Ice Open Network’s YouTube channel for updates and exclusive content.",
+     "errorDescription": "Verification failed. Please check if you subscribed and try again."
+   },
+   "es": {
+     "title": "Suscríbete en YouTube",
+     "shortDescription": "No te pierdas los últimos videos y actualizaciones de ION.",
+     "longDescription": "Suscríbete al canal de YouTube de Ice Open Network para recibir actualizaciones y contenido exclusivo.",
+     "errorDescription": "La verificación falló. Por favor, revisa si te suscribiste e inténtalo de nuevo."
+   },
+   "fa": {
+     "title": "در YouTube مشترک شوید",
+     "shortDescription": "آخرین ویدیوها و به‌روزرسانی‌های ION را از دست ندهید.",
+     "longDescription": "برای دریافت به‌روزرسانی‌ها و محتوای اختصاصی در کانال YouTube شبکه Ice Open Network مشترک شوید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً بررسی کنید که آیا مشترک شده‌اید و دوباره تلاش کنید."
+   },
+   "fr": {
+     "title": "Abonnez-vous sur YouTube",
+     "shortDescription": "Ne manquez pas les dernières vidéos et mises à jour d'ION.",
+     "longDescription": "Abonnez-vous à la chaîne YouTube de Ice Open Network pour recevoir des mises à jour et du contenu exclusif.",
+     "errorDescription": "Échec de la vérification. Veuillez vérifier si vous êtes abonné et réessayer."
+   },
+   "gu": {
+     "title": "YouTube પર સબ્સ્ક્રાઇબ કરો",
+     "shortDescription": "ION ના તાજેતરના વિડિયો અને અપડેટ્સ ચૂકી ના જશો.",
+     "longDescription": "અપડેટ્સ અને ખાસ સામગ્રી માટે Ice Open Network ના YouTube ચેનલને સબ્સ્ક્રાઇબ કરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને તપાસો કે તમે સબ્સ્ક્રાઇબ કર્યું છે કે નહીં અને ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "הירשמו ביוטיוב",
+     "shortDescription": "אל תפספסו את הסרטונים והעדכונים האחרונים של ION.",
+     "longDescription": "הירשמו לערוץ היוטיוב של Ice Open Network לקבלת עדכונים ותוכן בלעדי.",
+     "errorDescription": "האימות נכשל. אנא בדקו אם נרשמתם ונסו שוב."
+   },
+   "hi": {
+     "title": "YouTube पर सब्सक्राइब करें",
+     "shortDescription": "ION के नवीनतम वीडियो और अपडेट मिस न करें।",
+     "longDescription": "अपडेट्स और एक्सक्लूसिव सामग्री के लिए Ice Open Network के YouTube चैनल को सब्सक्राइब करें।",
+     "errorDescription": "सत्यापन विफल। कृपया जांचें कि आपने सब्सक्राइब किया है और फिर से प्रयास करें।"
+   },
+   "hu": {
+     "title": "Iratkozz fel a YouTube-on",
+     "shortDescription": "Ne maradj le az ION legújabb videóiról és frissítéseiről.",
+     "longDescription": "Iratkozz fel az Ice Open Network YouTube-csatornájára a frissítésekért és exkluzív tartalmakért.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Ellenőrizd, hogy feliratkoztál-e, és próbáld újra."
+   },
+   "id": {
+     "title": "Berlangganan di YouTube",
+     "shortDescription": "Jangan lewatkan video dan pembaruan terbaru dari ION.",
+     "longDescription": "Berlangganan ke saluran YouTube Ice Open Network untuk pembaruan dan konten eksklusif.",
+     "errorDescription": "Verifikasi gagal. Silakan periksa apakah Anda sudah berlangganan dan coba lagi."
+   },
+   "it": {
+     "title": "Iscriviti su YouTube",
+     "shortDescription": "Non perderti gli ultimi video e aggiornamenti di ION.",
+     "longDescription": "Iscriviti al canale YouTube di Ice Open Network per aggiornamenti e contenuti esclusivi.",
+     "errorDescription": "Verifica fallita. Controlla se ti sei iscritto e riprova."
+   },
+   "ja": {
+     "title": "YouTubeで登録する",
+     "shortDescription": "IONの最新ビデオとアップデートをお見逃しなく。",
+     "longDescription": "最新情報と限定コンテンツを受け取るために、Ice Open NetworkのYouTubeチャンネルに登録してください。",
+     "errorDescription": "確認に失敗しました。登録しているかどうか確認し、もう一度お試しください。"
+   },
+   "jv": {
+     "title": "Langganan ing YouTube",
+     "shortDescription": "Aja nganti kliwat video lan pembaruan paling anyar saka ION.",
+     "longDescription": "Langganan saluran YouTube Ice Open Network kanggo nampa pembaruan lan konten eksklusif.",
+     "errorDescription": "Verifikasi gagal. Priksa manawa sampeyan wis langganan lan coba maneh."
+   },
+   "kn": {
+     "title": "YouTube ನಲ್ಲಿ ಸಬ್ಸ್ಕ್ರೈಬ್ ಮಾಡಿ",
+     "shortDescription": "ION ನ ಇತ್ತೀಚಿನ ವಿಡಿಯೋಗಳು ಮತ್ತು ನವೀಕರಣಗಳನ್ನು ತಪ್ಪಿಸಿಕೊಳ್ಳಬೇಡಿ.",
+     "longDescription": "ನವೀಕರಣಗಳು ಮತ್ತು ವಿಶೇಷ ವಿಷಯಕ್ಕಾಗಿ Ice Open Network ಯ YouTube ಚಾನೆಲ್ ಗೆ ಸಬ್ಸ್ಕ್ರೈಬ್ ಮಾಡಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನೀವು ಸಬ್ಸ್ಕ್ರೈಬ್ ಮಾಡಿಕೊಂಡಿದ್ದೀರಾ ಎಂದು ಪರಿಶೀಲಿಸಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "YouTube에서 구독하기",
+     "shortDescription": "ION의 최신 동영상 및 업데이트를 놓치지 마세요.",
+     "longDescription": "업데이트 및 독점 콘텐츠를 위해 Ice Open Network의 YouTube 채널을 구독하세요.",
+     "errorDescription": "인증에 실패했습니다. 구독 여부를 확인하고 다시 시도하세요."
+   },
+   "mr": {
+     "title": "YouTube वर सदस्यता घ्या",
+     "shortDescription": "ION चे नवीनतम व्हिडिओ आणि अद्यतने चुकवू नका.",
+     "longDescription": "अद्यतने आणि विशेष सामग्रीसाठी Ice Open Network च्या YouTube चॅनेलचे सदस्यत्व घ्या.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तपासा की तुम्ही सदस्यत्व घेतले आहे आणि पुन्हा प्रयत्न करा."
+   },
+   "ms": {
+     "title": "Langgan di YouTube",
+     "shortDescription": "Jangan terlepas video dan kemas kini terkini ION.",
+     "longDescription": "Langgan saluran YouTube Ice Open Network untuk kemas kini dan kandungan eksklusif.",
+     "errorDescription": "Pengesahan gagal. Sila semak jika anda sudah melanggan dan cuba lagi."
+   },
+   "nb": {
+     "title": "Abonner på YouTube",
+     "shortDescription": "Ikke gå glipp av IONs nyeste videoer og oppdateringer.",
+     "longDescription": "Abonner på Ice Open Network sin YouTube-kanal for oppdateringer og eksklusivt innhold.",
+     "errorDescription": "Verifisering mislyktes. Vennligst sjekk om du har abonnert og prøv igjen."
+   },
+   "nn": {
+     "title": "Abonner på YouTube",
+     "shortDescription": "Ikkje gå glipp av ION sine nyaste videoar og oppdateringar.",
+     "longDescription": "Abonner på Ice Open Network sin YouTube-kanal for oppdateringar og eksklusivt innhald.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å sjå om du har abonnert og prøv igjen."
+   },
+   "pa": {
+     "title": "YouTube 'ਤੇ ਸਬਸਕ੍ਰਾਈਬ ਕਰੋ",
+     "shortDescription": "ION ਦੇ ਤਾਜ਼ਾ ਵੀਡੀਓ ਅਤੇ ਅੱਪਡੇਟਾਂ ਨਾ ਛੱਡੋ।",
+     "longDescription": "ਅੱਪਡੇਟਾਂ ਅਤੇ ਖ਼ਾਸ ਸਮੱਗਰੀ ਲਈ Ice Open Network ਦੇ YouTube ਚੈਨਲ ਨੂੰ ਸਬਸਕ੍ਰਾਈਬ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਜਾਂਚੋ ਕਿ ਤੁਸੀਂ ਸਬਸਕ੍ਰਾਈਬ ਕੀਤਾ ਹੈ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+   },
+   "pl": {
+     "title": "Zasubskrybuj na YouTube",
+     "shortDescription": "Nie przegap najnowszych filmów i aktualizacji ION.",
+     "longDescription": "Zasubskrybuj kanał YouTube Ice Open Network, aby otrzymywać aktualizacje i ekskluzywne treści.",
+     "errorDescription": "Weryfikacja nie powiodła się. Sprawdź, czy zasubskrybowałeś i spróbuj ponownie."
+   },
+   "pt": {
+     "title": "Inscreva-se no YouTube",
+     "shortDescription": "Não perca os últimos vídeos e atualizações da ION.",
+     "longDescription": "Inscreva-se no canal do YouTube da Ice Open Network para atualizações e conteúdo exclusivo.",
+     "errorDescription": "Falha na verificação. Verifique se você se inscreveu e tente novamente."
+   },
+   "ro": {
+     "title": "Abonează-te pe YouTube",
+     "shortDescription": "Nu rata cele mai recente videoclipuri și actualizări ION.",
+     "longDescription": "Abonează-te la canalul YouTube al Ice Open Network pentru actualizări și conținut exclusiv.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să verifici dacă te-ai abonat și să încerci din nou."
+   },
+   "ru": {
+     "title": "Подпишитесь на YouTube",
+     "shortDescription": "Не пропустите последние видео и обновления ION.",
+     "longDescription": "Подпишитесь на канал Ice Open Network на YouTube, чтобы получать обновления и эксклюзивный контент.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, проверьте, подписались ли вы, и попробуйте снова."
+   },
+   "sk": {
+     "title": "Prihlásiť sa na YouTube",
+     "shortDescription": "Nezmeškajte najnovšie videá a aktualizácie ION.",
+     "longDescription": "Prihláste sa na odber kanála Ice Open Network na YouTube, aby ste získali aktualizácie a exkluzívny obsah.",
+     "errorDescription": "Overenie zlyhalo. Skontrolujte, či ste sa prihlásili na odber, a skúste to znova."
+   },
+   "sl": {
+     "title": "Naročite se na YouTube",
+     "shortDescription": "Ne zamudite najnovejših videoposnetkov in posodobitev ION.",
+     "longDescription": "Naročite se na YouTube kanal Ice Open Network za posodobitve in ekskluzivne vsebine.",
+     "errorDescription": "Preverjanje ni uspelo. Preverite, ali ste naročeni, in poskusite znova."
+   },
+   "sq": {
+     "title": "Abonohuni në YouTube",
+     "shortDescription": "Mos i humbisni videot dhe përditësimet e fundit të ION.",
+     "longDescription": "Abonohuni në kanalin YouTube të Ice Open Network për përditësime dhe përmbajtje ekskluzive.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi kontrolloni nëse jeni abonuar dhe provoni përsëri."
+   },
+   "sv": {
+     "title": "Prenumerera på YouTube",
+     "shortDescription": "Missa inte ION:s senaste videor och uppdateringar.",
+     "longDescription": "Prenumerera på Ice Open Networks YouTube-kanal för uppdateringar och exklusivt innehåll.",
+     "errorDescription": "Verifiering misslyckades. Kontrollera om du har prenumererat och försök igen."
+   },
+   "te": {
+     "title": "YouTube లో సబ్‌స్క్రైబ్ చేయండి",
+     "shortDescription": "ION యొక్క తాజా వీడియోలు మరియు నవీకరణలను కోల్పోవద్దు.",
+     "longDescription": "అప్డేట్లు మరియు ప్రత్యేక కంటెంట్ కోసం Ice Open Network యొక్క YouTube ఛానెల్‌ను సబ్‌స్క్రైబ్ చేయండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీరు సబ్‌స్క్రైబ్ చేసారా అని తనిఖీ చేసి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "สมัครสมาชิกบน YouTube",
+     "shortDescription": "อย่าพลาดวิดีโอล่าสุดและการอัปเดตของ ION",
+     "longDescription": "สมัครรับข้อมูลช่อง YouTube ของ Ice Open Network เพื่อรับการอัปเดตและเนื้อหาพิเศษ",
+     "errorDescription": "การยืนยันล้มเหลว โปรดตรวจสอบว่าคุณสมัครรับข้อมูลแล้วและลองใหม่อีกครั้ง"
+   },
+   "tr": {
+     "title": "YouTube'da Abone Ol",
+     "shortDescription": "ION'un en son videolarını ve güncellemelerini kaçırmayın.",
+     "longDescription": "Güncellemeler ve özel içerikler için Ice Open Network'un YouTube kanalına abone olun.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen abone olup olmadığınızı kontrol edin ve tekrar deneyin."
+   },
+   "uk": {
+     "title": "Підпишіться на YouTube",
+     "shortDescription": "Не пропустіть останні відео та оновлення ION.",
+     "longDescription": "Підпишіться на канал Ice Open Network на YouTube, щоб отримувати оновлення та ексклюзивний контент.",
+     "errorDescription": "Перевірка не вдалася. Будь ласка, перевірте, чи підписалися ви, і спробуйте ще раз."
+   },
+   "ur": {
+     "title": "YouTube پر سبسکرائب کریں",
+     "shortDescription": "ION کی تازہ ترین ویڈیوز اور اپ ڈیٹس سے محروم نہ ہوں۔",
+     "longDescription": "اپ ڈیٹس اور خصوصی مواد کے لیے Ice Open Network کے YouTube چینل کو سبسکرائب کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم چیک کریں کہ آپ نے سبسکرائب کیا ہے اور دوبارہ کوشش کریں۔"
+   },
+   "vi": {
+     "title": "Đăng ký trên YouTube",
+     "shortDescription": "Đừng bỏ lỡ các video và cập nhật mới nhất của ION.",
+     "longDescription": "Đăng ký kênh YouTube của Ice Open Network để nhận các bản cập nhật và nội dung độc quyền.",
+     "errorDescription": "Xác minh không thành công. Vui lòng kiểm tra xem bạn đã đăng ký và thử lại."
+   },
+   "zh-hant": {
+     "title": "在 YouTube 上訂閱",
+     "shortDescription": "不要錯過 ION 的最新視頻和更新。",
+     "longDescription": "訂閱 Ice Open Network 的 YouTube 頻道以獲取更新和獨家內容。",
+     "errorDescription": "驗證失敗。請檢查您是否訂閱了，然後再試一次。"
+   },
+   "zh": {
+     "title": "在 YouTube 上订阅",
+     "shortDescription": "不要错过 ION 的最新视频和更新。",
+     "longDescription": "订阅 Ice Open Network 的 YouTube 频道以获取更新和独家内容。",
+     "errorDescription": "验证失败。请检查您是否订阅，然后重试。"
+   }
+ }
+ 

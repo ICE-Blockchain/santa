@@ -1,0 +1,261 @@
+{
+   "af": {
+     "title": "Eis {{.BadgeName}} sosiale kenteken",
+     "shortDescription": "Ontsluit en eis jou nuwe sosiale kenteken.",
+     "longDescription": "Eis jou kenteken om jou vordering en prestasies in die app te wys.",
+     "errorDescription": "Verifikasie het misluk. Probeer asseblief weer om jou kenteken te eis."
+   },
+   "ar": {
+     "title": "مطالبة بشارة {{.BadgeName}} الاجتماعية",
+     "shortDescription": "افتح واطلب شارة التواصل الاجتماعي الجديدة الخاصة بك.",
+     "longDescription": "اطلب شارتك لعرض تقدمك وإنجازاتك في التطبيق.",
+     "errorDescription": "فشل التحقق. يرجى المحاولة مرة أخرى للمطالبة بشارتك."
+   },
+   "az": {
+     "title": "{{.BadgeName}} sosial döş nişanını tələb et",
+     "shortDescription": "Sosial döş nişanınızı açın və tələb edin.",
+     "longDescription": "Tətbiqdə irəliləyişlərinizi və nailiyyətlərinizi göstərmək üçün döş nişanınızı tələb edin.",
+     "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa döş nişanınızı tələb etmək üçün yenidən cəhd edin."
+   },
+   "bg": {
+     "title": "Заяви социалния значка {{.BadgeName}}",
+     "shortDescription": "Отключете и заявете новия си социален значка.",
+     "longDescription": "Заявете значката си, за да покажете напредъка и постиженията си в приложението.",
+     "errorDescription": "Проверката не бе успешна. Моля, опитайте отново, за да заявите значката си."
+   },
+   "bn": {
+     "title": "{{.BadgeName}} সামাজিক ব্যাজ দাবি করুন",
+     "shortDescription": "আপনার নতুন সামাজিক ব্যাজ আনলক এবং দাবি করুন।",
+     "longDescription": "অ্যাপে আপনার অগ্রগতি এবং অর্জন প্রদর্শন করতে আপনার ব্যাজ দাবি করুন।",
+     "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। আপনার ব্যাজটি দাবি করার জন্য অনুগ্রহ করে আবার চেষ্টা করুন।"
+   },
+   "cs": {
+     "title": "Získejte sociální odznak {{.BadgeName}}",
+     "shortDescription": "Odemkněte a získejte svůj nový sociální odznak.",
+     "longDescription": "Získejte svůj odznak a ukažte svůj pokrok a úspěchy v aplikaci.",
+     "errorDescription": "Ověření selhalo. Zkuste to znovu a získejte svůj odznak."
+   },
+   "de": {
+     "title": "{{.BadgeName}} Sozialabzeichen beanspruchen",
+     "shortDescription": "Schalte dein neues Sozialabzeichen frei und beanspruche es.",
+     "longDescription": "Beanspruche dein Abzeichen, um deinen Fortschritt und deine Erfolge in der App zu zeigen.",
+     "errorDescription": "Verifizierung fehlgeschlagen. Bitte versuche es erneut, um dein Abzeichen zu beanspruchen."
+   },
+   "el": {
+     "title": "Διεκδίκηση κοινωνικού σήματος {{.BadgeName}}",
+     "shortDescription": "Ξεκλειδώστε και διεκδικήστε το νέο σας κοινωνικό σήμα.",
+     "longDescription": "Διεκδικήστε το σήμα σας για να δείξετε την πρόοδο και τα επιτεύγματά σας στην εφαρμογή.",
+     "errorDescription": "Η επαλήθευση απέτυχε. Δοκιμάστε ξανά να διεκδικήσετε το σήμα σας."
+   },
+   "en": {
+     "title": "Claim {{.BadgeName}} social badge",
+     "shortDescription": "Unlock and claim your new social badge.",
+     "longDescription": "Claim your badge to showcase your progress and achievements in the app.",
+     "errorDescription": "Verification failed. Please try again to claim your badge."
+   },
+   "es": {
+     "title": "Reclamar la insignia social {{.BadgeName}}",
+     "shortDescription": "Desbloquea y reclama tu nueva insignia social.",
+     "longDescription": "Reclama tu insignia para mostrar tu progreso y logros en la aplicación.",
+     "errorDescription": "La verificación falló. Por favor, inténtalo de nuevo para reclamar tu insignia."
+   },
+   "fa": {
+     "title": "ادعای نشان اجتماعی {{.BadgeName}}",
+     "shortDescription": "نشان اجتماعی جدید خود را باز کرده و ادعا کنید.",
+     "longDescription": "نشان خود را ادعا کنید تا پیشرفت‌ها و دستاوردهای خود را در اپلیکیشن نشان دهید.",
+     "errorDescription": "اعتبارسنجی شکست خورد. لطفاً دوباره تلاش کنید تا نشان خود را ادعا کنید."
+   },
+   "fr": {
+     "title": "Réclamer le badge social {{.BadgeName}}",
+     "shortDescription": "Débloquez et réclamez votre nouveau badge social.",
+     "longDescription": "Réclamez votre badge pour montrer vos progrès et réalisations dans l'application.",
+     "errorDescription": "Échec de la vérification. Veuillez réessayer de réclamer votre badge."
+   },
+   "gu": {
+     "title": "{{.BadgeName}} સામાજિક બેજ દાવો કરો",
+     "shortDescription": "તમારા નવા સામાજિક બેજને અનલૉક કરો અને દાવો કરો.",
+     "longDescription": "એપ્લિકેશનમાં તમારા પ્રગતિ અને સિદ્ધિઓને દર્શાવવા માટે તમારું બેજ દાવો કરો.",
+     "errorDescription": "ચકાસણી નિષ્ફળ. તમારું બેજ દાવો કરવા માટે ફરી પ્રયાસ કરો."
+   },
+   "he": {
+     "title": "תבע את תג {{.BadgeName}} החברתי",
+     "shortDescription": "פתח ותבע את תג החברתי החדש שלך.",
+     "longDescription": "תבע את התג שלך כדי להציג את ההתקדמות וההישגים שלך באפליקציה.",
+     "errorDescription": "האימות נכשל. אנא נסה שוב לתבוע את התג שלך."
+   },
+   "hi": {
+     "title": "{{.BadgeName}} सामाजिक बैज का दावा करें",
+     "shortDescription": "अपना नया सामाजिक बैज अनलॉक करें और दावा करें।",
+     "longDescription": "ऐप में अपनी प्रगति और उपलब्धियों को दिखाने के लिए अपना बैज दावा करें।",
+     "errorDescription": "सत्यापन विफल। कृपया फिर से प्रयास करें और अपने बैज का दावा करें।"
+   },
+   "hu": {
+     "title": "Igényeld a(z) {{.BadgeName}} közösségi jelvényt",
+     "shortDescription": "Nyisd meg és igényeld az új közösségi jelvényedet.",
+     "longDescription": "Igényeld a jelvényedet, hogy bemutasd a haladásodat és eredményeidet az alkalmazásban.",
+     "errorDescription": "Az ellenőrzés sikertelen volt. Kérlek, próbáld újra igényelni a jelvényedet."
+   },
+   "id": {
+     "title": "Klaim lencana sosial {{.BadgeName}}",
+     "shortDescription": "Buka dan klaim lencana sosial baru Anda.",
+     "longDescription": "Klaim lencana Anda untuk menampilkan kemajuan dan pencapaian Anda di aplikasi.",
+     "errorDescription": "Verifikasi gagal. Silakan coba lagi untuk mengklaim lencana Anda."
+   },
+   "it": {
+     "title": "Richiedi il badge sociale {{.BadgeName}}",
+     "shortDescription": "Sblocca e richiedi il tuo nuovo badge sociale.",
+     "longDescription": "Richiedi il tuo badge per mostrare i tuoi progressi e risultati nell'app.",
+     "errorDescription": "Verifica fallita. Riprova a richiedere il tuo badge."
+   },
+   "ja": {
+     "title": "{{.BadgeName}} ソーシャルバッジを請求する",
+     "shortDescription": "新しいソーシャルバッジをアンロックして請求してください。",
+     "longDescription": "バッジを請求して、アプリ内での進捗や成果を披露しましょう。",
+     "errorDescription": "確認に失敗しました。バッジを請求するためにもう一度試してください。"
+   },
+   "jv": {
+     "title": "Ngaku badge sosial {{.BadgeName}}",
+     "shortDescription": "Buka lan ngaku badge sosial anyar sampeyan.",
+     "longDescription": "Ngaku badge sampeyan kanggo nampilake kemajuan lan prestasi ing aplikasi.",
+     "errorDescription": "Verifikasi gagal. Coba maneh kanggo ngaku badge sampeyan."
+   },
+   "kn": {
+     "title": "{{.BadgeName}} ಸಾಮಾಜಿಕ ಬ್ಯಾಡ್ಜ್ ಅನ್ನು ದಾವಿ ಮಾಡಿ",
+     "shortDescription": "ನಿಮ್ಮ ಹೊಸ ಸಾಮಾಜಿಕ ಬ್ಯಾಡ್ಜ್ ಅನ್ನು ಅನ್ಲಾಕ್ ಮಾಡಿ ಮತ್ತು ದಾವಿ ಮಾಡಿ.",
+     "longDescription": "ಆಪ್‌ನಲ್ಲಿ ನಿಮ್ಮ ಪ್ರಗತಿ ಮತ್ತು ಸಾಧನೆಗಳನ್ನು ತೋರಿಸಲು ನಿಮ್ಮ ಬ್ಯಾಡ್ಜ್ ಅನ್ನು ದಾವಿ ಮಾಡಿ.",
+     "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಬ್ಯಾಡ್ಜ್ ಅನ್ನು ದಾವಿ ಮಾಡಲು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+   },
+   "ko": {
+     "title": "{{.BadgeName}} 소셜 배지를 요청하세요",
+     "shortDescription": "새로운 소셜 배지를 잠금 해제하고 요청하세요.",
+     "longDescription": "앱에서 자신의 진행 상황과 성과를 보여주기 위해 배지를 요청하세요.",
+     "errorDescription": "인증에 실패했습니다. 배지를 요청하려면 다시 시도해 주세요."
+   },
+   "mr": {
+     "title": "{{.BadgeName}} सामाजिक बॅज दावा करा",
+     "shortDescription": "तुमचा नवीन सामाजिक बॅज अनलॉक करा आणि दावा करा.",
+     "longDescription": "अॅपमध्ये तुमची प्रगती आणि उपलब्ध्या दाखवण्यासाठी तुमचा बॅज दावा करा.",
+     "errorDescription": "सत्यापन अयशस्वी झाले. कृपया पुन्हा प्रयत्न करा आणि तुमचा बॅज दावा करा."
+   },
+   "ms": {
+     "title": "Tuntut lencana sosial {{.BadgeName}}",
+     "shortDescription": "Buka dan tuntut lencana sosial baharu anda.",
+     "longDescription": "Tuntut lencana anda untuk mempamerkan kemajuan dan pencapaian anda dalam aplikasi.",
+     "errorDescription": "Pengesahan gagal. Sila cuba lagi untuk menuntut lencana anda."
+   },
+   "nb": {
+     "title": "Krev {{.BadgeName}} sosialmerke",
+     "shortDescription": "Lås opp og krev ditt nye sosialmerke.",
+     "longDescription": "Krev merket ditt for å vise frem fremgangen og prestasjonene dine i appen.",
+     "errorDescription": "Verifisering mislyktes. Vennligst prøv igjen for å kreve merket ditt."
+   },
+   "nn": {
+     "title": "Krev {{.BadgeName}} sosialmerke",
+     "shortDescription": "Lås opp og krev ditt nye sosialmerke.",
+     "longDescription": "Krev merket ditt for å vise fram framgangen og prestasjonane dine i appen.",
+     "errorDescription": "Verifisering mislukkast. Ver venleg å prøv igjen for å krev merket ditt."
+   },
+   "pa": {
+     "title": "{{.BadgeName}} ਸਮਾਜਿਕ ਬੈਜ ਕਲੈਮ ਕਰੋ",
+     "shortDescription": "ਆਪਣਾ ਨਵਾਂ ਸਮਾਜਿਕ ਬੈਜ ਅਨਲੌਕ ਅਤੇ ਕਲੈਮ ਕਰੋ।",
+     "longDescription": "ਐਪ ਵਿੱਚ ਆਪਣੇ ਤਰੱਕੀ ਅਤੇ ਉਪਲਬਧੀਆਂ ਨੂੰ ਵੇਖਾਉਣ ਲਈ ਆਪਣਾ ਬੈਜ ਕਲੈਮ ਕਰੋ।",
+     "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਆਪਣਾ ਬੈਜ ਕਲੈਮ ਕਰਨ ਲਈ।"
+   },
+   "pl": {
+     "title": "Zgłoś odznakę społeczną {{.BadgeName}}",
+     "shortDescription": "Odblokuj i zgłoś swoją nową odznakę społeczną.",
+     "longDescription": "Zgłoś swoją odznakę, aby zaprezentować swoje postępy i osiągnięcia w aplikacji.",
+     "errorDescription": "Weryfikacja nie powiodła się. Spróbuj ponownie zgłosić swoją odznakę."
+   },
+   "pt": {
+     "title": "Reivindicar o emblema social {{.BadgeName}}",
+     "shortDescription": "Desbloqueie e reivindique o seu novo emblema social.",
+     "longDescription": "Reivindique o seu emblema para exibir seu progresso e conquistas no aplicativo.",
+     "errorDescription": "Falha na verificação. Tente novamente para reivindicar o seu emblema."
+   },
+   "ro": {
+     "title": "Revendică insigna socială {{.BadgeName}}",
+     "shortDescription": "Deblochează și revendică noua ta insignă socială.",
+     "longDescription": "Revendică-ți insigna pentru a-ți arăta progresul și realizările în aplicație.",
+     "errorDescription": "Verificarea a eșuat. Te rugăm să încerci din nou pentru a revendica insigna."
+   },
+   "ru": {
+     "title": "Получите социальный значок {{.BadgeName}}",
+     "shortDescription": "Разблокируйте и получите свой новый социальный значок.",
+     "longDescription": "Получите свой значок, чтобы продемонстрировать свои успехи и достижения в приложении.",
+     "errorDescription": "Не удалось выполнить проверку. Пожалуйста, попробуйте снова, чтобы получить свой значок."
+   },
+   "sk": {
+     "title": "Získajte sociálny odznak {{.BadgeName}}",
+     "shortDescription": "Odomknite a získajte svoj nový sociálny odznak.",
+     "longDescription": "Získajte svoj odznak a ukážte svoj pokrok a úspechy v aplikácii.",
+     "errorDescription": "Overenie zlyhalo. Skúste to znovu a získajte svoj odznak."
+   },
+   "sl": {
+     "title": "Zahtevajte družbeni značko {{.BadgeName}}",
+     "shortDescription": "Odklenite in zahtevajte svojo novo družbeno značko.",
+     "longDescription": "Zahtevajte svojo značko, da pokažete svoj napredek in dosežke v aplikaciji.",
+     "errorDescription": "Preverjanje ni uspelo. Poskusite znova, da zahtevate svojo značko."
+   },
+   "sq": {
+     "title": "Kërkoni distinktivin social {{.BadgeName}}",
+     "shortDescription": "Zhbllokoni dhe kërkoni distinktivin tuaj të ri social.",
+     "longDescription": "Kërkoni distinktivin tuaj për të shfaqur përparimin dhe arritjet tuaja në aplikacion.",
+     "errorDescription": "Verifikimi dështoi. Ju lutemi provoni përsëri për të kërkuar distinktivin tuaj."
+   },
+   "sv": {
+     "title": "Kräv socialmärket {{.BadgeName}}",
+     "shortDescription": "Lås upp och kräv ditt nya socialmärke.",
+     "longDescription": "Kräv ditt märke för att visa dina framsteg och prestationer i appen.",
+     "errorDescription": "Verifiering misslyckades. Försök igen för att kräva ditt märke."
+   },
+   "te": {
+     "title": "{{.BadgeName}} సామాజిక బ్యాడ్జ్‌ను క్లెయిమ్ చేయండి",
+     "shortDescription": "మీ కొత్త సామాజిక బ్యాడ్జ్‌ను అన్‌లాక్ చేసి క్లెయిమ్ చేయండి.",
+     "longDescription": "యాప్‌లో మీ పురోగతి మరియు విజయాలను ప్రదర్శించడానికి మీ బ్యాడ్జ్‌ను క్లెయిమ్ చేయండి.",
+     "errorDescription": "ధృవీకరణ విఫలమైంది. మీ బ్యాడ్జ్‌ను క్లెయిమ్ చేయడానికి దయచేసి మళ్లీ ప్రయత్నించండి."
+   },
+   "th": {
+     "title": "รับเหรียญโซเชียล {{.BadgeName}}",
+     "shortDescription": "ปลดล็อกและรับเหรียญโซเชียลใหม่ของคุณ",
+     "longDescription": "รับเหรียญของคุณเพื่อแสดงความก้าวหน้าและความสำเร็จในแอป",
+     "errorDescription": "การยืนยันล้มเหลว โปรดลองอีกครั้งเพื่อรับเหรียญของคุณ"
+   },
+   "tr": {
+     "title": "{{.BadgeName}} sosyal rozetini talep et",
+     "shortDescription": "Yeni sosyal rozetinizi açın ve talep edin.",
+     "longDescription": "İlerlemelerinizi ve başarılarınızı göstermek için rozetinizi talep edin.",
+     "errorDescription": "Doğrulama başarısız oldu. Lütfen rozetinizi talep etmek için tekrar deneyin."
+   },
+   "uk": {
+     "title": "Отримайте соціальний значок {{.BadgeName}}",
+     "shortDescription": "Розблокуйте та отримайте свій новий соціальний значок.",
+     "longDescription": "Отримайте свій значок, щоб продемонструвати свій прогрес і досягнення в додатку.",
+     "errorDescription": "Перевірка не вдалася. Спробуйте ще раз, щоб отримати свій значок."
+   },
+   "ur": {
+     "title": "{{.BadgeName}} سماجی بیج حاصل کریں",
+     "shortDescription": "اپنا نیا سماجی بیج انلاک کریں اور حاصل کریں۔",
+     "longDescription": "ایپ میں اپنی پیشرفت اور کامیابیوں کو ظاہر کرنے کے لئے اپنا بیج حاصل کریں۔",
+     "errorDescription": "تصدیق ناکام ہو گئی۔ براہ کرم دوبارہ کوشش کریں تاکہ اپنا بیج حاصل کر سکیں۔"
+   },
+   "vi": {
+     "title": "Nhận huy hiệu xã hội {{.BadgeName}}",
+     "shortDescription": "Mở khóa và nhận huy hiệu xã hội mới của bạn.",
+     "longDescription": "Nhận huy hiệu của bạn để thể hiện tiến trình và thành tích của bạn trong ứng dụng.",
+     "errorDescription": "Xác minh không thành công. Vui lòng thử lại để nhận huy hiệu của bạn."
+   },
+   "zh-hant": {
+     "title": "申請 {{.BadgeName}} 社交徽章",
+     "shortDescription": "解鎖並申請你的新社交徽章。",
+     "longDescription": "申請你的徽章，以展示你在應用中的進展和成就。",
+     "errorDescription": "驗證失敗。請再試一次以申請你的徽章。"
+   },
+   "zh": {
+     "title": "领取 {{.BadgeName}} 社交徽章",
+     "shortDescription": "解锁并领取您的新社交徽章。",
+     "longDescription": "领取您的徽章，展示您在应用中的进展和成就。",
+     "errorDescription": "验证失败。请再次尝试领取您的徽章。"
+   }
+ }
+ 
