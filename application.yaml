@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_freedogs
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/theFreeDogs_bot/app?startapp=ref_DP5BqmL7
   - type: join_hipo
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg

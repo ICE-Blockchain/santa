@@ -164,6 +164,7 @@ definitions:
     - join_holdcoin
     - join_human
     - join_hipo
+    - join_freedogs
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -253,6 +254,7 @@ definitions:
     - JoinHoldCoinType
     - JoinHumanType
     - JoinHipoType
+    - JoinFreedogsType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
@@ -582,6 +584,7 @@ paths:
         - join_holdcoin
         - join_human
         - join_hipo
+        - join_freedogs
         in: path
         name: taskType
         required: true
@@ -794,6 +797,7 @@ paths:
         - join_holdcoin
         - join_human
         - join_hipo
+        - join_freedogs
         in: path
         name: taskType
         required: true

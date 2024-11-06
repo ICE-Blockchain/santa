@@ -46,6 +46,7 @@ const (
 	JoinHoldCoinType           Type = "join_holdcoin"
 	JoinHumanType              Type = "join_human"
 	JoinHipoType               Type = "join_hipo"
+	JoinFreedogsType           Type = "join_freedogs"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"
