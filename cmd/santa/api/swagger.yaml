@@ -162,6 +162,7 @@ definitions:
     - join_hipo
     - join_freedogs
     - join_athene
+    - join_kolo
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -253,6 +254,7 @@ definitions:
     - JoinHipoType
     - JoinFreedogsType
     - JoinAtheneType
+    - JoinKoloType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type

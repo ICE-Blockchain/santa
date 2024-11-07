@@ -1,0 +1,260 @@
+{
+  "af": {
+    "title": "Sluit aan by Kolo",
+    "shortDescription": "Verdien tokens direk op jou kripto kaart.",
+    "longDescription": "Iets opwindends is op die horison. Ontsluit toegang tot Kolo Wallet deur 'n paar take te voltooi.",
+    "errorDescription": "Verifikasie het misluk. Maak asseblief seker dat jy by Kolo aangesluit het en probeer weer."
+  },
+  "ar": {
+    "title": "انضم إلى Kolo",
+    "shortDescription": "اربح الرموز مباشرة على بطاقتك المشفرة.",
+    "longDescription": "شيء مثير يلوح في الأفق. افتح الوصول إلى Kolo Wallet بإكمال بعض المهام.",
+    "errorDescription": "فشل التحقق. يرجى التأكد من أنك انضممت إلى Kolo وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "Kolo-ya qoşulun",
+    "shortDescription": "Kripto kartınızda birbaşa token qazanın.",
+    "longDescription": "Üfüqdə həyəcanverici bir şey var. Bir neçə tapşırığı yerinə yetirərək Kolo Wallet-a giriş əldə edin.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa Kolo-ya qoşulduğunuzdan əmin olun və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Присъединете се към Kolo",
+    "shortDescription": "Спечелете токени директно на вашата крипто карта.",
+    "longDescription": "Нещо вълнуващо се задава на хоризонта. Отключете достъп до Kolo Wallet, като изпълните няколко задачи.",
+    "errorDescription": "Проверката не бе успешна. Моля, уверете се, че сте се присъединили към Kolo и опитайте отново."
+  },
+  "bn": {
+    "title": "Kolo-এ যোগ দিন",
+    "shortDescription": "আপনার ক্রিপ্টো কার্ডে সরাসরি টোকেন উপার্জন করুন।",
+    "longDescription": "একটি উত্তেজনাপূর্ণ কিছু আসন্ন। কয়েকটি কাজ সম্পূর্ণ করে Kolo Wallet-এ প্রবেশাধিকার আনলক করুন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন যে আপনি Kolo-এ যোগ দিয়েছেন এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Připojte se k Kolo",
+    "shortDescription": "Vydělávejte tokeny přímo na své krypto kartě.",
+    "longDescription": "Něco vzrušujícího je na obzoru. Odemkněte přístup k Kolo Wallet dokončením několika úkolů.",
+    "errorDescription": "Ověření selhalo. Ujistěte se, že jste se připojili k Kolo, a zkuste to znovu."
+  },
+  "de": {
+    "title": "Tritt Kolo bei",
+    "shortDescription": "Verdiene Tokens direkt auf deiner Kryptokarte.",
+    "longDescription": "Etwas Aufregendes zeichnet sich am Horizont ab. Schalte den Zugang zur Kolo Wallet frei, indem du einige Aufgaben erledigst.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte stelle sicher, dass du Kolo beigetreten bist, und versuche es erneut."
+  },
+  "el": {
+    "title": "Γίνετε μέλος του Kolo",
+    "shortDescription": "Κερδίστε tokens απευθείας στην κρυπτοκάρτα σας.",
+    "longDescription": "Κάτι συναρπαστικό βρίσκεται στον ορίζοντα. Ξεκλειδώστε την πρόσβαση στο Kolo Wallet ολοκληρώνοντας μερικές αποστολές.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Βεβαιωθείτε ότι έχετε εγγραφεί στο Kolo και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Join Kolo",
+    "shortDescription": "Earn tokens directly on your crypto card.",
+    "longDescription": "Something exciting is on the horizon. Unlock access to Kolo Wallet by completing a few tasks.",
+    "errorDescription": "Verification failed. Please ensure you joined Kolo and try again."
+  },
+  "es": {
+    "title": "Únete a Kolo",
+    "shortDescription": "Gana tokens directamente en tu tarjeta cripto.",
+    "longDescription": "Algo emocionante está en el horizonte. Desbloquea el acceso a Kolo Wallet completando algunas tareas.",
+    "errorDescription": "La verificación falló. Por favor, asegúrate de haberte unido a Kolo e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "به Kolo بپیوندید",
+    "shortDescription": "مستقیماً بر روی کارت رمز ارز خود توکن کسب کنید.",
+    "longDescription": "چیزی هیجان‌انگیز در پیش است. با انجام چند کار به Kolo Wallet دسترسی پیدا کنید.",
+    "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً مطمئن شوید که به Kolo پیوسته‌اید و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Rejoignez Kolo",
+    "shortDescription": "Gagnez des tokens directement sur votre carte crypto.",
+    "longDescription": "Quelque chose d'excitant se profile à l'horizon. Débloquez l'accès au Kolo Wallet en accomplissant quelques tâches.",
+    "errorDescription": "Échec de la vérification. Veuillez vous assurer que vous avez rejoint Kolo et réessayez."
+  },
+  "gu": {
+    "title": "Kolo માં જોડાઓ",
+    "shortDescription": "તમારા ક્રિપ્ટો કાર્ડ પર સીધા ટોકન્સ કમાઓ.",
+    "longDescription": "હોરાઇઝન પર કંઈક રોમાંચક છે. થોડા કાર્ય પૂર્ણ કરીને Kolo Wallet ની ઍક્સેસ અનલૉક કરો.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમે Kolo માં જોડાયા છો અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "הצטרף ל-Kolo",
+    "shortDescription": "הרוויחו טוקנים ישירות בכרטיס הקריפטו שלכם.",
+    "longDescription": "משהו מרגש באופק. פתחו גישה ל-Kolo Wallet על ידי השלמת מספר משימות.",
+    "errorDescription": "האימות נכשל. אנא ודא שהצטרפת ל-Kolo ונסה שוב."
+  },
+  "hi": {
+    "title": "Kolo से जुड़ें",
+    "shortDescription": "अपनी क्रिप्टो कार्ड पर सीधे टोकन कमाएँ।",
+    "longDescription": "क्षितिज पर कुछ रोमांचक है। कुछ कार्यों को पूरा करके Kolo Wallet तक पहुँच प्राप्त करें।",
+    "errorDescription": "सत्यापन विफल। कृपया सुनिश्चित करें कि आप Kolo से जुड़े हैं और फिर से प्रयास करें।"
+  },
+  "hu": {
+    "title": "Csatlakozz a Kolo-hoz",
+    "shortDescription": "Keress tokeneket közvetlenül a kriptokártyádon.",
+    "longDescription": "Valami izgalmas várható. Oldd fel a Kolo Wallet elérését néhány feladat elvégzésével.",
+    "errorDescription": "Az ellenőrzés nem sikerült. Győződj meg róla, hogy csatlakoztál a Kolo-hoz, és próbáld újra."
+  },
+  "id": {
+    "title": "Bergabunglah dengan Kolo",
+    "shortDescription": "Dapatkan token langsung di kartu kripto Anda.",
+    "longDescription": "Sesuatu yang menarik ada di depan mata. Buka akses ke Kolo Wallet dengan menyelesaikan beberapa tugas.",
+    "errorDescription": "Verifikasi gagal. Pastikan Anda bergabung dengan Kolo dan coba lagi."
+  },
+  "it": {
+    "title": "Unisciti a Kolo",
+    "shortDescription": "Guadagna token direttamente sulla tua carta crypto.",
+    "longDescription": "Qualcosa di eccitante è all'orizzonte. Sblocca l'accesso al Kolo Wallet completando alcuni compiti.",
+    "errorDescription": "Verifica fallita. Assicurati di esserti unito a Kolo e riprova."
+  },
+  "ja": {
+    "title": "Koloに参加",
+    "shortDescription": "暗号カードで直接トークンを稼ぐ。",
+    "longDescription": "ワクワクすることが近づいています。いくつかのタスクを完了して、Kolo Walletへのアクセスを解除しましょう。",
+    "errorDescription": "確認に失敗しました。Koloに参加したことを確認して、もう一度お試しください。"
+  },
+  "jv": {
+    "title": "Gabung Kolo",
+    "shortDescription": "Entuk token langsung ing kertu crypto sampeyan.",
+    "longDescription": "Ana sing nyenengake ing cakrawala. Buka akses menyang Kolo Wallet kanthi ngrampungake sawetara tugas.",
+    "errorDescription": "Verifikasi gagal. Mangga priksa manawa sampeyan wis gabung Kolo lan coba maneh."
+  },
+  "kn": {
+    "title": "Kolo ಗೆ ಸೇರಿ",
+    "shortDescription": "ನಿಮ್ಮ ಕ್ರಿಪ್ಟೋ ಕಾರ್ಡ್‌ನಲ್ಲಿ ನೇರವಾಗಿ ಟೋಕನ್ಗಳನ್ನು ಗಳಿಸಿ.",
+    "longDescription": "ಆಕಾಶದಲ್ಲಿ ಏನೋ ರೋಮಾಂಚಕ ಇದೆ. ಕೆಲವು ಕಾರ್ಯಗಳನ್ನು ಪೂರೈಸಿ Kolo Wallet ಗೆ ಪ್ರವೇಶವನ್ನು ಅನ್ಲಾಕ್ ಮಾಡಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. Kolo ಗೆ ಸೇರಿದ್ದೀರೆಂದು ಖಚಿತಪಡಿಸಿ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "Kolo에 가입하세요",
+    "shortDescription": "암호화 카드에서 직접 토큰을 받으세요.",
+    "longDescription": "흥미로운 일이 다가오고 있습니다. 몇 가지 작업을 완료하여 Kolo Wallet에 대한 액세스를 잠금 해제하세요.",
+    "errorDescription": "인증에 실패했습니다. Kolo에 가입했는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "Kolo मध्ये सामील व्हा",
+    "shortDescription": "तुमच्या क्रिप्टो कार्डवर थेट टोकन मिळवा.",
+    "longDescription": "क्षितिजावर काहीतरी रोमांचक आहे. काही कामे पूर्ण करून Kolo Wallet मध्ये प्रवेश अनलॉक करा.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया आपण Kolo मध्ये सामील झालात का ते सुनिश्चित करा आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Sertai Kolo",
+    "shortDescription": "Dapatkan token terus di kad kripto anda.",
+    "longDescription": "Ada sesuatu yang menarik di hadapan. Buka akses ke Kolo Wallet dengan melengkapkan beberapa tugasan.",
+    "errorDescription": "Pengesahan gagal. Pastikan anda menyertai Kolo dan cuba lagi."
+  },
+  "nb": {
+    "title": "Bli med i Kolo",
+    "shortDescription": "Tjen tokens direkte på ditt kryptokort.",
+    "longDescription": "Noe spennende er i horisonten. Lås opp tilgang til Kolo Wallet ved å fullføre noen oppgaver.",
+    "errorDescription": "Verifiseringen mislyktes. Vennligst sørg for at du har blitt med i Kolo, og prøv igjen."
+  },
+  "nn": {
+    "title": "Bli med i Kolo",
+    "shortDescription": "Tjen tokens direkte på ditt kryptokort.",
+    "longDescription": "Noko spanande er i horisonten. Lås opp tilgang til Kolo Wallet ved å fullføra nokre oppgåver.",
+    "errorDescription": "Verifisering mislukkast. Ver venleg å sjekka at du har blitt med i Kolo, og prøv igjen."
+  },
+  "pa": {
+    "title": "Kolo ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+    "shortDescription": "ਆਪਣੇ ਕ੍ਰਿਪਟੋ ਕਾਰਡ ਤੇ ਸਿੱਧੇ ਟੋਕਨ ਕਮਾਓ।",
+    "longDescription": "क्षितिज 'ਤੇ ਕੁਝ ਰੋਮਾਂਚਕ ਹੈ। ਕੁਝ ਕੰਮਾਂ ਨੂੰ ਪੂਰਾ ਕਰਕੇ Kolo Wallet ਵਿੱਚ ਪਹੁੰਚ ਅਨਲੌਕ ਕਰੋ।",
+    "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ Kolo ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ ਹੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  },
+  "pl": {
+    "title": "Dołącz do Kolo",
+    "shortDescription": "Zarabiaj tokeny bezpośrednio na swojej karcie krypto.",
+    "longDescription": "Coś ekscytującego nadchodzi. Odblokuj dostęp do Kolo Wallet, wykonując kilka zadań.",
+    "errorDescription": "Weryfikacja nie powiodła się. Upewnij się, że dołączyłeś do Kolo i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Junte-se ao Kolo",
+    "shortDescription": "Ganhe tokens diretamente no seu cartão cripto.",
+    "longDescription": "Algo empolgante está no horizonte. Desbloqueie o acesso à Kolo Wallet completando algumas tarefas.",
+    "errorDescription": "Falha na verificação. Verifique se você se juntou ao Kolo e tente novamente."
+  },
+  "ro": {
+    "title": "Alătură-te Kolo",
+    "shortDescription": "Câștigă tokenuri direct pe cardul tău crypto.",
+    "longDescription": "Ceva interesant este la orizont. Deblochează accesul la Kolo Wallet completând câteva sarcini.",
+    "errorDescription": "Verificarea a eșuat. Asigură-te că te-ai alăturat Kolo și încearcă din nou."
+  },
+  "ru": {
+    "title": "Присоединяйтесь к Kolo",
+    "shortDescription": "Зарабатывайте токены прямо на своей крипто-карте.",
+    "longDescription": "На горизонте что-то захватывающее. Откройте доступ к Kolo Wallet, выполнив несколько заданий.",
+    "errorDescription": "Не удалось выполнить проверку. Убедитесь, что вы присоединились к Kolo, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Pripojte sa k Kolo",
+    "shortDescription": "Získajte tokeny priamo na svoju krypto kartu.",
+    "longDescription": "Na obzore je niečo vzrušujúce. Odomknite prístup k Kolo Wallet dokončením niekoľkých úloh.",
+    "errorDescription": "Overenie zlyhalo. Uistite sa, že ste sa pripojili k Kolo, a skúste to znova."
+  },
+  "sl": {
+    "title": "Pridružite se Kolo",
+    "shortDescription": "Zaslužite žetone neposredno na vaši kripto kartici.",
+    "longDescription": "Na obzorju je nekaj vznemirljivega. Odklenite dostop do Kolo Wallet z izpolnjevanjem nekaj nalog.",
+    "errorDescription": "Preverjanje ni uspelo. Prepričajte se, da ste se pridružili Kolo, in poskusite znova."
+  },
+  "sq": {
+    "title": "Bashkohuni me Kolo",
+    "shortDescription": "Fitoni tokena direkt në kartën tuaj të kriptove.",
+    "longDescription": "Diçka emocionuese po vjen. Zhbllokoni qasjen në Kolo Wallet duke përfunduar disa detyra.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi sigurohuni që të jeni bashkuar me Kolo dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Gå med i Kolo",
+    "shortDescription": "Tjäna tokens direkt på ditt kryptokort.",
+    "longDescription": "Något spännande är på väg. Lås upp tillgång till Kolo Wallet genom att slutföra några uppgifter.",
+    "errorDescription": "Verifieringen misslyckades. Kontrollera att du har gått med i Kolo och försök igen."
+  },
+  "te": {
+    "title": "Kolo లో చేరండి",
+    "shortDescription": "మీ క్రిప్టో కార్డ్‌పై నేరుగా టోకెన్‌లను సంపాదించండి.",
+    "longDescription": "ఆకాశంలో రోమాంచకమైనది ఉంది. కొన్ని పనులను పూర్తి చేసి Kolo Wallet కి యాక్సెస్‌ను అన్లాక్ చేయండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. Kolo లో చేరారని నిర్ధారించుకుని మళ్లీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "เข้าร่วม Kolo",
+    "shortDescription": "รับโทเค็นโดยตรงบนบัตรคริปโตของคุณ",
+    "longDescription": "มีสิ่งที่น่าตื่นเต้นกำลังจะมา ปลดล็อกการเข้าถึง Kolo Wallet โดยการทำภารกิจบางอย่างให้เสร็จสิ้น",
+    "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าคุณเข้าร่วม Kolo แล้วลองอีกครั้ง"
+  },
+  "tr": {
+    "title": "Kolo'ya Katıl",
+    "shortDescription": "Kripto kartınızda doğrudan token kazanın.",
+    "longDescription": "Ufukta heyecan verici bir şey var. Birkaç görevi tamamlayarak Kolo Wallet erişimini açın.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen Kolo'ya katıldığınızdan emin olun ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Приєднайтеся до Kolo",
+    "shortDescription": "Заробляйте токени безпосередньо на своїй крипто-картці.",
+    "longDescription": "На горизонті щось захоплююче. Розблокуйте доступ до Kolo Wallet, виконавши кілька завдань.",
+    "errorDescription": "Перевірка не вдалася. Переконайтеся, що ви приєдналися до Kolo, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "Kolo میں شامل ہوں",
+    "shortDescription": "اپنے کرپٹو کارڈ پر براہ راست ٹوکن کمائیں۔",
+    "longDescription": "افق پر کچھ دلچسپ ہے۔ چند کام مکمل کر کے Kolo Wallet تک رسائی حاصل کریں۔",
+    "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم یقینی بنائیں کہ آپ Kolo میں شامل ہو گئے ہیں اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Tham gia Kolo",
+    "shortDescription": "Kiếm token trực tiếp trên thẻ crypto của bạn.",
+    "longDescription": "Có điều gì đó thú vị đang đến. Mở khóa quyền truy cập vào Kolo Wallet bằng cách hoàn thành một số nhiệm vụ.",
+    "errorDescription": "Xác minh không thành công. Vui lòng đảm bảo rằng bạn đã tham gia Kolo và thử lại."
+  },
+  "zh-hant": {
+    "title": "加入 Kolo",
+    "shortDescription": "在您的加密卡上直接賺取代幣。",
+    "longDescription": "令人興奮的事物即將到來。完成一些任務來解鎖 Kolo Wallet 的訪問權限。",
+    "errorDescription": "驗證失敗。請確保您已加入 Kolo，然後再試一次。"
+  },
+  "zh": {
+    "title": "加入 Kolo",
+    "shortDescription": "在您的加密卡上直接赚取代币。",
+    "longDescription": "令人兴奋的事情即将到来。通过完成一些任务解锁 Kolo Wallet 的访问权限。",
+    "errorDescription": "验证失败。请确保您已加入 Kolo，然后重试。"
+  }
+}
