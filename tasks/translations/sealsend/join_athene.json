@@ -1,0 +1,260 @@
+{
+  "af": {
+    "title": "Sluit aan by Athene Network",
+    "shortDescription": "Skaleer Ethereum, vinniger, goedkoper.",
+    "longDescription": "Sluit aan by 'n Laag 2-oplossing op Ethereum, wat dApp-skaalbaarheid en transaksiedoeltreffendheid verhoog met ATH as die kern-token.",
+    "errorDescription": "Verifikasie het misluk. Maak asseblief seker dat jy by Athene Network aangesluit het en probeer weer."
+  },
+  "ar": {
+    "title": "انضم إلى شبكة Athene",
+    "shortDescription": "توسيع نطاق إيثريوم، أسرع، أرخص.",
+    "longDescription": "انضم إلى حل من الطبقة الثانية على إيثريوم، يعزز كفاءة المعاملات وقابلية التوسع مع ATH كرمز أساسي.",
+    "errorDescription": "فشل التحقق. يرجى التأكد من أنك انضممت إلى شبكة Athene وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "Athene Şəbəkəsinə qoşulun",
+    "shortDescription": "Ethereum-u miqyasla, daha sürətli, daha ucuz.",
+    "longDescription": "ATH əsas tokeni ilə dApp miqyası və əməliyyat səmərəliliyini artıran Ethereum üzərində bir Layer 2 həllinə qoşulun.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa Athene Şəbəkəsinə qoşulduğunuzdan əmin olun və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Присъединете се към Athene Network",
+    "shortDescription": "Мащабиране на Ethereum, по-бързо, по-евтино.",
+    "longDescription": "Присъединете се към Layer 2 решение на Ethereum, което увеличава мащабируемостта и ефективността на транзакциите с ATH като основен токен.",
+    "errorDescription": "Проверката не бе успешна. Моля, уверете се, че сте се присъединили към Athene Network и опитайте отново."
+  },
+  "bn": {
+    "title": "Athene Network-এ যোগ দিন",
+    "shortDescription": "Ethereum স্কেলিং, দ্রুততর, সস্তা।",
+    "longDescription": "Ethereum-এর উপর একটি লেয়ার 2 সমাধানে যোগ দিন, dApp স্কেলযোগ্যতা এবং লেনদেনের দক্ষতা উন্নত করুন, যেখানে ATH প্রধান টোকেন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন যে আপনি Athene Network-এ যোগ দিয়েছেন এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Připojte se k Athene Network",
+    "shortDescription": "Škálování Etherea, rychlejší, levnější.",
+    "longDescription": "Připojte se k řešení druhé vrstvy na Ethereu, které zlepšuje škálovatelnost dAppů a efektivitu transakcí s ATH jako základním tokenem.",
+    "errorDescription": "Ověření selhalo. Ujistěte se, že jste se připojili k Athene Network, a zkuste to znovu."
+  },
+  "de": {
+    "title": "Tritt dem Athene Network bei",
+    "shortDescription": "Ethereum skalieren, schneller, günstiger.",
+    "longDescription": "Schließe dich einer Layer-2-Lösung auf Ethereum an, die die dApp-Skalierbarkeit und Transaktionseffizienz mit ATH als Kerntoken verbessert.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte stelle sicher, dass du dem Athene Network beigetreten bist, und versuche es erneut."
+  },
+  "el": {
+    "title": "Γίνετε μέλος του Athene Network",
+    "shortDescription": "Κλιμάκωση Ethereum, γρηγορότερα, φθηνότερα.",
+    "longDescription": "Συμμετάσχετε σε μια λύση δεύτερης βαθμίδας στο Ethereum, βελτιώνοντας την επεκτασιμότητα των dApp και την αποτελεσματικότητα των συναλλαγών με το ATH ως κύριο token.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Βεβαιωθείτε ότι έχετε εγγραφεί στο Athene Network και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Join Athene Network",
+    "shortDescription": "Scaling Ethereum, faster, cheaper.",
+    "longDescription": "Join a Layer 2 solution on Ethereum, enhancing dApp scalability and transaction efficiency with ATH as its core token.",
+    "errorDescription": "Verification failed. Please ensure you joined Athene Network and try again."
+  },
+  "es": {
+    "title": "Únete a Athene Network",
+    "shortDescription": "Escalando Ethereum, más rápido, más barato.",
+    "longDescription": "Únete a una solución de Capa 2 en Ethereum, mejorando la escalabilidad de dApp y la eficiencia de transacciones con ATH como su token central.",
+    "errorDescription": "La verificación falló. Por favor, asegúrate de haberte unido a Athene Network e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "به Athene Network بپیوندید",
+    "shortDescription": "مقیاس‌پذیری اتریوم، سریع‌تر، ارزان‌تر.",
+    "longDescription": "به یک راه‌حل لایه دوم در اتریوم بپیوندید که مقیاس‌پذیری dApp و کارایی تراکنش‌ها را با توکن ATH بهبود می‌بخشد.",
+    "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً مطمئن شوید که به Athene Network پیوسته‌اید و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Rejoignez Athene Network",
+    "shortDescription": "Évoluer Ethereum, plus rapide, moins cher.",
+    "longDescription": "Rejoignez une solution Layer 2 sur Ethereum, améliorant l'évolutivité des dApps et l'efficacité des transactions avec ATH comme jeton central.",
+    "errorDescription": "Échec de la vérification. Veuillez vous assurer que vous avez rejoint Athene Network et réessayez."
+  },
+  "gu": {
+    "title": "Athene Network માં જોડાઓ",
+    "shortDescription": "Ethereum ને સ્કેલ કરો, ઝડપી, સસ્તુ.",
+    "longDescription": "Ethereum પર એક લેયર 2 સોલ્યુશનમાં જોડાઓ, dApp સ્કેલેબિલિટી અને ટ્રાન્ઝેક્શન કાર્યક્ષમતા વધારવું, જ્યાં ATH મુખ્ય ટોકન છે.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમે Athene Network માં જોડાયા છો અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "הצטרף לרשת Athene",
+    "shortDescription": "הגדלת Ethereum, מהיר יותר, זול יותר.",
+    "longDescription": "הצטרף לפתרון שכבה 2 ב-Ethereum, המשפר את יכולת ההרחבה של dApp ויעילות העסקאות עם ATH כטוקן ליבה.",
+    "errorDescription": "האימות נכשל. אנא ודא שהצטרפת לרשת Athene ונסה שוב."
+  },
+  "hi": {
+    "title": "Athene Network से जुड़ें",
+    "shortDescription": "Ethereum का स्केलिंग, तेज, सस्ता।",
+    "longDescription": "Ethereum पर एक लेयर 2 समाधान में शामिल हों, dApp स्केलेबिलिटी और लेनदेन दक्षता को ATH के कोर टोकन के साथ बढ़ाएं।",
+    "errorDescription": "सत्यापन विफल। कृपया सुनिश्चित करें कि आप Athene Network से जुड़े हैं और फिर से प्रयास करें।"
+  },
+  "hu": {
+    "title": "Csatlakozz az Athene Networkhöz",
+    "shortDescription": "Ethereum skálázása, gyorsabb, olcsóbb.",
+    "longDescription": "Csatlakozz az Ethereumon működő Layer 2 megoldáshoz, amely javítja a dApp skálázhatóságát és tranzakciós hatékonyságát az ATH fő tokenként.",
+    "errorDescription": "Az ellenőrzés nem sikerült. Győződj meg róla, hogy csatlakoztál az Athene Networkhöz, és próbáld újra."
+  },
+  "id": {
+    "title": "Bergabunglah dengan Athene Network",
+    "shortDescription": "Memperbesar Ethereum, lebih cepat, lebih murah.",
+    "longDescription": "Bergabunglah dengan solusi Layer 2 di Ethereum, meningkatkan skalabilitas dApp dan efisiensi transaksi dengan ATH sebagai token inti.",
+    "errorDescription": "Verifikasi gagal. Pastikan Anda bergabung dengan Athene Network dan coba lagi."
+  },
+  "it": {
+    "title": "Unisciti a Athene Network",
+    "shortDescription": "Scalare Ethereum, più veloce, più economico.",
+    "longDescription": "Unisciti a una soluzione Layer 2 su Ethereum, migliorando la scalabilità delle dApp e l'efficienza delle transazioni con ATH come token principale.",
+    "errorDescription": "Verifica fallita. Assicurati di esserti unito a Athene Network e riprova."
+  },
+  "ja": {
+    "title": "Athene Networkに参加",
+    "shortDescription": "Ethereumをスケーリング、より速く、より安く。",
+    "longDescription": "Ethereum上のレイヤー2ソリューションに参加し、ATHをコアトークンとしてdAppのスケーラビリティとトランザクション効率を向上させましょう。",
+    "errorDescription": "確認に失敗しました。Athene Networkに参加したことを確認して、もう一度お試しください。"
+  },
+  "jv": {
+    "title": "Gabung Athene Network",
+    "shortDescription": "Skala Ethereum, luwih cepet, luwih murah.",
+    "longDescription": "Gabung solusi Layer 2 ing Ethereum, ningkatake skala dApp lan efisiensi transaksi kanthi ATH minangka token inti.",
+    "errorDescription": "Verifikasi gagal. Mangga priksa manawa sampeyan wis gabung Athene Network lan coba maneh."
+  },
+  "kn": {
+    "title": "Athene Network ಗೆ ಸೇರಿ",
+    "shortDescription": "Ethereum ಸ್ಕೇಲಿಂಗ್, ವೇಗವಾಗಿ, ಕಡಿಮೆ ವೆಚ್ಚದಲ್ಲಿ.",
+    "longDescription": "Ethereum ನಲ್ಲಿ ಲೇಯರ್ 2 ಪರಿಹಾರದಲ್ಲಿ ಸೇರಿ, dApp ಸ್ಕೇಲಬಿಲಿಟಿ ಮತ್ತು ಲೆನ್‌ದೇವಾರಿ ಸಾಮರ್ಥ್ಯವನ್ನು ATH ಮುಖ್ಯ ಟೋಕನ್ ಆಗಿ ಸುಧಾರಿಸಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. Athene Network ಗೆ ಸೇರಿದ್ದೀರೆಂದು ಖಚಿತಪಡಿಸಿ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "Athene Network에 가입하세요",
+    "shortDescription": "더 빠르고 저렴하게 Ethereum 확장.",
+    "longDescription": "Ethereum에서 Layer 2 솔루션에 참여하여 dApp 확장성과 거래 효율성을 ATH 핵심 토큰으로 향상시킵니다.",
+    "errorDescription": "인증에 실패했습니다. Athene Network에 가입했는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "Athene Network मध्ये सामील व्हा",
+    "shortDescription": "Ethereum चे स्केलिंग, जलद, स्वस्त.",
+    "longDescription": "Ethereum वरील लेयर 2 सोल्यूशनमध्ये सामील व्हा, dApp स्केलेबिलिटी आणि व्यवहार कार्यक्षमतेत सुधारणा करा, ATH हे मुख्य टोकन म्हणून.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया आपण Athene Network मध्ये सामील झालात का ते सुनिश्चित करा आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Sertai Athene Network",
+    "shortDescription": "Menyelaras Ethereum, lebih pantas, lebih murah.",
+    "longDescription": "Sertai penyelesaian Layer 2 di Ethereum, meningkatkan skala dApp dan kecekapan transaksi dengan ATH sebagai token terasnya.",
+    "errorDescription": "Pengesahan gagal. Pastikan anda menyertai Athene Network dan cuba lagi."
+  },
+  "nb": {
+    "title": "Bli med i Athene Network",
+    "shortDescription": "Skaler Ethereum, raskere, billigere.",
+    "longDescription": "Bli med i en Layer 2-løsning på Ethereum, som forbedrer dApp-skalerbarhet og transaksjonseffektivitet med ATH som kjerne-token.",
+    "errorDescription": "Verifiseringen mislyktes. Vennligst sørg for at du har blitt med i Athene Network, og prøv igjen."
+  },
+  "nn": {
+    "title": "Bli med i Athene Network",
+    "shortDescription": "Skalerer Ethereum, raskare, billegare.",
+    "longDescription": "Bli med i ei Layer 2-løysing på Ethereum, som aukar dApp-skalerbarheit og transaksjonseffektivitet med ATH som kjernetoken.",
+    "errorDescription": "Verifisering mislukkast. Ver venleg å sjekka at du har blitt med i Athene Network, og prøv igjen."
+  },
+  "pa": {
+    "title": "Athene Network ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+    "shortDescription": "Ethereum ਦਾ ਸਕੇਲਿੰਗ, ਤੇਜ਼, ਸਸਤਾ।",
+    "longDescription": "Ethereum 'ਤੇ ਇਕ ਲੇਅਰ 2 ਹੱਲ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ, ATH ਦੇ ਮੁੱਖ ਟੋਕਨ ਦੇ ਨਾਲ dApp ਸਕੇਲੇਬਿਲਿਟੀ ਅਤੇ ਲੈਨਦੈਨ ਸਮਰੱਥਾ ਨੂੰ ਵਧਾਓ।",
+    "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ Athene Network ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ ਹੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  },
+  "pl": {
+    "title": "Dołącz do Athene Network",
+    "shortDescription": "Skalowanie Ethereum, szybciej, taniej.",
+    "longDescription": "Dołącz do rozwiązania warstwy 2 na Ethereum, poprawiając skalowalność dApp i efektywność transakcji z ATH jako głównym tokenem.",
+    "errorDescription": "Weryfikacja nie powiodła się. Upewnij się, że dołączyłeś do Athene Network i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Junte-se ao Athene Network",
+    "shortDescription": "Escalando Ethereum, mais rápido, mais barato.",
+    "longDescription": "Junte-se a uma solução de Camada 2 no Ethereum, aprimorando a escalabilidade do dApp e a eficiência das transações com o ATH como seu token principal.",
+    "errorDescription": "Falha na verificação. Verifique se você se juntou ao Athene Network e tente novamente."
+  },
+  "ro": {
+    "title": "Alătură-te Athene Network",
+    "shortDescription": "Scalarea Ethereum, mai rapid, mai ieftin.",
+    "longDescription": "Alătură-te unei soluții Layer 2 pe Ethereum, îmbunătățind scalabilitatea dApp și eficiența tranzacțiilor cu ATH ca token principal.",
+    "errorDescription": "Verificarea a eșuat. Asigură-te că te-ai alăturat Athene Network și încearcă din nou."
+  },
+  "ru": {
+    "title": "Присоединяйтесь к Athene Network",
+    "shortDescription": "Масштабируем Ethereum, быстрее, дешевле.",
+    "longDescription": "Присоединяйтесь к решению второго уровня на Ethereum, улучшая масштабируемость dApp и эффективность транзакций с ATH в качестве основного токена.",
+    "errorDescription": "Не удалось выполнить проверку. Убедитесь, что вы присоединились к Athene Network, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Pripojte sa k Athene Network",
+    "shortDescription": "Škáluje Ethereum, rýchlejšie, lacnejšie.",
+    "longDescription": "Pripojte sa k riešeniu druhej vrstvy na Ethereum, ktoré zlepšuje škálovateľnosť dApp a efektívnosť transakcií s ATH ako hlavný token.",
+    "errorDescription": "Overenie zlyhalo. Uistite sa, že ste sa pripojili k Athene Network, a skúste to znova."
+  },
+  "sl": {
+    "title": "Pridružite se Athene Network",
+    "shortDescription": "Širimo Ethereum, hitreje, ceneje.",
+    "longDescription": "Pridružite se rešitvi Layer 2 na Ethereumu, ki izboljšuje skalabilnost dApp in učinkovitost transakcij z ATH kot glavnim žetonom.",
+    "errorDescription": "Preverjanje ni uspelo. Prepričajte se, da ste se pridružili Athene Network, in poskusite znova."
+  },
+  "sq": {
+    "title": "Bashkohuni me Athene Network",
+    "shortDescription": "Shkallëzimi i Ethereum, më shpejt, më lirë.",
+    "longDescription": "Bashkohuni me një zgjidhje Layer 2 në Ethereum, duke përmirësuar shkallëzueshmërinë e dApp dhe efikasitetin e transaksioneve me ATH si tokenin kryesor.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi sigurohuni që të jeni bashkuar me Athene Network dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Gå med i Athene Network",
+    "shortDescription": "Skalar Ethereum, snabbare, billigare.",
+    "longDescription": "Gå med i en Layer 2-lösning på Ethereum, förbättrar dApp-skalbarhet och transaktionseffektivitet med ATH som sin kärntoken.",
+    "errorDescription": "Verifieringen misslyckades. Kontrollera att du har gått med i Athene Network och försök igen."
+  },
+  "te": {
+    "title": "Athene Network లో చేరండి",
+    "shortDescription": "Ethereum స్కేల్ చేయడం, వేగంగా, చౌకగా.",
+    "longDescription": "Ethereum లో లేయర్ 2 పరిష్కారంలో చేరండి, dApp స్కేలబిలిటీ మరియు లావాదేవీ సామర్ధ్యాన్ని ATH ప్రధాన టోకెన్ తో మెరుగుపరచండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. Athene Network లో చేరారని నిర్ధారించుకుని మళ్లీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "เข้าร่วม Athene Network",
+    "shortDescription": "ขยาย Ethereum เร็วขึ้น ถูกกว่า",
+    "longDescription": "เข้าร่วมโซลูชันเลเยอร์ 2 บน Ethereum เพื่อปรับขนาด dApp และเพิ่มประสิทธิภาพธุรกรรมโดยใช้ ATH เป็นโทเค็นหลัก",
+    "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าคุณเข้าร่วม Athene Network แล้วลองอีกครั้ง"
+  },
+  "tr": {
+    "title": "Athene Network'a Katıl",
+    "shortDescription": "Ethereum ölçeklendirme, daha hızlı, daha ucuz.",
+    "longDescription": "Ethereum'da bir Layer 2 çözümüne katılın, ATH ana token olarak dApp ölçeklenebilirliğini ve işlem verimliliğini artırın.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen Athene Network'e katıldığınızdan emin olun ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Приєднайтеся до Athene Network",
+    "shortDescription": "Масштабування Ethereum, швидше, дешевше.",
+    "longDescription": "Приєднайтеся до рішення другого рівня на Ethereum, яке покращує масштабованість dApp та ефективність транзакцій з ATH як основним токеном.",
+    "errorDescription": "Перевірка не вдалася. Переконайтеся, що ви приєдналися до Athene Network, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "Athene Network میں شامل ہوں",
+    "shortDescription": "اتھیریم کو اسکیل کریں، تیز اور سستا۔",
+    "longDescription": "اتھیرئم پر ایک لیئر 2 حل میں شامل ہوں، dApp اسکیل ایبلٹی اور ٹرانزیکشن کی کارکردگی کو ATH کے بنیادی ٹوکن کے ساتھ بہتر بنائیں۔",
+    "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم یقینی بنائیں کہ آپ Athene Network میں شامل ہو گئے ہیں اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Tham gia Athene Network",
+    "shortDescription": "Mở rộng Ethereum, nhanh hơn, rẻ hơn.",
+    "longDescription": "Tham gia giải pháp Layer 2 trên Ethereum, tăng cường khả năng mở rộng dApp và hiệu suất giao dịch với ATH là mã thông báo chính.",
+    "errorDescription": "Xác minh không thành công. Vui lòng đảm bảo rằng bạn đã tham gia Athene Network và thử lại."
+  },
+  "zh-hant": {
+    "title": "加入 Athene Network",
+    "shortDescription": "擴展以太坊，更快、更便宜。",
+    "longDescription": "加入以太坊的二層解決方案，通過 ATH 作為核心代幣提升 dApp 的擴展性和交易效率。",
+    "errorDescription": "驗證失敗。請確保您已加入 Athene Network，然後再試一次。"
+  },
+  "zh": {
+    "title": "加入 Athene Network",
+    "shortDescription": "扩展以太坊，更快、更便宜。",
+    "longDescription": "加入以太坊的二层解决方案，通过 ATH 作为核心代币提升 dApp 的扩展性和交易效率。",
+    "errorDescription": "验证失败。请确保您已加入 Athene Network，然后重试。"
+  }
+}
