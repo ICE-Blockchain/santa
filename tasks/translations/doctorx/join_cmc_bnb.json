@@ -1,0 +1,260 @@
+{
+  "af": {
+    "title": "Voeg 'n opmerking by op CoinMarketCap",
+    "shortDescription": "Versprei die woord oor $ICE.",
+    "longDescription": "Druk Start om die BNB-bladsy op CoinMarketCap oop te maak en voeg 'n positiewe opmerking by wat $ICE insluit.",
+    "errorDescription": "Verifikasie het misluk. Maak asseblief seker dat jou opmerking $ICE insluit en probeer weer."
+  },
+  "ar": {
+    "title": "أضف تعليقًا على CoinMarketCap",
+    "shortDescription": "انشر الكلمة حول $ICE.",
+    "longDescription": "اضغط على Start لفتح صفحة BNB على CoinMarketCap وإضافة تعليق إيجابي يتضمن $ICE.",
+    "errorDescription": "فشل التحقق. يرجى التأكد من أن تعليقك يتضمن $ICE وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "CoinMarketCap-də bir şərh əlavə edin",
+    "shortDescription": "$ICE haqqında məlumatı yay.",
+    "longDescription": "CoinMarketCap-də BNB səhifəsini açmaq üçün Start düyməsini basın və $ICE daxil olan müsbət bir şərh əlavə edin.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa, şərhinizdə $ICE olduğundan əmin olun və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Добавете коментар в CoinMarketCap",
+    "shortDescription": "Разпространете информацията за $ICE.",
+    "longDescription": "Натиснете Start, за да отворите страницата на BNB в CoinMarketCap и добавете положителен коментар, който включва $ICE.",
+    "errorDescription": "Проверката не бе успешна. Моля, уверете се, че коментарът ви включва $ICE и опитайте отново."
+  },
+  "bn": {
+    "title": "CoinMarketCap-এ একটি মন্তব্য যোগ করুন",
+    "shortDescription": "$ICE সম্পর্কে কথা ছড়ান।",
+    "longDescription": "CoinMarketCap-এ BNB পৃষ্ঠা খুলতে Start চাপুন এবং $ICE সহ একটি ইতিবাচক মন্তব্য যোগ করুন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন যে আপনার মন্তব্যে $ICE রয়েছে এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Přidejte komentář na CoinMarketCap",
+    "shortDescription": "Šiřte slovo o $ICE.",
+    "longDescription": "Stiskněte Start pro otevření stránky BNB na CoinMarketCap a přidejte pozitivní komentář, který zahrnuje $ICE.",
+    "errorDescription": "Ověření selhalo. Ujistěte se, že váš komentář obsahuje $ICE a zkuste to znovu."
+  },
+  "de": {
+    "title": "Fügen Sie einen Kommentar auf CoinMarketCap hinzu",
+    "shortDescription": "Verbreiten Sie das Wort über $ICE.",
+    "longDescription": "Drücken Sie Start, um die BNB-Seite auf CoinMarketCap zu öffnen und einen positiven Kommentar mit $ICE hinzuzufügen.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte stellen Sie sicher, dass Ihr Kommentar $ICE enthält, und versuchen Sie es erneut."
+  },
+  "el": {
+    "title": "Προσθέστε ένα σχόλιο στο CoinMarketCap",
+    "shortDescription": "Διαδώστε τη λέξη για το $ICE.",
+    "longDescription": "Πατήστε Έναρξη για να ανοίξετε τη σελίδα BNB στο CoinMarketCap και προσθέστε ένα θετικό σχόλιο που περιλαμβάνει το $ICE.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Βεβαιωθείτε ότι το σχόλιό σας περιλαμβάνει το $ICE και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Add a comment on CoinMarketCap",
+    "shortDescription": "Spread the word about $ICE.",
+    "longDescription": "Press Start to open BNB page on CoinMarketCap and add a positive comment that includes $ICE.",
+    "errorDescription": "Verification failed. Please ensure your comment includes $ICE and try again."
+  },
+  "es": {
+    "title": "Agrega un comentario en CoinMarketCap",
+    "shortDescription": "Corre la voz sobre $ICE.",
+    "longDescription": "Presiona Start para abrir la página de BNB en CoinMarketCap y agrega un comentario positivo que incluya $ICE.",
+    "errorDescription": "La verificación falló. Por favor, asegúrate de que tu comentario incluya $ICE e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "یک نظر در CoinMarketCap اضافه کنید",
+    "shortDescription": "اطلاعات $ICE را پخش کنید.",
+    "longDescription": "شروع را فشار دهید تا صفحه BNB در CoinMarketCap باز شود و یک نظر مثبت شامل $ICE اضافه شود",
+    "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً مطمئن شوید که نظر شما شامل $ICE است و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Ajoutez un commentaire sur CoinMarketCap",
+    "shortDescription": "Faites connaître $ICE.",
+    "longDescription": "Appuyez sur Start pour ouvrir la page BNB sur CoinMarketCap et ajoutez un commentaire positif incluant $ICE.",
+    "errorDescription": "Échec de la vérification. Veuillez vous assurer que votre commentaire inclut $ICE et réessayez."
+  },
+  "gu": {
+    "title": "CoinMarketCap પર એક ટિપ્પણી ઉમેરો",
+    "shortDescription": "$ICE વિશે જાણકારી ફેલાવો.",
+    "longDescription": "CoinMarketCap પર BNB પેજ ખોલવા માટે Start દબાવો અને $ICEનો સમાવેશ કરતો સકારાત્મક ટિપ્પણી ઉમેરો.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમારી ટિપ્પણીમાં $ICE છે અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "הוסף תגובה ב-CoinMarketCap",
+    "shortDescription": "פרסם את המילה על $ICE.",
+    "longDescription": "לחץ על Start כדי לפתוח את עמוד BNB ב-CoinMarketCap והוסף תגובה חיובית הכוללת את $ICE.",
+    "errorDescription": "האימות נכשל. אנא ודא שהתגובה שלך כוללת את $ICE ונסה שוב."
+  },
+  "hi": {
+    "title": "CoinMarketCap पर एक टिप्पणी जोड़ें",
+    "shortDescription": "$ICE के बारे में जानकारी फैलाएं।",
+    "longDescription": "CoinMarketCap पर BNB पृष्ठ खोलने के लिए Start दबाएं और $ICE सहित एक सकारात्मक टिप्पणी जोड़ें।",
+    "errorDescription": "सत्यापन विफल। कृपया सुनिश्चित करें कि आपकी टिप्पणी में $ICE है और फिर से प्रयास करें।"
+  },
+  "hu": {
+    "title": "Adjon megjegyzést a CoinMarketCap oldalán",
+    "shortDescription": "Terjessze a hírt a $ICE-ről.",
+    "longDescription": "Nyomja meg a Start gombot a BNB oldal megnyitásához a CoinMarketCap-en, és adjon hozzá egy pozitív megjegyzést, amely tartalmazza a $ICE-t.",
+    "errorDescription": "Az ellenőrzés nem sikerült. Győződjön meg róla, hogy megjegyzése tartalmazza a $ICE-t, és próbálja újra."
+  },
+  "id": {
+    "title": "Tambahkan komentar di CoinMarketCap",
+    "shortDescription": "Sebarkan berita tentang $ICE.",
+    "longDescription": "Tekan Start untuk membuka halaman BNB di CoinMarketCap dan tambahkan komentar positif yang menyertakan $ICE.",
+    "errorDescription": "Verifikasi gagal. Pastikan komentar Anda menyertakan $ICE dan coba lagi."
+  },
+  "it": {
+    "title": "Aggiungi un commento su CoinMarketCap",
+    "shortDescription": "Diffondi la parola su $ICE.",
+    "longDescription": "Premi Start per aprire la pagina BNB su CoinMarketCap e aggiungi un commento positivo che includa $ICE.",
+    "errorDescription": "Verifica fallita. Assicurati che il tuo commento includa $ICE e riprova."
+  },
+  "ja": {
+    "title": "CoinMarketCapにコメントを追加",
+    "shortDescription": "$ICEについて広めよう。",
+    "longDescription": "Startを押してCoinMarketCapのBNBページを開き、$ICEを含むポジティブなコメントを追加してください。",
+    "errorDescription": "確認に失敗しました。コメントに$ICEが含まれていることを確認して、もう一度お試しください。"
+  },
+  "jv": {
+    "title": "Tambah komentar ing CoinMarketCap",
+    "shortDescription": "Sebar kabar babagan $ICE.",
+    "longDescription": "Pencet Start kanggo mbukak kaca BNB ing CoinMarketCap lan tambah komentar positif sing kalebu $ICE.",
+    "errorDescription": "Verifikasi gagal. Priksa manawa komentar sampeyan kalebu $ICE lan coba maneh."
+  },
+  "kn": {
+    "title": "CoinMarketCap ನಲ್ಲಿ ಒಂದು ಕಾಮೆಂಟ್ ಸೇರಿಸಿ",
+    "shortDescription": "$ICE ಬಗ್ಗೆ ಶಬ್ದ ಹಂಚಿಕೊಳ್ಳಿ.",
+    "longDescription": "CoinMarketCap ನಲ್ಲಿ BNB ಪುಟವನ್ನು ತೆರೆಯಲು Start ಒತ್ತಿ ಮತ್ತು $ICE ಒಳಗೊಂಡ ಒಂದು ಸಕಾರಾತ್ಮಕ ಕಾಮೆಂಟ್ ಸೇರಿಸಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ನಿಮ್ಮ ಕಾಮೆಂಟ್‌ನಲ್ಲಿ $ICE ಸೇರಿಸಿದಂತೆಯೇ ಖಚಿತಪಡಿಸಿ ಮತ್ತು ಮರು ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "CoinMarketCap에 댓글 추가",
+    "shortDescription": "$ICE에 대해 소문을 퍼뜨리세요.",
+    "longDescription": "CoinMarketCap에서 BNB 페이지를 열기 위해 Start를 누르고 $ICE가 포함된 긍정적인 댓글을 추가하세요.",
+    "errorDescription": "인증에 실패했습니다. 댓글에 $ICE가 포함되어 있는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "CoinMarketCap वर टिप्पणी जोडा",
+    "shortDescription": "$ICE चा प्रचार करा.",
+    "longDescription": "CoinMarketCap वर BNB पृष्ठ उघडण्यासाठी Start दाबा आणि $ICE समाविष्ट असलेली सकारात्मक टिप्पणी जोडा.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुमच्या टिप्पणीत $ICE आहे याची खात्री करा आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Tambahkan komen di CoinMarketCap",
+    "shortDescription": "Sebarkan perkataan tentang $ICE.",
+    "longDescription": "Tekan Start untuk membuka halaman BNB di CoinMarketCap dan tambah komen positif yang menyertakan $ICE.",
+    "errorDescription": "Pengesahan gagal. Pastikan komen anda menyertakan $ICE dan cuba lagi."
+  },
+  "nb": {
+    "title": "Legg til en kommentar på CoinMarketCap",
+    "shortDescription": "Spre ordet om $ICE.",
+    "longDescription": "Trykk Start for å åpne BNB-siden på CoinMarketCap og legg til en positiv kommentar som inkluderer $ICE.",
+    "errorDescription": "Verifiseringen mislyktes. Vennligst sørg for at kommentaren din inkluderer $ICE, og prøv igjen."
+  },
+  "nn": {
+    "title": "Legg til ein kommentar på CoinMarketCap",
+    "shortDescription": "Sprei ordet om $ICE.",
+    "longDescription": "Trykk Start for å opna BNB-sida på CoinMarketCap og legg til ein positiv kommentar som inkluderer $ICE.",
+    "errorDescription": "Verifisering mislukkast. Ver venleg å sjekka at kommentaren din inkluderer $ICE, og prøv igjen."
+  },
+  "pa": {
+    "title": "CoinMarketCap ਤੇ ਇੱਕ ਟਿੱਪਣੀ ਸ਼ਾਮਲ ਕਰੋ",
+    "shortDescription": "$ICE ਬਾਰੇ ਸ਼ਬਦ ਫੈਲਾਓ।",
+    "longDescription": "CoinMarketCap ਤੇ BNB ਪੰਨਾ ਖੋਲ੍ਹਣ ਲਈ Start ਦਬਾਓ ਅਤੇ $ICE ਸ਼ਾਮਲ ਕਰਨ ਵਾਲੀ ਇਕ ਸਕਾਰਾਤਮਕ ਟਿੱਪਣੀ ਸ਼ਾਮਲ ਕਰੋ।",
+    "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੀ ਟਿੱਪਣੀ ਵਿੱਚ $ICE ਸ਼ਾਮਲ ਹੈ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  },
+  "pl": {
+    "title": "Dodaj komentarz na CoinMarketCap",
+    "shortDescription": "Rozgłoś o $ICE.",
+    "longDescription": "Naciśnij Start, aby otworzyć stronę BNB na CoinMarketCap i dodaj pozytywny komentarz zawierający $ICE.",
+    "errorDescription": "Weryfikacja nie powiodła się. Upewnij się, że Twój komentarz zawiera $ICE i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Adicione um comentário no CoinMarketCap",
+    "shortDescription": "Espalhe a palavra sobre $ICE.",
+    "longDescription": "Pressione Start para abrir a página do BNB no CoinMarketCap e adicione um comentário positivo que inclua $ICE.",
+    "errorDescription": "Falha na verificação. Verifique se o seu comentário inclui $ICE e tente novamente."
+  },
+  "ro": {
+    "title": "Adaugă un comentariu pe CoinMarketCap",
+    "shortDescription": "Răspândește vestea despre $ICE.",
+    "longDescription": "Apasă Start pentru a deschide pagina BNB pe CoinMarketCap și adaugă un comentariu pozitiv care include $ICE.",
+    "errorDescription": "Verificarea a eșuat. Asigură-te că comentariul tău include $ICE și încearcă din nou."
+  },
+  "ru": {
+    "title": "Добавьте комментарий на CoinMarketCap",
+    "shortDescription": "Распространите информацию о $ICE.",
+    "longDescription": "Нажмите Start, чтобы открыть страницу BNB на CoinMarketCap, и добавьте положительный комментарий с упоминанием $ICE.",
+    "errorDescription": "Не удалось выполнить проверку. Убедитесь, что ваш комментарий включает $ICE, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Pridajte komentár na CoinMarketCap",
+    "shortDescription": "Šírte slovo o $ICE.",
+    "longDescription": "Stlačte Start na otvorenie stránky BNB na CoinMarketCap a pridajte pozitívny komentár, ktorý obsahuje $ICE.",
+    "errorDescription": "Overenie zlyhalo. Uistite sa, že váš komentár obsahuje $ICE, a skúste to znova."
+  },
+  "sl": {
+    "title": "Dodajte komentar na CoinMarketCap",
+    "shortDescription": "Širite besedo o $ICE.",
+    "longDescription": "Pritisnite Start za odprtje strani BNB na CoinMarketCap in dodajte pozitiven komentar, ki vključuje $ICE.",
+    "errorDescription": "Preverjanje ni uspelo. Prepričajte se, da vaš komentar vključuje $ICE, in poskusite znova."
+  },
+  "sq": {
+    "title": "Shtoni një koment në CoinMarketCap",
+    "shortDescription": "Shpërndani fjalën për $ICE.",
+    "longDescription": "Shtypni Start për të hapur faqen e BNB në CoinMarketCap dhe shtoni një koment pozitiv që përfshin $ICE.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi sigurohuni që komenti juaj përfshin $ICE dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Lägg till en kommentar på CoinMarketCap",
+    "shortDescription": "Sprid ordet om $ICE.",
+    "longDescription": "Tryck på Start för att öppna BNB-sidan på CoinMarketCap och lägg till en positiv kommentar som inkluderar $ICE.",
+    "errorDescription": "Verifieringen misslyckades. Se till att din kommentar inkluderar $ICE och försök igen."
+  },
+  "te": {
+    "title": "CoinMarketCap పై వ్యాఖ్యను జోడించండి",
+    "shortDescription": "$ICE గురించి సమాచారం పంచుకోండి.",
+    "longDescription": "CoinMarketCap లో BNB పేజీని తెరవడానికి Start నొక్కి, $ICEని కలిగి ఉన్న ఒక సానుకూల వ్యాఖ్యను జోడించండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. దయచేసి మీ వ్యాఖ్యలో $ICE ఉన్నదని నిర్ధారించుకొని మళ్ళీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "เพิ่มความคิดเห็นใน CoinMarketCap",
+    "shortDescription": "กระจายคำเกี่ยวกับ $ICE",
+    "longDescription": "กด Start เพื่อเปิดหน้า BNB บน CoinMarketCap และเพิ่มความคิดเห็นเชิงบวกที่มี $ICE",
+    "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าความคิดเห็นของคุณมี $ICE และลองอีกครั้ง"
+  },
+  "tr": {
+    "title": "CoinMarketCap'te bir yorum ekleyin",
+    "shortDescription": "$ICE hakkında bilgi yay.",
+    "longDescription": "CoinMarketCap'te BNB sayfasını açmak için Start'a basın ve $ICE içeren olumlu bir yorum ekleyin.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen yorumunuzun $ICE içerdiğinden emin olun ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Додайте коментар на CoinMarketCap",
+    "shortDescription": "Поширте інформацію про $ICE.",
+    "longDescription": "Натисніть Start, щоб відкрити сторінку BNB на CoinMarketCap і додайте позитивний коментар із $ICE.",
+    "errorDescription": "Перевірка не вдалася. Переконайтеся, що ваш коментар містить $ICE, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "CoinMarketCap پر ایک تبصرہ شامل کریں",
+    "shortDescription": "$ICE کے بارے میں بات کریں۔",
+    "longDescription": "CoinMarketCap پر BNB صفحہ کھولنے کے لئے Start دبائیں اور $ICE کے ساتھ ایک مثبت تبصرہ شامل کریں۔",
+    "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم یقینی بنائیں کہ آپ کے تبصرے میں $ICE شامل ہے اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Thêm nhận xét trên CoinMarketCap",
+    "shortDescription": "Truyền bá thông tin về $ICE.",
+    "longDescription": "Nhấn Start để mở trang BNB trên CoinMarketCap và thêm một nhận xét tích cực bao gồm $ICE.",
+    "errorDescription": "Xác minh không thành công. Vui lòng đảm bảo nhận xét của bạn bao gồm $ICE và thử lại."
+  },
+  "zh-hant": {
+    "title": "在 CoinMarketCap 上添加評論",
+    "shortDescription": "宣傳 $ICE。",
+    "longDescription": "按 Start 打開 CoinMarketCap 上的 BNB 頁面，並添加包含 $ICE 的正面評論。",
+    "errorDescription": "驗證失敗。請確保您的評論包含 $ICE，然後再試一次。"
+  },
+  "zh": {
+    "title": "在 CoinMarketCap 上添加评论",
+    "shortDescription": "传播有关 $ICE 的信息。",
+    "longDescription": "按下 Start 以打开 CoinMarketCap 上的 BNB 页面，并添加包含 $ICE 的正面评论。",
+    "errorDescription": "验证失败。请确保您的评论包含 $ICE，然后重试。"
+  }
+}

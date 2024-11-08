@@ -168,6 +168,11 @@ definitions:
     - join_athene
     - join_kolo
     - join_ducks
+    - join_cmc_ton
+    - join_cmc_sol
+    - join_cmc_bnb
+    - join_cmc_eth
+    - join_cmc_btc
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -261,6 +266,11 @@ definitions:
     - JoinAtheneType
     - JoinKoloType
     - JoinDucksType
+    - JoinCMCTONType
+    - JoinCMCSSOLType
+    - JoinCMCBNBType
+    - JoinCMCETHType
+    - JoinCMCBTCType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
@@ -594,6 +604,11 @@ paths:
         - join_athene
         - join_kolo
         - join_ducks
+        - join_cmc_ton
+        - join_cmc_sol
+        - join_cmc_bnb
+        - join_cmc_eth
+        - join_cmc_btc
         in: path
         name: taskType
         required: true
@@ -810,6 +825,11 @@ paths:
         - join_athene
         - join_kolo
         - join_ducks
+        - join_cmc_ton
+        - join_cmc_sol
+        - join_cmc_bnb
+        - join_cmc_eth
+        - join_cmc_btc
         in: path
         name: taskType
         required: true
