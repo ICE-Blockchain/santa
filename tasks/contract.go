@@ -50,6 +50,11 @@ const (
 	JoinAtheneType             Type = "join_athene"
 	JoinKoloType               Type = "join_kolo"
 	JoinDucksType              Type = "join_ducks"
+	JoinCMCTONType             Type = "join_cmc_ton"
+	JoinCMCSSOLType            Type = "join_cmc_sol"
+	JoinCMCBNBType             Type = "join_cmc_bnb"
+	JoinCMCETHType             Type = "join_cmc_eth"
+	JoinCMCBTCType             Type = "join_cmc_btc"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"

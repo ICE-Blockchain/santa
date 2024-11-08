@@ -28,6 +28,26 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_cmc_btc
+    prize: 4000
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://coinmarketcap.com/currencies/bitcoin/#Community
+  - type: join_cmc_bnb
+    prize: 4000
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://coinmarketcap.com/currencies/bnb/#Community
+  - type: join_cmc_ton
+    prize: 4000
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://coinmarketcap.com/currencies/toncoin/#Community
+  - type: join_cmc_sol
+    prize: 4000
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://coinmarketcap.com/currencies/solana/#Community
+  - type: join_cmc_eth
+    prize: 4000
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://coinmarketcap.com/currencies/ethereum/#Community
   - type: join_ducks
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
