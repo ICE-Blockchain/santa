@@ -459,7 +459,8 @@ const docTemplate = `{
                             "join_hipo",
                             "join_freedogs",
                             "join_athene",
-                            "join_kolo"
+                            "join_kolo",
+                            "join_ducks"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -640,7 +641,8 @@ const docTemplate = `{
                             "join_hipo",
                             "join_freedogs",
                             "join_athene",
-                            "join_kolo"
+                            "join_kolo",
+                            "join_ducks"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -949,6 +951,7 @@ const docTemplate = `{
                 "join_freedogs",
                 "join_athene",
                 "join_kolo",
+                "join_ducks",
                 "watch_video_with_code_confirmation_1",
                 "invite_friends_5",
                 "invite_friends_10",
@@ -1041,6 +1044,7 @@ const docTemplate = `{
                 "JoinFreedogsType",
                 "JoinAtheneType",
                 "JoinKoloType",
+                "JoinDucksType",
                 "WatchVideoWithCodeConfirmation1Type",
                 "InviteFriends5Type",
                 "InviteFriends10Type",
