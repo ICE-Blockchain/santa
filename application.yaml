@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_bearfi
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/BearFi_OfficialBot/bearfi?startapp=Rainmaker8888-351302-0
   - type: join_cmc_btc
     prize: 4000
     icon: https://ice-staging.b-cdn.net/task.svg
