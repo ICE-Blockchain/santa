@@ -634,7 +634,7 @@ const docTemplate = `{
                             "signup_callfluent",
                             "signup_sauces",
                             "signup_sealsend",
-                            "singup_doctorx",
+                            "signup_doctorx",
                             "signup_tokero",
                             "join_twitter_multiversx",
                             "join_twitter_xportal",
