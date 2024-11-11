@@ -124,7 +124,7 @@ func (p *progress) reEvaluateAchievedBadges() *users.Enum[Type] { //nolint:funle
 			achieved = uint64(p.CompletedLevels) >= Milestones[badgeType].FromInclusive //nolint:gosec // .
 		case CoinGroupType:
 			if p.Balance > 0 {
-				achieved = uint64(p.Balance) >= Milestones[badgeType].FromInclusive //nolint:gosec // .
+				achieved = uint64(p.Balance) >= Milestones[badgeType].FromInclusive
 			}
 		case SocialGroupType:
 			achieved = uint64(p.FriendsInvited) >= Milestones[badgeType].FromInclusive //nolint:gosec // .
