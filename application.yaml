@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_dejendog
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/DejenDogBot/djdog?startapp=17de5be0
   - type: join_boinkers
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg

@@ -467,7 +467,8 @@ const docTemplate = `{
                             "join_cmc_eth",
                             "join_cmc_btc",
                             "join_bearfi",
-                            "join_boinkers"
+                            "join_boinkers",
+                            "join_dejendog"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -656,7 +657,8 @@ const docTemplate = `{
                             "join_cmc_eth",
                             "join_cmc_btc",
                             "join_bearfi",
-                            "join_boinkers"
+                            "join_boinkers",
+                            "join_dejendog"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -973,6 +975,7 @@ const docTemplate = `{
                 "join_cmc_btc",
                 "join_bearfi",
                 "join_boinkers",
+                "join_dejendog",
                 "watch_video_with_code_confirmation_1",
                 "invite_friends_5",
                 "invite_friends_10",
@@ -1073,6 +1076,7 @@ const docTemplate = `{
                 "JoinCMCBTCType",
                 "JoinBearfiType",
                 "JoinBoinkersType",
+                "JoinDejenDogType",
                 "WatchVideoWithCodeConfirmation1Type",
                 "InviteFriends5Type",
                 "InviteFriends10Type",
