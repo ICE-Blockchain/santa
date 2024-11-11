@@ -56,6 +56,7 @@ const (
 	JoinCMCETHType             Type = "join_cmc_eth"
 	JoinCMCBTCType             Type = "join_cmc_btc"
 	JoinBearfiType             Type = "join_bearfi"
+	JoinBoinkersType           Type = "join_boinkers"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"

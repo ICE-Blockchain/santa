@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_boinkers
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/boinker_bot/boinkapp?startapp=boink6756867382campDoctorX
   - type: join_bearfi
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
@@ -434,6 +438,14 @@ tasksList: &tasksList
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
     url: www.sunwavestoken.com/@sealsend
+  - type: signup_doctorx
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: www.sunwavestoken.com/@doctorx
+  - type: signup_tokero
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: www.sunwavestoken.com/@tokero
   - type: join_twitter_multiversx
     prize: 1500
     icon: https://ice-staging.b-cdn.net/task.svg
