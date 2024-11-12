@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_tonkombat
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/Ton_kombat_bot/app?startapp=6756867382
   - type: join_cmc_pnut
     prize: 4000
     icon: https://ice-staging.b-cdn.net/task.svg
