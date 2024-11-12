@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_tonai
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/PeaAIBot/App?startapp=sid-67330ea500f0e100537c58b1
   - type: join_tonkombat
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
