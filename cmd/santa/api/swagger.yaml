@@ -172,6 +172,7 @@ definitions:
     - join_bearfi
     - join_boinkers
     - join_dejendog
+    - join_catgoldminer
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -273,6 +274,7 @@ definitions:
     - JoinBearfiType
     - JoinBoinkersType
     - JoinDejenDogType
+    - JoinCatGoldMinerType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
