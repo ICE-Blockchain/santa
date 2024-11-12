@@ -173,15 +173,15 @@ definitions:
     - join_cmc_bnb
     - join_cmc_eth
     - join_cmc_btc
-    - join_bearfi
-    - join_boinkers
-    - join_dejendog
-    - join_catgoldminer
     - join_cmc_pnut
     - join_cmc_ada
     - join_cmc_doge
     - join_cmc_xrp
     - join_cmc_act
+    - join_bearfi
+    - join_boinkers
+    - join_dejendog
+    - join_catgoldminer
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -280,15 +280,15 @@ definitions:
     - JoinCMCBNBType
     - JoinCMCETHType
     - JoinCMCBTCType
+    - JoinCMCPNUType
+    - JoinCMCADAType
+    - JoinCMCDOGEType
+    - JoinCMCXRPType
+    - JoinCMCACTType
     - JoinBearfiType
     - JoinBoinkersType
     - JoinDejenDogType
     - JoinCatGoldMinerType
-    - JoinCMCPnutType
-    - JoinCMCAdaType
-    - JoinCMCDogeType
-    - JoinCMCXrpType
-    - JoinCMCActType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
