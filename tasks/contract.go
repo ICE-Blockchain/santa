@@ -58,6 +58,7 @@ const (
 	JoinBearfiType             Type = "join_bearfi"
 	JoinBoinkersType           Type = "join_boinkers"
 	JoinDejenDogType           Type = "join_dejendog"
+	JoinCatGoldMinerType       Type = "join_catgoldminer"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"
