@@ -173,6 +173,11 @@ definitions:
     - join_cmc_bnb
     - join_cmc_eth
     - join_cmc_btc
+    - join_cmc_pnut
+    - join_cmc_ada
+    - join_cmc_doge
+    - join_cmc_xrp
+    - join_cmc_act
     - join_bearfi
     - join_boinkers
     - join_dejendog
@@ -275,6 +280,11 @@ definitions:
     - JoinCMCBNBType
     - JoinCMCETHType
     - JoinCMCBTCType
+    - JoinCMCPNUType
+    - JoinCMCADAType
+    - JoinCMCDOGEType
+    - JoinCMCXRPType
+    - JoinCMCACTType
     - JoinBearfiType
     - JoinBoinkersType
     - JoinDejenDogType
@@ -621,6 +631,11 @@ paths:
         - join_boinkers
         - join_dejendog
         - join_catgoldminer
+        - join_cmc_pnut
+        - join_cmc_ada
+        - join_cmc_doge
+        - join_cmc_xrp
+        - join_cmc_act
         in: path
         name: taskType
         required: true
@@ -846,6 +861,11 @@ paths:
         - join_boinkers
         - join_dejendog
         - join_catgoldminer
+        - join_cmc_pnut
+        - join_cmc_ada
+        - join_cmc_doge
+        - join_cmc_xrp
+        - join_cmc_act
         in: path
         name: taskType
         required: true
