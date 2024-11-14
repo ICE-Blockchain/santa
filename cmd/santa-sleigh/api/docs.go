@@ -476,7 +476,8 @@ const docTemplate = `{
                             "join_cmc_xrp",
                             "join_cmc_act",
                             "join_tonkombat",
-                            "join_tonai"
+                            "join_tonai",
+                            "join_pigs"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -674,7 +675,8 @@ const docTemplate = `{
                             "join_cmc_xrp",
                             "join_cmc_act",
                             "join_tonkombat",
-                            "join_tonai"
+                            "join_tonai",
+                            "join_pigs"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -1000,6 +1002,7 @@ const docTemplate = `{
                 "join_catgoldminer",
                 "join_tonkombat",
                 "join_tonai",
+                "join_pigs",
                 "watch_video_with_code_confirmation_1",
                 "invite_friends_5",
                 "invite_friends_10",
@@ -1109,6 +1112,7 @@ const docTemplate = `{
                 "JoinCatGoldMinerType",
                 "JoinTonKombatType",
                 "JoinTonAIType",
+                "JoinPigsType",
                 "WatchVideoWithCodeConfirmation1Type",
                 "InviteFriends5Type",
                 "InviteFriends10Type",

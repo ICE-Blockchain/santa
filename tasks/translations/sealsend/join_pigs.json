@@ -1,0 +1,261 @@
+{
+    "af": {
+      "title": "Sluit aan by Pigs",
+      "shortDescription": "Tel jou Telegram-vriende!",
+      "longDescription": "Kyk na jou totale kontakte en verdien belonings! Hoe meer, hoe beter!",
+      "errorDescription": "Verifikasie het misluk. Maak asseblief seker dat jy by Pigs aangesluit het en probeer weer."
+    },
+    "ar": {
+      "title": "انضم إلى Pigs",
+      "shortDescription": "احسب أصدقائك في Telegram!",
+      "longDescription": "تحقق من إجمالي جهات الاتصال الخاصة بك واكسب المكافآت! كلما زاد العدد كان أفضل!",
+      "errorDescription": "فشل التحقق. يرجى التأكد من أنك انضممت إلى Pigs وحاول مرة أخرى."
+    },
+    "az": {
+      "title": "Pigs-a qoşulun",
+      "shortDescription": "Telegram dostlarınızı sayın!",
+      "longDescription": "Ümumi kontaktlarınıza baxın və mükafat qazanın! Nə qədər çox, bir o qədər yaxşı!",
+      "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa Pigs-a qoşulduğunuzdan əmin olun və yenidən cəhd edin."
+    },
+    "bg": {
+      "title": "Присъединете се към Pigs",
+      "shortDescription": "Пребройте вашите приятели в Telegram!",
+      "longDescription": "Проверете общите си контакти и печелете награди! Колкото повече, толкова по-добре!",
+      "errorDescription": "Проверката не бе успешна. Моля, уверете се, че сте се присъединили към Pigs и опитайте отново."
+    },
+    "bn": {
+      "title": "Pigs-এ যোগ দিন",
+      "shortDescription": "আপনার Telegram বন্ধুদের গণনা করুন!",
+      "longDescription": "আপনার মোট পরিচিতির সংখ্যা চেক করুন এবং পুরস্কার উপার্জন করুন! যত বেশি তত মজা!",
+      "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন যে আপনি Pigs-এ যোগ দিয়েছেন এবং আবার চেষ্টা করুন।"
+    },
+    "cs": {
+      "title": "Připojte se k Pigs",
+      "shortDescription": "Spočítejte si své přátele na Telegramu!",
+      "longDescription": "Zkontrolujte svůj celkový počet kontaktů a získejte odměny! Čím více, tím lépe!",
+      "errorDescription": "Ověření selhalo. Ujistěte se, že jste se připojili k Pigs, a zkuste to znovu."
+    },
+    "de": {
+      "title": "Tritt Pigs bei",
+      "shortDescription": "Zähle deine Telegram-Freunde!",
+      "longDescription": "Überprüfe deine gesamten Kontakte und verdiene Belohnungen! Je mehr, desto besser!",
+      "errorDescription": "Verifizierung fehlgeschlagen. Bitte stelle sicher, dass du Pigs beigetreten bist, und versuche es erneut."
+    },
+    "el": {
+      "title": "Γίνετε μέλος του Pigs",
+      "shortDescription": "Μετρήστε τους φίλους σας στο Telegram!",
+      "longDescription": "Ελέγξτε τις συνολικές σας επαφές και κερδίστε ανταμοιβές! Όσο περισσότεροι, τόσο καλύτερα!",
+      "errorDescription": "Η επαλήθευση απέτυχε. Βεβαιωθείτε ότι έχετε εγγραφεί στο Pigs και δοκιμάστε ξανά."
+    },
+    "en": {
+      "title": "Join Pigs",
+      "shortDescription": "Count your Telegram friends!",
+      "longDescription": "Check your total contacts and earn rewards! The more the merrier!",
+      "errorDescription": "Verification failed. Please ensure you joined Pigs and try again."
+    },
+    "es": {
+      "title": "Únete a Pigs",
+      "shortDescription": "¡Cuenta a tus amigos de Telegram!",
+      "longDescription": "¡Verifica tus contactos totales y gana recompensas! ¡Cuantos más, mejor!",
+      "errorDescription": "La verificación falló. Por favor, asegúrate de haberte unido a Pigs e inténtalo de nuevo."
+    },
+    "fa": {
+      "title": "به Pigs بپیوندید",
+      "shortDescription": "دوستان تلگرام خود را بشمارید!",
+      "longDescription": "تعداد کل مخاطبین خود را بررسی کنید و پاداش بگیرید! هر چه بیشتر، بهتر!",
+      "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً مطمئن شوید که به Pigs پیوسته‌اید و دوباره تلاش کنید."
+    },
+    "fr": {
+      "title": "Rejoignez Pigs",
+      "shortDescription": "Comptez vos amis Telegram!",
+      "longDescription": "Vérifiez vos contacts totaux et gagnez des récompenses! Plus on est de fous, plus on rit!",
+      "errorDescription": "Échec de la vérification. Veuillez vous assurer que vous avez rejoint Pigs et réessayez."
+    },
+    "gu": {
+      "title": "Pigs માં જોડાઓ",
+      "shortDescription": "તમારા Telegram મિત્રોની ગણતરી કરો!",
+      "longDescription": "તમારા કુલ સંપર્કો તપાસો અને પુરસ્કાર મેળવો! જેટલા વધુ, તેટલું સારું!",
+      "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમે Pigs માં જોડાયા છો અને ફરી પ્રયાસ કરો."
+    },
+    "he": {
+      "title": "הצטרף ל-Pigs",
+      "shortDescription": "ספור את חבריך בטלגרם!",
+      "longDescription": "בדוק את סך כל אנשי הקשר שלך וקבל תגמולים! ככל שיש יותר, כך טוב יותר!",
+      "errorDescription": "האימות נכשל. אנא ודא שהצטרפת ל-Pigs ונסה שוב."
+    },
+    "hi": {
+      "title": "Pigs से जुड़ें",
+      "shortDescription": "अपने Telegram दोस्तों की गिनती करें!",
+      "longDescription": "अपने कुल संपर्कों की जाँच करें और पुरस्कार अर्जित करें! जितने अधिक, उतना अच्छा!",
+      "errorDescription": "सत्यापन विफल। कृपया सुनिश्चित करें कि आप Pigs से जुड़े हैं और फिर से प्रयास करें।"
+    },
+    "hu": {
+      "title": "Csatlakozz a Pigshez",
+      "shortDescription": "Számold meg a Telegram barátaidat!",
+      "longDescription": "Ellenőrizd az összes kapcsolatodat, és szerezz jutalmakat! Minél több, annál jobb!",
+      "errorDescription": "Az ellenőrzés nem sikerült. Győződj meg róla, hogy csatlakoztál a Pigshez, és próbáld újra."
+    },
+    "id": {
+      "title": "Bergabunglah dengan Pigs",
+      "shortDescription": "Hitung teman Telegram Anda!",
+      "longDescription": "Periksa total kontak Anda dan dapatkan hadiah! Semakin banyak semakin meriah!",
+      "errorDescription": "Verifikasi gagal. Pastikan Anda bergabung dengan Pigs dan coba lagi."
+    },
+    "it": {
+      "title": "Unisciti a Pigs",
+      "shortDescription": "Conta i tuoi amici su Telegram!",
+      "longDescription": "Controlla il totale dei tuoi contatti e guadagna ricompense! Più siamo, meglio è!",
+      "errorDescription": "Verifica fallita. Assicurati di esserti unito a Pigs e riprova."
+    },
+    "ja": {
+      "title": "Pigsに参加",
+      "shortDescription": "Telegramの友達を数えよう！",
+      "longDescription": "あなたの全連絡先を確認して報酬を獲得しよう！多ければ多いほど良い！",
+      "errorDescription": "確認に失敗しました。Pigsに参加したことを確認して、もう一度お試しください。"
+    },
+    "jv": {
+      "title": "Gabung Pigs",
+      "shortDescription": "Itilake kanca-kanca Telegram!",
+      "longDescription": "Priksa total kontakmu lan entuk hadiah! Luwih akeh, luwih nyenengake!",
+      "errorDescription": "Verifikasi gagal. Mangga priksa manawa sampeyan wis gabung Pigs lan coba maneh."
+    },
+    "kn": {
+      "title": "Pigs ಗೆ ಸೇರಿ",
+      "shortDescription": "ನಿಮ್ಮ Telegram ಸ್ನೇಹಿತರನ್ನು ಎಣಿಸಿ!",
+      "longDescription": "ನಿಮ್ಮ ಒಟ್ಟು ಸಂಪರ್ಕಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಬಹುಮಾನಗಳನ್ನು ಸಂಪಾದಿಸಿ! ಹೆಚ್ಚು ಇದ್ದರೆ ಹೆಚ್ಚು ಚೆನ್ನಾಗಿದೆ!",
+      "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ನೀವು Pigs ಗೆ ಸೇರಿದ್ದೀರೆಂದು ಖಚಿತಪಡಿಸಿ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+    },
+    "ko": {
+      "title": "Pigs에 가입하세요",
+      "shortDescription": "Telegram 친구를 세어보세요!",
+      "longDescription": "전체 연락처를 확인하고 보상을 받으세요! 많을수록 좋습니다!",
+      "errorDescription": "인증에 실패했습니다. Pigs에 가입했는지 확인하고 다시 시도하세요."
+    },
+    "mr": {
+      "title": "Pigs मध्ये सामील व्हा",
+      "shortDescription": "तुमच्या Telegram मित्रांची गणना करा!",
+      "longDescription": "तुमचे एकूण संपर्क तपासा आणि बक्षिसे कमवा! जितके जास्त तितके आनंददायी!",
+      "errorDescription": "सत्यापन अयशस्वी झाले. कृपया आपण Pigs मध्ये सामील झालात का ते सुनिश्चित करा आणि पुन्हा प्रयत्न करा."
+    },
+    "ms": {
+      "title": "Sertai Pigs",
+      "shortDescription": "Kira rakan Telegram anda!",
+      "longDescription": "Semak jumlah kenalan anda dan dapatkan ganjaran! Semakin ramai semakin meriah!",
+      "errorDescription": "Pengesahan gagal. Pastikan anda menyertai Pigs dan cuba lagi."
+    },
+    "nb": {
+      "title": "Bli med i Pigs",
+      "shortDescription": "Tell Telegram-vennene dine!",
+      "longDescription": "Sjekk totalt antall kontakter og få belønninger! Jo flere, jo bedre!",
+      "errorDescription": "Verifiseringen mislyktes. Vennligst sørg for at du har blitt med i Pigs, og prøv igjen."
+    },
+    "nn": {
+      "title": "Bli med i Pigs",
+      "shortDescription": "Tel Telegram-venene dine!",
+      "longDescription": "Sjekk totalen av kontaktene dine og få belønningar! Jo fleire, jo betre!",
+      "errorDescription": "Verifisering mislukkast. Ver venleg å sjekka at du har blitt med i Pigs, og prøv igjen."
+    },
+    "pa": {
+      "title": "Pigs ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+      "shortDescription": "ਆਪਣੇ Telegram ਦੋਸਤਾਂ ਦੀ ਗਿਣਤੀ ਕਰੋ!",
+      "longDescription": "ਆਪਣੇ ਕੁੱਲ ਸੰਪਰਕਾਂ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਇਨਾਮ ਕਮਾਓ! ਜਿੰਨੇ ਵੱਧ, ਓਨਾ ਚੰਗਾ!",
+      "errorDescription": "ਪ੍ਰਮਾਣਕਰਨ ਫੇਲ੍ਹ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਸੀਂ Pigs ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਏ ਹੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+    },
+    "pl": {
+      "title": "Dołącz do Pigs",
+      "shortDescription": "Policz swoich znajomych na Telegramie!",
+      "longDescription": "Sprawdź swoje kontakty i zdobywaj nagrody! Im więcej, tym lepiej!",
+      "errorDescription": "Weryfikacja nie powiodła się. Upewnij się, że dołączyłeś do Pigs i spróbuj ponownie."
+    },
+    "pt": {
+      "title": "Junte-se ao Pigs",
+      "shortDescription": "Conte seus amigos no Telegram!",
+      "longDescription": "Verifique seus contatos totais e ganhe recompensas! Quanto mais, melhor!",
+      "errorDescription": "Falha na verificação. Verifique se você se juntou ao Pigs e tente novamente."
+    },
+    "ro": {
+      "title": "Alătură-te Pigs",
+      "shortDescription": "Numără-ți prietenii de pe Telegram!",
+      "longDescription": "Verifică-ți totalul de contacte și câștigă recompense! Cu cât mai mulți, cu atât mai bine!",
+      "errorDescription": "Verificarea a eșuat. Asigură-te că te-ai alăturat Pigs și încearcă din nou."
+    },
+    "ru": {
+      "title": "Присоединяйтесь к Pigs",
+      "shortDescription": "Посчитайте своих друзей в Telegram!",
+      "longDescription": "Проверьте количество контактов и зарабатывайте награды! Чем больше, тем лучше!",
+      "errorDescription": "Не удалось выполнить проверку. Убедитесь, что вы присоединились к Pigs, и попробуйте снова."
+    },
+    "sk": {
+      "title": "Pripojte sa k Pigs",
+      "shortDescription": "Spočítajte si svojich priateľov na Telegrame!",
+      "longDescription": "Skontrolujte svoj celkový počet kontaktov a získajte odmeny! Čím viac, tým lepšie!",
+      "errorDescription": "Overenie zlyhalo. Uistite sa, že ste sa pripojili k Pigs, a skúste to znova."
+    },
+    "sl": {
+      "title": "Pridružite se Pigs",
+      "shortDescription": "Preštejte svoje prijatelje na Telegramu!",
+      "longDescription": "Preverite skupne stike in pridobite nagrade! Več kot jih je, boljše je!",
+      "errorDescription": "Preverjanje ni uspelo. Prepričajte se, da ste se pridružili Pigs, in poskusite znova."
+    },
+    "sq": {
+      "title": "Bashkohuni me Pigs",
+      "shortDescription": "Numëroni miqtë tuaj në Telegram!",
+      "longDescription": "Kontrolloni kontaktet tuaja totale dhe fitoni shpërblime! Sa më shumë, aq më mirë!",
+      "errorDescription": "Verifikimi dështoi. Ju lutemi sigurohuni që të jeni bashkuar me Pigs dhe provoni përsëri."
+    },
+    "sv": {
+      "title": "Gå med i Pigs",
+      "shortDescription": "Räkna dina Telegram-vänner!",
+      "longDescription": "Kolla dina totala kontakter och tjäna belöningar! Ju fler desto bättre!",
+      "errorDescription": "Verifieringen misslyckades. Kontrollera att du har gått med i Pigs och försök igen."
+    },
+    "te": {
+      "title": "Pigs లో చేరండి",
+      "shortDescription": "మీ Telegram స్నేహితులను లెక్కించండి!",
+      "longDescription": "మీ మొత్తం పరిచయాలను తనిఖీ చేయండి మరియు బహుమతులు సంపాదించండి! ఎక్కువ మంది ఉంటే మరింత ఆనందం!",
+      "errorDescription": "ధృవీకరణ విఫలమైంది. Pigs లో చేరారని నిర్ధారించుకుని మళ్ళీ ప్రయత్నించండి."
+    },
+    "th": {
+      "title": "เข้าร่วม Pigs",
+      "shortDescription": "นับเพื่อนใน Telegram ของคุณ!",
+      "longDescription": "ตรวจสอบจำนวนผู้ติดต่อทั้งหมดของคุณและรับรางวัล! ยิ่งมากยิ่งดี!",
+      "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าคุณเข้าร่วม Pigs แล้วลองอีกครั้ง"
+    },
+    "tr": {
+      "title": "Pigs'a Katıl",
+      "shortDescription": "Telegram arkadaşlarını say!",
+      "longDescription": "Toplam kişi sayınızı kontrol edin ve ödüller kazanın! Ne kadar çok, o kadar iyi!",
+      "errorDescription": "Doğrulama başarısız oldu. Lütfen Pigs'a katıldığınızdan emin olun ve tekrar deneyin."
+    },
+    "uk": {
+      "title": "Приєднайтеся до Pigs",
+      "shortDescription": "Порахуйте своїх друзів у Telegram!",
+      "longDescription": "Перевірте загальну кількість контактів і отримайте нагороди! Чим більше, тим краще!",
+      "errorDescription": "Перевірка не вдалася. Переконайтеся, що ви приєдналися до Pigs, і спробуйте ще раз."
+    },
+    "ur": {
+      "title": "Pigs میں شامل ہوں",
+      "shortDescription": "اپنے Telegram دوستوں کی گنتی کریں!",
+      "longDescription": "اپنے کل رابطوں کی تعداد چیک کریں اور انعامات کمائیں! جتنے زیادہ، اتنا اچھا!",
+      "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم یقینی بنائیں کہ آپ Pigs میں شامل ہو گئے ہیں اور دوبارہ کوشش کریں۔"
+    },
+    "vi": {
+      "title": "Tham gia Pigs",
+      "shortDescription": "Đếm bạn bè trên Telegram của bạn!",
+      "longDescription": "Kiểm tra tổng số liên hệ của bạn và nhận phần thưởng! Càng nhiều càng vui!",
+      "errorDescription": "Xác minh không thành công. Vui lòng đảm bảo rằng bạn đã tham gia Pigs và thử lại."
+    },
+    "zh-hant": {
+      "title": "加入 Pigs",
+      "shortDescription": "數一數你的 Telegram 朋友！",
+      "longDescription": "查看你的聯絡人總數並獲得獎勵！人越多越好！",
+      "errorDescription": "驗證失敗。請確保您已加入 Pigs，然後再試一次。"
+    },
+    "zh": {
+      "title": "加入 Pigs",
+      "shortDescription": "统计你的 Telegram 好友！",
+      "longDescription": "查看你的联系人总数并获得奖励！越多越好！",
+      "errorDescription": "验证失败。请确保您已加入 Pigs，然后重试。"
+    }
+  }
+  
