@@ -28,6 +28,14 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_capybara
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/the_capybara_meme_bot/start?startapp=0df8520885a6c2df22256a0ca36b9739
+  - type: join_pigs
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/PigshouseBot?start=7115118465
   - type: join_tonai
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg

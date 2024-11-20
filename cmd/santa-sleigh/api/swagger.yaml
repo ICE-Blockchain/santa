@@ -185,6 +185,7 @@ definitions:
     - join_tonkombat
     - join_tonai
     - join_pigs
+    - join_capybara
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -295,6 +296,7 @@ definitions:
     - JoinTonKombatType
     - JoinTonAIType
     - JoinPigsType
+    - JoinCapybaraType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
@@ -645,6 +647,7 @@ paths:
         - join_tonkombat
         - join_tonai
         - join_pigs
+        - join_capybara
         in: path
         name: taskType
         required: true
@@ -878,6 +881,7 @@ paths:
         - join_tonkombat
         - join_tonai
         - join_pigs
+        - join_capybara
         in: path
         name: taskType
         required: true
