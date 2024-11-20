@@ -67,6 +67,7 @@ const (
 	JoinTonKombatType          Type = "join_tonkombat"
 	JoinTonAIType              Type = "join_tonai"
 	JoinPigsType               Type = "join_pigs"
+	JoinCapybaraType           Type = "join_capybara"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"
