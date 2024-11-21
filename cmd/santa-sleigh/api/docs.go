@@ -478,7 +478,8 @@ const docTemplate = `{
                             "join_tonkombat",
                             "join_tonai",
                             "join_pigs",
-                            "join_capybara"
+                            "join_capybara",
+                            "join_sidekick"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -678,7 +679,8 @@ const docTemplate = `{
                             "join_tonkombat",
                             "join_tonai",
                             "join_pigs",
-                            "join_capybara"
+                            "join_capybara",
+                            "join_sidekick"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -1006,6 +1008,7 @@ const docTemplate = `{
                 "join_tonai",
                 "join_pigs",
                 "join_capybara",
+                "join_sidekick",
                 "watch_video_with_code_confirmation_1",
                 "invite_friends_5",
                 "invite_friends_10",
@@ -1117,6 +1120,7 @@ const docTemplate = `{
                 "JoinTonAIType",
                 "JoinPigsType",
                 "JoinCapybaraType",
+                "JoinSidekickType",
                 "WatchVideoWithCodeConfirmation1Type",
                 "InviteFriends5Type",
                 "InviteFriends10Type",
