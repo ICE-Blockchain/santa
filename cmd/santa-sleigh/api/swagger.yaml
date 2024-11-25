@@ -201,7 +201,7 @@ definitions:
     - signup_sealsend
     - signup_sunwaves
     - signup_doctorx
-    - signup_tokero
+    - signup_cryptomayors
     - claim_badge_l1
     - claim_badge_l2
     - claim_badge_l3
@@ -315,7 +315,7 @@ definitions:
     - SignUpSealsendType
     - SignUpSunwavesType
     - SignUpDoctorxType
-    - SignUpTokeroType
+    - SignUpCryptoMayorsType
     - ClaimLevelBadge1Type
     - ClaimLevelBadge2Type
     - ClaimLevelBadge3Type
@@ -621,7 +621,7 @@ paths:
         - signup_sauces
         - signup_sealsend
         - singup_doctorx
-        - signup_tokero
+        - signup_cryptomayors
         - join_twitter_multiversx
         - join_twitter_xportal
         - join_telegram_multiversx
@@ -858,7 +858,7 @@ paths:
         - signup_sauces
         - signup_sealsend
         - signup_doctorx
-        - signup_tokero
+        - signup_cryptomayors
         - join_twitter_multiversx
         - join_twitter_xportal
         - join_telegram_multiversx
