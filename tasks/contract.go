@@ -80,12 +80,12 @@ const (
 	InviteFriends100Type                Type = "invite_friends_100"
 	InviteFriends200Type                Type = "invite_friends_200"
 
-	SignUpCallfluentType Type = "signup_callfluent"
-	SignUpSaucesType     Type = "signup_sauces"
-	SignUpSealsendType   Type = "signup_sealsend"
-	SignUpSunwavesType   Type = "signup_sunwaves"
-	SignUpDoctorxType    Type = "signup_doctorx"
-	SignUpTokeroType     Type = "signup_tokero"
+	SignUpCallfluentType   Type = "signup_callfluent"
+	SignUpSaucesType       Type = "signup_sauces"
+	SignUpSealsendType     Type = "signup_sealsend"
+	SignUpSunwavesType     Type = "signup_sunwaves"
+	SignUpDoctorxType      Type = "signup_doctorx"
+	SignUpCryptoMayorsType Type = "signup_cryptomayors"
 
 	ClaimLevelBadge1Type Type = "claim_badge_l1"
 	ClaimLevelBadge2Type Type = "claim_badge_l2"

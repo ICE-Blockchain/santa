@@ -498,7 +498,7 @@ tasksList: &tasksList
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
     url: www.sunwavestoken.com/@doctorx
-  - type: signup_tokero
+  - type: signup_cryptomayors
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
     url: www.sunwavestoken.com/@tokero
