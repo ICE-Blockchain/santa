@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_goats
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/realgoats_bot/run?startapp=c5f4c012-f5e8-4c4f-a343-237822b5e727
   - type: join_iceberg
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg
