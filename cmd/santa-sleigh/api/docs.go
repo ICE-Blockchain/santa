@@ -479,7 +479,8 @@ const docTemplate = `{
                             "join_tonai",
                             "join_pigs",
                             "join_capybara",
-                            "join_sidekick"
+                            "join_sidekick",
+                            "join_iceberg"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -680,7 +681,8 @@ const docTemplate = `{
                             "join_tonai",
                             "join_pigs",
                             "join_capybara",
-                            "join_sidekick"
+                            "join_sidekick",
+                            "join_iceberg"
                         ],
                         "type": "string",
                         "description": "the type of the task",
