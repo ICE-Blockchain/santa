@@ -651,6 +651,7 @@ paths:
         - join_pigs
         - join_capybara
         - join_sidekick
+        - join_iceberg
         in: path
         name: taskType
         required: true
@@ -886,6 +887,7 @@ paths:
         - join_pigs
         - join_capybara
         - join_sidekick
+        - join_iceberg
         in: path
         name: taskType
         required: true
