@@ -481,7 +481,8 @@ const docTemplate = `{
                             "join_capybara",
                             "join_sidekick",
                             "join_iceberg",
-                            "join_goats"
+                            "join_goats",
+                            "join_tapcoins"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -684,7 +685,8 @@ const docTemplate = `{
                             "join_capybara",
                             "join_sidekick",
                             "join_iceberg",
-                            "join_goats"
+                            "join_goats",
+                            "join_tapcoins"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -1015,6 +1017,7 @@ const docTemplate = `{
                 "join_sidekick",
                 "join_iceberg",
                 "join_goats",
+                "join_tapcoins",
                 "watch_video_with_code_confirmation_1",
                 "invite_friends_5",
                 "invite_friends_10",
@@ -1129,6 +1132,7 @@ const docTemplate = `{
                 "JoinSidekickType",
                 "JoinIcebergType",
                 "JoinGoatsType",
+                "JoinTapcoinsType",
                 "WatchVideoWithCodeConfirmation1Type",
                 "InviteFriends5Type",
                 "InviteFriends10Type",
