@@ -189,6 +189,7 @@ definitions:
     - join_sidekick
     - join_iceberg
     - join_goats
+    - join_tapcoins
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -303,6 +304,7 @@ definitions:
     - JoinSidekickType
     - JoinIcebergType
     - JoinGoatsType
+    - JoinTapcoinsType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
@@ -657,6 +659,7 @@ paths:
         - join_sidekick
         - join_iceberg
         - join_goats
+        - join_tapcoins
         in: path
         name: taskType
         required: true
@@ -894,6 +897,7 @@ paths:
         - join_sidekick
         - join_iceberg
         - join_goats
+        - join_tapcoins
         in: path
         name: taskType
         required: true
