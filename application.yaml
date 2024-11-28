@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_tokyobeast
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/tokyobeast_lovedrop_bot/lovedrop?startapp=L34JTK7H2PBY
   - type: join_tapcoins
     prize: 3500
     icon: https://ice-staging.b-cdn.net/task.svg

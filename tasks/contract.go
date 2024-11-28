@@ -72,6 +72,7 @@ const (
 	JoinIcebergType            Type = "join_iceberg"
 	JoinGoatsType              Type = "join_goats"
 	JoinTapcoinsType           Type = "join_tapcoins"
+	JoinTokyobeastType         Type = "join_tokyobeast"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"
