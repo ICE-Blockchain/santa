@@ -663,6 +663,7 @@ paths:
         - join_goats
         - join_tapcoins
         - join_tokyobeast
+        - join_twitter_pichain
         in: path
         name: taskType
         required: true
@@ -902,6 +903,7 @@ paths:
         - join_goats
         - join_tapcoins
         - join_tokyobeast
+        - join_twitter_pichain
         in: path
         name: taskType
         required: true

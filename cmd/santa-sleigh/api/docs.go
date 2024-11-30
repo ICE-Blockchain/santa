@@ -483,7 +483,8 @@ const docTemplate = `{
                             "join_iceberg",
                             "join_goats",
                             "join_tapcoins",
-                            "join_tokyobeast"
+                            "join_tokyobeast",
+                            "join_twitter_pichain"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -688,7 +689,8 @@ const docTemplate = `{
                             "join_iceberg",
                             "join_goats",
                             "join_tapcoins",
-                            "join_tokyobeast"
+                            "join_tokyobeast",
+                            "join_twitter_pichain"
                         ],
                         "type": "string",
                         "description": "the type of the task",
