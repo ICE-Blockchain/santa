@@ -28,6 +28,10 @@ cmd/santa-sleigh:
   wintr/auth/ice:
     jwtSecret: bogus
 tasksList: &tasksList
+  - type: join_sugar
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://t.me/sugarboy_tap_bot?start=776211972
   - type: join_twitter_pichain
     prize: 2500
     icon: https://ice-staging.b-cdn.net/task.svg

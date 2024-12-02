@@ -219,8 +219,8 @@ github.com/hashicorp/go-multierror v1.1.1 h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+l
 github.com/hashicorp/go-multierror v1.1.1/go.mod h1:iw975J/qwKPdAO1clOe2L8331t/9/fmwbPZ6JB6eMoM=
 github.com/hashicorp/hcl v1.0.0 h1:0Anlzjpi4vEasTeNFn2mLJgTSwt0+6sfsiTG8qcWGx4=
 github.com/hashicorp/hcl v1.0.0/go.mod h1:E5yfLk+7swimpb2L/Alb/PJmXilQ/rhwaUYs4T20WEQ=
-github.com/ice-blockchain/eskimo v1.433.0 h1:qqusQ2jMNqKK7pb4SUW7e8gTQgCgGT72u2ow+oh8hG4=
-github.com/ice-blockchain/eskimo v1.433.0/go.mod h1:qQ3Ku3Asyge6yTfTsvCNV6ziALMduNtp93jEnmnmTGI=
+github.com/ice-blockchain/eskimo v1.434.0 h1:tS1Zw6hH4YqF+s7OIuFR5dw8oYcFnNfzPfjbgRwaBGU=
+github.com/ice-blockchain/eskimo v1.434.0/go.mod h1:44EGWQqA2PiX8zJ0H3NMhODEyt7TLA1jFDhzJP73Qfc=
 github.com/ice-blockchain/go-tarantool-client v0.0.0-20230327200757-4fc71fa3f7bb h1:8TnFP3mc7O+tc44kv2e0/TpZKnEVUaKH+UstwfBwRkk=
 github.com/ice-blockchain/go-tarantool-client v0.0.0-20230327200757-4fc71fa3f7bb/go.mod h1:ZsQU7i3mxhgBBu43Oev7WPFbIjP4TniN/b1UPNGbrq8=
 github.com/ice-blockchain/wintr v1.154.0 h1:yZSQtAEwGHTSmJ5pXjX0tpui1TNnG615QfpBkhY99a4=

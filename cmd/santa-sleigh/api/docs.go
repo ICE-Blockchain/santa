@@ -484,7 +484,8 @@ const docTemplate = `{
                             "join_goats",
                             "join_tapcoins",
                             "join_tokyobeast",
-                            "join_twitter_pichain"
+                            "join_twitter_pichain",
+                            "join_sugar"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -690,7 +691,8 @@ const docTemplate = `{
                             "join_goats",
                             "join_tapcoins",
                             "join_tokyobeast",
-                            "join_twitter_pichain"
+                            "join_twitter_pichain",
+                            "join_sugar"
                         ],
                         "type": "string",
                         "description": "the type of the task",
@@ -1023,6 +1025,7 @@ const docTemplate = `{
                 "join_goats",
                 "join_tapcoins",
                 "join_tokyobeast",
+                "join_sugar",
                 "watch_video_with_code_confirmation_1",
                 "invite_friends_5",
                 "invite_friends_10",
@@ -1139,6 +1142,7 @@ const docTemplate = `{
                 "JoinGoatsType",
                 "JoinTapcoinsType",
                 "JoinTokyobeastType",
+                "JoinSugarType",
                 "WatchVideoWithCodeConfirmation1Type",
                 "InviteFriends5Type",
                 "InviteFriends10Type",
