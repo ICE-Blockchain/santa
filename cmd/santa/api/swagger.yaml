@@ -187,6 +187,7 @@ definitions:
     - join_goats
     - join_tapcoins
     - join_tokyobeast
+    - join_twitter_pichain
     - join_sugar
     - watch_video_with_code_confirmation_1
     - invite_friends_5
@@ -304,6 +305,7 @@ definitions:
     - JoinGoatsType
     - JoinTapcoinsType
     - JoinTokyobeastType
+    - JoinTwitterPichainType
     - JoinSugarType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type

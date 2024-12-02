@@ -73,6 +73,8 @@ const (
 	JoinGoatsType              Type = "join_goats"
 	JoinTapcoinsType           Type = "join_tapcoins"
 	JoinTokyobeastType         Type = "join_tokyobeast"
+	JoinTwitterPichainType     Type = "join_twitter_pichain"
+	JoinSugarType              Type = "join_sugar"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"
