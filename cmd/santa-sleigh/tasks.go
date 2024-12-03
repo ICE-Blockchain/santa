@@ -41,9 +41,6 @@ func (s *service) PseudoCompleteTask( //nolint:gocritic // False negative.
 	ctx context.Context,
 	req *server.Request[CompleteTaskRequestBody, any],
 ) (*server.Response[any], *server.Response[server.ErrorResponse]) {
-	if cfg.Tenant == "doctorx" {
-		return nil, server.Forbidden(errForbidden)
-	}
 	task := &tasks.Task{
 		Data:   req.Data.Data,
 		Type:   req.Data.TaskType,

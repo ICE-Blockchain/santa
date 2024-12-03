@@ -5,7 +5,7 @@ go 1.23
 require (
 	github.com/goccy/go-json v0.10.3
 	github.com/hashicorp/go-multierror v1.1.1
-	github.com/ice-blockchain/eskimo v1.434.0
+	github.com/ice-blockchain/eskimo v1.435.0
 	github.com/ice-blockchain/wintr v1.154.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.10.0
@@ -14,7 +14,7 @@ require (
 )
 
 require (
-	cel.dev/expr v0.18.0 // indirect
+	cel.dev/expr v0.19.0 // indirect
 	cloud.google.com/go v0.116.0 // indirect
 	cloud.google.com/go/auth v0.11.0 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.6 // indirect
@@ -90,7 +90,7 @@ require (
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/ice-blockchain/go-tarantool-client v0.0.0-20230327200757-4fc71fa3f7bb // indirect
 	github.com/imroc/req/v3 v3.48.0 // indirect
-	github.com/ip2location/ip2location-go/v9 v9.7.0 // indirect
+	github.com/ip2location/ip2location-go/v9 v9.7.1 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
 	github.com/jackc/pgx/v5 v5.7.1 // indirect
