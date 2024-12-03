@@ -3,8 +3,6 @@
 package main
 
 import (
-	"github.com/pkg/errors"
-
 	"github.com/ice-blockchain/santa/badges"
 	friendsinvited "github.com/ice-blockchain/santa/friends-invited"
 	levelsandroles "github.com/ice-blockchain/santa/levels-and-roles"
@@ -35,13 +33,6 @@ const (
 	invalidPropertiesErrorCode = "INVALID_PROPERTIES"
 	taskNotFoundCode           = "TASK_NOT_FOUND"
 	taskNotCompletedCode       = "TASK_NOT_COMPLETED"
-)
-
-// .
-var (
-	//nolint:gochecknoglobals // Because its loaded once, at runtime.
-	cfg          config
-	errForbidden = errors.New("disabled")
 )
 
 type (
