@@ -530,6 +530,30 @@ tasksList: &tasksList
     prize: 1500
     icon: https://ice-staging.b-cdn.net/task.svg
     url: https://t.me/MultiversXAnn
+  - type: join_x_tokero
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://x.com/tokeroexchange
+  - type: join_instagram_tokero
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://www.instagram.com/tokerocryptoexchange/
+  - type: join_facebook_tokero
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://www.facebook.com/TokeroExchange
+  - type: join_youtube_tokero
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://www.youtube.com/@tokerocryptoexchange
+  - type: join_tiktok_tokero
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://www.tiktok.com/@tokerocryptoexchange
+  - type: join_linkedin_tokero
+    prize: 3500
+    icon: https://ice-staging.b-cdn.net/task.svg
+    url: https://ro.linkedin.com/company/tokero-crypto-exchange
 badgesList: &badgesList
   levels:
     - name: Wave Starter

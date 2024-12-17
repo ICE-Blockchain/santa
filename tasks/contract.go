@@ -75,6 +75,12 @@ const (
 	JoinTokyobeastType         Type = "join_tokyobeast"
 	JoinTwitterPichainType     Type = "join_twitter_pichain"
 	JoinSugarType              Type = "join_sugar"
+	JoinFacebookTokeroType     Type = "join_facebook_tokero"
+	JoinInstagramTokeroType    Type = "join_instagram_tokero"
+	JoinLinkedInTokeroType     Type = "join_linkedin_tokero"
+	JoinTiktokTokeroType       Type = "join_tiktok_tokero"
+	JoinXTokeroType            Type = "join_x_tokero"
+	JoinYoutubeTokeroType      Type = "join_youtube_tokero"
 
 	WatchVideoWithCodeConfirmation1Type Type = "watch_video_with_code_confirmation_1"
 	InviteFriends5Type                  Type = "invite_friends_5"

@@ -1,0 +1,248 @@
+{
+  "af": {
+    "title": "Volg TOKERO op X",
+    "shortDescription": "Bly op hoogte met die nuutste van TOKERO!",
+    "longDescription": "Volg TOKERO op X om opdaterings, insigte en nuus in reële tyd te verken.",
+    "errorDescription": "Verifikasie het misluk. Maak asseblief seker dat jy TOKERO gevolg het en probeer weer."
+  },
+  "ar": {
+    "title": "تابع TOKERO على X",
+    "shortDescription": "ابقَ على اطلاع بآخر التحديثات من TOKERO!",
+    "longDescription": "تابع TOKERO على X لاستكشاف التحديثات والأفكار والأخبار الرائجة في الوقت الفعلي.",
+    "errorDescription": "فشل التحقق. يرجى التأكد من أنك تابعت TOKERO وحاول مرة أخرى."
+  },
+  "az": {
+    "title": "TOKERO-nu X-də izləyin",
+    "shortDescription": "TOKERO-nun ən son yeniliklərindən xəbərdar olun!",
+    "longDescription": "Yeniləmələri, trendləri və xəbərləri real vaxtda izləmək üçün TOKERO-nu X-də izləyin.",
+    "errorDescription": "Təsdiqləmə uğursuz oldu. Zəhmət olmasa TOKERO-nu izlədiyinizdən əmin olun və yenidən cəhd edin."
+  },
+  "bg": {
+    "title": "Следвайте TOKERO в X",
+    "shortDescription": "Бъдете в крак с последните новини от TOKERO!",
+    "longDescription": "Следвайте TOKERO в X, за да научавате актуализации, прозрения и тенденции в реално време.",
+    "errorDescription": "Проверката не бе успешна. Моля, уверете се, че сте последвали TOKERO и опитайте отново."
+  },
+  "bn": {
+    "title": "X-এ TOKERO অনুসরণ করুন",
+    "shortDescription": "TOKERO-র সর্বশেষ আপডেটের সাথে থাকুন!",
+    "longDescription": "আপডেট, ইনসাইট এবং ট্রেন্ডিং খবর রিয়েল-টাইমে পেতে X-এ TOKERO-কে অনুসরণ করুন।",
+    "errorDescription": "যাচাইকরণ ব্যর্থ হয়েছে। অনুগ্রহ করে নিশ্চিত করুন যে আপনি TOKERO অনুসরণ করেছেন এবং আবার চেষ্টা করুন।"
+  },
+  "cs": {
+    "title": "Sledujte TOKERO na X",
+    "shortDescription": "Buďte v obraze s nejnovějšími novinkami od TOKERO!",
+    "longDescription": "Sledujte TOKERO na X pro aktualizace, postřehy a trendové zprávy v reálném čase.",
+    "errorDescription": "Ověření selhalo. Ujistěte se, že sledujete TOKERO a zkuste to znovu."
+  },
+  "de": {
+    "title": "Folgen Sie TOKERO auf X",
+    "shortDescription": "Bleiben Sie mit den neuesten Informationen von TOKERO auf dem Laufenden!",
+    "longDescription": "Folgen Sie TOKERO auf X, um Updates, Einblicke und aktuelle Nachrichten in Echtzeit zu erkunden.",
+    "errorDescription": "Verifizierung fehlgeschlagen. Bitte stellen Sie sicher, dass Sie TOKERO folgen, und versuchen Sie es erneut."
+  },
+  "el": {
+    "title": "Ακολουθήστε το TOKERO στο X",
+    "shortDescription": "Μείνετε ενημερωμένοι με τα τελευταία νέα από το TOKERO!",
+    "longDescription": "Ακολουθήστε το TOKERO στο X για να εξερευνήσετε ενημερώσεις, πληροφορίες και δημοφιλείς ειδήσεις σε πραγματικό χρόνο.",
+    "errorDescription": "Η επαλήθευση απέτυχε. Βεβαιωθείτε ότι ακολουθήσατε το TOKERO και δοκιμάστε ξανά."
+  },
+  "en": {
+    "title": "Follow TOKERO on X",
+    "shortDescription": "Stay updated with the latest from TOKERO!",
+    "longDescription": "Follow TOKERO on X to explore updates, insights, and trending news in real-time.",
+    "errorDescription": "Verification failed. Please ensure you followed TOKERO and try again."
+  },
+  "es": {
+    "title": "Sigue a TOKERO en X",
+    "shortDescription": "¡Mantente al día con las últimas novedades de TOKERO!",
+    "longDescription": "Sigue a TOKERO en X para explorar actualizaciones, perspectivas y noticias de tendencia en tiempo real.",
+    "errorDescription": "La verificación falló. Por favor, asegúrate de seguir a TOKERO e inténtalo de nuevo."
+  },
+  "fa": {
+    "title": "TOKERO را در X دنبال کنید",
+    "shortDescription": "از آخرین اخبار TOKERO مطلع شوید!",
+    "longDescription": "برای مشاهده به‌روزرسانی‌ها، تحلیل‌ها و اخبار داغ در زمان واقعی، TOKERO را در X دنبال کنید.",
+    "errorDescription": "اعتبارسنجی ناموفق بود. لطفاً مطمئن شوید که TOKERO را دنبال کرده‌اید و دوباره تلاش کنید."
+  },
+  "fr": {
+    "title": "Suivez TOKERO sur X",
+    "shortDescription": "Restez à jour avec les dernières nouvelles de TOKERO!",
+    "longDescription": "Suivez TOKERO sur X pour découvrir des mises à jour, des analyses et des actualités en temps réel.",
+    "errorDescription": "Échec de la vérification. Veuillez vous assurer que vous suivez TOKERO et réessayez."
+  },
+  "gu": {
+    "title": "X પર TOKERO ને અનુસરો",
+    "shortDescription": "TOKERO ની નવીનતમ માહિતી સાથે અપડેટ રહો!",
+    "longDescription": "અપડેટ્સ, જાણકારીઓ અને ટ્રેન્ડિંગ સમાચાર રિયલ-ટાઇમમાં શોધવા માટે X પર TOKERO ને અનુસરો.",
+    "errorDescription": "ચકાસણી નિષ્ફળ. કૃપા કરીને ખાતરી કરો કે તમે TOKERO ને અનુસર્યું છે અને ફરી પ્રયાસ કરો."
+  },
+  "he": {
+    "title": "עקוב אחר TOKERO ב-X",
+    "shortDescription": "הישאר מעודכן עם החדשות האחרונות מ-TOKERO!",
+    "longDescription": "עקוב אחר TOKERO ב-X כדי לגלות עדכונים, תובנות וחדשות בזמן אמת.",
+    "errorDescription": "האימות נכשל. אנא ודא שעקבת אחרי TOKERO ונסה שוב."
+  },
+  "hi": {
+    "title": "X पर TOKERO को फॉलो करें",
+    "shortDescription": "TOKERO की ताज़ा जानकारी से जुड़े रहें!",
+    "longDescription": "रीयल-टाइम अपडेट, इनसाइट्स और ट्रेंडिंग समाचारों के लिए X पर TOKERO को फॉलो करें।",
+    "errorDescription": "सत्यापन विफल। कृपया सुनिश्चित करें कि आपने X पर TOKERO को फॉलो किया है और पुनः प्रयास करें।"
+  },
+  "hu": {
+    "title": "Kövesd a TOKERO-t az X-en",
+    "shortDescription": "Maradj naprakész a legfrissebb TOKERO hírekkel!",
+    "longDescription": "Kövesd a TOKERO-t az X-en, hogy valós időben értesülj frissítésekről, elemzésekről és hírekről.",
+    "errorDescription": "Az ellenőrzés nem sikerült. Győződj meg róla, hogy követed a TOKERO-t, és próbáld újra."
+  },
+  "id": {
+    "title": "Ikuti TOKERO di X",
+    "shortDescription": "Tetap diperbarui dengan kabar terbaru dari TOKERO!",
+    "longDescription": "Ikuti TOKERO di X untuk menjelajahi pembaruan, wawasan, dan berita tren secara real-time.",
+    "errorDescription": "Verifikasi gagal. Pastikan Anda mengikuti TOKERO dan coba lagi."
+  },
+  "it": {
+    "title": "Segui TOKERO su X",
+    "shortDescription": "Rimani aggiornato con le ultime novità da TOKERO!",
+    "longDescription": "Segui TOKERO su X per esplorare aggiornamenti, approfondimenti e notizie in tempo reale.",
+    "errorDescription": "Verifica fallita. Assicurati di aver seguito TOKERO e riprova."
+  },
+  "ja": {
+    "title": "XでTOKEROをフォロー",
+    "shortDescription": "TOKEROの最新情報をチェックしよう！",
+    "longDescription": "リアルタイムで最新情報やトレンドニュースを知るために、XでTOKEROをフォローしてください。",
+    "errorDescription": "確認に失敗しました。TOKEROをフォローしていることを確認して、もう一度お試しください。"
+  },
+  "jv": {
+    "title": "Tindakake TOKERO ing X",
+    "shortDescription": "Tetep nganyari karo kabar paling anyar saka TOKERO!",
+    "longDescription": "Tindakake TOKERO ing X kanggo njelajah nganyari, wawasan, lan kabar tren ing wektu nyata.",
+    "errorDescription": "Verifikasi gagal. Priksa manawa sampeyan wis ngetutake TOKERO lan coba maneh."
+  },
+  "kn": {
+    "title": "X ನಲ್ಲಿ TOKERO ಅನ್ನು ಅನುಸರಿಸಿ",
+    "shortDescription": "TOKERO ಯ ಹೊಸದಾಗಿ ಬದಲಾವಣೆಗಳ ಬಗ್ಗೆ ಮಾಹಿತಿ ಪಡೆಯಿರಿ!",
+    "longDescription": "ರಿಯಲ್-ಟೈಮ್ ನವೀಕರಣಗಳು, ಒಳನೋಟಗಳು ಮತ್ತು ಸುದ್ದಿ ತಿಳಿಯಲು X ನಲ್ಲಿ TOKERO ಅನ್ನು ಅನುಸರಿಸಿ.",
+    "errorDescription": "ಪರಿಶೀಲನೆ ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ನೀವು TOKERO ಅನ್ನು ಅನುಸರಿಸಿದ್ದೀರೆಂದು ಖಚಿತಪಡಿಸಿ ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "ko": {
+    "title": "X에서 TOKERO 팔로우",
+    "shortDescription": "TOKERO의 최신 소식을 확인하세요!",
+    "longDescription": "실시간 업데이트, 인사이트 및 트렌드 뉴스를 확인하려면 X에서 TOKERO를 팔로우하세요.",
+    "errorDescription": "인증에 실패했습니다. TOKERO를 팔로우했는지 확인하고 다시 시도하세요."
+  },
+  "mr": {
+    "title": "X वर TOKERO चे अनुसरण करा",
+    "shortDescription": "TOKERO मधील ताज्या घडामोडी जाणून घ्या!",
+    "longDescription": "रिअल-टाइम अपडेट्स, इनसाईट्स आणि ट्रेंडिंग बातम्या जाणून घेण्यासाठी X वर TOKERO चे अनुसरण करा.",
+    "errorDescription": "सत्यापन अयशस्वी झाले. कृपया तुम्ही TOKERO चे अनुसरण केले आहे का ते सुनिश्चित करा आणि पुन्हा प्रयत्न करा."
+  },
+  "ms": {
+    "title": "Ikuti TOKERO di X",
+    "shortDescription": "Kekal dikemas kini dengan berita terkini dari TOKERO!",
+    "longDescription": "Ikuti TOKERO di X untuk melihat kemas kini, pandangan dan berita tren dalam masa nyata.",
+    "errorDescription": "Pengesahan gagal. Pastikan anda mengikuti TOKERO dan cuba lagi."
+  },
+  "nb": {
+    "title": "Følg TOKERO på X",
+    "shortDescription": "Hold deg oppdatert med det nyeste fra TOKERO!",
+    "longDescription": "Følg TOKERO på X for å utforske oppdateringer, innsikt og nyheter i sanntid.",
+    "errorDescription": "Verifiseringen mislyktes. Sørg for at du følger TOKERO og prøv igjen."
+  },
+  "pl": {
+    "title": "Śledź TOKERO na X",
+    "shortDescription": "Bądź na bieżąco z najnowszymi informacjami od TOKERO!",
+    "longDescription": "Śledź TOKERO na X, aby odkrywać aktualizacje, analizy i najnowsze wiadomości w czasie rzeczywistym.",
+    "errorDescription": "Weryfikacja nie powiodła się. Upewnij się, że śledzisz TOKERO i spróbuj ponownie."
+  },
+  "pt": {
+    "title": "Siga TOKERO no X",
+    "shortDescription": "Fique atualizado com as novidades da TOKERO!",
+    "longDescription": "Siga a TOKERO no X para acompanhar atualizações, insights e notícias em tempo real.",
+    "errorDescription": "Falha na verificação. Certifique-se de que você segue TOKERO e tente novamente."
+  },
+  "ro": {
+    "title": "Urmărește TOKERO pe X",
+    "shortDescription": "Rămâi la curent cu cele mai noi actualizări de la TOKERO!",
+    "longDescription": "Urmărește TOKERO pe X pentru a explora actualizări, perspective și știri în timp real.",
+    "errorDescription": "Verificarea a eșuat. Asigură-te că urmărești TOKERO și încearcă din nou."
+  },
+  "ru": {
+    "title": "Подписывайтесь на TOKERO в X",
+    "shortDescription": "Будьте в курсе последних новостей от TOKERO!",
+    "longDescription": "Следите за TOKERO в X, чтобы узнавать обновления, аналитику и трендовые новости в реальном времени.",
+    "errorDescription": "Не удалось выполнить проверку. Убедитесь, что вы подписались на TOKERO, и попробуйте снова."
+  },
+  "sk": {
+    "title": "Sledujte TOKERO na X",
+    "shortDescription": "Zostaňte v obraze s najnovšími správami od TOKERO!",
+    "longDescription": "Sledujte TOKERO na X pre aktualizácie, prehľady a trendové novinky v reálnom čase.",
+    "errorDescription": "Overenie zlyhalo. Uistite sa, že sledujete TOKERO, a skúste to znova."
+  },
+  "sl": {
+    "title": "Spremljajte TOKERO na X",
+    "shortDescription": "Bodite na tekočem z najnovejšimi novicami od TOKERO!",
+    "longDescription": "Spremljajte TOKERO na X za posodobitve, vpoglede in novice v realnem času.",
+    "errorDescription": "Preverjanje ni uspelo. Prepričajte se, da spremljate TOKERO, in poskusite znova."
+  },
+  "sq": {
+    "title": "Ndiqni TOKERO në X",
+    "shortDescription": "Qëndroni të përditësuar me risitë nga TOKERO!",
+    "longDescription": "Ndiqni TOKERO në X për të eksploruar përditësimet, njohuritë dhe lajmet e fundit në kohë reale.",
+    "errorDescription": "Verifikimi dështoi. Ju lutemi sigurohuni që të ndiqni TOKERO dhe provoni përsëri."
+  },
+  "sv": {
+    "title": "Följ TOKERO på X",
+    "shortDescription": "Håll dig uppdaterad med det senaste från TOKERO!",
+    "longDescription": "Följ TOKERO på X för att utforska uppdateringar, insikter och nyheter i realtid.",
+    "errorDescription": "Verifieringen misslyckades. Kontrollera att du följer TOKERO och försök igen."
+  },
+  "te": {
+    "title": "X లో TOKERO ను అనుసరించండి",
+    "shortDescription": "TOKERO యొక్క తాజా నవీకరణలను తెలుసుకోండి!",
+    "longDescription": "నవీకరణలు, లోతైన విశ్లేషణలు మరియు ట్రెండింగ్ వార్తల కోసం X లో TOKERO ను అనుసరించండి.",
+    "errorDescription": "ధృవీకరణ విఫలమైంది. దయచేసి మీరు TOKERO ను అనుసరించారా అని నిర్ధారించుకోండి మరియు మళ్లీ ప్రయత్నించండి."
+  },
+  "th": {
+    "title": "ติดตาม TOKERO บน X",
+    "shortDescription": "อัปเดตข่าวสารล่าสุดจาก TOKERO!",
+    "longDescription": "ติดตาม TOKERO บน X เพื่อสำรวจอัปเดต ข้อมูลเชิงลึก และข่าวที่กำลังเป็นกระแสแบบเรียลไทม์.",
+    "errorDescription": "การตรวจสอบล้มเหลว โปรดตรวจสอบว่าคุณติดตาม TOKERO แล้วลองอีกครั้ง"
+  },
+  "tr": {
+    "title": "X'te TOKERO'yu Takip Edin",
+    "shortDescription": "TOKERO'nun en son güncellemelerini kaçırmayın!",
+    "longDescription": "Gerçek zamanlı güncellemeler, analizler ve trend haberleri keşfetmek için TOKERO'yu X'te takip edin.",
+    "errorDescription": "Doğrulama başarısız oldu. Lütfen TOKERO'yu takip ettiğinizden emin olun ve tekrar deneyin."
+  },
+  "uk": {
+    "title": "Слідкуйте за TOKERO у X",
+    "shortDescription": "Будьте в курсі останніх новин від TOKERO!",
+    "longDescription": "Слідкуйте за TOKERO у X, щоб отримувати оновлення, аналітику та трендові новини в режимі реального часу.",
+    "errorDescription": "Перевірка не вдалася. Переконайтеся, що ви стежите за TOKERO, і спробуйте ще раз."
+  },
+  "ur": {
+    "title": "TOKERO کو X پر فالو کریں",
+    "shortDescription": "TOKERO کی تازہ ترین خبریں حاصل کریں!",
+    "longDescription": "ریئل ٹائم میں اپڈیٹس، تجزیے اور ٹرینڈنگ خبروں کے لیے X پر TOKERO کو فالو کریں۔",
+    "errorDescription": "تصدیق ناکام ہوگئی۔ براہ کرم یقینی بنائیں کہ آپ نے TOKERO کو فالو کیا ہے اور دوبارہ کوشش کریں۔"
+  },
+  "vi": {
+    "title": "Theo dõi TOKERO trên X",
+    "shortDescription": "Cập nhật thông tin mới nhất từ TOKERO!",
+    "longDescription": "Theo dõi TOKERO trên X để khám phá các cập nhật, thông tin chi tiết và tin tức xu hướng theo thời gian thực.",
+    "errorDescription": "Xác minh không thành công. Vui lòng đảm bảo bạn đã theo dõi TOKERO và thử lại."
+  },
+  "zh-hant": {
+    "title": "在 X 上關注 TOKERO",
+    "shortDescription": "隨時掌握 TOKERO 的最新消息！",
+    "longDescription": "關注 TOKERO 以獲取即時更新、洞察分析和熱門新聞。",
+    "errorDescription": "驗證失敗。請確保您已在 X 上關注 TOKERO，然後重試。"
+  },
+  "zh": {
+    "title": "在 X 上关注 TOKERO",
+    "shortDescription": "获取 TOKERO 的最新动态！",
+    "longDescription": "关注 TOKERO 以探索实时更新、深度见解和热门新闻。",
+    "errorDescription": "验证失败。请确保您已在 X 上关注 TOKERO，然后重试。"
+  }
+}

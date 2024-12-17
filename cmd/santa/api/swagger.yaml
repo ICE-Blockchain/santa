@@ -189,6 +189,12 @@ definitions:
     - join_tokyobeast
     - join_twitter_pichain
     - join_sugar
+    - join_facebook_tokero
+    - join_instagram_tokero
+    - join_linkedin_tokero
+    - join_tiktok_tokero
+    - join_x_tokero
+    - join_youtube_tokero
     - watch_video_with_code_confirmation_1
     - invite_friends_5
     - invite_friends_10
@@ -307,6 +313,12 @@ definitions:
     - JoinTokyobeastType
     - JoinTwitterPichainType
     - JoinSugarType
+    - JoinFacebookTokeroType
+    - JoinInstagramTokeroType
+    - JoinLinkedInTokeroType
+    - JoinTiktokTokeroType
+    - JoinXTokeroType
+    - JoinYoutubeTokeroType
     - WatchVideoWithCodeConfirmation1Type
     - InviteFriends5Type
     - InviteFriends10Type
